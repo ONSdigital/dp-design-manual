@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body style="height: auto;">
+
+    {% include banner.html %}
+
+    {% include header-basic.html %}
+
+    {{ content }}
+
+    {% include footer-basic.html %}
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+
+</html>
