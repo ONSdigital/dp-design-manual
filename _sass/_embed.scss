@@ -1,0 +1,18 @@
+.embed-code--text-area {
+  padding: 8px 16px;
+  background-color: #EAEAEA;
+  border: 1px solid #D0D2D3;
+  width: 100%;
+  font-size: 14px;
+  color: #414042;
+  line-height: 20px;
+  overflow: hidden;
+  height: 40px;
+  white-space: nowrap;
+  resize: none;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  }
+
+.embed-code--text-area:focus {
+  outline: 3px solid #414042 ;
+}
