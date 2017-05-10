@@ -54,41 +54,71 @@ layout: basic
         </ol>
       </div>
 
-      <div class="download-options--container">
+      <div class="download-options__container">
         <h5 class="font-size--h6">Download this chart</h5>
-        <a class="btn btn--primary">Image</a>
-        <a class="btn btn--primary">.csv</a>
-        <a class="btn btn--primary">.xls</a>
+        <a class="btn btn--primary" href="#">Image</a>
+        <a class="btn btn--primary" href="#">.csv</a>
+        <a class="btn btn--primary" href="#">.xls</a>
 
-        <h5 class="font-size--h6">Embed this chart</h5>
+        <form class="embed-code margin-top--2">
+          <label class="font-size--h6" for="textarea-01">Embed this chart</label>
+          <textarea class="embed-code__text-area" id="textarea-01" onFocus="this.select()" readonly="readonly">&lt;iframe width="100%" height="800px" src="https://www.ons.gov.uk/visualisations/dvc402/chart2/index.html" scrolling="no" frameborder="0"/&gt;</textarea>
+        </form>
+
+
         <div class="embed-code">
-          <textarea class="embed-code--text-area" onclick="this.focus();this.select()" readonly="readonly">&lt;iframe width="100%" height="800px" src="https://www.ons.gov.uk/visualisations/dvc402/chart2/index.html" scrolling="no" frameborder="0"/&gt;</textarea>
         </div>
       </div>
 
-      <div class="download-options--container">
+      <div class="download-options__container">
         <h5 class="font-size--h6">Download chart</h5>
-        <a class="download-options--link" href="#"><span class="visually-hidden">Download Figure 1</span> Image 63KB</a>
-        <a class="download-options--link" href="#"><span class="visually-hidden">Download Figure 1</span> CSV 1KB</a>
-        <a class="download-options--link" href="#"><span class="visually-hidden">Download Figure 1</span> XLS 6KB</a>
+        <a class="btn btn--primary" href="#"><span class="visually-hidden">Download 'figure 1'</span> Image (PNG, 63KB)</a>
+        <a class="btn btn--primary" href="#"><span class="visually-hidden">Download 'figure 1'</span> CSV (1KB)</a>
+        <a class="btn btn--primary" href="#"><span class="visually-hidden">Download 'figure 1'</span> XLS (6KB)</a>
 
-        <h5 class="font-size--h6">Embed chart</h5>
-        <div class="embed-code">
-          <textarea class="embed-code--text-area" onclick="this.focus();this.select()" readonly="readonly">&lt;iframe width="100%" height="800px" src="https://www.ons.gov.uk/visualisations/dvc402/chart2/index.html" scrolling="no" frameborder="0"/&gt;</textarea>
-        </div>
+        <form class="embed-code margin-top--2">
+          <label class="font-size--h6" for="textarea-02">Embed chart</label>
+          <textarea class="embed-code__text-area" id="textarea-02" onFocus="this.select()" readonly="readonly">&lt;iframe width="100%" height="800px" src="https://www.ons.gov.uk/visualisations/dvc402/chart2/index.html" scrolling="no" frameborder="0"/&gt;</textarea>
+        </form>
+      </div>
+
+      <div class="download-options__container">
+        <h5 class="font-size--h6">Download chart</h5>
+        <a class="download-options__link" href="#"><span class="visually-hidden">Download 'figure 1'</span> Image (PNG, 63KB)</a>
+        <a class="download-options__link" href="#"><span class="visually-hidden">Download 'figure 1'</span> CSV (1KB)</a>
+        <a class="download-options__link" href="#"><span class="visually-hidden">Download 'figure 1'</span> XLS (6KB)</a>
+
+        <form class="embed-code margin-top--2">
+          <label class="font-size--h6" for="textarea-03">Embed this chart</label>
+          <textarea class="embed-code__text-area" id="textarea-03" onFocus="this.select()" readonly="readonly">&lt;iframe width="100%" height="800px" src="https://www.ons.gov.uk/visualisations/dvc402/chart2/index.html" scrolling="no" frameborder="0"/&gt;</textarea>
+        </form>
         <a href="#">Help and advanced options</a>
 
       </div>
 
-      <div class="download-options--container">
+      <div class="download-options__container">
         <h5 class="font-size--h6">Download or embed chart</h5>
-        <a class="download-options--link" href="#"><span class="visually-hidden">Download Figure 1</span> Image 63KB</a>
-        <a class="download-options--link" href="#"><span class="visually-hidden">Download figure 1</span> CSV 1KB</a>
-        <a class="download-options--link" href="#"><span class="visually-hidden">Download figure 1</span> XLS 6KB</a>
-        <a class="download-options--link" href="#">Embed <span class="visually-hidden">figure 1</span> chart</a>
+        <a class="download-options__link" href="#"><span class="visually-hidden">Download Figure 1</span> Image 63KB</a>
+        <a class="download-options__link" href="#"><span class="visually-hidden">Download figure 1</span> CSV 1KB</a>
+        <a class="download-options__link" href="#"><span class="visually-hidden">Download figure 1</span> XLS 6KB</a>
+        <div class="js-show-hide js-show-hide--inline">
+          <div class="show-hide show-hide--light show-hide--inline">
+            <div class="js-show-hide__title">
+              <span class="show-hide__title">
+                Embed <span class="visually-hidden">figure 1</span> chart
+              </span>
+            </div>
+            <div class="js-show-hide__content">
+              <form class="embed-code margin-top--2">
+                <label class="font-size--h6" for="textarea-04">Embed this chart</label>
+                <textarea class="embed-code__text-area" id="textarea-04" onFocus="this.select()" readonly="readonly">&lt;iframe width="100%" height="800px" src="https://www.ons.gov.uk/visualisations/dvc402/chart2/index.html" scrolling="no" frameborder="0"/&gt;</textarea>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="download-options--container">
+      <div>
         <div class="js-show-hide border-bottom--iron-sm border-bottom--iron-md border-top--iron-sm border-top--iron-md">
           <div class="show-hide show-hide--light">
             <div class="js-show-hide__title">
@@ -98,14 +128,15 @@ layout: basic
             </div>
             <div class="js-show-hide__content padding-bottom--3">
               <h5 class="font-size--h6 margin-top--0">Download chart</h5>
-              <a class="download-options--link" href="#"><span class="visually-hidden">Download Figure 1</span> Image 63KB</a>
-              <a class="download-options--link" href="#"><span class="visually-hidden">Download Figure 1</span> CSV 1KB</a>
-              <a class="download-options--link" href="#"><span class="visually-hidden">Download Figure 1</span> XLS 6KB</a>
+              <a class="download-options__link" href="#"><span class="visually-hidden">Download Figure 1</span> Image 63KB</a>
+              <a class="download-options__link" href="#"><span class="visually-hidden">Download Figure 1</span> CSV 1KB</a>
+              <a class="download-options__link" href="#"><span class="visually-hidden">Download Figure 1</span> XLS 6KB</a>
 
-              <h5 class="font-size--h6">Embed chart</h5>
-              <div class="embed-code">
-                <textarea class="embed-code--text-area" onclick="this.focus();this.select()" readonly="readonly">&lt;iframe width="100%" height="800px" src="https://www.ons.gov.uk/visualisations/dvc402/chart2/index.html" scrolling="no" frameborder="0"/&gt;</textarea>
-              </div>
+              <form class="embed-code margin-top--2">
+                <label class="font-size--h6" for="textarea-05">Embed this chart</label>
+                <textarea class="embed-code__text-area" id="textarea-05" onFocus="this.select()" readonly="readonly">&lt;iframe width="100%" height="800px" src="https://www.ons.gov.uk/visualisations/dvc402/chart2/index.html" scrolling="no" frameborder="0"/&gt;</textarea>
+              </form>
+
               <a href="#">Help and advanced options</a>
             </div>
           </div>

@@ -1,4 +1,4 @@
-.embed-code--text-area {
+.embed-code__text-area {
   padding: 8px 16px;
   background-color: #EAEAEA;
   border: 1px solid #D0D2D3;
@@ -12,14 +12,14 @@
   resize: none;
   font-family: "Open Sans",Helvetica,Arial,sans-serif; }
 
-.embed-code--text-area:focus {
+.embed-code__text-area:focus {
   outline: 3px solid #414042; }
 
-.download-options--container {
+.download-options__container {
   margin-top: 5em;
   margin-bottom: 8em; }
 
-.download-options--link {
+.download-options__link {
   margin-right: 1em; }
 
 .visually-hidden {
@@ -39,8 +39,36 @@ a:focus {
   outline: 3px solid #414042;
   color: #fff; }
 
-a:focus:visited {
+.section__content--markdown a.btn {
+  text-decoration: none; }
+
+.btn {
+  margin-right: .5em; }
+
+.download-options__container .js-show-hide__title button {
+  width: auto; }
+
+.js-show-hide__title {
+  display: inline; }
+
+.js-show-hide--inline {
+  display: inline; }
+
+.show-hide--inline {
+  display: inline; }
+
+.download-options__container .show-hide__title {
+  padding-right: 0; }
+
+.download-options__container .js-show-hide__title button {
+  color: #206095;
+  text-decoration: underline;
+  padding: 0; }
+
+.download-options__container .js-show-hide__title button:focus {
+  background-color: #414042;
+  outline: 3px solid #414042;
   color: #fff; }
 
-a:visited {
-  color: #560072; }
+.download-options__container .show-hide button[aria-expanded=false]:after, .download-options__container .show-hide button[aria-expanded=true]:after {
+  background-image: none; }

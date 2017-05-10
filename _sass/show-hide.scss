@@ -1,0 +1,35 @@
+.download-options__container .js-show-hide__title button {
+  width: auto;
+}
+
+.js-show-hide__title {
+  display: inline;
+}
+
+.js-show-hide--inline {
+  display: inline;
+}
+
+.show-hide--inline {
+  display: inline;
+}
+
+.download-options__container .show-hide__title {
+  padding-right: 0;
+}
+
+.download-options__container .js-show-hide__title button {
+  color:#206095;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.download-options__container .js-show-hide__title button:focus {
+  background-color: #414042;
+  outline: 3px solid #414042;
+  color: #fff;
+}
+
+.download-options__container .show-hide button[aria-expanded=false]:after, .download-options__container .show-hide button[aria-expanded=true]:after {
+  background-image: none;
+}
