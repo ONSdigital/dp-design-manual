@@ -1,0 +1,53 @@
+// Colours in production
+$astral:	#3B7A9E;
+$salem:		#0F8243;
+$carrot:  #FF9933;
+$poppy:   #D32F2F;
+$matisse: #206095;
+
+// Colours in data collection pattern library https://onsdigital.github.io/sdc-global-design-patterns/docs/colours.html
+
+$dc-error: #D0121E;
+$dc-link:  #4361AA;
+
+.background--dc-error {
+  background-color: $dc-error;
+  color: #fff;
+}
+
+.background--dc-link {
+  background-color: $dc-link;
+  color: #fff;
+}
+
+// Colours in development
+$navy:    #112941;
+$blue:		#0068a8;
+$teal:    #1996a3;
+$sky:     #5bbee1;
+$yellow:  #f1c410;
+
+.background--navy {
+  background-color: $navy;
+  color: #fff;
+}
+
+.background--blue {
+  background-color: $blue;
+  color: #fff;
+}
+
+.background--teal {
+  background-color: $teal;
+  color: #fff;
+}
+
+.background--sky {
+  background-color: $sky;
+  color: #fff;
+}
+
+.background--yellow {
+  background-color: $yellow;
+  color: #fff;
+}

@@ -1,23 +1,29 @@
+// Font weights
 .font-weight--bold {
   font-weight: bold;
 }
 
+.font-weight--normal {
+  font-weight: normal;
+}
+
+// Font colours
 .font-color--astral {
-  color: #3B7A9E;
+  color: $astral;
 }
 
 .font-color--salem {
-  color: #0F8243;
+  color: $salem;
 }
 
 .font-color--carrot {
-  color: #FF9933;
+  color: $carrot;
 }
 
 .font-color--poppy {
-  color: #D32F2F;
+  color: $poppy;
 }
 
 .font-color--matisse {
-  color: #206095;
+  color: $matisse;
 }
