@@ -145,8 +145,22 @@
 .font-color--br-teal {
   color: #008080; }
 
+.font-color--br-darkgoldenrod {
+  color: #b8860b; }
+
+.font-color--br-purple {
+  color: #5c435c; }
+
 .background--br-teal {
   background-color: #008080;
+  color: #fff; }
+
+.background--br-darkgoldenrod {
+  background-color: #b8860b;
+  color: #fff; }
+
+.background--br-purple {
+  background-color: #5c435c;
   color: #fff; }
 
 .font-weight--bold {

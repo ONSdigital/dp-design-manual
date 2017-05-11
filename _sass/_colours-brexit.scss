@@ -1,6 +1,8 @@
 // Brexit dashboard http://visual.ons.gov.uk/dashboard/
 
-$br-teal:     #008080;
+$br-teal:          #008080;
+$br-darkgoldenrod: #b8860b;
+$br-purple:        #5c435c;
 
 // Font colour
 
@@ -8,9 +10,27 @@ $br-teal:     #008080;
   color: $br-teal;
 }
 
+.font-color--br-darkgoldenrod {
+  color: $br-darkgoldenrod;
+}
+
+.font-color--br-purple {
+  color: $br-purple;
+}
+
 // Background colour
 
 .background--br-teal {
   background-color: $br-teal;
+  color: #fff;
+}
+
+.background--br-darkgoldenrod {
+  background-color: $br-darkgoldenrod;
+  color: #fff;
+}
+
+.background--br-purple {
+  background-color: $br-purple;
   color: #fff;
 }
