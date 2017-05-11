@@ -3,6 +3,10 @@
 $br-teal:          #008080;
 $br-darkgoldenrod: #b8860b;
 $br-purple:        #5c435c;
+$br-green:         #3d6840;
+$br-slate:         #708090;
+$br-navy:          #000080;
+
 
 // Font colour
 
@@ -16,6 +20,18 @@ $br-purple:        #5c435c;
 
 .font-color--br-purple {
   color: $br-purple;
+}
+
+.font-color--br-green {
+  color: $br-green;
+}
+
+.font-color--br-slate {
+  color: $br-slate;
+}
+
+.font-color--br-navy {
+  color: $br-navy;
 }
 
 // Background colour
@@ -32,5 +48,20 @@ $br-purple:        #5c435c;
 
 .background--br-purple {
   background-color: $br-purple;
+  color: #fff;
+}
+
+.background--br-green {
+  background-color: $br-green;
+  color: #fff;
+}
+
+.background--br-slate {
+  background-color: $br-slate;
+  color: #fff;
+}
+
+.background--br-navy {
+  background-color: $br-navy;
   color: #fff;
 }

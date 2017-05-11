@@ -151,6 +151,15 @@
 .font-color--br-purple {
   color: #5c435c; }
 
+.font-color--br-green {
+  color: #3d6840; }
+
+.font-color--br-slate {
+  color: #708090; }
+
+.font-color--br-navy {
+  color: #000080; }
+
 .background--br-teal {
   background-color: #008080;
   color: #fff; }
@@ -161,6 +170,18 @@
 
 .background--br-purple {
   background-color: #5c435c;
+  color: #fff; }
+
+.background--br-green {
+  background-color: #3d6840;
+  color: #fff; }
+
+.background--br-slate {
+  background-color: #708090;
+  color: #fff; }
+
+.background--br-navy {
+  background-color: #000080;
   color: #fff; }
 
 .font-weight--bold {
