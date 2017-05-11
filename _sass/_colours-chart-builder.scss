@@ -1,0 +1,56 @@
+// Chart builder colours
+
+$cb-navy:    #112941;
+$cb-blue:		#0068a8;
+$cb-teal:    #1996a3;
+$cb-sky:     #5bbee1;
+$cb-yellow:  #f1c410;
+
+// Font colour
+
+.font-color--cb-navy {
+  color: $cb-navy;
+}
+
+.font-color--cb-blue {
+  color: $cb-blue;
+}
+
+.font-color--cb-teal {
+  color: $cb-teal;
+}
+
+.font-color--cb-sky {
+  color: $cb-sky;
+}
+
+.font-color--cb-yellow {
+  color: $cb-yellow;
+}
+
+// Background colour
+
+.background--cb-navy {
+  background-color: $cb-navy;
+  color: #fff;
+}
+
+.background--cb-blue {
+  background-color: $cb-blue;
+  color: #fff;
+}
+
+.background--cb-teal {
+  background-color: $cb-teal;
+  color: #fff;
+}
+
+.background--cb-sky {
+  background-color: $cb-sky;
+  color: #fff;
+}
+
+.background--cb-yellow {
+  background-color: $cb-yellow;
+  color: #fff;
+}

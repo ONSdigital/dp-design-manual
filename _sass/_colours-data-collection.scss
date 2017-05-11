@@ -1,0 +1,40 @@
+// Data collection https://onsdigital.github.io/sdc-global-design-patterns/docs/colours.html
+
+$dc-ons-blue: #003C57;
+$dc-primary:  #0F8243;
+$dc-warning:  #F99C21;
+$dc-error:    #D0121E;
+$dc-link:     #4361AA;
+$dc-census:   #6E2585;
+
+// Background colour
+
+.background--dc-ons-blue {
+  background-color: $dc-ons-blue;
+  color: #003C57;
+}
+
+.background--dc-primary {
+  background-color: $dc-primary;
+  color: #0F8243;
+}
+
+.background--dc-warning {
+  background-color: $dc-warning;
+  color: #fff;
+}
+
+.background--dc-error {
+  background-color: $dc-error;
+  color: #fff;
+}
+
+.background--dc-link {
+  background-color: $dc-link;
+  color: #fff;
+}
+
+.background--dc-census {
+  background-color: $dc-census;
+  color: #6E2585;
+}

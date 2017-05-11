@@ -1,0 +1,16 @@
+// Brexit dashboard http://visual.ons.gov.uk/dashboard/
+
+$br-teal:     #008080;
+
+// Font colour
+
+.font-color--br-teal {
+  color: $br-teal;
+}
+
+// Background colour
+
+.background--br-teal {
+  background-color: $br-teal;
+  color: #fff;
+}

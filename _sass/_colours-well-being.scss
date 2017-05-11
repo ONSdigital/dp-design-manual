@@ -1,0 +1,107 @@
+// Well being dashboard https://www.ons.gov.uk/visualisations/dvc364/dashboard/index.html
+
+$wb-blue:     #365e94;
+$wb-pink:     #ce3f6d;
+$wb-purple:   #6e4a75;
+$wb-nevada:   #5f7682;
+$wb-green:    #507d3a;
+$wb-blue-2:   #3a73a9;
+$wb-orange:   #ff5f00;
+$wb-blue-3:   #388aa8;
+$wb-green-2: #497d44;
+$wb-red:      #e54a31;
+
+// Font colour
+
+.font-color--wb-blue {
+  color: $wb-blue;
+}
+
+.font-color--wb-pink {
+  color: $wb-pink;
+}
+
+.font-color--wb-purple {
+  color: $wb-purple;
+}
+
+.font-color--wb-nevada {
+  color: $wb-nevada;
+}
+
+.font-color--wb-green {
+  color: $wb-green;
+}
+
+.font-color--wb-blue-2 {
+  color: $wb-blue-2;
+}
+
+.font-color--wb-orange {
+  color: $wb-orange;
+}
+
+.font-color--wb-blue-3 {
+  color: $wb-blue-3;
+}
+
+.font-color--wb-green-2 {
+  color: $wb-green-2;
+}
+
+.font-color--wb-red {
+  color: $wb-red;
+}
+
+
+// Background colour
+
+.background--wb-blue {
+  background-color: $wb-blue;
+  color: #fff;
+}
+
+.background--wb-pink {
+  background-color: $wb-pink;
+  color: #fff;
+}
+
+.background--wb-purple {
+  background-color: $wb-purple;
+  color: #fff;
+}
+
+.background--wb-nevada {
+  background-color: $wb-nevada;
+  color: #fff;
+}
+
+.background--wb-green {
+  background-color: $wb-green;
+  color: #fff;
+}
+
+.background--wb-blue-2 {
+  background-color: $wb-blue-2;
+  color: #fff;
+}
+
+.background--wb-orange {
+  background-color: $wb-orange;
+  color: #fff;
+}
+
+.background--wb-blue-3 {
+  background-color: $wb-blue-3;
+  color: #fff;
+}
+
+.background--wb-green-2 {
+  background-color: $wb-green-2;
+  color: #fff;
+}
+
+.background--wb-red {
+  background-color: $wb-red;
+  color: #fff;
+}
