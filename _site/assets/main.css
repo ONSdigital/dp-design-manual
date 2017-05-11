@@ -1,3 +1,15 @@
+.background--dc-ons-blue {
+  background-color: #003C57;
+  color: #003C57; }
+
+.background--dc-primary {
+  background-color: #0F8243;
+  color: #0F8243; }
+
+.background--dc-warning {
+  background-color: #F99C21;
+  color: #fff; }
+
 .background--dc-error {
   background-color: #D0121E;
   color: #fff; }
@@ -5,6 +17,10 @@
 .background--dc-link {
   background-color: #4361AA;
   color: #fff; }
+
+.background--dc-census {
+  background-color: #6E2585;
+  color: #6E2585; }
 
 .background--navy {
   background-color: #112941;
@@ -24,6 +40,10 @@
 
 .background--yellow {
   background-color: #f1c410;
+  color: #fff; }
+
+.background--wb-blue {
+  background-color: #365e94;
   color: #fff; }
 
 .embed-code__text-area {
