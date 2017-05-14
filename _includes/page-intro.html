@@ -1,0 +1,15 @@
+<div class="col col--md-47 col--lg-48">
+  <h1 class="page-intro__title ">
+    <span class="page-intro__type">
+      {% if page.type %}{{ page.type }}{% else %}
+      Page type
+      {% endif %}:
+    </span>
+    {% if page.title %}{{ page.title }}{% else %}
+    Page title
+    {% endif %}</h1>
+  <p class="page-intro__content">
+    {% if page.intro-content %}{{ page.intro-content   }}{% else %}
+    Page intro content goes here.
+    {% endif %}</p>
+</div>

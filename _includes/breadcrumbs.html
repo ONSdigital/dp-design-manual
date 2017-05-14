@@ -1,14 +1,19 @@
 <nav>
   <div class="breadcrumb print--hide">
     <ol class="breadcrumb__list">
+      {% if page.breadcrumbs %}
+        {% for breadcrumb in page.breadcrumbs %}
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="{{ breadcrumb.link }}">{{ breadcrumb.label }}</a>
+        </li>
+        {% endfor %}
+      {% else %}
       <li class="breadcrumb__item">
         <a class="breadcrumb__link" href="#">Home</a>
       </li>
+      {% endif %}
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="#">Example category</a>
-      </li>
-      <li class="breadcrumb__item">
-        Page name
+        {{ page.title }}
       </li>
     </ol>
   </div>
