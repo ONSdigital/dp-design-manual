@@ -1,0 +1,38 @@
+// Social media style guide colours
+
+$sm-blue:          #003d59;
+$sm-blue-2:        #2eabc1;
+$sm-blue-3:        #90b0c9;
+
+
+// Font colour
+
+.font-color--sm-blue {
+  color: $sm-blue;
+}
+
+.font-color--sm-blue-2 {
+  color: $sm-blue-2;
+}
+
+.font-color--sm-blue-3 {
+  color: $sm-blue-3;
+}
+
+
+// Background colour
+
+.background--sm-blue {
+  background-color: $sm-blue;
+  color: #fff;
+}
+
+.background--sm-blue-2 {
+  background-color: $sm-blue-2;
+  color: #fff;
+}
+
+.background--sm-blue-3 {
+  background-color: $sm-blue-3;
+  color: #fff;
+}

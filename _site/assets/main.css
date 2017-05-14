@@ -184,6 +184,27 @@
   background-color: #000080;
   color: #fff; }
 
+.font-color--sm-blue {
+  color: #003d59; }
+
+.font-color--sm-blue-2 {
+  color: #2eabc1; }
+
+.font-color--sm-blue-3 {
+  color: #90b0c9; }
+
+.background--sm-blue {
+  background-color: #003d59;
+  color: #fff; }
+
+.background--sm-blue-2 {
+  background-color: #2eabc1;
+  color: #fff; }
+
+.background--sm-blue-3 {
+  background-color: #90b0c9;
+  color: #fff; }
+
 .font-weight--bold {
   font-weight: bold; }
 
