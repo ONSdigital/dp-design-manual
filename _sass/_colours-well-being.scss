@@ -3,7 +3,7 @@
 $wb-blue:     #365e94;
 $wb-pink:     #ce3f6d;
 $wb-purple:   #6e4a75;
-$wb-nevada:   #5f7682;
+$wb-slate:   #5f7682;
 $wb-green:    #507d3a;
 $wb-blue-2:   #3a73a9;
 $wb-orange:   #ff5f00;
@@ -25,8 +25,8 @@ $wb-red:      #e54a31;
   color: $wb-purple;
 }
 
-.font-color--wb-nevada {
-  color: $wb-nevada;
+.font-color--wb-slate {
+  color: $wb-slate;
 }
 
 .font-color--wb-green {
@@ -71,8 +71,8 @@ $wb-red:      #e54a31;
   color: #fff;
 }
 
-.background--wb-nevada {
-  background-color: $wb-nevada;
+.background--wb-slate {
+  background-color: $wb-slate;
   color: #fff;
 }
 
