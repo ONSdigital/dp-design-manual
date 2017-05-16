@@ -1,10 +1,10 @@
 // Chart builder colours
 
-$cb-navy:   rgb(35,77,112);
-$cb-blue:		rgb(0,117,163);
-$cb-teal:   rgb(38,109,74);
-$cb-sky:    rgb(54,173,217);
-$cb-yellow: rgb(226,188,34);
+$cb-navy:   rgba(35,77,112,1);
+$cb-blue:		rgba(0,117,163,1);
+$cb-green:  rgba(38,109,74,1);
+$cb-sky:    rgba(54,173,217,1);
+$cb-yellow: rgba(226,188,34,1);
 
 // Font colour
 
@@ -16,8 +16,8 @@ $cb-yellow: rgb(226,188,34);
   color: $cb-blue;
 }
 
-.font-color--cb-teal {
-  color: $cb-teal;
+.font-color--cb-green {
+  color: $cb-green;
 }
 
 .font-color--cb-sky {
@@ -40,8 +40,8 @@ $cb-yellow: rgb(226,188,34);
   color: #fff;
 }
 
-.background--cb-teal {
-  background-color: $cb-teal;
+.background--cb-green {
+  background-color: $cb-green;
   color: #fff;
 }
 
