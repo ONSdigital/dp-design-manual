@@ -1,14 +1,20 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Only this main Sass file needs front matter (these dashes are enough)
 ---
-@import "colours";
-@import "headings";
-@import "show-hide";
-@import "links";
 
+@import "colours";
+@import "typography";
+@import "links";
+@import "visually-hidden";
+
+@import "footer";
+
+@import "show-hide";
 @import "embed";
 @import "download-options";
-@import "visually-hidden";
 @import "pullout-box";
+@import "banners";
+@import "page-intro";
+@import "alerts";
 
 @import "pattern-library";
