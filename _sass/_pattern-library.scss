@@ -8,3 +8,19 @@
 .pl-colour-circle--border {
 	border: 1px solid #DDDDDD;
 }
+
+.pl-example {
+    position: relative;
+    border: 1px solid #ECE8E6;
+    margin: 47px 0 32px 0;
+    padding: 10px;
+}
+
+.pl-example:before {
+    position: absolute;
+    top: -40px;
+    left: -1px;
+    text-transform: uppercase;
+    content: "Example";
+    padding: 16px 0;
+}
