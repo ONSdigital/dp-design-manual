@@ -1,3 +1,5 @@
+<!-- Copy of ONS.GOV.UK with extra prototype styles included -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,19 +8,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <title>Experimental: UK business; activity, size and location: 2016</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/f2507a4/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/jekyll/update/2017/05/04/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://localhost:4000/sprint/14/experimental-banner/option-2.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing UX Prototypes" href="/feed.xml">
 
   
 </head>
 
 
-  <body>
+  <body style="height: auto;">
+
+    <div class="banner background--carrot">
+	<div class="wrapper">
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
+	</div>
+</div>
+
 
     <header>
 	<a class="skiplink" href="#main" tabindex="0">
@@ -234,43 +244,146 @@ Taking part in a survey?
 </header>
 
 
-    <main class="page-content" aria-label="Content">
+    <main id="main" role="main" tabindex="-1">
+  <div class="page-intro background--gallery">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+
+          <nav>
+  <div class="breadcrumb print--hide">
+    <ol class="breadcrumb__list">
+      
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="#">Home</a>
+      </li>
+      
+      <li class="breadcrumb__item">
+        Experimental: UK business; activity, size and location: 2016
+      </li>
+    </ol>
+  </div>
+</nav>
+
+
+          <div class="col col--md-47 col--lg-48">
+  <h1 class="page-intro__title ">
+    
+    <span class="page-intro__type">
+      Statistical bulletin
+    </span>
+    
+    Experimental: UK business; activity, size and location: 2016</h1> 
+  <p class="page-intro__content">
+    UK businesses broken down by legal status, industry, region, employment and turnover size bands.
+  </p>
+  
+</div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="alert background--gallery">
       <div class="wrapper">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="col-wrap">
+          <div class="col">
+            <div class="show-hide show-hide--dark info-box margin-top-sm--1 margin-top-md--1 js-show-hide">
+              <div class="js-show-hide__title">
+                <button class="js-show-hide__button" type="button" aria-expanded="false" aria-controls="collapsible-0">
+                  <span class="icon icon-info icon-info--info-box"></span>
+                  <h2 class="show-hide__title alert--warning__title">
+                    Data being developed
+                  </h2>
+                </button>
+              </div>
+              <div class="js-show-hide__content" id="collapsible-0" aria-hidden="true">
+                <div class="show-hide__content alert--warning__content section__content--markdown padding-bottom--2">
+                  <section>
+                    <p>These statistics are in a testing phase and not yet fully developed. You should be aware of the status and cautions of this release, they will vary for each statistic. The particular limitations are explained in the information on this
+                      page.</p>
+                    <p><a href="https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/guidetoexperimentalstatistics">Experimental statistics guide</a></p>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Welcome to Jekyll!</h1>
-    <p class="post-meta">
-      <time datetime="2017-05-04T11:40:41+01:00" itemprop="datePublished">
-        
-        May 4, 2017
-      </time>
+    <div class="meta-wrap">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <p class="col col--md-16 col--lg-20 meta__item">
+        <!-- <a href="https://www.statisticsauthority.gov.uk/national-statistician/types-of-official-statistics/"><img class="meta__image" src="https://www.ons.gov.uk/img/national-statistics.png" alt="National Statistics logo"></a> -->
+        <span>Contact: </span><br><a href="#">Karen Thomas</a>
       </p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+      <p class="col col--md-16 col--lg-20 meta__item">
+        <span>Release date: </span><br>4 October 2016<br>
+      </p>
+      <p class="col col--md-16 col--lg-20 meta__item">
+        <span>Next release: </span><br>To be announced
+      </p>
+    </div>
+  </div>
+</div>
 
 
   </div>
+  <div class="page-content border-top--iron-sm border-top--iron-md">
+    <div class="wrapper">
 
-  
-</article>
+      <div class="hide--md margin-top-sm--1">
+        <div class="margin-bottom-sm--2 margin-bottom-md--2 print--hide">
+  <a class="btn btn--primary btn--full-width" href="#">
+    View all data used in this <span class="lowercase">Statistical bulletin</span></a>
+</div>
 
       </div>
-    </main>
+
+      <article class="col col--md-36 col--lg-39 page-content__main-content margin-bottom--5" style="padding-top: 0px;">
+
+        <div class="section__content--markdown ">
+          <section>
+            <header>
+              <h2><span class="section__content-number">1.</span> Main points</h2>
+            </header>
+            <p>UK Business: Activity, Size and Location, 2016 is produced from an extract taken from the <a href="#">Inter-Departmental Business Register</a> (IDBR) recording
+              the position of units as at 11 March 2016. </p>
+            <p>This publication represents the businesses registered with HM Revenue and Customs (HMRC) for VAT and/or Pay As You Earn (PAYE). The Department for Business, Energy and Industrial Strategy (BEIS) produces <a href="#">Business Population Estimates</a>              which seek to provide full coverage of all types of businesses in the UK including an estimate of the unregistered business population. </p>
+
+          </section>
+        </div>
+
+      </article>
+      <div class="col col--md-11 col--lg-20 margin-top-md--3">
+
+        <div class="margin-bottom-sm--2 margin-bottom-md--2 print--hide">
+  <a class="btn btn--primary btn--full-width" href="#">
+    View all data used in this <span class="lowercase">Statistical bulletin</span></a>
+</div>
+
+
+        <div class="tiles__item tiles__item--nav-type flush-col">
+  <h3 class="tiles__title-h3 tiles__title-h3--nav">
+    Contact details for this <span class="lowercase">Statistical bulletin</span>
+  </h3>
+  <div class="tiles__content--nav">
+    <address>Karen Thomas
+      <br><a href="#">email@ons.gsi.gov.uk</a>
+      <br>Telephone: +44 (0)1234 567890</address>
+  </div>
+</div>
+
+
+      </div>
+
+    </div>
+  </div>
+</main>
+
 
     <footer class="print--hide">
 	<h2 class="visuallyhidden">Footer links</h2>
@@ -349,5 +462,7 @@ Taking part in a survey?
 
 
   </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
 
 </html>

@@ -22,9 +22,10 @@
 
   <body style="height: auto;">
 
-    <div class="beta-banner">
+    <div class="banner background--carrot">
 	<div class="wrapper">
-		<p style="font-size:16px;"><strong style="padding: 2px 7px 3px;text-transform: uppercase;color: #fff;background-color: #323132;">Warning</strong> this is a prototype and the content may not be complete or accurate</p>
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
 	</div>
 </div>
 
@@ -50,93 +51,187 @@
 </header>
 
 
-    <main id="main" role="main" tabindex="-1">
-  <div class="page-intro background--gallery">
-    <div class="wrapper">
-      <div class="col-wrap">
-        <div class="col">
-
-          <div class="col col--md-47 col--lg-48">
+    <div class="prototype page-intro background--gallery padding-top--1 padding-bottom--4 ">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-47 col--lg-48">
   <h1 class="page-intro__title ">
     
-    Experimental banners</h1>
-  <p class="page-intro__content">
+    <span class="page-intro__type">
+      Status: prototype
+    </span>
     
-    Page intro content goes here.
-    </p>
+    Experimental banners</h1> 
+  <p class="page-intro__content">
+    Different options to indicate when a release is "experimental". Will be used together with a heading and relevant body content to make sure users notice it.
+  </p>
+  
 </div>
 
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="prototype wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+        <h2>User need</h2>
+        <p>I need to know that the data is still being developed, so that I know it should be used with caution.</p>
+        <h2>Research questions</h2>
+        <ul>
+          <li>Which design is most effective?</li>
+          <li>Which content works best "Experimental, draft or data being developed"?</li>
+          <li>Do users want to know more information?</li>
+        </ul>
+        <h2>Options</h2>
+        <ul>
+          <li><a href="option-1">Option 1</a></li>
+          <li><a href="option-2">Option 2</a></li>
+          <li><a href="option-3">Option 3</a></li>
+          <li><a href="option-4">Option 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="prototype wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+        <h2>Banners</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="banner background--carrot">
+  <div class="wrapper">
+    <p class="banner__content font-size--16">
+      <strong class="banner__tag">Experimental</strong> this release is still in development.</p>
+  </div>
+</div>
+
+<br>
+
+<div class="banner border-top--iron-sm border-right--iron-sm border-bottom--iron-sm border-left--iron-sm border-top--iron-md border-right--iron-md border-bottom--iron-md border-left--iron-md">
+  <div class="wrapper">
+    <p class="banner__content font-size--16">
+      <strong class="banner__tag banner__tag--matisse">Data being developed</strong> <a href="https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/guidetoexperimentalstatistics">Learn about experimental statistics</a>.</p>
+  </div>
+</div>
+
+<div class="prototype wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+        <h2>Simple alert</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="alert">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        <h2 class="alert__title inline-block margin-bottom--0 margin-right-md--1">
+          Experimental release
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="alert">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        <h2 class="alert__title inline-block margin-bottom--0 margin-right-md--1">
+          Data being developed
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="prototype wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+        <h2>Alert with show/hide text</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="alert">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="show-hide show-hide--dark info-box margin-top-sm--1 margin-top-md--1 js-show-hide">
+          <div class="js-show-hide__title">
+            <button class="js-show-hide__button" type="button" aria-expanded="false" aria-controls="collapsible-0">
+              <span class="icon icon-info icon-info--info-box"></span>
+              <h2 class="show-hide__title alert--warning__title">
+                Experimental release
+              </h2>
+            </button>
+          </div>
+          <div class="js-show-hide__content" id="collapsible-0" aria-hidden="true">
+            <div class="show-hide__content alert--warning__content section__content--markdown padding-bottom--2">
+              <section>
+                <p>These statistics are in a testing phase and not yet fully developed. You should be aware of the status and cautions of this release, they will vary for each statistic. The particular limitations are explained in the information on this
+                  page.</p>
+                <p><a href="https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/guidetoexperimentalstatistics">Learn more about experimental statistics</a></p>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div>
-  	<div class="wrapper">
-  		<div class="col-wrap">
-  			<div class="col">
-  				<div class="col col--md-47 col--lg-48 margin-bottom--4">
-            <h2>Alert</h2>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-  </div>
+<br>
 
-  <div class="alert">
+<div class="alert">
   <div class="wrapper">
     <div class="col-wrap">
       <div class="col">
-        <p class="alert__title">This is the latest release</p>
-        <a class="alert__link" href="#">View previous releases</a>
+        <div class="show-hide show-hide--dark info-box margin-top-sm--1 margin-top-md--1 js-show-hide">
+          <div class="js-show-hide__title">
+            <button class="js-show-hide__button" type="button" aria-expanded="false" aria-controls="collapsible-0">
+              <span class="icon icon-info icon-info--info-box"></span>
+              <h2 class="show-hide__title alert--warning__title">
+                Data being developed
+              </h2>
+            </button>
+          </div>
+          <div class="js-show-hide__content" id="collapsible-0" aria-hidden="true">
+            <div class="show-hide__content alert--warning__content section__content--markdown padding-bottom--2">
+              <section>
+                <p>These statistics are in a testing phase and not yet fully developed. You should be aware of the status and cautions of this release, they will vary for each statistic. The particular limitations are explained in the information on this
+                  page.</p>
+                <p><a href="https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/guidetoexperimentalstatistics">Learn more about experimental statistics</a></p>
+              </section>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-
-  <div>
-  	<div class="wrapper">
-  		<div class="col-wrap">
-  			<div class="col">
-  				<div class="col col--md-47 col--lg-48 margin-bottom--4">
-            <h2>Alert (not latest)</h2>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-  </div>
-
-  <div class="alert">
-  <div class="wrapper">
-    <div class="col-wrap">
-      <div class="col">
-        <p class="alert__title">This is not the latest release</p>
-        <a class="btn btn--primary print--hide" href="#">View latest release</a>
-      </div>
-    </div>
-  </div>
-</div>
+<br>
 
 
-  <div>
-  	<div class="wrapper">
-  		<div class="col-wrap">
-  			<div class="col">
-  				<div class="col col--md-47 col--lg-48 margin-bottom--4">
-            <p>Add banner options here too</p>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-  </div>
-
-
-</main>
-
-
-    <footer class="print--hide">
+    <footer class="prototype print--hide">
 	<h2 class="visuallyhidden">Footer links</h2>
 	<div class="footer">
 		<div class="wrapper">

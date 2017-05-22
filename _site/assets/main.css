@@ -13,6 +13,12 @@
 .font-color--matisse {
   color: #206095; }
 
+.font-color--white {
+  color: #FFFFFF; }
+
+.font-color--iron {
+  color: #D0D2D3; }
+
 .background--dc-ons-blue {
   background-color: #003C57;
   color: #003C57; }
@@ -211,6 +217,69 @@
 .font-weight--normal {
   font-weight: normal; }
 
+.prototype h1, .prototype h2, .prototype h3, .prototype h4, .prototype h5, .prototype h6 {
+  font-weight: bold;
+  padding: 0;
+  margin: 40px 0 24px 0;
+  line-height: 1.2; }
+.prototype ul, .prototype ol {
+  margin: 0;
+  padding-left: 30px;
+  margin: 8px 0 24px 0; }
+.prototype p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 8px 0 24px 0;
+  padding: 0; }
+.prototype .text {
+  max-width: 36em; }
+.prototype li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+  padding: 0; }
+.prototype .page-intro__content, .prototype .lede {
+  font-size: 21px; }
+
+.prototype a {
+  text-decoration: underline; }
+.prototype a:visited {
+  color: #560072; }
+
+a:focus {
+  outline: 3px solid #FF9933;
+  color: #323132; }
+
+.link--underline {
+  text-decoration: underline; }
+
+.section__content--markdown a.btn {
+  text-decoration: none; }
+
+.section__content--markdown .btn:visited {
+  color: #fff; }
+
+.btn--primary:visited {
+  color: #fff; }
+
+.btn {
+  margin-right: 0.5em; }
+
+.visually-hidden {
+  /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden; }
+
+.prototype .footer-license {
+  border-top: none; }
+
 .download-options__container .js-show-hide__title button {
   width: auto; }
 
@@ -239,17 +308,6 @@
 .download-options__container .show-hide button[aria-expanded=false]:after, .download-options__container .show-hide button[aria-expanded=true]:after {
   background-image: none; }
 
-a:focus {
-  background-color: #414042;
-  outline: 3px solid #414042;
-  color: #fff; }
-
-.section__content--markdown a.btn {
-  text-decoration: none; }
-
-.btn {
-  margin-right: .5em; }
-
 .embed-code__text-area {
   padding: 8px 16px;
   background-color: #EAEAEA;
@@ -265,25 +323,13 @@ a:focus {
   font-family: "Open Sans",Helvetica,Arial,sans-serif; }
 
 .embed-code__text-area:focus {
-  outline: 3px solid #414042; }
+  outline: 3px solid #FF9933; }
 
 .download-options__container {
   margin-bottom: 15em; }
 
 .download-options__link {
   margin-right: 1em; }
-
-.visually-hidden {
-  /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden; }
 
 .pullout:after {
   content: "";
@@ -308,6 +354,30 @@ a:focus {
   padding-left: 1em;
   margin-bottom: 1em; }
 
+.banner p {
+  margin: 0; }
+
+.banner a {
+  text-decoration: underline; }
+
+.banner__tag {
+  padding: 2px 7px 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #323132; }
+
+.banner__tag--matisse {
+  background-color: #206095; }
+
+.banner__tag--carrot {
+  background-color: #FF9933;
+  color: #FFFFFF; }
+
+.prototype .page-intro__content {
+  margin-bottom: 16px; }
+.prototype .page-intro__type {
+  color: #414042; }
+
 .pl-colour-circle {
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
@@ -316,3 +386,17 @@ a:focus {
 
 .pl-colour-circle--border {
   border: 1px solid #DDDDDD; }
+
+.pl-example {
+  position: relative;
+  border: 1px solid #ECE8E6;
+  margin: 47px 0 32px 0;
+  padding: 10px; }
+
+.pl-example:before {
+  position: absolute;
+  top: -40px;
+  left: -1px;
+  text-transform: uppercase;
+  content: "Example";
+  padding: 16px 0; }

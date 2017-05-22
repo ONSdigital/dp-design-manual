@@ -8,12 +8,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Embed charts</title>
+  <title>Buttons</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/f2507a4/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/sprint/13/embed-charts/">
+  <link rel="canonical" href="http://localhost:4000/elements/buttons.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing UX Prototypes" href="/feed.xml">
 
   
@@ -59,12 +59,12 @@
   <h1 class="page-intro__title ">
     
     <span class="page-intro__type">
-      Status: research
+      Status: prototype
     </span>
     
-    Embed charts</h1> 
+    Buttons</h1> 
   <p class="page-intro__content">
-    Options for allowing users to copy and paste embed code, to have our charts on their website.
+    Buttons, buttons, buttons.
   </p>
   
 </div>
@@ -79,14 +79,83 @@
   <div class="col-wrap">
     <div class="col">
       <div class="col col--md-36 col--lg-36">
+        <h2>To do</h2>
         <ul>
-          <li><a href="all">All options on one page</a></li>
-          <li><a href="option-1">Option 1</a></li>
-          <li><a href="option-2">Option 2</a></li>
-          <li><a href="option-3">Option 3</a></li>
-          <li><a href="option-4">Option 4</a></li>
-          <li><a href="option-5">Option 5</a></li>
+          <li>Add link styles?</li>
+          <li>Add guidance on hover style (shade and underline)</li>
+          <li>Add focus style</li>
+          <li>Add guidance for download links (file type and size)</li>
+          <li>Consider making them consistent with Survey data collection</li>
         </ul>
+
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="https://onsdigital.github.io/ons-pattern-library-starter/buttons">ONS website production buttons</a></li>
+          <li><a href="https://onsdigital.github.io/sdc-global-design-patterns/components/detail/button.html">Survey data collection buttons</a></li>
+        </ul>
+
+        <h2>Examples</h2>
+        <p>These buttons can be found in the ONS website production pattern library.</p>
+        <p>
+          <button class="btn btn--primary">
+            Primary button
+        </button>
+        </p>
+        <p>
+          <button class="btn btn--primary btn--primary-disabled">
+            Primary button (disabled)
+        </button>
+        </p>
+        <!-- Secondary button -->
+        <p><button class="btn btn--secondary">
+            Secondary button
+        </button></p>
+
+        <!-- Active secondary button -->
+        <p><button class="btn btn--secondary btn--secondary-active">
+            Active secondary button
+        </button></p>
+
+        <!-- Disabled secondary button -->
+        <p><button class="btn btn--secondary btn--secondary-disabled">
+            Disabled secondary button
+        </button></p>
+
+        <!-- Small -->
+        <p><button class="btn btn--primary btn--small">
+    Small button
+</button></p>
+
+        <!-- Thick -->
+        <p><button class="btn btn--primary btn--thick">
+    Thick button
+</button></p>
+
+        <!-- Thin -->
+        <p><button class="btn btn--primary btn--thin">
+    Thin button
+</button></p>
+
+        <!-- Narrow -->
+        <p><button class="btn btn--primary btn--narrow">
+    Narrow button
+</button>
+        </p>
+        <!-- Wide -->
+        <p><button class="btn btn--primary btn--wide">
+    Wide button
+</button></p>
+
+        <!-- Custom width using utility width class -->
+        <p><button class="btn btn--primary width--15">
+    Custom width button
+</button></p>
+
+        <!-- Full width -->
+        <p><button class="btn btn--primary btn--full-width">
+    Full width button
+</button></p>
+
       </div>
     </div>
   </div>

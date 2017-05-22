@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Digital Publishing UX Prototypes</title>
+  <title>Colours</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
 
   <link rel="stylesheet" href="/assets/main.css">
@@ -22,9 +22,10 @@
 
   <body style="height: auto;">
 
-    <div class="beta-banner">
+    <div class="banner background--carrot">
 	<div class="wrapper">
-		<p style="font-size:16px;"><strong style="padding: 2px 7px 3px;text-transform: uppercase;color: #fff;background-color: #323132;">Warning</strong> this is a prototype and the content may not be complete or accurate</p>
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
 	</div>
 </div>
 
@@ -50,20 +51,51 @@
 </header>
 
 
-    <div class="page-intro background--gallery">
+    <div class="prototype page-intro background--gallery padding-top--1 padding-bottom--4 ">
   <div class="wrapper">
     <div class="col-wrap">
       <div class="col">
         <div class="col col--md-47 col--lg-48">
-          <h1 class="page-intro__title">Colours</h1>
-          <p class="page-intro__content">A work in progress</p>
+  <h1 class="page-intro__title ">
+    
+    <span class="page-intro__type">
+      Status: prototype
+    </span>
+    
+    Colours</h1> 
+  <p class="page-intro__content">
+    We're working to expand and harmonize the ONS website colour pallette.
+  </p>
+  
+</div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="wrapper margin-top--4 margin-bottom--8">
+<div class="prototype wrapper margin-top--6 margin-bottom--8">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+        <h2>Context</h2>
+        <p>The ONS website has no formal extended colour pallete. We need to introduce one so that charts and data visualisations can become more consistent.</p>
+        <p>We're also considering whether colours should be consistent with Survey data collection.</p>
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="https://onsdigital.github.io/ons-pattern-library-starter/colour">ONS website production colours</a></li>
+          <li><a href="https://onsdigital.github.io/sdc-global-design-patterns/docs/colours.html">Survey data collection colours</a></li>
+          <li><a href="http://style.ons.gov.uk/category/data-visualisation/using-colours/">Style.ONS guidance on using colour when visualising data</a></li>
+        </ul>
+        <h2>Colour contrast</h2>
+        <p>The colour contrast ratio for text and interactive elements should be at least 4.5:1 as recommended by the W3C.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="prototype wrapper margin-top--4 margin-bottom--8">
   <div class="col-wrap">
         <div class="col col--md-half col--lg-half margin-top--1 margin-bottom--8 padding-top--4 padding-right--2 padding-bottom--4 padding-left--2 border-top--iron-sm border-right--iron-sm border-bottom--iron-sm border-left--iron-sm border-top--iron-md border-right--iron-md border-bottom--iron-md border-left--iron-md">
           <h3 class="font-color--astral font-weight--bold margin-top--0 margin-bottom--0">Astral</h3>
@@ -125,37 +157,37 @@
 
 </div>
 
-<div class="wrapper">
+<div class="prototype wrapper">
 
   <h3>ONS website</h3>
-  <p>Salem is used for primary actions e.g. search, primary call to action buttons. Poppy is used to highlight errors, e.g. validation errors on forms. Carrot is used for global messages e.g alpha/beta banners or messages. Text links are Matisse.</p>
+  <p class="text">Salem is used for primary actions e.g. search, primary call to action buttons. Poppy is used to highlight errors, e.g. validation errors on forms. Carrot is used for global messages e.g alpha/beta banners or messages. Text links are Matisse.</p>
   <div class="col col--md-6 col--lg-6 margin-right-md--3 margin-bottom-md--1">
-    <h3 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Astral</h3>
+    <h4 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Astral</h4>
     <div class="background--astral width--4 height--8 pl-colour-circle"></div>
     <p class="text-center margin-top-sm--1 margin-top-md--1">$astral <br>#3B7A9E</p>
   </div>
   <div class="col col--md-6 col--lg-6 margin-right-md--3 margin-bottom-md--1">
-    <h3 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Salem</h3>
+    <h4 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Salem</h4>
     <div class="background--salem width--4 height--8 pl-colour-circle"></div>
     <p class="text-center margin-top-sm--1 margin-top-md--1">$salem<br>#0F8243</p>
   </div>
   <div class="col col--md-6 col--lg-6 margin-right-md--3 margin-bottom-md--1">
-    <h3 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Carrot</h3>
+    <h4 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Carrot</h4>
     <div class="background--carrot width--4 height--8 pl-colour-circle"></div>
     <p class="text-center margin-top-sm--1 margin-top-md--1">$carrot <br>#FF9933</p>
   </div>
   <div class="col col--md-6 col--lg-6 margin-right-md--3 margin-bottom-md--1">
-    <h3 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Poppy</h3>
+    <h4 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Poppy</h4>
     <div class="background--poppy width--4 height--8 pl-colour-circle"></div>
     <p class="text-center margin-top-sm--1 margin-top-md--1">$poppy <br>#D32F2F</p>
   </div>
   <div class="col col--md-6 col--lg-6 margin-right-md--3 margin-bottom-md--1">
-    <h3 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Matisse</h3>
+    <h4 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Matisse</h4>
     <div class="background--matisse width--4 height--8 pl-colour-circle"></div>
     <p class="text-center margin-top-sm--1 margin-top-md--1">$matisse <br>#206095</p>
   </div>
   <div class="col col--md-6 col--lg-6 margin-right-md--3 margin-bottom-md--1">
-    <h3 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Indigo</h3>
+    <h4 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Indigo</h4>
     <div class="background--indigo width--4 height--8 pl-colour-circle"></div>
     <p class="text-center margin-top-sm--1 margin-top-md--1">$indigo <br>#560072</p>
   </div>
@@ -347,7 +379,7 @@
 </div>
 
 
-    <footer class="print--hide">
+    <footer class="prototype print--hide">
 	<h2 class="visuallyhidden">Footer links</h2>
 	<div class="footer">
 		<div class="wrapper">

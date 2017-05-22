@@ -1,0 +1,465 @@
+<!-- A layout for Data discovery (alpha) elements, patterns and pages -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Digital Publishing UX Prototypes</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/f2507a4/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/templates/data-discovery/filter-dataset/example.html">
+  <link rel="alternate" type="application/rss+xml" title="Digital Publishing UX Prototypes" href="/feed.xml">
+
+  
+</head>
+
+
+  <style type="text/css">
+    #app dd,
+    #app dt,
+    #app fieldset,
+    #app input,
+    #app label,
+    #app li,
+    #app p {
+      font-size: 16px
+    }
+
+    #app h1,
+    #app h2,
+    #app h3,
+    #app h4,
+    #app h5,
+    #app h6 {
+      font-weight: 700
+    }
+
+    #app a:not(.btn) {
+      text-decoration: underline
+    }
+
+    #app .wrapper {
+      overflow: inherit
+    }
+
+    dfn {
+      font-style: normal
+    }
+
+    .btn {
+      font-size: 17px;
+      font-weight: 600
+    }
+
+    .btn--link {
+      font-size: 14px;
+      font-weight: 400
+    }
+
+    a:hover {
+      cursor: pointer
+    }
+
+    .error__message {
+      color: #d32f2f;
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 16px
+    }
+
+    .error__group {
+      border-left: 4px solid #d32f2f;
+      padding-left: 16px
+    }
+
+    .highlight {
+      border-left: 4px solid #a6a8ab;
+      padding-left: 16px
+    }
+
+    .react-show-hide__title {
+      position: relative;
+      font-size: 16px;
+      padding-left: 24px
+    }
+
+    .react-show-hide__title:before {
+      content: "";
+      top: 12px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 8px solid #206095;
+      position: absolute
+    }
+
+    .react-show-hide__title.active:before {
+      top: 14px;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 0 solid transparent;
+      border-top: 8px solid #206095
+    }
+
+    .react-show-hide__content {
+      display: none
+    }
+
+    .react-show-hide__content.active {
+      display: block
+    }
+
+    .loading:after {
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: bottom;
+      -webkit-animation: ellipsis steps(4) .9s infinite;
+      animation: ellipsis steps(4) .9s infinite;
+      content: "\2026";
+      width: 0
+    }
+
+    @keyframes ellipsis {
+      to {
+        width: 16px
+      }
+    }
+
+    @-webkit-keyframes ellipsis {
+      to {
+        width: 16px
+      }
+    }
+
+    @media (min-width:768px) {
+      .float-right--md {
+        float: right
+      }
+    }
+
+    .checkbox {
+      position: relative
+    }
+
+    .checkbox__input {
+      position: absolute;
+      cursor: pointer;
+      left: 0;
+      top: 0;
+      width: 38px;
+      height: 38px;
+      margin: 0
+    }
+
+    .checkbox__input:before {
+      content: "";
+      border: 2px solid #414042;
+      background: #fff;
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      top: 0;
+      left: 0
+    }
+
+    .checkbox__input:after {
+      content: "";
+      border: solid;
+      border-width: 0 0 5px 5px;
+      border-color: #414042;
+      background: transparent;
+      width: 17px;
+      height: 7px;
+      position: absolute;
+      top: 10px;
+      left: 8px;
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      zoom: 1;
+      filter: alpha(opacity=0);
+      opacity: 0
+    }
+
+    .checkbox__label {
+      display: inline-block;
+      float: none;
+      clear: left;
+      position: relative;
+      padding: 8px 8px 9px 50px;
+      margin-bottom: 8px;
+      cursor: pointer
+    }
+
+    .checkbox.disabled input[disabled]:before {
+      border: 2px solid #d0d2d3
+    }
+
+    .checkbox.disabled label {
+      color: #d0d2d3
+    }
+
+    .checkbox .selected:after {
+      zoom: 1;
+      filter: alpha(opacity=100);
+      opacity: 1
+    }
+
+    .checkbox .focused:before {
+      -webkit-box-shadow: 0 0 0 5px #f93;
+      -moz-box-shadow: 0 0 0 5px #f93;
+      box-shadow: 0 0 0 5px #f93
+    }
+
+    .radio {
+      position: relative
+    }
+
+    .radio__input {
+      position: absolute;
+      cursor: pointer;
+      left: 0;
+      top: 0;
+      width: 38px;
+      height: 38px
+    }
+
+    .radio__input:before {
+      content: "";
+      border: 2px solid #414042;
+      background: #fff;
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%
+    }
+
+    .radio__input:after {
+      content: "";
+      border: 10px solid #414042;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      zoom: 1;
+      filter: alpha(opacity=0);
+      opacity: 0
+    }
+
+    .radio__label {
+      display: inline-block;
+      float: none;
+      clear: left;
+      position: relative;
+      padding: 8px 8px 9px 50px;
+      margin-bottom: 8px;
+      cursor: pointer
+    }
+
+    .radio .selected:after {
+      zoom: 1;
+      filter: alpha(opacity=100);
+      opacity: 1
+    }
+
+    .radio .focused:before {
+      -webkit-box-shadow: 0 0 0 5px #f93;
+      -moz-box-shadow: 0 0 0 5px #f93;
+      box-shadow: 0 0 0 5px #f93
+    }
+
+    .radio--inline {
+      display: inline-block
+    }
+
+    .select-box__input {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-weight: 400;
+      text-transform: none;
+      font-size: 16px;
+      line-height: 1.25;
+      padding: 5px 4px 4px;
+      color: inherit;
+      background-color: transparent;
+      border: 2px solid #414042;
+      clear: both
+    }
+
+    .select-box--inline {
+      display: inline-block
+    }
+
+    .keyword-search {
+      margin-bottom: 16px
+    }
+
+    .keyword-search__label {
+      display: block;
+      margin-bottom: 16px;
+      font-size: 17px
+    }
+
+    .keyword-search__input {
+      height: 40px;
+      -webkit-appearance: textfield;
+      border: 1px solid #d0d2d3;
+      padding: 0 8px
+    }
+
+    @media (min-width:768px) {
+      .keyword-search__input {
+        width: 288px
+      }
+    }
+
+    .keyword-search__input:active,
+    .keyword-search__input:focus {
+      border-color: #414042;
+      outline: 0
+    }
+
+    .hierarchy {
+      padding-left: 0
+    }
+
+    .hierarchy li {
+      list-style: none;
+      margin: 0;
+      position: relative
+    }
+
+    .hierarchy--children {
+      padding: 0
+    }
+
+    .hierarchy--children .hierarchy--children {
+      padding: 6px 0 10px 16px
+    }
+
+    .hierarchy--children .hierarchy--children:last-child {
+      padding-bottom: 0
+    }
+
+    .hierarchy--children ul {
+      border-left: 3px solid #d0d2d3;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 21px;
+      padding-top: 0;
+      padding-left: 0
+    }
+  </style>
+
+
+  <body id="app" style="height: auto;">
+
+    <div class="banner background--carrot">
+	<div class="wrapper">
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
+	</div>
+</div>
+
+
+    <header class="border-bottom--iron-sm border-bottom--iron-md">
+	<a class="skiplink" href="#main" tabindex="0">
+		Skip to main content
+	</a>
+
+	<div class="wrapper">
+		<div class="header col-wrap">
+
+			<div class="col col--lg-one-third col--md-one-third">
+  <a href="/dp-ux/">
+    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
+  </a>
+</div>
+
+
+		</div>
+	</div>
+
+</header>
+
+
+    <div class="wrapper">
+  <h1 class="margin-top--4 margin-bottom">
+      Filter this dataset
+    </h1>
+  <ul class="list--neutral">
+    <li class="margin-left--0 padding-bottom--2 padding-top--2 border-bottom--gallery-sm border-top--gallery-md border-bottom--gallery-md col-wrap width-lg--39 border-top--gallery-sm">
+      <div class="col col--md-24 col--lg-19"><strong>Geography</strong></div>
+      <div class="col col--md-17 col--lg-14">Everything selected (236)</div>
+      <div class="col col--md-6 col--lg-6"><a class="float-right--md" href="#">Filter</a></div>
+    </li>
+    <li class="margin-left--0 padding-bottom--2 padding-top--2 border-bottom--gallery-sm border-top--gallery-md border-bottom--gallery-md col-wrap width-lg--39 border-top--gallery-sm">
+      <div class="col col--md-24 col--lg-19"><strong>Sex</strong></div>
+      <div class="col col--md-17 col--lg-14">Everything selected (3)</div>
+      <div class="col col--md-6 col--lg-6"><a class="float-right--md" href="#">Filter</a></div>
+    </li>
+    <li class="margin-left--0 padding-bottom--2 padding-top--2 border-bottom--gallery-sm border-top--gallery-md border-bottom--gallery-md col-wrap width-lg--39 border-top--gallery-sm">
+      <div class="col col--md-24 col--lg-19"><strong>Age</strong></div>
+      <div class="col col--md-17 col--lg-14">Selected options (1)</div>
+      <div class="col col--md-6 col--lg-6"><a class="float-right--md" href="#">Filter</a></div>
+    </li>
+    <li class="margin-left--0 padding-bottom--2 padding-top--2 border-bottom--gallery-sm border-top--gallery-md border-bottom--gallery-md col-wrap width-lg--39 border-top--gallery-sm">
+      <div class="col col--md-24 col--lg-19"><strong>Residence Type</strong></div>
+      <div class="col col--md-17 col--lg-14">Everything selected (3)</div>
+      <div class="col col--md-6 col--lg-6"><a class="float-right--md" href="#">Filter</a></div>
+    </li>
+  </ul>
+  <div class="margin-top--4 margin-bottom--8">
+    <a class="btn btn--primary btn--thick btn--wide btn--big margin-right--half" href="#">
+        Choose a download format
+      </a>
+    <br>
+    <a class="inline-block margin-top--4 font-size--17" href="#">
+        Cancel
+      </a>
+  </div>
+</div>
+
+
+    <footer class="prototype print--hide">
+	<h2 class="visuallyhidden">Footer links</h2>
+	<div class="footer">
+		<div class="wrapper">
+
+			<div class="footer-license">
+  <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+  <p class="footer-license__text margin-left-sm--0">
+    All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+  </p>
+</div>
+
+
+		</div>
+	</div>
+</footer>
+
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+
+</html>
