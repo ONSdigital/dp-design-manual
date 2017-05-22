@@ -1,21 +1,37 @@
-  a:focus {
-    background-color: #414042;
-    outline: 3px solid #414042;
-    color: #fff;
+.prototype {
+  a {
+    text-decoration: underline;
   }
+  a:visited {
+    color: #560072;
+  }
+}
 
-  // a:focus:visited {
-  //   color: #fff;
-  // }
-  //
-  // a:visited {
-  //   color:#560072;
-  // }
+a:focus {
+  outline: 3px solid $carrot;
+  color: $thunder;
+}
+
+.link--underline {
+  text-decoration: underline;
+}
+
+// a:focus:visited {
+//   color: #fff;
+// }
 
 .section__content--markdown a.btn {
   text-decoration: none;
 }
 
+.section__content--markdown .btn:visited {
+  color: #fff;
+}
+
+.btn--primary:visited {
+  color: #fff;
+}
+
 .btn {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
