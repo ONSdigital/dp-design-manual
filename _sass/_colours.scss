@@ -7,6 +7,25 @@ $poppy:   #D32F2F;
 $matisse: #206095;
 $indigo:  #560072;
 
+//Mono:
+$thunder: 		#323132;
+$ship-grey: 	#414042;
+$abbey: 		  #58595B;
+$nevada:      #6D6E72; //tile hover colour
+$aluminium: 	#A6A8AB;
+$silver:      #BBBDBF; //tile hover colour
+$silver-light:  rgba(187,189,191,0.3); // tile hover colour
+$iron: 			  #D0D2D3;
+$iron-light: 	#E5E6E7;
+$mercury: 		#E5E5E5;
+$gallery: 		#EAEAEA;
+$alabaster:   #F9F9F9;
+$haze:			  #F0F1F1;
+$white:			  #FFFFFF;
+$mine-shaft:	#222222;
+$cod-gray:	  #111111;
+
+
 // Font colours
 .font-color--astral {
   color: $astral;
@@ -26,6 +45,14 @@ $indigo:  #560072;
 
 .font-color--matisse {
   color: $matisse;
+}
+
+.font-color--white {
+  color: $white;
+}
+
+.font-color--iron {
+  color: $iron;
 }
 
 @import "colours-data-collection";
