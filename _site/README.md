@@ -5,9 +5,12 @@
 - Get a GitHub account
 - Install [GitHub desktop](https://desktop.github.com/)
 - Download/clone this repo using GitHub desktop
+- Open Terminal
 - Install [Jekyll](https://jekyllrb.com/)
+- Run Jekyll
 - Open this repo in a [code editor](https://atom.io/)
-- Play
+
+Stuck? Ask Benjy for help.
 
 ## License
 
