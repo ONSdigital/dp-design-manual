@@ -3,7 +3,22 @@
 }
 
 .banner a {
+  color: $ship-grey;
   text-decoration: underline;
+}
+
+.banner a.btn {
+  text-decoration: none;
+  padding: 4px 10px 6px;
+  margin-left: 4px;
+}
+
+.banner .icon {
+  vertical-align: middle;
+}
+
+.banner .link--matisse {
+  color: $matisse;
 }
 
 .banner__tag {
@@ -13,11 +28,19 @@
   background-color: $thunder;
 }
 
+.banner__tag--sentance-case {
+  text-transform: none;
+}
+
+.banner__tag--astral {
+  background-color: $astral;
+}
+
 .banner__tag--matisse {
   background-color: $matisse;
 }
 
 .banner__tag--carrot {
   background-color: $carrot;
-  color: $white;
+  color: $ship-grey;
 }
