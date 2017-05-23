@@ -2,8 +2,12 @@
 
 ## Getting started
 
+- Get a GitHub account
+- Install [GitHub desktop](https://desktop.github.com/)
+- Download/clone this repo using GitHub desktop
 - Install [Jekyll](https://jekyllrb.com/)
-- Download this repo from GitHub
+- Open this repo in a [code editor](https://atom.io/)
+- Play
 
 ## License
 
