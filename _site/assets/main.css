@@ -283,6 +283,8 @@ a:focus {
 
 .prototype .footer-license {
   border-top: none; }
+.prototype .footer a:visited {
+  color: #D0D2D3; }
 
 .download-options__container .js-show-hide__title button {
   width: auto; }

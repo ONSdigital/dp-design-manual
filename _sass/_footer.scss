@@ -1,3 +1,10 @@
-.prototype .footer-license {
-  border-top: none;
+.prototype {
+
+  .footer-license {
+    border-top: none;
+  }
+
+  .footer a:visited {
+    color: $iron;
+  }
 }
