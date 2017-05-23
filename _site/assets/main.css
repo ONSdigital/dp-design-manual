@@ -265,6 +265,10 @@ a:focus {
 .btn {
   margin-right: 0.5em; }
 
+.btn:focus {
+  outline: 3px solid #FF9933;
+  color: #FFFFFF; }
+
 .visually-hidden {
   /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
   position: absolute !important;
@@ -301,9 +305,8 @@ a:focus {
   padding: 0; }
 
 .download-options__container .js-show-hide__title button:focus {
-  background-color: #414042;
-  outline: 3px solid #414042;
-  color: #fff; }
+  outline: 3px solid #FF9933;
+  color: #323132; }
 
 .download-options__container .show-hide button[aria-expanded=false]:after, .download-options__container .show-hide button[aria-expanded=true]:after {
   background-image: none; }

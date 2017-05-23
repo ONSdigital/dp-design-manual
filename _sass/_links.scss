@@ -35,3 +35,8 @@ a:focus {
 .btn {
   margin-right: 0.5em;
 }
+
+.btn:focus {
+  outline: 3px solid $carrot;
+  color: $white;
+}

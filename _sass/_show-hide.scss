@@ -25,9 +25,8 @@
 }
 
 .download-options__container .js-show-hide__title button:focus {
-  background-color: #414042;
-  outline: 3px solid #414042;
-  color: #fff;
+  outline: 3px solid $carrot;
+  color: $thunder;
 }
 
 .download-options__container .show-hide button[aria-expanded=false]:after, .download-options__container .show-hide button[aria-expanded=true]:after {
