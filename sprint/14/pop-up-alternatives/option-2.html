@@ -1,0 +1,34 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+<body style="height: auto;">
+
+  {% include header.html %}
+
+  <div class="banner">
+    <div class="wrapper padding-top--1 padding-bottom--1">
+      <p class="banner__content font-size--16">
+        <strong class="banner__tag banner__tag--astral banner__tag--sentance-case">Survey</strong> answer 8 quick questions to <a class="link--matisse" href="#">help us improve the website</a>.</p>
+    </div>
+  </div>
+
+  <main id="main" role="main" tabindex="-1">
+
+    {% include page-intro-home.html %}
+
+    {% include home-content.html %}
+
+  </main>
+
+  {% include footer-basic.html %}
+
+</body>
+
+<script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+
+</html>
