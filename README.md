@@ -1,4 +1,4 @@
-# Digital Publishing UX Prototypes
+# Digital Publishing Design Manual
 
 ## Getting started
 
