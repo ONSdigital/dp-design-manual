@@ -55,6 +55,10 @@ $cod-gray:	  #111111;
   color: $iron;
 }
 
+.font-color--iron-light {
+  color: $iron-light;
+}
+
 @import "colours-data-collection";
 @import "colours-chart-builder";
 @import "colours-well-being";
