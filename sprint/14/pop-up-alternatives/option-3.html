@@ -1,0 +1,91 @@
+---
+layout: prototype
+type: "Statistical bulletin"
+title: "Title"
+intro-content: "Intro content"
+contact-name: Karen Thomas
+contact-email: email@ons.gsi.gov.uk
+contact-tel: +44 (0)1234 567890
+release-date: 4 October 2016
+next-release: To be announced
+---
+
+<main id="main" role="main" tabindex="-1">
+  <div class="banner background--astral padding-top--1 padding-bottom--1">
+    <div class="wrapper">
+      <p class="font-size--16 padding-bottom--1">
+        <span class="icon icon-info"></span>
+        Answer 8 quick questions to <a class="link--white" href="#">help us improve the website</a>.</p>
+    </div>
+  </div>
+  <div class="page-intro background--gallery">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+
+          {% include breadcrumbs.html %}
+
+          {% include page-intro.html %}
+
+        </div>
+      </div>
+    </div>
+
+    {% include alerts/alert.html %}
+
+    {% include meta.html %}
+
+  </div>
+  <div class="page-content border-top--iron-sm border-top--iron-md">
+    <div class="wrapper">
+
+      {% include table-of-contents.html %}
+
+      <div class="hide--md margin-top-sm--1">
+        {% include view-all-data.html %}
+      </div>
+
+      <article class="col col--md-36 col--lg-39 page-content__main-content margin-bottom--5" style="padding-top: 0px;">
+
+        <div class="section__content--markdown ">
+          <section>
+            <header>
+              <h2><span class="section__content-number">1.</span> Section 1</h2>
+            </header>
+            <p>UK Business: Activity, Size and Location, 2016 is produced from an extract taken from the IDBR recording the position of units as at 11 March 2016.</p>
+            <p>This publication represents the businesses registered with HM Revenue and Customs (HMRC) for VAT and/or Pay As You Earn (PAYE). The Department for Business, Energy and Industrial Strategy (BEIS) produces Business Population Estimates which seek to provide full coverage of all types of businesses in the UK including an estimate of the unregistered business population.</p>
+            <p>UK Business: Activity, Size and Location, 2016 is produced from an extract taken from the IDBR recording the position of units as at 11 March 2016.</p>
+            <p>This publication represents the businesses registered with HM Revenue and Customs (HMRC) for VAT and/or Pay As You Earn (PAYE). The Department for Business, Energy and Industrial Strategy (BEIS) produces Business Population Estimates which seek to provide full coverage of all types of businesses in the UK including an estimate of the unregistered business population.</p>
+
+            {% include links/back-to-table-of-contents.html %}
+
+          </section>
+        </div>
+
+      </article>
+      <div class="col col--md-11 col--lg-20 margin-top-md--3">
+
+        {% include view-all-data.html %}
+
+        {% include tile-contact-details.html %}
+
+        <div class="tiles__item tiles__item--nav-type flush-col">
+          <h3 class="tiles__title-h3 margin-bottom--2">
+            Related
+          </h3>
+        <div class="tiles__content--nav">
+          <ul class="list--neutral">
+            <li><a href="#">Baby names since 1904: how has yours performed?</a></li>
+            <li><a href="#">The popularity of the name Muhammad/Mohammed/Mohammad</a></li>
+            <li><a href="#">Baby names comparison tool by Anna Powell-Smith using our data</a></li>
+            <li><a href="#">Baby names statistics for Scotland</a></li>
+            <li><a href="#">Baby name statistics for Northern Ireland</a></li>
+          </ul>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</main>
