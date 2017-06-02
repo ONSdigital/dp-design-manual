@@ -19,7 +19,8 @@ h3 {
   line-height: 1.4 !important; // Only use !imporant in the prototype to temporarily overwrite production styles
 }
 
-.prototype {
+// Custom styles created for the "basic" template
+.basic {
   h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     padding: 0;

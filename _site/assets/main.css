@@ -229,31 +229,31 @@ h2 {
 h3 {
   line-height: 1.4 !important; }
 
-.prototype h1, .prototype h2, .prototype h3, .prototype h4, .prototype h5, .prototype h6 {
+.basic h1, .basic h2, .basic h3, .basic h4, .basic h5, .basic h6 {
   font-weight: bold;
   padding: 0;
   margin: 40px 0 24px 0;
   line-height: 1.2; }
-.prototype ul, .prototype ol {
+.basic ul, .basic ol {
   margin: 0;
   padding-left: 30px;
   margin: 8px 0 24px 0; }
-.prototype p {
+.basic p {
   font-size: 16px;
   line-height: 1.5;
   margin: 8px 0 24px 0;
   padding: 0; }
-.prototype li {
+.basic li {
   font-size: 16px;
   line-height: 1.5;
   margin: 0 0 8px 0;
   padding: 0; }
-.prototype .page-intro__content, .prototype .lede {
+.basic .page-intro__content, .basic .lede {
   font-size: 21px; }
 
-.prototype a {
+.basic a {
   text-decoration: underline; }
-.prototype a:visited {
+.basic a:visited {
   color: #560072; }
 
 .visited {
@@ -300,9 +300,9 @@ a:focus {
 .border-bottom--iron {
   border-bottom: 1px solid #D0D2D3; }
 
-.prototype .footer-license {
+.basic .footer-license {
   border-top: none; }
-.prototype .footer a:visited {
+.basic .footer a:visited {
   color: #D0D2D3; }
 
 .banner p {
@@ -385,9 +385,9 @@ a:focus {
 @media (min-width: 768px) {
   .meta-v2 .meta__item {
     padding-left: 16px; } }
-.prototype .page-intro__content {
+.basic .page-intro__content {
   margin-bottom: 16px; }
-.prototype .page-intro__type {
+.basic .page-intro__type {
   color: #414042; }
 
 .page-intro-v2 .page-intro__title {

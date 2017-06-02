@@ -1,14 +1,15 @@
-.prototype {
+// Custom styles created for the "basic" template
+.basic {
   .page-intro__content {
     margin-bottom: 16px;
   }
+
   .page-intro__type {
     color: $ship-grey;
   }
 }
 
 .page-intro-v2 {
-
   .page-intro__title {
     margin-top: 0;
   }
@@ -20,5 +21,4 @@
   .page-intro__content {
     margin-bottom: 32px;
   }
-
 }
