@@ -223,6 +223,12 @@
 .text {
   max-width: 36em; }
 
+h2 {
+  line-height: 1.4 !important; }
+
+h3 {
+  line-height: 1.4 !important; }
+
 .prototype h1, .prototype h2, .prototype h3, .prototype h4, .prototype h5, .prototype h6 {
   font-weight: bold;
   padding: 0;
@@ -373,7 +379,8 @@ a:focus {
 
 .meta-v2 .meta__item {
   border-right: none;
-  padding-left: 0; }
+  padding-left: 0;
+  min-height: 0; }
 
 @media (min-width: 768px) {
   .meta-v2 .meta__item {

@@ -8,12 +8,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Bulletin</title>
+  <title>Extended width article</title>
   <meta name="description" content="A place for ONS website UX and design stuff that&#39;s in progress.">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/ee328ac/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/sprint/14/bulletin/">
+  <link rel="canonical" href="http://localhost:4000/sprint/14/article/">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/feed.xml">
 
   <meta name="robots" content="noindex, nofollow">
@@ -23,13 +23,13 @@
 
   <body style="height: auto;">
 
-    <div class="banner background--carrot">
+    <!-- <div class="banner background--carrot">
 	<div class="wrapper">
 		<p class="banner__content font-size--16">
 			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
 	</div>
 </div>
-
+ -->
 
     <header class="border-bottom--iron-sm border-bottom--iron-md">
 	<a class="skiplink" href="#main" tabindex="0">
@@ -63,9 +63,9 @@
       Status: prototype
     </span>
     
-    Bulletin</h1> 
+    Extended width article</h1> 
   <p class="page-intro__content">
-    Extended width, work up spec for further front end changes. This includes evaluating options for removing contents for content with only one section and removing/altering the "latest release" option for one-off content.
+    Extend width of main content area and remove unnessary elements from article header
   </p>
   
 </div>
@@ -81,8 +81,37 @@
       <div class="col col--md-36 col--lg-36">
         <h2>Prototypes</h2>
         <ul>
-          <li><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/mar2017">Current website example</a></li>
           <li><a href="option-1">Prototype</a></li>
+          <li><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/mar2017">Current website example</a></li>
+          <li><a href="https://onsdigital.github.io/dp-ux-prototypes/dist/sprint-10-extended-width-pages/">Sprint 10 prototype</a></li>
+        </ul>
+
+        <h2>Changes</h2>
+        <ul>
+          <li>Page intro area: reduce spacing</li>
+          <li>Breadcrumbs: removed current page from breadcrumb list</li>
+          <li>Breadcrumbs: removed border bottom</li>
+          <li>Page type: Changed colour to dark grey</li>
+          <li>Meta wrapper: Removed borders</li>
+          <li>Meta wrapper: Changed background colour to same as page intro area as a whole</li>
+          <li>Meta wrapper: Removed contact email. Not many users click this, also is function confusing?</li>
+          <li>Meta wrapper: Removed "release date" label</li>
+          <li>Meta wrapper: Removed "next release" item</li>
+          <li>Alert: hide for one off articles</li>
+          <li>TOC: Remove table of contents</li>
+          <li>TOC: Removed print link, not many users click it</li>
+          <li>TOC: Removed download link, as it interactive will be invisible</li>
+          <li>Content area: text width to be 36 columns max</li>
+          <li>Content area: charts to fill 100% of width</li>
+          <li>Aside: Moved related links to bottom, use new "related links" component</li>
+          <li>Aside: Moved contact box to bottom</li>
+        </ul>
+
+        <h2>Future</h2>
+        <ul>
+          <li>Heading lineheight needs to be increases</li>
+          <li>Font size should probably be increased as we are going down from 19px to 14px on visual articles. Big step back in my opinion.</li>
+          <li>National statistics badge: improve alt text</li>
         </ul>
 
       </div>
@@ -91,7 +120,7 @@
 </div>
 
 
-    <footer class="prototype print--hide">
+    <!-- <footer class="prototype print--hide">
 	<h2 class="visuallyhidden">Footer links</h2>
 	<div class="footer">
 		<div class="wrapper">
@@ -107,7 +136,7 @@
 		</div>
 	</div>
 </footer>
-
+ -->
 
   </body>
 

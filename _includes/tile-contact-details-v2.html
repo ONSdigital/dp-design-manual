@@ -3,8 +3,16 @@
     Contact
   </h3>
   <div class="tiles__content padding-top--2 padding-bottom--3 background--gallery">
-    <address>{{ page.contact-name }}
-      <br><a href="#">{{ page.contact-email }}</a>
-      <br>Telephone: {{ page.contact-tel }}</address>
+    <address>
+      {% if page.contact-name %}
+      {{ page.contact-name }}<br>
+      {% endif %}
+
+      <a href="#">{{ page.contact-email }}</a>
+
+      {% if page.contact-tel %}
+      <br>Telephone: {{ page.contact-tel }}
+      {% endif %}
+    </address>
   </div>
 </div>
