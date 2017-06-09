@@ -1,0 +1,78 @@
+---
+layout: basic
+type: "Status: prototype"
+title: Symbols
+intro-content: Accessibility of mathematical symbols.
+---
+
+<div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        {% include page-intro.html %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="basic wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+        <h2>User need</h2>
+        <p>As a user I need to perceive and understand mathemetical symbols, so that I can understand the content and data on the ONS website.</p>
+
+        <h2>Thoughts</h2>
+        <p>Use the minus symbol instead of a hyphen? This is semanticlly correct. It's also wider, so potentially more readable?</p>
+        <p><a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#maths-content">GDS recommend</a> using the minus symbol but they actually use the en dash (not sure if accident).</p>
+
+        <h2>Options</h2>
+
+        <h3>Option 1: plain language</h3>
+        <p>positive 7 negative 3
+        <p>or</p>
+        <p>plus 7 minus 3</p>
+
+        <h3>Option 2: plus and hyphen symbols</h3>
+        <p>
+          +7
+          -3
+        </p>
+
+        <h3>Option 3: plus and minus symbols</h3>
+        <p>
+          +7
+          −3
+        </p>
+
+        <h3>Option 3: HTML abbr tag (abbreviation)</h3>
+        <p><abbr title="plus">+</abbr>7</p>
+        <p><abbr title="minus">-</abbr>3</p>
+
+        <h3>Option 4: aria label</h3>
+        <p><span aria-label="plus">+</span>7</p>
+        <p><span aria-label="minus">-</span>3</p>
+
+
+        <h3>Option 5: visually hidden class</h3>
+        <p><span class="visuallyhidden">plus</span>+7</p>
+        <p><span class="visuallyhidden">minus</span>-3</p>
+        <p><span class="visuallyhidden">minus</span>−3</p>
+
+
+        <h3>Option 6: visually hidden and aria hidden</h3>
+        <p><span aria-hidden="true">+</span><span class="visuallyhidden">plus</span>7</p>
+        <p><span aria-hidden="true">-</span><span class="visuallyhidden">minus</span>3</p>
+
+        <h3>Option 7: plus symbol with no mark-up, minus symbol as en dash with visually hidden "minus" text</h3>
+        <p>+7</p>
+        <p><span class="visuallyhidden">minus</span>–3</p>
+
+        <h2>Resources</h2>
+        <p><a href="http://style.ons.gov.uk/house-style/plus-and-minus/">ONS style guide</a></p>
+        <p><a href="https://accessibility.blog.gov.uk/2016/11/01/results-of-the-2016-gov-uk-assistive-technology-survey/">Results of the 2016 GOV.UK assistive technology survey</a></p>
+        <p><a href="https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">Why Don’t Screen Readers Always Read What’s on the Screen? Part 1: Punctuation and Typographic Symbols</a></p>
+      </div>
+    </div>
+  </div>
+</div>
