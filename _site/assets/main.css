@@ -300,6 +300,9 @@ a:focus {
 .border-bottom--iron {
   border-bottom: 1px solid #D0D2D3; }
 
+.border-top--iron {
+  border-top: 1px solid #D0D2D3; }
+
 .basic .footer-license {
   border-top: none; }
 .basic .footer a:visited {
