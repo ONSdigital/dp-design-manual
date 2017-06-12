@@ -251,6 +251,19 @@ h3 {
 .basic .page-intro__content, .basic .lede {
   font-size: 21px; }
 
+.table-v2 caption {
+  padding-bottom: 16px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #D0D2D3; }
+.table-v2 th, .table-v2 td {
+  border-bottom: 1px solid #D0D2D3;
+  text-align: left;
+  line-height: 1.3;
+  padding: 8px 16px 8px 0;
+  width: 10%; }
+.table-v2 .numeric {
+  text-align: right; }
+
 .basic a {
   text-decoration: underline; }
 .basic a:visited {

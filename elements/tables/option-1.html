@@ -1,0 +1,53 @@
+---
+layout: basic
+title: Improving ONS tables
+---
+
+<div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        {% include page-intro.html %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="basic wrapper margin-top--6 margin-bottom--8">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+
+        <h2>Before</h2>
+
+        {% include tables/example-01.html %}
+
+        <h2>After</h2>
+
+        {% include tables/example-01-v2.html %}
+
+        <h2>Changes made</h2>
+          <ul>
+            <li>Improve graphic design (spacing, alignment, borders)</li>
+            <li>Use '%' symbol, not 'percent' text</li>
+            <li>Put symbols (£ and %) into the cells instead of the headings</li>
+            <li>Use caption instead of h4 for the table's title</li>
+            <li>Use scope correctly</li>
+            <li>Avoid using empty columns and rows for spacing</li>
+            <li>Combine source info and footnotes into one cell</li>
+            <li>Remove inline styles and auto-generated classes</li>
+            <li>Remove tbody</li>
+            <li>Remove meta tags</li>
+            <li>Remove empty colgroup</li>
+            <li>Remove title attribute from download link/button (not applicable in this example)</li>
+          </ul>
+
+          <h2>Further work to explore</h2>
+            <ul>
+              <li>Swap axis, so there are fewer columns and more rows</li>
+              <li>Use tfoot for notes (instead of a cell)</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
