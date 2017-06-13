@@ -1,0 +1,61 @@
+---
+layout: basic
+type: "Status: prototype"
+title: Extended width article
+intro-content: Extend width of main content area and remove unnessary elements from article header
+---
+
+<div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        {% include page-intro.html %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="basic wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+        <h2>Prototypes</h2>
+        <ul>
+          <li><a href="option-1">Prototype</a></li>
+          <li><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/mar2017">Current website example</a></li>
+          <li><a href="https://onsdigital.github.io/dp-ux-prototypes/dist/sprint-10-extended-width-pages/">Sprint 10 prototype</a></li>
+        </ul>
+
+        <h2>Changes</h2>
+        <ul>
+          <li>Page intro area: reduce spacing</li>
+          <li>Breadcrumbs: removed current page from breadcrumb list</li>
+          <li>Breadcrumbs: removed border bottom</li>
+          <li>Page type: Changed colour to dark grey</li>
+          <li>Meta wrapper: Removed borders</li>
+          <li>Meta wrapper: Changed background colour to same as page intro area as a whole</li>
+          <li>Meta wrapper: Removed contact email. Not many users click this, also is function confusing?</li>
+          <li>Meta wrapper: Removed "release date" label</li>
+          <li>Meta wrapper: Removed "next release" item</li>
+          <li>Alert: hide for one off articles</li>
+          <li>TOC: Remove table of contents</li>
+          <li>TOC: Removed print link, not many users click it</li>
+          <li>TOC: Removed download link, as it interactive will be invisible</li>
+          <li>Content area: text width to be 36 columns max</li>
+          <li>Content area: charts to fill 100% of width</li>
+          <li>Increase h2 and h3 lineheight</li>
+          <li>Aside: Moved related links to bottom, use new "related links" component</li>
+          <li>Aside: Moved contact box to bottom</li>
+        </ul>
+
+        <h2>Future</h2>
+        <ul>
+          <li>Font size should probably be increased as we are going down from 19px to 14px on visual articles. Big step back in my opinion.</li>
+          <li>National statistics badge: improve alt text</li>
+          <li>Article type is included in h1, but not in page title meta tag - does this cause accessibilty issues?</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>

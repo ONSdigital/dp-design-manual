@@ -19,6 +19,9 @@
 .font-color--iron {
   color: #D0D2D3; }
 
+.font-color--iron-light {
+  color: #E5E6E7; }
+
 .background--dc-ons-blue {
   background-color: #003C57;
   color: #003C57; }
@@ -322,34 +325,57 @@
 .font-weight--normal {
   font-weight: normal; }
 
-.prototype h1, .prototype h2, .prototype h3, .prototype h4, .prototype h5, .prototype h6 {
+.text {
+  max-width: 36em; }
+
+h2 {
+  line-height: 1.4 !important; }
+
+h3 {
+  line-height: 1.4 !important; }
+
+.basic h1, .basic h2, .basic h3, .basic h4, .basic h5, .basic h6 {
   font-weight: bold;
   padding: 0;
   margin: 40px 0 24px 0;
   line-height: 1.2; }
-.prototype ul, .prototype ol {
+.basic ul, .basic ol {
   margin: 0;
   padding-left: 30px;
   margin: 8px 0 24px 0; }
-.prototype p {
+.basic p {
   font-size: 16px;
   line-height: 1.5;
   margin: 8px 0 24px 0;
   padding: 0; }
-.prototype .text {
-  max-width: 36em; }
-.prototype li {
+.basic li {
   font-size: 16px;
   line-height: 1.5;
   margin: 0 0 8px 0;
   padding: 0; }
-.prototype .page-intro__content, .prototype .lede {
+.basic .page-intro__content, .basic .lede {
   font-size: 21px; }
 
-.prototype a {
+.table-v2 caption {
+  padding-bottom: 16px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #D0D2D3; }
+.table-v2 th, .table-v2 td {
+  border-bottom: 1px solid #D0D2D3;
+  text-align: left;
+  line-height: 1.3;
+  padding: 8px 16px 8px 0;
+  width: 10%; }
+.table-v2 .numeric {
+  text-align: right; }
+
+.basic a {
   text-decoration: underline; }
-.prototype a:visited {
+.basic a:visited {
   color: #560072; }
+
+.visited {
+  color: #560072 !important; }
 
 a:focus {
   outline: 3px solid #FF9933;
@@ -392,10 +418,128 @@ a:focus {
 .border-bottom--iron {
   border-bottom: 1px solid #D0D2D3; }
 
-.prototype .footer-license {
+.border-top--iron {
+  border-top: 1px solid #D0D2D3; }
+
+.basic .footer-license {
   border-top: none; }
-.prototype .footer a:visited {
+.basic .footer a:visited {
   color: #D0D2D3; }
+
+.banner p {
+  margin: 0; }
+
+.banner a {
+  color: #414042;
+  text-decoration: underline; }
+
+.banner a.btn {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 4px 10px 6px;
+  margin-left: 4px; }
+
+.banner .icon {
+  vertical-align: middle; }
+
+.banner .link--matisse {
+  color: #206095; }
+
+.banner .link--white {
+  color: #FFFFFF; }
+
+.banner__tag {
+  padding: 2px 7px 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #323132; }
+
+.banner__tag--sentance-case {
+  text-transform: none; }
+
+.banner__tag--astral {
+  background-color: #3B7A9E; }
+
+.banner__tag--matisse {
+  background-color: #206095; }
+
+.banner__tag--carrot {
+  background-color: #FF9933;
+  color: #414042; }
+
+.breadcrumb-v2 {
+  border-bottom: none !important; }
+
+.download-options__container {
+  margin-bottom: 15em; }
+
+.download-options__link {
+  margin-right: 1em; }
+
+.embed-code__text-area {
+  padding: 8px 16px;
+  background-color: #EAEAEA;
+  border: 1px solid #D0D2D3;
+  width: 100%;
+  font-size: 14px;
+  color: #414042;
+  line-height: 20px;
+  overflow: hidden;
+  height: 40px;
+  white-space: nowrap;
+  resize: none;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif; }
+
+.embed-code__text-area:focus {
+  outline: 3px solid #FF9933; }
+
+.meta-v2.meta-wrap {
+  background: none;
+  border-top: none;
+  padding-top: 0; }
+
+.meta-v2 .meta__item {
+  border-right: none;
+  padding-left: 0;
+  min-height: 0; }
+
+@media (min-width: 768px) {
+  .meta-v2 .meta__item {
+    padding-left: 16px; } }
+.basic .page-intro__content {
+  margin-bottom: 16px; }
+.basic .page-intro__type {
+  color: #414042; }
+
+.page-intro-v2 .page-intro__title {
+  margin-top: 0; }
+.page-intro-v2 .page-intro__type {
+  color: #414042; }
+.page-intro-v2 .page-intro__content {
+  margin-bottom: 32px; }
+
+.pullout:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media (min-width: 768px) {
+  .pullout--anchor {
+    float: left;
+    width: 50%; }
+
+  .pullout--box {
+    float: right;
+    width: 50%; } }
+.pullout--box__border {
+  border: 1px solid #D0D2D3; }
+
+.panel {
+  border-left-style: solid;
+  border-width: 10px;
+  border-color: #D0D2D3;
+  padding-left: 1em;
+  margin-bottom: 1em; }
 
 .download-options__container .js-show-hide__title button {
   width: auto; }
@@ -423,94 +567,6 @@ a:focus {
 
 .download-options__container .show-hide button[aria-expanded=false]:after, .download-options__container .show-hide button[aria-expanded=true]:after {
   background-image: none; }
-
-.embed-code__text-area {
-  padding: 8px 16px;
-  background-color: #EAEAEA;
-  border: 1px solid #D0D2D3;
-  width: 100%;
-  font-size: 14px;
-  color: #414042;
-  line-height: 20px;
-  overflow: hidden;
-  height: 40px;
-  white-space: nowrap;
-  resize: none;
-  font-family: "Open Sans",Helvetica,Arial,sans-serif; }
-
-.embed-code__text-area:focus {
-  outline: 3px solid #FF9933; }
-
-.download-options__container {
-  margin-bottom: 15em; }
-
-.download-options__link {
-  margin-right: 1em; }
-
-.pullout:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-@media (min-width: 768px) {
-  .pullout--anchor {
-    float: left;
-    width: 50%; }
-
-  .pullout--box {
-    float: right;
-    width: 50%; } }
-.pullout--box__border {
-  border: 1px solid #D0D2D3; }
-
-.panel {
-  border-left-style: solid;
-  border-width: 10px;
-  border-color: #D0D2D3;
-  padding-left: 1em;
-  margin-bottom: 1em; }
-
-.banner p {
-  margin: 0; }
-
-.banner a {
-  color: #414042;
-  text-decoration: underline; }
-
-.banner a.btn {
-  text-decoration: none;
-  padding: 4px 10px 6px;
-  margin-left: 4px; }
-
-.banner .icon {
-  vertical-align: middle; }
-
-.banner .link--matisse {
-  color: #206095; }
-
-.banner__tag {
-  padding: 2px 7px 3px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #323132; }
-
-.banner__tag--sentance-case {
-  text-transform: none; }
-
-.banner__tag--astral {
-  background-color: #3B7A9E; }
-
-.banner__tag--matisse {
-  background-color: #206095; }
-
-.banner__tag--carrot {
-  background-color: #FF9933;
-  color: #414042; }
-
-.prototype .page-intro__content {
-  margin-bottom: 16px; }
-.prototype .page-intro__type {
-  color: #414042; }
 
 .pl-colour-circle {
   -webkit-border-radius: 32px;

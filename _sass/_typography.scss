@@ -7,7 +7,20 @@
   font-weight: normal;
 }
 
-.prototype {
+.text {
+  max-width: 36em;
+}
+
+h2 {
+  line-height: 1.4 !important; // Only use !imporant in the prototype to temporarily overwrite production styles
+}
+
+h3 {
+  line-height: 1.4 !important; // Only use !imporant in the prototype to temporarily overwrite production styles
+}
+
+// Custom styles created for the "basic" template
+.basic {
   h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     padding: 0;
@@ -26,10 +39,6 @@
     line-height: 1.5;
     margin: 8px 0 24px 0;
     padding: 0;
-  }
-
-  .text {
-    max-width: 36em;
   }
 
   li {

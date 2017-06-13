@@ -1,0 +1,163 @@
+<!-- A basic layout with minimal header and footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Symbols</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/ee328ac/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/sprint/0/symbols/">
+  <link rel="alternate" type="application/rss+xml" title="Digital Publishing UX Prototypes" href="/feed.xml">
+
+  <meta name="robots" content="noindex, nofollow">
+
+</head>
+
+
+  <body style="height: auto;">
+
+    <!-- <div class="banner background--carrot">
+	<div class="wrapper">
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
+	</div>
+</div>
+ -->
+
+    <header class="border-bottom--iron-sm border-bottom--iron-md">
+	<a class="skiplink" href="#main" tabindex="0">
+		Skip to main content
+	</a>
+
+	<div class="wrapper">
+		<div class="header col-wrap">
+
+			<div class="col col--lg-one-third col--md-one-third">
+  <a href="/dp-ux/">
+    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
+  </a>
+</div>
+
+
+		</div>
+	</div>
+
+</header>
+
+
+    <div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-47 col--lg-48">
+  <h1 class="page-intro__title ">
+    
+    <span class="page-intro__type">
+      Status: prototype
+    </span>
+    
+    Symbols</h1> 
+  <p class="page-intro__content">
+    Accessibility of mathematical symbols.
+  </p>
+  
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="basic wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+        <h2>User need</h2>
+        <p>As a user I need to perceive and understand mathemetical symbols, so that I can understand the content and data on the ONS website.</p>
+
+        <h2>Thoughts</h2>
+        <p>Use the minus symbol instead of a hyphen? This is semanticlly correct. It's also wider, so potentially more readable?</p>
+        <p><a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#maths-content">GDS recommend</a> using the minus symbol but they actually use the en dash (not sure if accident).</p>
+
+        <h2>Options</h2>
+
+        <h3>Option 1: plain language</h3>
+        <p>positive 7 negative 3
+        <p>or</p>
+        <p>plus 7 minus 3</p>
+
+        <h3>Option 2: plus and hyphen symbols</h3>
+        <p>
+          +7
+          -3
+        </p>
+
+        <h3>Option 3: plus and minus symbols</h3>
+        <p>
+          +7
+          −3
+        </p>
+
+        <h3>Option 3: HTML abbr tag (abbreviation)</h3>
+        <p><abbr title="plus">+</abbr>7</p>
+        <p><abbr title="minus">-</abbr>3</p>
+
+        <h3>Option 4: aria label</h3>
+        <p><span aria-label="plus">+</span>7</p>
+        <p><span aria-label="minus">-</span>3</p>
+
+
+        <h3>Option 5: visually hidden class</h3>
+        <p><span class="visuallyhidden">plus</span>+7</p>
+        <p><span class="visuallyhidden">minus</span>-3</p>
+        <p><span class="visuallyhidden">minus</span>−3</p>
+
+
+        <h3>Option 6: visually hidden and aria hidden</h3>
+        <p><span aria-hidden="true">+</span><span class="visuallyhidden">plus</span>7</p>
+        <p><span aria-hidden="true">-</span><span class="visuallyhidden">minus</span>3</p>
+
+        <h3>Option 7: plus symbol with no mark-up, minus symbol as en dash with visually hidden "minus" text</h3>
+        <p>+7</p>
+        <p><span class="visuallyhidden">minus</span>–3</p>
+
+        <h2>Resources</h2>
+        <p><a href="http://style.ons.gov.uk/house-style/plus-and-minus/">ONS style guide</a></p>
+        <p><a href="https://accessibility.blog.gov.uk/2016/11/01/results-of-the-2016-gov-uk-assistive-technology-survey/">Results of the 2016 GOV.UK assistive technology survey</a></p>
+        <p><a href="https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">Why Don’t Screen Readers Always Read What’s on the Screen? Part 1: Punctuation and Typographic Symbols</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- <footer class="basic print--hide">
+	<h2 class="visuallyhidden">Footer links</h2>
+	<div class="footer">
+		<div class="wrapper">
+
+			<div class="footer-license">
+  <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+  <p class="footer-license__text margin-left-sm--0">
+    All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+  </p>
+</div>
+
+
+		</div>
+	</div>
+</footer>
+ -->
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+
+</html>
