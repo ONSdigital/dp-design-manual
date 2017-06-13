@@ -211,6 +211,111 @@
   background-color: #90b0c9;
   color: #fff; }
 
+.font-color--ons-blue {
+  color: #003C57; }
+
+.font-color--sm-blue-2 {
+  color: #2eabc1; }
+
+.font-color--light-blue {
+  color: #36ADD9; }
+
+.font-color--green {
+  color: #0F8243; }
+
+.font-color--ons-green {
+  color: #A8BD3A; }
+
+.font-color--yellow {
+  color: #E2BC22; }
+
+.font-color--census {
+  color: #6E2585; }
+
+.font-color--mauve {
+  color: #766FAF; }
+
+.font-color--purple {
+  color: #37288B; }
+
+.font-color--pink {
+  color: #D2376D; }
+
+.font-color--baby-pink {
+  color: #EB92BB; }
+
+.font-color--gold {
+  color: #BE7D0B; }
+
+.font-color--red {
+  color: #D32F2F; }
+
+.font-color--teal {
+  color: #008080; }
+
+.font-color--orange {
+  color: #FF9933; }
+
+.background--ons-blue {
+  background-color: #003C57;
+  color: #fff; }
+
+.background--blue {
+  background-color: #0075a3;
+  color: #fff; }
+
+.background--light-blue {
+  background-color: #36ADD9;
+  color: #fff; }
+
+.background--green {
+  background-color: #0F8243;
+  color: #fff; }
+
+.background--ons-green {
+  background-color: #A8BD3A;
+  color: #fff; }
+
+.background--yellow {
+  background-color: #E2BC22;
+  color: #fff; }
+
+.background--census {
+  background-color: #6E2585;
+  color: #fff; }
+
+.background--mauve {
+  background-color: #766FAF;
+  color: #fff; }
+
+.background--purple {
+  background-color: #37288B;
+  color: #fff; }
+
+.background--pink {
+  background-color: #D2376D;
+  color: #fff; }
+
+.background--baby-pink {
+  background-color: #EB92BB;
+  color: #fff; }
+
+.background--gold {
+  background-color: #BE7D0B;
+  color: #fff; }
+
+.background--red {
+  background-color: #D32F2F;
+  color: #fff; }
+
+.background--teal {
+  background-color: #008080;
+  color: #fff; }
+
+.background--orange {
+  background-color: #FF9933;
+  color: #fff; }
+
 .font-weight--bold {
   font-weight: bold; }
 
