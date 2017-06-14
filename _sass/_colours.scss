@@ -58,6 +58,12 @@ $cod-gray:	  #111111;
   color: $iron-light;
 }
 
+// white circle border
+.background--white {
+  border: 1px solid #DDDDDD;
+}
+
+
 @import "colours-data-collection";
 @import "colours-chart-builder";
 @import "colours-well-being";

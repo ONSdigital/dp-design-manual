@@ -22,6 +22,9 @@
 .font-color--iron-light {
   color: #E5E6E7; }
 
+.background--white {
+  border: 1px solid #DDDDDD; }
+
 .background--dc-ons-blue {
   background-color: #003C57;
   color: #003C57; }
@@ -259,6 +262,9 @@
 .font-color--orange {
   color: #FF9933; }
 
+.font-color--slate {
+  color: #5F7682; }
+
 .background--ons-blue {
   background-color: #003C57;
   color: #fff; }
@@ -317,6 +323,10 @@
 
 .background--orange {
   background-color: #FF9933;
+  color: #fff; }
+
+.background--slate {
+  background-color: #5F7682;
   color: #fff; }
 
 .font-weight--bold {
