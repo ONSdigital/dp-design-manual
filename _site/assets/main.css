@@ -431,6 +431,10 @@ a:focus {
 .border-top--iron {
   border-top: 1px solid #D0D2D3; }
 
+.search__input.search__input--postcode {
+  background: #FFFFFF;
+  border: 2px solid #323132; }
+
 .basic .footer-license {
   border-top: none; }
 .basic .footer a:visited {
@@ -466,6 +470,10 @@ a:focus {
 
 .banner__tag--sentance-case {
   text-transform: none; }
+
+.banner__tag--white {
+  color: #206095;
+  background-color: #FFFFFF; }
 
 .banner__tag--astral {
   background-color: #3B7A9E; }

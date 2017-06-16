@@ -37,6 +37,11 @@
   text-transform: none;
 }
 
+.banner__tag--white {
+  color: $matisse;
+  background-color: $white;
+}
+
 .banner__tag--astral {
   background-color: $astral;
 }

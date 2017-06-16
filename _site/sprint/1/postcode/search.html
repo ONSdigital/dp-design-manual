@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/ee328ac/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/sprint/1/postcode/">
+  <link rel="canonical" href="http://localhost:4000/sprint/1/postcode/search.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/feed.xml">
 
   <meta name="robots" content="noindex, nofollow">
@@ -52,35 +52,42 @@
 </header>
 
 
-    <main id="main" role="main" tabindex="-1">
+    <div class="banner background--matisse padding-top--1 padding-bottom--1">
+  <div class="wrapper">
+    <p class="font-size--16 padding-bottom--1">
+      <strong class="banner__tag banner__tag--sentance-case banner__tag--white">Alpha</strong>
+      This is a new service – your <a class="link--white" href="#">feedback</a> will help us to improve it.</p>
+  </div>
+</div>
 
-  <div class="basic wrapper padding-top--4 padding-bottom--8">
-    <div class="col-wrap">
-      <div class="col">
-        <div class="col col--md-36 col--lg-36">
-          <h1>Postcode look-up</h1>
-          <h2>User need</h2>
-          <p>I need to find out what Ouput Area matches my Postcode.</p>
-          <h2>Prototype</h2>
-          <ul>
-            <li><a href="search">Basic prototype</a></li>
-          </ul>
-          <h2>Future</h2>
-          <ul>
-            <li>Add 'about this page' info if needed</li>
-            <li>Design a 'please wait loading' page</li>
-            <li>Design pages to handle errors</li>
-            <li>Explain acronyms</li>
-            <li>Order content by priority</li>
-            <li>Remove or hide less important stuff</li>
-            <li>Consider if table is best way to mark-up content</li>
-            <li>Add map to results</li>
-            <li>Add ability to download</li>
-          </ul>
-        </div>
+
+<main id="main" role="main" tabindex="-1">
+
+<div class="wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="basic col--md-36 col--lg-39 margin-bottom--8">
+
+        <form class="" action="results">
+
+          <label class="block" for="postcode-look-up">
+            <h1>Postcode look-up</h1>
+            <p>For example, 'SA2 0DB'.</p>
+          </label>
+
+          <input id="postcode-look-up" class="search__input search__input--postcode col col--md-18 col--lg-20" type="text" name="postcode-look-up">
+
+          <button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
+            <span class="visuallyhidden">Search</span>
+            <span class="icon icon-search--light"></span>
+          </button>
+
+        </form>
+
       </div>
     </div>
   </div>
+</div>
 
 </main>
 
