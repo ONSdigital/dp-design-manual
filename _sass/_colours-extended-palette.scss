@@ -15,6 +15,7 @@ $gold:			#BE7D0B;
 $red:			#D32F2F;
 $teal:			#008080;
 $orange:		#FF9933;
+$slate:    #5F7682;
 
 // Font colour
 
@@ -76,6 +77,10 @@ $orange:		#FF9933;
 
 .font-color--orange {
   color: $orange;
+}
+
+.font-color--slate {
+  color: $slate;
 }
 
 
@@ -153,5 +158,10 @@ $orange:		#FF9933;
 
 .background--orange {
   background-color: $orange;
+  color: #fff;
+}
+
+.background--slate {
+  background-color: $slate;
   color: #fff;
 }
