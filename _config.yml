@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Digital Publishing Design Manual
 email: benjamin.stanton@ons.gov.uk
-description: A place for ONS website UX and design stuff that's in progress.
+description: A place for ONS website user experience and design stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ONSdigital
