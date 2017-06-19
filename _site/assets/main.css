@@ -382,10 +382,10 @@ h3 {
 .basic a {
   text-decoration: underline; }
 .basic a:visited {
-  color: #560072; }
+  color: #6E2585; }
 
 .visited {
-  color: #560072 !important; }
+  color: #6E2585 !important; }
 
 a:focus {
   outline: 3px solid #FF9933;

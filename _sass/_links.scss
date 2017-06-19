@@ -4,13 +4,13 @@
     text-decoration: underline;
   }
   a:visited {
-    color: $indigo;
+    color: $census ;
   }
 }
 
 // A dirty pattern library class to force the visited style onto links
 .visited {
-  color: $indigo !important;
+  color: $census !important;
 }
 
 a:focus {
