@@ -1,0 +1,32 @@
+---
+layout: basic
+type:
+title: "ONS postcode directory"
+feedback-link: "mailto:ons.geography@ons.gov.uk?Subject=Postcode%20directory%20alpha%20feedback"
+---
+
+{% include banners/alpha.html %}
+
+<main id="main" role="main" tabindex="-1">
+
+<div class="wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="basic margin-top--8 margin-bottom--8">
+
+        <h1>{{ page.title }}</h1>
+
+        <p class="col--md-36">Enter a postcode to get information from the Office for National Statistics postcode directory.</p>
+
+        <noscript><p class="col--md-36">Please enable JavaScript to use this tool.</p></noscript>
+
+        <iframe id="frame" src="http://ons.maps.arcgis.com/apps/webappviewer/index.html?id=374d26ccc6244bf594465a3a4ab3ac19" scrolling="no" frameborder="0" style="width: 100%; height: 640px;"></iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+{% include footer-basic.html %}
