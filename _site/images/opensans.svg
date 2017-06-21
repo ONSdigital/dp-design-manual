@@ -9,5 +9,16 @@
 	.st3{font-family:'OpenSans-Semibold';}
 	.st4{font-family:'OpenSans-Bold';}
 </style>
-<text transform="matrix(1 0 0 1 1 31.5)"><tspan x="0" y="0" class="st0 st1 st2">Open Sans Regular</tspan><tspan x="0" y="56" class="st0 st1 st2">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp </tspan><tspan x="0" y="88" class="st0 st1 st2">Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</tspan><tspan x="0" y="120" class="st0 st1 st2">1234567890 (,.;:@?!£&amp;*%)</tspan><tspan x="0" y="192" class="st0 st3 st2">Open Sans Semi-bold</tspan><tspan x="0" y="248" class="st0 st3 st2">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp  </tspan><tspan x="0" y="280" class="st0 st3 st2">Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</tspan><tspan x="0" y="312" class="st0 st3 st2">1234567890 (,.;:@?!£&amp;*%)</tspan><tspan x="0" y="384" class="st0 st4 st2">Open Sans Bold</tspan><tspan x="0" y="440" class="st0 st4 st2">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp  </tspan><tspan x="0" y="472" class="st0 st4 st2">Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</tspan><tspan x="0" y="504" class="st0 st4 st2">1234567890 (,.;:@?!£&amp;*%)</tspan></text>
+<text transform="matrix(1 0 0 1 1 31.5)" class="st0 st1 st2">Open Sans Regular</text>
+<text transform="matrix(1 0 0 1 1 87.5)" class="st0 st1 st2">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp </text>
+<text transform="matrix(1 0 0 1 1 119.5)" class="st0 st1 st2">Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</text>
+<text transform="matrix(1 0 0 1 1 151.5)" class="st0 st1 st2">1234567890 (,.;:@?!£&amp;*%)</text>
+<text transform="matrix(1 0 0 1 1 223.5)" class="st0 st3 st2">Open Sans Semi-bold</text>
+<text transform="matrix(1 0 0 1 1 279.5)" class="st0 st3 st2">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp  </text>
+<text transform="matrix(1 0 0 1 1 311.5)" class="st0 st3 st2">Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</text>
+<text transform="matrix(1 0 0 1 1 343.5)" class="st0 st3 st2">1234567890 (,.;:@?!£&amp;*%)</text>
+<text transform="matrix(1 0 0 1 1 415.5)" class="st0 st4 st2">Open Sans Bold</text>
+<text transform="matrix(1 0 0 1 1 471.5)" class="st0 st4 st2">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp  </text>
+<text transform="matrix(1 0 0 1 1 503.5)" class="st0 st4 st2">Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</text>
+<text transform="matrix(1 0 0 1 1 535.5)" class="st0 st4 st2">1234567890 (,.;:@?!£&amp;*%)</text>
 </svg>
