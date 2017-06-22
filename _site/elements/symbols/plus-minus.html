@@ -76,7 +76,8 @@
     <div class="col">
       <div class="col col--md-36 col--lg-36">
         <h2>Context</h2>
-        <p>Use the minus symbol instead of a hyphen? This is semanticlly correct. It's also wider, so potentially more readable?</p>
+        <p>How can we make sure mathematical symbols are shown to all users?</p>
+        <p>We should probably use the minus symbol instead of a hyphen. It's also wider, so potentially more readable.</p>
         <p><a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#maths-content">GDS recommend</a> using the minus symbol.</p>
 
         <h2>Options</h2>
@@ -95,31 +96,26 @@
         <h3>Option 3: plus and minus symbols</h3>
         <p>
           +7
-          −3
+          &minus;3
         </p>
 
         <h3>Option 3: HTML abbr tag (abbreviation)</h3>
         <p><abbr title="plus">+</abbr>7</p>
-        <p><abbr title="minus">-</abbr>3</p>
+        <p><abbr title="minus">&minus;</abbr>3</p>
 
-        <h3>Option 4: aria label</h3>
+        <h3>Option 4: aria-label</h3>
         <p><span aria-label="plus">+</span>7</p>
-        <p><span aria-label="minus">-</span>3</p>
+        <p><span aria-label="minus">&minus;</span>3</p>
 
 
-        <h3>Option 5: visually hidden class</h3>
+        <h3>Option 5: visuallyhidden class</h3>
         <p><span class="visuallyhidden">plus</span>+7</p>
-        <p><span class="visuallyhidden">minus</span>-3</p>
-        <p><span class="visuallyhidden">minus</span>−3</p>
+        <p><span class="visuallyhidden">minus</span>&minus;3</p>
 
 
-        <h3>Option 6: visually hidden and aria hidden</h3>
+        <h3>Option 6: visuallyhidden and aria-hidden</h3>
         <p><span aria-hidden="true">+</span><span class="visuallyhidden">plus</span>7</p>
-        <p><span aria-hidden="true">-</span><span class="visuallyhidden">minus</span>3</p>
-
-        <h3>Option 7: plus symbol with no mark-up, minus symbol as en dash with visually hidden "minus" text</h3>
-        <p>+7</p>
-        <p><span class="visuallyhidden">minus</span>–3</p>
+        <p><span aria-hidden="true">&minus;</span><span class="visuallyhidden">minus</span>3</p>
 
       </div>
     </div>
