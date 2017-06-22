@@ -8,9 +8,12 @@
       <p class="col col--md-16 col--lg-20 meta__item">
         <span>Release date: </span><br>{{ page.release-date }}<br>
       </p>
-      <p class="col col--md-16 col--lg-20 meta__item">
-        <span>Next release: </span><br>{{ page.next-release }}
-      </p>
+      {% if page.next-release %}
+        <p class="col col--md-16 col--lg-20 meta__item">
+          <span>Next release: </span><br>{{ page.next-release }}
+        </p>
+      {% else %}
+      {% endif %}
     </div>
   </div>
 </div>
