@@ -5,10 +5,12 @@
       {{ page.type }}
     </span>
     {% endif %}
+    <span class="font-weight--bold">
     {% if page.title %}{{ page.title }}{% else %}
     Page title
+  </span>
     {% endif %}</h1> {% if page.intro-content %}
-  <p class="page-intro__content">
+  <p class="page-intro__content col--md-46">
     {{ page.intro-content }}
   </p>
   {% endif %}
