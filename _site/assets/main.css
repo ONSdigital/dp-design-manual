@@ -259,6 +259,9 @@
 .font-color--teal {
   color: #008080; }
 
+.font-color--light-teal {
+  color: #00A7A3; }
+
 .font-color--orange {
   color: #FF9933; }
 
@@ -319,6 +322,10 @@
 
 .background--teal {
   background-color: #008080;
+  color: #fff; }
+
+.background--light-teal {
+  background-color: #00A7A3;
   color: #fff; }
 
 .background--orange {

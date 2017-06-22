@@ -14,6 +14,7 @@ $baby-pink:		#EB92BB;
 $gold:			#BE7D0B;
 $red:			#D32F2F;
 $teal:			#008080;
+$light-teal: #00A7A3;
 $orange:		#FF9933;
 $slate:    #5F7682;
 
@@ -73,6 +74,10 @@ $slate:    #5F7682;
 
 .font-color--teal {
   color: $teal;
+}
+
+.font-color--light-teal {
+  color: $light-teal;
 }
 
 .font-color--orange {
@@ -153,6 +158,11 @@ $slate:    #5F7682;
 
 .background--teal {
   background-color: $teal;
+  color: #fff;
+}
+
+.background--light-teal {
+  background-color: $light-teal;
   color: #fff;
 }
 
