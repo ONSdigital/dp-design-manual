@@ -1,6 +1,6 @@
 // Font weights
 .font-weight--bold {
-  font-weight: bold;
+  font-weight: bold !important; // Only use !important in the prototype to temporarily overwrite production styles
 }
 
 .font-weight--normal {
@@ -12,11 +12,11 @@
 }
 
 h2 {
-  line-height: 1.4 !important; // Only use !imporant in the prototype to temporarily overwrite production styles
+  line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
 }
 
 h3 {
-  line-height: 1.4 !important; // Only use !imporant in the prototype to temporarily overwrite production styles
+  line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
 }
 
 // Custom styles created for the "basic" template
