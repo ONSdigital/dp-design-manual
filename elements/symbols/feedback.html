@@ -1,0 +1,76 @@
+---
+layout: basic
+type:
+title: Feedback
+intro-content: Feedback from GDS accessibilty group, tested using NVDA on Firefox.
+---
+<main id="main" role="main" tabindex="-1">
+
+  <div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+          {% include page-intro.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h2>Tables</h2>
+          <p>The tables are really complicated and would be hard for a lot of people to understand, not just people using assistive technology.</p>
+          <p>Recommend 4 simpler tables:</p>
+          <ol>
+            <li>North Sea revenue geographic share (£ millions)</li>
+            <li>North Sea revenue geographic share as a percentage of GDP</li>
+            <li>North Sea revenue population share (millions)</li>
+            <li>North Sea revenue population share as a percentage of GDP</li>
+          </ol>
+
+          <h2>Headings</h2>
+          <p>The H1 of the page is treated as 2 H1s because of the span inside the H1.</p>
+
+          <h2>Symbols</h2>
+          <p>Only the minus symbols are actually read out when NVDA's punctuation reader is set to "none". It ignored the + = / &amp;.</p>
+          <p>They all read out fine when I changed it to "some", "most" and "all".</p>
+          <p>GDS recommend using minus symbol (not hyphen symbol or plain language)</p>
+
+          <h2>Introductory content</h2>
+          <ul>
+            <li>Use shorter sentances</li>
+            <li>Use simpler words</li>
+            <li>Use actual dates</li>
+          </ul>
+          <h3>Sentence 1 before</h3>
+          <p>Net long-term international migration was estimated to be +248,000 in 2016, down 84,000 from 2015 (statistically significant).</p>
+          <h3>Sentence 1 after</h3>
+          <p>Net long-term international migration was estimated to be +248,000 in 2016. This was 84,000 less than 2015. The different between 2016 and 2015 is statistically significant.</p>
+          <h3>Sentence 2 before</h3>
+          <p>"year ending (YE) March 2017"</p>
+          <h3>Sentence 2 after</h3>
+          <p>"1 April 2016 and 31 March 2017"</p>
+
+          <h2>Abbreviations</h2>
+          <p>YE is read out as "ye" not Y.E. Does this have to be abbreviated?</p>
+
+          <h2>Footnotes</h2>
+          <p>Footnotes are read out as numbers not footnotes. You would need some visuallyhidden text around these.</p>
+          <p>You could also make them links to the information at the bottom of the screen like an HTML publication on GOV UK.</p>
+
+          <h2>Table</h2>
+          <p>"(£m)1" is read out as "pound m one". GDS and ONS style is to write out millions, not use m.</p>
+          <p>"Country/Region" is read as a single word or "country slash region". Depending on punctuation settings. "Country or region" would be better</p>
+          <p>Year ranges should be "2013 to 2014" not "2013/14". That is in GDS and ONS style guide. NVDA says "2013 14" or "2013 slash 14" if punctuation is switched on.</p>
+          <p>There are no captions or headings to introduce the tables. There are empty rows and cells. There are no column headers so the numbers will not make sense unless you made notes as the screen reader was announcing things in the earlier rows and cells.</p>
+          <p>You could use simpler tables like I suggested earlier with a H2 before it to help someone navigate to the table using a screen reader. Use column headers so the year ranges would be repeated for the data so you do not have to remember what column 5 is for. It would be easier to adjust these for mobile too because there are fewer columns.</p>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
