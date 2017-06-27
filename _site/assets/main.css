@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 .font-color--astral {
   color: #3B7A9E; }
 
@@ -618,3 +619,6 @@ a:focus {
   text-transform: uppercase;
   content: "Example";
   padding: 16px 0; }
+
+.lato {
+  font-family: 'Lato', sans-serif; }

@@ -1,9 +1,15 @@
 ---
 layout: prototype
-type:
-title:
-intro-content:
+type: Statistical bulletin
+title: "Gross domestic product, preliminary estimate: Jan to Mar 2017"
+intro-content: "Preliminary estimate for gross domestic product (GDP) containing constant price gross value added (GVA) data for the UK. Data are available by industrial sector."
 breadcrumbs:
+contact-name: James Scruton
+contact-email: gdp@ons.gsi.gov.uk
+contact-tel: +44 (0)1633 456724
+release-date: 28 April 2017
+next-release: 25 May 2017
+
 ---
 
 <main id="main" role="main" tabindex="-1">
@@ -19,219 +25,595 @@ breadcrumbs:
         </div>
       </div>
     </div>
-    <div class="alert">
-      <div class="wrapper">
-        <div class="col-wrap">
-          <div class="col">
-            <p class="alert__title">This is the latest release</p>
-            <a class="alert__link" href="#">View previous releases</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="meta-wrap">
-      <div class="wrapper">
-        <div class="col-wrap">
-          <p class="col col--md-16 col--lg-20 meta__item">
-            <a href="https://www.statisticsauthority.gov.uk/national-statistician/types-of-official-statistics/"><img class="meta__image" src="https://www.ons.gov.uk/img/national-statistics.png" alt="National Statistics logo"></a>
-            <span>Contact: </span><br><a href="#">Karen Thomas</a>
-          </p>
-          <p class="col col--md-16 col--lg-20 meta__item">
-            <span>Release date: </span><br>4 October 2016<br>
-          </p>
-          <p class="col col--md-16 col--lg-20 meta__item">
-            <span>Next release: </span><br>To be announced
-          </p>
-        </div>
-      </div>
-    </div>
+
+    {% include alerts/alert.html %}
+
+    {% include meta.html %}
+
   </div>
   <div class="page-content border-top--iron-sm border-top--iron-md">
     <div class="wrapper">
-      <!-- <div class="col-wrap border-bottom--iron-md">
-        <div class="col col--md-31 col--lg-41 margin-left-md--1">
-          <div class="table-of-contents js-sticky-toc print--avoid-break">
-            <h2 class="table-of-contents__title">Table of contents</h2>
-            <ol id="toc" class="table-of-contents__list">
-              <li class="table-of-contents__item">
-                <a href="#pull-out-box" class="js-scroll">Pull out box</a>
-              </li>
-              <li class="table-of-contents__item">
-                <a href="#economic-context" class="js-scroll" data-ga-event="" data-ga-event-category="toc-link" data-ga-event-label="Economic context ">Economic context </a>
-              </li>
-              <li class="table-of-contents__item">
-                <a href="#business-counts-by-legal-form" class="js-scroll" data-ga-event="" data-ga-event-category="toc-link" data-ga-event-label="Business counts by legal form">Business counts by legal form</a>
-              </li>
-              <li class="table-of-contents__item">
-                <a href="#business-counts-by-broad-industry" class="js-scroll" data-ga-event="" data-ga-event-category="toc-link" data-ga-event-label="Business counts by broad industry">Business counts by broad industry</a>
-              </li>
-              <li class="table-of-contents__item">
-                <a href="#business-counts-by-uk-region" class="js-scroll" data-ga-event="" data-ga-event-category="toc-link" data-ga-event-label="Business counts by UK region">Business counts by UK region</a>
-              </li>
-              <li class="table-of-contents__item">
-                <a href="#local-unit-site-information" class="js-scroll" data-ga-event="" data-ga-event-category="toc-link" data-ga-event-label="Local unit site information">Local unit site information</a>
-              </li>
-              <li class="table-of-contents__item">
-                <a href="#quality-and-methodology" class="js-scroll" data-ga-event="" data-ga-event-category="toc-link" data-ga-event-label="Quality and methodology">Quality and methodology</a>
-              </li>
-              <li class="table-of-contents__item">
-                <a href="#background-notes" class="js-scroll expand-accordion" data-ga-event="" data-ga-event-category="toc-link" data-ga-event-label="Background notes">Background notes</a>
-              </li>
-            </ol>
-          </div>
-        </div>
-        <div class="col col--md-15 col--lg-16 margin-bottom-sm--2 margin-top-md--7 margin-bottom-md--2 margin-left-lg--2 padding-bottom-sm--2 padding-left-sm--1 padding-bottom-md--1 border-top--iron-sm border-right--iron-sm border-bottom--iron-sm border-left--iron-sm border-top--iron-md border-right--iron-md border-bottom--iron-md border-left--iron-md js-print-pdf print--hide">
-          <p class="text-right--md padding-top-md--0 padding-bottom-md--0 height--5 margin-bottom-md--0 print--hide js--show" style="display: block;">
-            <a href="" class="link-complex js--show js-print-page" data-ga-event="" data-ga-event-category="print" data-ga-event-label="UK business; activity, size and location - 2016" style="display: inline;">
-Print this <span class="lowercase">
-Statistical bulletin
-</span>
-</a>
-            <span class="icon icon-print--dark"></span>
-          </p>
-          <p class="text-right--md padding-top-md--0 padding-bottom-md--0 height--5 margin-top-md--1 print--hide">
-            <a href="/businessindustryandtrade/business/activitysizeandlocation/bulletins/ukbusinessactivitysizeandlocation/2016/pdf" class="link-complex js-pdf-dl-link" data-ga-event="" data-ga-event-category="pdf" data-ga-event-label="UK business; activity, size and location - 2016">
-Download as PDF
-</a>
-            <span class="icon icon-download--dark"></span>
-          </p>
-        </div>
-      </div> -->
+
+      {% include table-of-contents.html %}
+
       <div class="hide--md margin-top-sm--1">
-        <div class=" margin-bottom-sm--2 margin-bottom-md--2 print--hide">
-          <a class="btn btn--primary btn--full-width" href="/businessindustryandtrade/business/activitysizeandlocation/bulletins/ukbusinessactivitysizeandlocation/2016/relateddata">View all data used in this <span class="lowercase">Statistical bulletin</span></a>
-        </div>
+        {% include view-all-data.html %}
       </div>
-      <article class="col col--md-36 col--lg-39 page-content__main-content margin-bottom--5" style="padding-top: 0px;">
 
-        <div id="pull-out-box" class="section__content--markdown ">
+      <article class="col col--md-36 col--lg-39 page-content__main-content js-sticky-toc__trigger" style="padding-top: 0px;">
+
+        <div id="main-points" class="section__content--markdown js-sticky-toc__section">
           <section>
             <header>
-              <h2><span class="section__content-number">1.</span> Pull out box</h2>
+              <h2><span class="section__content-number">1.</span> Main points</h2>
             </header>
-            <p>UK Business: Activity, Size and Location, 2016 is produced from an extract taken from the <a href="#">Inter-Departmental Business Register</a> (IDBR) recording
-              the position of units as at 11 March 2016. </p>
-            <div class="pullout">
-              <div class="pullout--anchor padding-right--1">
-                <p>For the purpose of this release the term “business” is used to represent an enterprise. An enterprise can be defined as the smallest combination of legal units (generally based on VAT and/or PAYE records) that is an organisational unit producing goods or services, which benefits from a certain degree of autonomy in decision-making, especially for the allocation of its current resources. An enterprise carries out one or more activities at one or more locations. An enterprise may be a sole legal unit.</p>
-              </div>
-              <div class="pullout--box background--gallery padding-top--1 padding-right--1 padding-left--1">
-                <p>Please note that all data are rounded to protect confidentiality. The figures in the tables are rounded individually therefore the sum of component items may be slightly different to the totals shown.</p>
-              </div>
-            </div>
-            <p>This publication represents the businesses registered with HM Revenue and Customs (HMRC) for VAT and/or Pay As You Earn (PAYE). The Department for Business, Energy and Industrial Strategy (BEIS) produces <a href="#">Business Population Estimates</a>              which seek to provide full coverage of all types of businesses in the UK including an estimate of the unregistered business population. </p>
-
+            <ul>
+              <li>UK gross domestic product (GDP) was estimated to have increased by 0.3% in Quarter 1 (Jan to Mar) 2017, the slowest rate of growth since Quarter 1 2016.</li>
+              <li>Slower growth in Quarter 1 2017 was mainly due to services, which grew by 0.3% compared with growth of 0.8% in Quarter 4 (Oct to Dec) 2016.</li>
+              <li>In Quarter 1 2017 there were falls in several important consumer-focused industries, such as retail sales and accommodation; this was due in part to prices increasing more than spending.</li>
+              <li>Production, construction and agriculture grew by 0.3%, 0.2% and 0.3% respectively in Quarter 1 2017.</li>
+              <li>GDP per head was estimated to have increased by 0.1% during Quarter 1 2017.</li>
+            </ul>
+            {% include back-to-table-of-contents.html %}
           </section>
         </div>
 
-        <div id="pull-out-box" class="section__content--markdown ">
+        <div id="whats-changed-in-this-release" class="section__content--markdown js-sticky-toc__section">
           <section>
             <header>
-              <h2><span class="section__content-number">2.</span> Pull out box alternative</h2>
+              <h2><span class="section__content-number">2.</span> What’s changed in this release?</h2>
             </header>
-            <p>UK Business: Activity, Size and Location, 2016 is produced from an extract taken from the <a href="#">Inter-Departmental Business Register</a> (IDBR) recording
-              the position of units as at 11 March 2016. </p>
-            <div class="pullout">
-              <div class="pullout--anchor padding-right--1">
-                <p>For the purpose of this release the term “business” is used to represent an enterprise. An enterprise can be defined as the smallest combination of legal units (generally based on VAT and/or PAYE records) that is an organisational unit producing goods or services, which benefits from a certain degree of autonomy in decision-making, especially for the allocation of its current resources. An enterprise carries out one or more activities at one or more locations. An enterprise may be a sole legal unit.</p>
-              </div>
-              <div class="pullout--box pullout--box__border padding-top--1 padding-right--1 padding-left--1">
-                <p>Please note that all data are rounded to protect confidentiality. The figures in the tables are rounded individually therefore the sum of component items may be slightly different to the totals shown.</p>
-              </div>
-            </div>
-            <p>This publication represents the businesses registered with HM Revenue and Customs (HMRC) for VAT and/or Pay As You Earn (PAYE). The Department for Business, Energy and Industrial Strategy (BEIS) produces <a href="#">Business Population Estimates</a>              which seek to provide full coverage of all types of businesses in the UK including an estimate of the unregistered business population. </p>
-
+            <p>This is the second Preliminary GDP bulletin released as part of the new <a href="https://www.ons.gov.uk/news/news/operationalnotechangestopublicationscheduleforeconomicstatistics">economic theme days</a>. As such this bulletin now follows a more
+              streamlined format and some tables such as revisions, previously found in the background notes, can now be found in the main datasets.</p>
+            <p><a href="https://www.ons.gov.uk/releases/monthlyeconomiccommentaryapr2017">Monthly economic commentary</a> has been published alongside this release, presenting new analysis on the latest economic data.</p>
+            <p>We welcome your feedback on this new style bulletin via our <a href="https://www.surveymonkey.co.uk/r/TYNKK6H">short survey</a>. </p>
+            {% include back-to-table-of-contents.html %}
           </section>
         </div>
 
-        <div id="inset-box" class="section__content--markdown">
+        <div id="things-you-need-to-know-about-this-release" class="section__content--markdown js-sticky-toc__section">
           <section>
             <header>
-              <h2><span class="section__content-number">3.</span> Inset box </h2>
+              <h2><span class="section__content-number">3.</span> Things you need to know about this release</h2>
             </header>
-            <p>UK Business: Activity, Size and Location, 2016 is produced from an extract taken from the <a href="#">Inter-Departmental Business Register</a> (IDBR) recording the position of units as at 11 March 2016.</p>
-            <p>For the purpose of this release the term “business” is used to represent an enterprise. An enterprise can be defined as the smallest combination of legal units (generally based on VAT and/or PAYE records) that is an organisational unit producing goods or services, which benefits from a certain degree of autonomy in decision-making, especially for the allocation of its current resources. An enterprise carries out one or more activities at one or more locations. An enterprise may be a sole legal unit.</p>
-            <div class="panel">
-              <p>Please note that all data are rounded to protect confidentiality. The figures in the tables are rounded individually therefore the sum of component items may be slightly different to the totals shown.</p>
-            </div>
-            <p>This publication represents the businesses registered with HM Revenue and Customs (HMRC) for VAT and/or Pay As You Earn (PAYE). The Department for Business, Energy and Industrial Strategy (BEIS) produces <a href="#">Business Population Estimates</a>              which seek to provide full coverage of all types of businesses in the UK including an estimate of the unregistered business population. </p>
-            </section>
-          </div>
+            <p>Change in GDP is the main indicator of economic growth. The preliminary estimate of GDP is based solely on the output approach to measuring GDP. </p>
+            <p>The output approach measures gross value added (GVA) at a detailed industry level before aggregating to produce an estimate for the whole economy. GDP (as measured by the output approach) can then be calculated by adding taxes and subtracting subsidies
+              (both only available at whole economy level) to this estimate of total GVA. However, as there is no information available on taxes and subsidies at this stage, the quarterly growth for output GVA is taken as a proxy for GDP growth (more information
+              on creating the preliminary estimate of GDP is available on the <a href="http://webarchive.nationalarchives.gov.uk/20160105160709/http:/www.ons.gov.uk/ons/guide-method/method-quality/specific/economy/output-measure-of-gdp/methods-and-sources/index.html">methods and sources</a>        page of our website). </p>
+            <p>The preliminary estimate is the first of three estimates of GDP published by the Office for National Statistics, followed by the <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/quarter2aprtojun2016">second estimate</a>        and the <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/quarter2aprtojune2016">quarterly national accounts</a>. In the second estimate of GDP and the quarterly national accounts, the output GVA
+              and GDP estimates are balanced with the equivalent income and expenditure approaches to produce headline estimates of GVA and GDP. Further information on all three approaches to measuring GDP can be found in the <a href="http://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/methodologies/nationalaccounts">national accounts</a>.</p>
+            <p>All data in this bulletin are seasonally adjusted, chained volume estimates and have had the effect of price changes removed (in other words, the data are deflated). </p>
+            <p>The growth estimates within this release are created from short-term measures of output and should be considered alongside medium and long-term patterns in the series to give a more comprehensive picture. At this stage, data content is less than
+              half of the total required for the final output estimate. The estimate is subject to revision as more data become available, but these revisions are typically small between the preliminary and third estimates of GDP, with no upward or downward
+              bias to these revisions. More information on the data content and the monthly path of the components of the output measure of GDP are included in section 6. </p>
+            <p>In accordance with National Accounts Revisions Policy, there are no periods open for revision in this release.</p>
+            {% include back-to-table-of-contents.html %}
+          </section>
+        </div>
 
-          <div id="hidden-text" class="section__content--markdown">
-            <section>
-              <header>
-                <h2><span class="section__content-number">4.</span> Hidden text </h2>
-              </header>
-              <p>UK Business: Activity, Size and Location, 2016 is produced from an extract taken from the <a href="#">Inter-Departmental Business Register</a> (IDBR) recording the position of units as at 11 March 2016.</p>
-              <p>For the purpose of this release the term “business” is used to represent an enterprise. An enterprise can be defined as the smallest combination of legal units (generally based on VAT and/or PAYE records) that is an organisational unit producing goods or services, which benefits from a certain degree of autonomy in decision-making, especially for the allocation of its current resources. An enterprise carries out one or more activities at one or more locations. An enterprise may be a sole legal unit.</p>
-              <div class="js-show-hide">
-                <div class="show-hide show-hide--light">
-                  <div class="js-show-hide__title">
-                      <p class="show-hide__title">
-                      <a>Help with data rounding</a>
-                    </p>
-                  </div>
-                  <div class="js-show-hide__content panel">
-                    <p>Please note that all data are rounded to protect confidentiality. The figures in the tables are rounded individually therefore the sum of component items may be slightly different to the totals shown.</p>
-                  </div>
+        <div id="gross-domestic-product-gdp-main-figures" class="section__content--markdown js-sticky-toc__section">
+          <section>
+            <header>
+              <h2><span class="section__content-number">4.</span> Gross domestic product (GDP) main figures</h2>
+            </header>
+            <p>
+            </p>
+            <div class="markdown-table-container print--avoid-break">
+              <h4>Table 1: GDP main figures, UK, Quarter 1 (Jan to Mar) 2017</h4>
+              <div class="markdown-table-wrap">
+
+
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <style type="text/css">
+                  .b1 {
+                    white-space-collapsing: preserve;
+                  }
+
+                  .t1 {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                  }
+
+                  .r-4492d2fc-033a-458e-a724-540e1fac5a44-1 {
+                    height: 15.0pt;
+                  }
+
+                  .r-4492d2fc-033a-458e-a724-540e1fac5a44-2 {
+                    height: 14.25pt;
+                  }
+                </style>
+                <meta content="currin" name="author">
+
+
+                <table class="t1">
+                  <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-1"></tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2"></tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-1">
+                      <td colspan="4" style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">Percentage Change</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;color: black; ">&nbsp;</td>
+                      <td style="white-space:pre-wrap;text-align:center;color: black; ">&nbsp;</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">Most recent</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">Most recent</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;color: black; ">&nbsp;</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">Weights per</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">quarter on a </td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">quarter on the</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;border-bottom:thin solid black;color: black; ">Description</td>
+                      <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">1000</td>
+                      <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">year earlier</td>
+                      <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">previous quarter</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;color: black; ">GDP</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">1000</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">2.1</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">0.3</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;color: black; ">GDP per head</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">…</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">1.4</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">0.1</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;color: black; ">&nbsp;</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">&nbsp;</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">&nbsp;</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">&nbsp;</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;color: black; ">Agriculture</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">7</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">0.0</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">0.3</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;color: black; ">Production</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">146</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">2.5</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">0.3</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;color: black; ">Manufacturing</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">103</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">2.8</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">0.5</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;color: black; ">Construction</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">59</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">1.9</td>
+                      <td style="white-space:pre-wrap;text-align:right;color: black; ">0.2</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td style="white-space:pre-wrap;text-align:left;border-bottom:thin solid black;color: black; ">Services</td>
+                      <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">788</td>
+                      <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">2.5</td>
+                      <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">0.3</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td colspan="4" style="white-space:pre-wrap;border-top:thin solid black;color: black; ">Source: Office for National Statistics</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td colspan="4" style="white-space:pre-wrap;color: black; ">1. Components may not sum due to rounding.</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td colspan="4" style="white-space:pre-wrap;color: black; ">2. Manufacturing is a component of the production aggregate.</td>
+                    </tr>
+                    <tr class="r-4492d2fc-033a-458e-a724-540e1fac5a44-2">
+                      <td colspan="4" style="white-space:pre-wrap;color: black; ">3. No data represented by …</td>
+                    </tr>
+                  </tbody>
+                </table><button class="btn btn--mobile-table-hide">Close table</button>
+
+
+              </div><button class="btn btn--mobile-table-show">View table</button>
+              <h5 class="print--hide font-size--h6">Download this table</h5>
+              <a href="/file?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/e0dccaad.xls" title="Download as xls" class="btn btn--primary print--hide" data-ga-event="" data-ga-event-category="download-xls" data-ga-event-label="Table 1: GDP main figures, UK, Quarter 1 (Jan to Mar) 2017">.xls</a>
+            </div>
+            <p></p>
+            <p>Figure 1 shows the seasonally adjusted volume series for GDP, along with quarter-on-quarter growths, over the past decade. Following growth of 0.3% in Quarter 1 2017, GDP has grown for 17 consecutive quarters.</p>
+            <p>
+            </p>
+            <div class="markdown-chart-container panel--bottom-mar print--avoid-break">
+              <h4 class="flush--third--vertical">Figure 1: Seasonally adjusted GDP (£ billions) and quarter-on-quarter growths</h4>
+              <h5 class="flush--third--bottom">UK, Quarter 1 (Jan to Mar) 2007 to Quarter 1 2017</h5>
+              <div id="chart-ef3e73b9" data-filename="ef3e73b9" data-uri="/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/ef3e73b9" class="markdown-chart" data-highcharts-chart="2" style="width: 230px;">
+                <div id="highcharts-8mu5v1d-8" class="highcharts-container " style="position: relative; overflow: hidden; width: 700px; height: 392px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial;"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Open Sans&quot;, Tahoma, Verdana, Arial;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="700" height="392.00000000000006"><desc>Created with Highcharts 5.0.7</desc><defs><clipPath id="highcharts-8mu5v1d-9"><rect x="0" y="0" width="560" height="301" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="700" height="392.00000000000006" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="70" y="53" width="560" height="301"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 76.5 53 L 76.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 158.5 53 L 158.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 240.5 53 L 240.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 322.5 53 L 322.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 404.5 53 L 404.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 486.5 53 L 486.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 568.5 53 L 568.5 354" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 354.5 L 630 354.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 294.5 L 630 294.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 234.5 L 630 234.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 173.5 L 630 173.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 113.5 L 630 113.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 52.5 L 630 52.5" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 354.5 L 630 354.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 294.5 L 630 294.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 234.5 L 630 234.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 173.5 L 630 173.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 113.5 L 630 113.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 70 52.5 L 630 52.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="70" y="53" width="560" height="301"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 76.5 354 L 76.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 158.5 354 L 158.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 240.5 354 L 240.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 322.5 354 L 322.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 404.5 354 L 404.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 486.5 354 L 486.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 568.5 354 L 568.5 364" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 70 354.5 L 630 354.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 70 53 L 70 354"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 630 53 L 630 354"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker" transform="translate(70,53) scale(1 1)" clip-path="url(#highcharts-8mu5v1d-9)"><rect x="1" y="144" width="11" height="38" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="15" y="155" width="11" height="27" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="29" y="152" width="11" height="30" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="42" y="152" width="11" height="30" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="56" y="178" width="11" height="4" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="70" y="182" width="11" height="26" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-negative highcharts-color-1"></rect><rect x="83" y="182" width="11" height="64" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-negative highcharts-color-1"></rect><rect x="97" y="182" width="11" height="86" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-negative highcharts-color-1"></rect><rect x="111" y="182" width="11" height="60" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-negative highcharts-color-1"></rect><rect x="124" y="182" width="11" height="7" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-negative highcharts-color-1"></rect><rect x="138" y="178" width="11" height="4" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="152" y="167" width="11" height="15" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="165" y="163" width="11" height="19" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="179" y="144" width="11" height="38" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="193" y="159" width="11" height="23" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="206" y="178" width="11" height="4" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="220" y="159" width="11" height="23" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="234" y="178" width="10" height="4" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="247" y="167" width="11" height="15" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="261" y="174" width="11" height="8" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="275" y="167" width="10" height="15" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="288" y="182" width="11" height="3" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-negative highcharts-color-1"></rect><rect x="302" y="140" width="11" height="42" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="316" y="182" width="10" height="7" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-negative highcharts-color-1"></rect><rect x="329" y="159" width="11" height="23" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="343" y="163" width="11" height="19" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="356" y="152" width="11" height="30" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="370" y="163" width="11" height="19" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="384" y="152" width="11" height="30" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="397" y="148" width="11" height="34" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="411" y="152" width="11" height="30" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="425" y="152" width="11" height="30" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="438" y="170" width="11" height="12" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="452" y="163" width="11" height="19" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="466" y="170" width="11" height="12" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="479" y="155" width="11" height="27" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="493" y="174" width="11" height="8" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="507" y="159" width="11" height="23" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="520" y="163" width="11" height="19" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="534" y="155" width="11" height="27" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="548" y="170" width="11" height="12" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect></g><g class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1 " transform="translate(70,53) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-0 " transform="translate(70,53) scale(1 1)" clip-path="url(#highcharts-8mu5v1d-9)"><path fill="none" d="M 6.8292682926829 233.77666666666664 L 20.487804878049 227.55599999999995 L 34.146341463415 221.13466666666665 L 47.80487804878 214.51266666666663 L 61.463414634146 213.30866666666668 L 75.121951219512 218.92733333333337 L 88.780487804878 233.57599999999996 L 102.43902439024 252.84 L 116.09756097561 266.2846666666666 L 129.75609756098 268.0906666666667 L 143.41463414634 267.6893333333333 L 157.07317073171 264.27799999999996 L 170.73170731707 259.86333333333334 L 184.39024390244 251.43533333333335 L 198.0487804878 246.82 L 211.70731707317 245.81666666666666 L 225.36585365854 241.2013333333333 L 239.0243902439 240.59933333333328 L 252.68292682927 236.98733333333337 L 266.34146341463 234.78 L 280 231.16799999999998 L 293.65853658537 231.76999999999998 L 307.31707317073 222.13799999999998 L 320.9756097561 224.14466666666664 L 334.63414634146 218.72666666666666 L 348.29268292683 214.1113333333333 L 361.9512195122 207.48933333333326 L 375.60975609756 203.27533333333335 L 389.26829268293 195.8506666666667 L 402.92682926829 187.62333333333333 L 416.58536585366 180.3993333333333 L 430.24390243902 172.77400000000003 L 443.90243902439 170.56666666666666 L 457.56097560976 166.15200000000002 L 471.21951219512 163.54333333333332 L 484.87804878049 157.3226666666666 L 498.53658536585 155.91799999999998 L 512.19512195122 150.29933333333327 L 525.85365853659 145.68400000000003 L 539.51219512195 139.4633333333333 L 553.17073170732 136.65400000000002" class="highcharts-graph" stroke="rgba(0,117,163,0.9)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -3.1707317073171 233.77666666666664 L 6.8292682926829 233.77666666666664 L 20.487804878049 227.55599999999995 L 34.146341463415 221.13466666666665 L 47.80487804878 214.51266666666663 L 61.463414634146 213.30866666666668 L 75.121951219512 218.92733333333337 L 88.780487804878 233.57599999999996 L 102.43902439024 252.84 L 116.09756097561 266.2846666666666 L 129.75609756098 268.0906666666667 L 143.41463414634 267.6893333333333 L 157.07317073171 264.27799999999996 L 170.73170731707 259.86333333333334 L 184.39024390244 251.43533333333335 L 198.0487804878 246.82 L 211.70731707317 245.81666666666666 L 225.36585365854 241.2013333333333 L 239.0243902439 240.59933333333328 L 252.68292682927 236.98733333333337 L 266.34146341463 234.78 L 280 231.16799999999998 L 293.65853658537 231.76999999999998 L 307.31707317073 222.13799999999998 L 320.9756097561 224.14466666666664 L 334.63414634146 218.72666666666666 L 348.29268292683 214.1113333333333 L 361.9512195122 207.48933333333326 L 375.60975609756 203.27533333333335 L 389.26829268293 195.8506666666667 L 402.92682926829 187.62333333333333 L 416.58536585366 180.3993333333333 L 430.24390243902 172.77400000000003 L 443.90243902439 170.56666666666666 L 457.56097560976 166.15200000000002 L 471.21951219512 163.54333333333332 L 484.87804878049 157.3226666666666 L 498.53658536585 155.91799999999998 L 512.19512195122 150.29933333333327 L 525.85365853659 145.68400000000003 L 539.51219512195 139.4633333333333 L 553.17073170732 136.65400000000002 L 563.17073170732 136.65400000000002" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-0 highcharts-tracker" transform="translate(70,53) scale(1 1)" clip-path="none"></g></g><g class="highcharts-legend" transform="translate(40,6)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="184" height="35" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-line-series highcharts-color-0 highcharts-series-0" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="rgba(0,117,163,0.9)" stroke-width="2"></path></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-1 highcharts-series-1" transform="translate(94,3)"><rect x="2" y="4" width="12" height="12" fill="rgba(226,188,34,0.9)" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="55" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="358" opacity="1"><tspan>390</tspan></text><text x="55" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="298" opacity="1"><tspan>420</tspan></text><text x="55" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="237" opacity="1"><tspan>450</tspan></text><text x="55" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="177" opacity="1"><tspan>480</tspan></text><text x="55" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="117" opacity="1"><tspan>510</tspan></text><text x="55" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="57" opacity="1"><tspan>540</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="645" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="start" transform="translate(0,0)" y="358" opacity="1"><tspan>-3.2</tspan></text><text x="645" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="start" transform="translate(0,0)" y="298" opacity="1"><tspan>-1.6</tspan></text><text x="645" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="start" transform="translate(0,0)" y="237" opacity="1"><tspan>0</tspan></text><text x="645" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="start" transform="translate(0,0)" y="177" opacity="1"><tspan>1.6</tspan></text><text x="645" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="start" transform="translate(0,0)" y="117" opacity="1"><tspan>3.2</tspan></text><text x="645" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="start" transform="translate(0,0)" y="57" opacity="1"><tspan>4.8</tspan></text></g><g class="highcharts-annotations"></g><text x="50" y="652"><tspan>Source: Office for National Statistics</tspan></text></svg>
+                  <div
+                    class="highcharts-legend" style="position: absolute; left: 40px; top: 6px; opacity: 1;">
+                    <div style="position: absolute; left: 0px; top: 0px; opacity: 1;">
+                      <div style="position: absolute; left: 0px; top: 0px; opacity: 1;">
+                        <div class="highcharts-legend-item highcharts-line-series highcharts-color-0 highcharts-series-0" style="position: absolute; left: 8px; top: 3px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(112, 112, 112); font-weight: normal; cursor: pointer; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(112, 112, 112);">£ Billion</span></div>
+                        <div
+                          class="highcharts-legend-item highcharts-column-series highcharts-color-1 highcharts-series-1" style="position: absolute; left: 94px; top: 3px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(112, 112, 112); font-weight: normal; cursor: pointer; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(112, 112, 112);">Growth (%)</span></div>
+                    </div>
                 </div>
               </div>
-              <p>This publication represents the businesses registered with HM Revenue and Customs (HMRC) for VAT and/or Pay As You Earn (PAYE). The Department for Business, Energy and Industrial Strategy (BEIS) produces <a href="#">Business Population Estimates</a>              which seek to provide full coverage of all types of businesses in the UK including an estimate of the unregistered business population. </p>
-              </section>
+              <div class="highcharts-axis-labels highcharts-xaxis-labels " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 55.3293px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1"> Q1 2007</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 137.28px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">Q3 2008</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 219.232px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">Q1 2010</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 301.183px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">Q3 2011 </span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 383.134px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">Q1 2013</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 465.085px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">Q3 2014 </span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 547.037px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">Q1 2016</span></div>
+              <div class="highcharts-axis highcharts-yaxis " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); margin-left: 0px; margin-top: 0px; transform: rotate(270deg); transform-origin: 50% 12px 0px; left: 3.64062px; top: 191.5px; visibility: inherit;"
+                  class="highcharts-axis-title" transform="translate(0,0) rotate(270 0 0)">£ Billion</span></div>
+              <div class="highcharts-axis highcharts-yaxis " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); margin-left: 0px; margin-top: 0px; transform: rotate(90deg); transform-origin: 50% 12px 0px; left: 643.531px; top: 191.5px; visibility: inherit;"
+                  class="highcharts-axis-title" transform="translate(0,0) rotate(90 0 0)">Growth (%)</span></div>
             </div>
-
-            <div id="link" class="section__content--markdown">
-              <section>
-                <header>
-                  <h2><span class="section__content-number">5.</span> Footnote (or external link) </h2>
-                </header>
-                <p>UK Business: Activity, Size and Location, 2016 is produced from an extract taken from the <a href="#">Inter-Departmental Business Register</a> (IDBR) recording the position of units as at 11 March 2016.</p>
-                <p>For the purpose of this release the term “business” is used to represent an enterprise. An enterprise can be defined as the smallest combination of legal units (generally based on VAT and/or PAYE records) that is an organisational unit producing goods or services, which benefits from a certain degree of autonomy in decision-making, especially for the allocation of its current resources. An enterprise carries out one or more activities at one or more locations. An enterprise may be a sole legal unit.</p>
-                <p id="back"><a href="#round-data">Read about how we round data</a></p>
-                <p>This publication represents the businesses registered with HM Revenue and Customs (HMRC) for VAT and/or Pay As You Earn (PAYE). The Department for Business, Energy and Industrial Strategy (BEIS) produces <a href="#">Business Population Estimates</a> which seek to provide full coverage of all types of businesses in the UK including an estimate of the unregistered business population. </p>
-                <p>During the period from March 2011 to March 2016, the Bank of England base rate was 0.5%. This historically low rate may have encouraged more businesses to set up over the period. The base rate may be linked to commercial loan rates to businesses which are often required to start up and invest in fixed capital.</p>
-                <p>The employment rate rose from 70.5% in the 3 months to March 2011 to 74.2% in the 3 months to March 2016. The amount of people employed in the public sector from March 2011 to March 2016 fell when excluding reclassifications. The data suggest that the new employment growth from the 2011 to 2016 period was in the private sector. This is consistent with the continuing increase in the number of businesses which were set up between 2011 and 2016.</p>
-                <p>During the period from March 2011 to March 2016, the Bank of England base rate was 0.5%. This historically low rate may have encouraged more businesses to set up over the period. The base rate may be linked to commercial loan rates to businesses which are often required to start up and invest in fixed capital.</p>
-                <p>The employment rate rose from 70.5% in the 3 months to March 2011 to 74.2% in the 3 months to March 2016. The amount of people employed in the public sector from March 2011 to March 2016 fell when excluding reclassifications. The data suggest that the new employment growth from the 2011 to 2016 period was in the private sector. This is consistent with the continuing increase in the number of businesses which were set up between 2011 and 2016.</p>
-                <p>During the period from March 2011 to March 2016, the Bank of England base rate was 0.5%. This historically low rate may have encouraged more businesses to set up over the period. The base rate may be linked to commercial loan rates to businesses which are often required to start up and invest in fixed capital.</p>
-                <p>The employment rate rose from 70.5% in the 3 months to March 2011 to 74.2% in the 3 months to March 2016. The amount of people employed in the public sector from March 2011 to March 2016 fell when excluding reclassifications. The data suggest that the new employment growth from the 2011 to 2016 period was in the private sector. This is consistent with the continuing increase in the number of businesses which were set up between 2011 and 2016.</p>
-                </section>
+        </div>
+        <h5 class="flush--third--bottom font-size--h6 clear-left">Source: Office for National Statistics</h5>
+        <div id="notes-ef3e73b9" class="notes-holder-js">
+          <h6 class="flush--third--bottom js-notes-title">Notes:</h6>
+          <ol>
+            <li>Growth rates are calculated using unrounded data.</li>
+            <li>Q1 refers to Quarter 1(Jan to Mar), Q2 refers to Quarter 2 (Apr to June), Q3 refers to Quarter 3 (July to Sept), Q4 refers to Quarter 4 (Oct to Dec).</li>
+          </ol>
+        </div>
+        <h5 class="print--hide font-size--h6 clear-left">Download this chart</h5>
+        <a class="btn btn--primary print--hide js-chart-image-src " data-filename="ef3e73b9" href="/chartimage?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/ef3e73b9" data-ga-event="" data-ga-event-category="download-image"
+          data-ga-event-label="Figure 1: Seasonally adjusted GDP (£ billions) and quarter-on-quarter growths" download="Figure 1: Seasonally adjusted GDP (£ billions) and quarter-on-quarter growths">Image</a>
+        <a class="btn btn--primary print--hide" title="Download as csv" href="/generator?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/ef3e73b9&amp;format=csv" data-ga-event="" data-ga-event-category="download-csv"
+          data-ga-event-label="Figure 1: Seasonally adjusted GDP (£ billions) and quarter-on-quarter growths">.csv</a>
+        <a class="btn btn--primary print--hide" title="Download as xls" href="/generator?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/ef3e73b9&amp;format=xls" data-ga-event="" data-ga-event-category="download-xls"
+          data-ga-event-label="Figure 1: Seasonally adjusted GDP (£ billions) and quarter-on-quarter growths">.xls</a>
+        </div>
+        <p></p>
+        <p>Figure 2 shows the average compound quarterly growth rate experienced over the 5 years prior to the economic downturn in 2008 to 2009, the average compound quarterly growth rate experienced between Quarter 3 (July to Sept) 2009 and Quarter 2 (Apr to
+          June) 2014 (5 years following the downturn), and the current quarterly growth rate observed in the most recent period (Quarter 1 2017). Compound average growth is the rate at which a series would have increased or decreased if it had grown or fallen
+          at a steady rate over a number of periods. This allows the composition of growth in the recent economic recovery to be compared with the long run average.</p>
+        <p>The UK experienced slightly slower average compound GDP growth in the 5 years following the economic downturn compared with the 5 years prior: this is also true of the services industry. Figure 2 shows that in Quarter 1 2017, total GDP, construction
+          and services were weaker than their post-downturn average.</p>
+        <p>
+        </p>
+        <div class="markdown-chart-container panel--bottom-mar print--avoid-break">
+          <h4 class="flush--third--vertical">Figure 2: GDP quarterly average compound growth by industry</h4>
+          <h5 class="flush--third--bottom">UK, Quarter 1 (Jan to Mar) 2003 to Quarter 4 (Oct to Dec) 2007, Quarter 3 (July to Sept) 2009 to Quarter 2 (Apr to June) 2014, Quarter 1 2017</h5>
+          <div id="chart-3944b3df" data-filename="3944b3df" data-uri="/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/3944b3df" class="markdown-chart" data-highcharts-chart="0" style="width: 230px;">
+            <div id="highcharts-8mu5v1d-0" class="highcharts-container " aria-label="Chart representing data available in following XLS or CSV download" style="position: relative; overflow: hidden; width: 700px; height: 392px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial;"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Open Sans&quot;, Tahoma, Verdana, Arial;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="700" height="392.00000000000006" aria-hidden="true"><desc>Created with Highcharts 5.0.7</desc><defs><clipPath id="highcharts-8mu5v1d-1"><rect x="0" y="0" width="618" height="301" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="700" height="392.00000000000006" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="47" y="53" width="618" height="301"></rect><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 47 354.5 L 665 354.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 47 294.5 L 665 294.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 47 234.5 L 665 234.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 47 173.5 L 665 173.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 47 113.5 L 665 113.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 47 52.5 L 665 52.5" opacity="1"></path></g><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 170.5 53 L 170.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 293.5 53 L 293.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 417.5 53 L 417.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 540.5 53 L 540.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 664.5 53 L 664.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 46.5 53 L 46.5 354" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="47" y="53" width="618" height="301"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 170.5 354 L 170.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 293.5 354 L 293.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 417.5 354 L 417.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 540.5 354 L 540.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 664.5 354 L 664.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 46.5 354 L 46.5 364" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 47 354.5 L 665 354.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 47 53 L 47 354"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-color-0 highcharts-tracker" transform="translate(47,53) scale(1 1)" clip-path="url(#highcharts-8mu5v1d-1)"><rect x="12" y="91" width="33" height="211" fill="rgba(0,100,185,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="136" y="302" width="33" height="0" fill="rgba(0,100,185,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="260" y="212" width="33" height="90" fill="rgba(0,100,185,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="383" y="182" width="33" height="120" fill="rgba(0,100,185,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="507" y="31" width="33" height="271" fill="rgba(0,100,185,0.9)" class="highcharts-point highcharts-color-0"></rect></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series highcharts-color-0 " transform="translate(47,53) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker" transform="translate(47,53) scale(1 1)" clip-path="url(#highcharts-8mu5v1d-1)"><rect x="45" y="152" width="33" height="150" fill="rgba(170,214,232,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="169" y="302" width="33" height="0" fill="rgba(170,214,232,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="293" y="182" width="32" height="120" fill="rgba(170,214,232,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="416" y="121" width="33" height="181" fill="rgba(170,214,232,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="540" y="152" width="33" height="150" fill="rgba(170,214,232,0.9)" class="highcharts-point highcharts-color-1"></rect></g><g class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1 " transform="translate(47,53) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-color-2 highcharts-tracker" transform="translate(47,53) scale(1 1)" clip-path="url(#highcharts-8mu5v1d-1)"><rect x="78" y="212" width="33" height="90" fill="rgba(17,41,65,0.9)" class="highcharts-point highcharts-color-2"></rect><rect x="202" y="212" width="33" height="90" fill="rgba(17,41,65,0.9)" class="highcharts-point highcharts-color-2"></rect><rect x="325" y="152" width="33" height="150" fill="rgba(17,41,65,0.9)" class="highcharts-point highcharts-color-2"></rect><rect x="449" y="242" width="33" height="60" fill="rgba(17,41,65,0.9)" class="highcharts-point highcharts-color-2"></rect><rect x="573" y="212" width="33" height="90" fill="rgba(17,41,65,0.9)" class="highcharts-point highcharts-color-2"></rect></g><g class="highcharts-markers highcharts-series-2 highcharts-column-series highcharts-color-2 " transform="translate(47,53) scale(1 1)" clip-path="none"></g></g><g class="highcharts-legend" transform="translate(40,6)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="360" height="35" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-column-series highcharts-color-0 highcharts-series-0" transform="translate(8,3)"><rect x="2" y="4" width="12" height="12" fill="rgba(0,100,185,0.9)" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-1 highcharts-series-1" transform="translate(146,3)"><rect x="2" y="4" width="12" height="12" fill="rgba(170,214,232,0.9)" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-2 highcharts-series-2" transform="translate(284,3)"><rect x="2" y="4" width="12" height="12" fill="rgba(17,41,65,0.9)" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g><g class="highcharts-annotations"></g><text x="50" y="652"><tspan>Source: Office for National Statistics</tspan></text></svg>
+              <div
+                class="highcharts-legend" style="position: absolute; left: 40px; top: 6px; opacity: 1;">
+                <div style="position: absolute; left: 0px; top: 0px; opacity: 1;">
+                  <div style="position: absolute; left: 0px; top: 0px; opacity: 1;">
+                    <div class="highcharts-legend-item highcharts-column-series highcharts-color-0 highcharts-series-0" style="position: absolute; left: 8px; top: 3px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(112, 112, 112); font-weight: normal; cursor: pointer; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(112, 112, 112);">2003 Q1-2007 Q4</span></div>
+                    <div
+                      class="highcharts-legend-item highcharts-column-series highcharts-color-1 highcharts-series-1" style="position: absolute; left: 146px; top: 3px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(112, 112, 112); font-weight: normal; cursor: pointer; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(112, 112, 112);">2009 Q3-2014 Q2</span></div>
+                  <div
+                    class="highcharts-legend-item highcharts-column-series highcharts-color-2 highcharts-series-2" style="position: absolute; left: 284px; top: 3px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(112, 112, 112); font-weight: normal; cursor: pointer; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(112, 112, 112);">2017 Q1</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="highcharts-axis-labels highcharts-xaxis-labels " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 97.8px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">GDP</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 204.4px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">Production</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 318.5px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">Manufacturing</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 446.6px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">Construction</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 582.2px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">Services</span></div>
+        <div class="highcharts-axis-labels highcharts-yaxis-labels " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 347px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">0.00</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 286px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">0.20</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 226px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">0.40</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 166px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">0.60</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 106px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">0.80</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 46px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+            transform="translate(0,0)" opacity="1">1.00</span></div>
+        <div class="highcharts-axis highcharts-yaxis " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); left: 47px; right: 0px; margin-left: 0px; margin-top: 0px; transform: rotate(360deg); transform-origin: 100% 12px 0px; top: 37px; visibility: inherit;"
+            class="highcharts-axis-title" transform="translate(0,0) rotate(360 0 0)">Percentage change</span></div>
+        </div>
+        </div>
+        <h5 class="flush--third--bottom font-size--h6 clear-left">Source: Office for National Statistics</h5>
+        <div id="notes-3944b3df" class="notes-holder-js">
+          <h6 class="flush--third--bottom js-notes-title">Notes:</h6>
+          <ol>
+            <li>The third column, which shows the current quarterly growth rate, is based on only one data point. Consequently, users should use caution when making direct comparisons with the long run averages.</li>
+          </ol>
+        </div>
+        <h5 class="print--hide font-size--h6 clear-left">Download this chart</h5>
+        <a class="btn btn--primary print--hide js-chart-image-src " data-filename="3944b3df" href="/chartimage?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/3944b3df" data-ga-event="" data-ga-event-category="download-image"
+          data-ga-event-label="Figure 2: GDP quarterly average compound growth by industry" download="Figure 2: GDP quarterly average compound growth by industry">Image</a>
+        <a class="btn btn--primary print--hide" title="Download as csv" href="/generator?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/3944b3df&amp;format=csv" data-ga-event="" data-ga-event-category="download-csv"
+          data-ga-event-label="Figure 2: GDP quarterly average compound growth by industry">.csv</a>
+        <a class="btn btn--primary print--hide" title="Download as xls" href="/generator?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/3944b3df&amp;format=xls" data-ga-event="" data-ga-event-category="download-xls"
+          data-ga-event-label="Figure 2: GDP quarterly average compound growth by industry">.xls</a>
+        </div>
+        <p></p>
+        {% include back-to-table-of-contents.html %}
+        </section>
+        </div>
+        <div id="services-slows-gdp-growth" class="section__content--markdown js-sticky-toc__section">
+          <section>
+            <header>
+              <h2><span class="section__content-number">5.</span> Services slows GDP growth</h2>
+            </header>
+            <p>In Quarter 1 (Jan to Mar) 2017, UK GDP was estimated to have increased by 0.3%. The services aggregate was the main driver to the slower growth in GDP, contributing 0.23 percentage points. Production, construction and agriculture contributed 0.04,
+              0.01 and 0.00 percentage points to the headline figure respectively.</p>
+            <h3>Services</h3>
+            <p>Services grew by 0.3% in Quarter 1 2017, compared with growth of 0.8% in Quarter 4 (Oct to Dec) 2016. Within the services aggregate, two of the four main sectors decreased in Quarter 1 2017.</p>
+            <p>The main contributor to the slowdown in services was the distribution, hotels and restaurants sector, which decreased by 0.5%, contributing negative 0.07 percentage points to quarter-on-quarter GDP growth. Retail trade and accommodation services
+              were the main contributors to the negative growth in this sector. These industries were impacted by increases in prices, as reported in the latest <a href="https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/mar2017">Retail Sales</a>        and <a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/mar2017">Consumer Price Inflation</a> publications. These falls were partially offset by an increase in food and beverage service activities,
+              which grew by 2.7%.</p>
+            <p>The transport, storage and communications industries decreased by 0.2% in Quarter 1 2017. The main drivers to the fall in this sector were publishing activities, telecommunications and computer programming activities.</p>
+            <p>However, the negative growths in these two sectors were more than offset by positive growths in the government and other services and business services and finance sectors.</p>
+            <p>Government and other services grew by 0.5%, with human health activities and education being significant contributors, reflecting their large weights within GDP.</p>
+            <p>Business services and finance grew by 0.7%, with accounting activities and travel agency activities both performing strongly in this quarter.</p>
+            <p>
+            </p>
+            <div class="markdown-chart-container panel--bottom-mar print--avoid-break">
+              <h4 class="flush--third--vertical">Figure 3 : Largest and smallest quarter-on-quarter contributions of industries to headline GDP growth</h4>
+              <h5 class="flush--third--bottom">UK, Quarter 1 (Jan to Mar) 2017</h5>
+              <div id="chart-92a9934c" data-filename="92a9934c" data-uri="/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/92a9934c" class="markdown-chart" data-highcharts-chart="1" style="width: 230px;">
+                <div id="highcharts-8mu5v1d-5" class="highcharts-container " aria-label="Chart representing data available in following XLS or CSV download" style="position: relative; overflow: hidden; width: 700px; height: 392px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial;"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Open Sans&quot;, Tahoma, Verdana, Arial;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="700" height="392.00000000000006" aria-hidden="true"><desc>Created with Highcharts 5.0.7</desc><defs><clipPath id="highcharts-8mu5v1d-6"><rect x="0" y="0" width="317" height="427" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="700" height="392.00000000000006" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="238" y="16" width="427" height="317"></rect><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 237.5 16 L 237.5 333" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 298.5 16 L 298.5 333" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 359.5 16 L 359.5 333" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 420.5 16 L 420.5 333" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 481.5 16 L 481.5 333" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 542.5 16 L 542.5 333" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 603.5 16 L 603.5 333" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 665.5 16 L 665.5 333" opacity="1"></path></g><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 238 45.5 L 665 45.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 74.5 L 665 74.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 102.5 L 665 102.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 131.5 L 665 131.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 160.5 L 665 160.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 189.5 L 665 189.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 218.5 L 665 218.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 247.5 L 665 247.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 275.5 L 665 275.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 304.5 L 665 304.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 333.5 L 665 333.5" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 238 16.5 L 665 16.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="238" y="16" width="427" height="317"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 45.5 L 228 45.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 74.5 L 228 74.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 102.5 L 228 102.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 131.5 L 228 131.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 160.5 L 228 160.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 189.5 L 228 189.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 218.5 L 228 218.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 247.5 L 228 247.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 275.5 L 228 275.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 304.5 L 228 304.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 333.5 L 228 333.5" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 238 15.5 L 228 15.5" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 237.5 16 L 237.5 333"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 238 333 L 665 333"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-bar-series highcharts-color-0 highcharts-tracker" transform="translate(665,333) rotate(90) scale(-1,1) scale(1 1)" clip-path="url(#highcharts-8mu5v1d-6)"><rect x="291" y="38" width="23" height="146" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="262" y="62" width="23" height="122" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="233" y="62" width="23" height="122" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="205" y="86" width="23" height="98" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="176" y="111" width="23" height="73" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="118" y="184" width="23" height="73" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-negative highcharts-color-0"></rect><rect x="89" y="184" width="23" height="73" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-negative highcharts-color-0"></rect><rect x="61" y="184" width="23" height="98" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-negative highcharts-color-0"></rect><rect x="32" y="184" width="23" height="98" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-negative highcharts-color-0"></rect><rect x="3" y="184" width="23" height="195" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-negative highcharts-color-0"></rect></g><g class="highcharts-markers highcharts-series-0 highcharts-bar-series highcharts-color-0 " transform="translate(665,333) rotate(90) scale(-1,1) scale(1 1)" clip-path="none"></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g><g class="highcharts-annotations"></g><text x="50" y="652"><tspan>Source: Office for National Statistics</tspan></text></svg>
+                  <div
+                    class="highcharts-axis-labels highcharts-xaxis-labels " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 39px; top: 23px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Food and beverage service activities</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 119px; top: 52px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Accounting activities</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 154px; top: 81px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Travel agency</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 69px; top: 109px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Office administrative activities</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 102px; top: 138px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Human health activities</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 214px; top: 167px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">…</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 47px; top: 196px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Trade and repair of motor vehicles</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 225px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Other professional and scientific activities</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 82px; top: 253px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Rental and leasing activities</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 139px; top: 282px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Accommodation</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 164px; top: 311px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                      transform="translate(0,0)" opacity="1">Retail trade</span></div>
+                <div class="highcharts-axis-labels highcharts-yaxis-labels " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 225.5px; top: 341px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                    transform="translate(0,0)" opacity="1">-0.10</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 471px; top: 341px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                    transform="translate(0,0)" opacity="1">0.00</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 286.5px; top: 341px; transform: rotate(0deg); transform-origin: 50% 11px 0px; opacity: 1;"
+                    opacity="1">-0.08</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 347.5px; top: 341px; transform: rotate(0deg); transform-origin: 50% 11px 0px; opacity: 1;"
+                    opacity="1">-0.05</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 408.5px; top: 341px; transform: rotate(0deg); transform-origin: 50% 11px 0px; opacity: 1;"
+                    opacity="1">-0.03</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 532px; top: 341px; transform: rotate(0deg); transform-origin: 50% 11px 0px; opacity: 1;"
+                    opacity="1">0.03</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 593px; top: 341px; transform: rotate(0deg); transform-origin: 50% 11px 0px; opacity: 1;"
+                    opacity="1">0.05</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 654px; top: 341px; transform: rotate(0deg); transform-origin: 50% 11px 0px; opacity: 1;"
+                    opacity="1">0.08</span></div>
+                <div class="highcharts-axis highcharts-yaxis " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); margin-left: 0px; margin-top: 0px; transform: rotate(0deg); transform-origin: 100% 12px 0px; left: 564px; top: 361px; visibility: inherit;"
+                    class="highcharts-axis-title">Percentage points</span></div>
               </div>
-
-              <div id="notes" class="section__content--markdown">
-                <header>
-                  <h2><span class="section__content-number">6.</span> Notes </h2>
-                </header>
-                <section>
-                  <h3 id="round-data">How we round data</h3>
-                  <p>Please note that all data are rounded to protect confidentiality. The figures in the tables are rounded individually therefore the sum of component items may be slightly different to the totals shown. <a href="#back">Back to section</a></p>
-                </section>
+            </div>
+            <h5 class="flush--third--bottom font-size--h6 clear-left">Source: Office for National Statistics</h5>
+            <div id="notes-92a9934c" class="notes-holder-js">
+              <h6 class="flush--third--bottom js-notes-title">Notes:</h6>
+              <ol>
+                <li>... represents other industries in the services aggregates.</li>
+              </ol>
+            </div>
+            <h5 class="print--hide font-size--h6 clear-left">Download this chart</h5>
+            <a class="btn btn--primary print--hide js-chart-image-src " data-filename="92a9934c" href="/chartimage?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/92a9934c" data-ga-event="" data-ga-event-category="download-image"
+              data-ga-event-label="Figure 3 : Largest and smallest quarter-on-quarter contributions of industries to headline GDP growth" download="Figure 3 : Largest and smallest quarter-on-quarter contributions of industries to headline GDP growth">Image</a>
+            <a class="btn btn--primary print--hide" title="Download as csv" href="/generator?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/92a9934c&amp;format=csv" data-ga-event="" data-ga-event-category="download-csv"
+              data-ga-event-label="Figure 3 : Largest and smallest quarter-on-quarter contributions of industries to headline GDP growth">.csv</a>
+            <a class="btn btn--primary print--hide" title="Download as xls" href="/generator?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/92a9934c&amp;format=xls" data-ga-event="" data-ga-event-category="download-xls"
+              data-ga-event-label="Figure 3 : Largest and smallest quarter-on-quarter contributions of industries to headline GDP growth">.xls</a>
+        </div>
+        <p></p>
+        <p>Many of the significant negative contributions in the services industries in Quarter 1 2017 came from consumer-focused industries, such as retail trade; accommodation; and the trade and repair of motor vehicles, which all decreased when compared with
+          the previous quarter. </p>
+        <h3>Production</h3>
+        <p>Within the production aggregate: manufacturing increased by 0.5% in Quarter 1 2017, due mainly to a large rise in the manufacture of motor vehicles industry; mining and quarrying increased by 1.3%; and water supply, sewerage, waste management and remediation
+          activities increased by 0.5%.</p>
+        <p>However, these positive growths were partially offset by a 3.2% decrease in electricity, gas, steam and air conditioning supply. This followed a growth of 4.0% in Quarter 4 2016.</p>
+        <h3>Construction</h3>
+        <p>Construction output was estimated to have increased by 0.2% during Quarter 1 2017, following a growth of 1.0% during Quarter 4 2016. </p>
+        <h3>Agriculture</h3>
+        <p>Agriculture output was estimated to have increased by 0.3% in Quarter 1 2017, following a growth of 1.0% in Quarter 4 2016. Agriculture is the smallest of the main industrial groups with a weight of less than 1% in the output measure of GDP. </p>
+        {% include back-to-table-of-contents.html %}
+        </section>
+        </div>
+        <div id="data-content-and-monthly-path-of-components-for-quarter-1-jan-to-mar-2017-preliminary-estimate" class="section__content--markdown js-sticky-toc__section">
+          <section>
+            <header>
+              <h2><span class="section__content-number">6.</span> Data content and monthly path of components for Quarter 1 (Jan to Mar) 2017 preliminary estimate</h2>
+            </header>
+            <p>Figure 4 contains information about the data content for each month in Quarter 1 2017 and Quarter 1 2017 as a whole. The data content for the Quarter 1 2017 preliminary estimate is 44% of total output data, which is broadly similar to <a href="https://www.ons.gov.uk/search?q=GDP%20preliminary">previous preliminary estimates</a>.</p>
+            <p>The approach to producing the preliminary GDP estimate uses monthly output data for January and February and forecasts for estimating March. The forecasts are reinforced by early responses to our Monthly Business Survey. More information on creating
+              the preliminary estimate of GDP is available on the <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/outputapproachtogrossdomesticproductgdp#methods-and-sources">methods and sources page</a>.</p>
+            <p>
+            </p>
+            <div class="markdown-chart-container panel--bottom-mar print--avoid-break">
+              <h4 class="flush--third--vertical">Figure 4: Data content within the GDP estimate</h4>
+              <h5 class="flush--third--bottom">UK, Quarter 1 2017</h5>
+              <div id="chart-897f97ce" data-filename="897f97ce" data-uri="/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/897f97ce" class="markdown-chart" data-highcharts-chart="3" style="width: 230px;">
+                <div id="highcharts-8mu5v1d-12" class="highcharts-container " style="position: relative; overflow: hidden; width: 700px; height: 392px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial;"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Open Sans&quot;, Tahoma, Verdana, Arial;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="700" height="392.00000000000006"><desc>Created with Highcharts 5.0.7</desc><defs><clipPath id="highcharts-8mu5v1d-13"><rect x="0" y="0" width="621" height="301" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="700" height="392.00000000000006" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="44" y="53" width="621" height="301"></rect><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 44 354.5 L 665 354.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 44 294.5 L 665 294.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 44 234.5 L 665 234.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 44 173.5 L 665 173.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 44 113.5 L 665 113.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 44 52.5 L 665 52.5" opacity="1"></path></g><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 198.5 53 L 198.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 354.5 53 L 354.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 509.5 53 L 509.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 664.5 53 L 664.5 354" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 43.5 53 L 43.5 354" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="44" y="53" width="621" height="301"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 198.5 354 L 198.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 354.5 354 L 354.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 509.5 354 L 509.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 665.5 354 L 665.5 364" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 43.5 354 L 43.5 364" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 44 354.5 L 665 354.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 44 53 L 44 354"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-color-0 highcharts-tracker" transform="translate(44,53) scale(1 1)" clip-path="url(#highcharts-8mu5v1d-13)"><rect x="16" y="61" width="124" height="121" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="171" y="61" width="124" height="128" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="326" y="61" width="124" height="159" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-color-0"></rect><rect x="481" y="61" width="124" height="135" fill="rgba(0,117,163,0.9)" class="highcharts-point highcharts-color-0"></rect></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series highcharts-color-0 " transform="translate(44,53) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker" transform="translate(44,53) scale(1 1)" clip-path="url(#highcharts-8mu5v1d-13)"><rect x="16" y="182" width="124" height="120" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="171" y="189" width="124" height="113" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="326" y="220" width="124" height="82" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect><rect x="481" y="196" width="124" height="106" fill="rgba(226,188,34,0.9)" class="highcharts-point highcharts-color-1"></rect></g><g class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1 " transform="translate(44,53) scale(1 1)" clip-path="none"></g></g><g class="highcharts-legend" transform="translate(40,6)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="165" height="35" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-column-series highcharts-color-1 highcharts-series-1" transform="translate(8,3)"><rect x="2" y="4" width="12" height="12" fill="rgba(226,188,34,0.9)" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-0 highcharts-series-0" transform="translate(84,3)"><rect x="2" y="4" width="12" height="12" fill="rgba(0,117,163,0.9)" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g><g class="highcharts-annotations"></g><text x="50" y="652"><tspan>Source: Office for National Statistics</tspan></text></svg>
+                  <div
+                    class="highcharts-legend" style="position: absolute; left: 40px; top: 6px; opacity: 1;">
+                    <div style="position: absolute; left: 0px; top: 0px; opacity: 1;">
+                      <div style="position: absolute; left: 0px; top: 0px; opacity: 1;">
+                        <div class="highcharts-legend-item highcharts-column-series highcharts-color-1 highcharts-series-1" style="position: absolute; left: 8px; top: 3px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(112, 112, 112); font-weight: normal; cursor: pointer; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(112, 112, 112);">Actual</span></div>
+                        <div
+                          class="highcharts-legend-item highcharts-column-series highcharts-color-0 highcharts-series-0" style="position: absolute; left: 84px; top: 3px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(112, 112, 112); font-weight: normal; cursor: pointer; margin-left: 0px; margin-top: 0px; left: 21px; top: 3px; fill: rgb(112, 112, 112);">Modelled</span></div>
+                    </div>
+                </div>
               </div>
+              <div class="highcharts-axis-labels highcharts-xaxis-labels " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 102.625px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">January</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 253.875px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">February</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 416.125px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">March</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 580.375px; top: 362px; transform: rotate(0deg); transform-origin: 50% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">Q1</span></div>
+              <div class="highcharts-axis-labels highcharts-yaxis-labels " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 23px; top: 347px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">0</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 16px; top: 286px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">25</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 16px; top: 226px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">50</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 16px; top: 166px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">75</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 106px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">100</span><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 11px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 46px; transform: rotate(0deg); transform-origin: 100% 11px 0px; text-overflow: clip; opacity: 1;"
+                  transform="translate(0,0)" opacity="1">125</span></div>
+              <div class="highcharts-axis highcharts-yaxis " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span style="font-family: &quot;Open Sans&quot;, Tahoma, Verdana, Arial; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(102, 102, 102); left: 44px; right: 0px; margin-left: 0px; margin-top: 0px; transform: rotate(360deg); transform-origin: 100% 12px 0px; top: 37px; visibility: inherit;"
+                  class="highcharts-axis-title" transform="translate(0,0) rotate(360 0 0)">%</span></div>
+            </div>
+        </div>
+        <h5 class="flush--third--bottom font-size--h6 clear-left">Source: Office for National Statistics</h5>
+        <div id="notes-897f97ce" class="notes-holder-js">
+          <h6 class="flush--third--bottom js-notes-title">Notes:</h6>
+          <ol>
+            <li>Q1 refers to Quarter 1(Jan to Mar), Q2 refers to Quarter 2 (Apr to June), Q3 refers to Quarter 3 (July to Sept), Q4 refers to Quarter 4 (Oct to Dec).</li>
+          </ol>
+        </div>
+        <h5 class="print--hide font-size--h6 clear-left">Download this chart</h5>
+        <a class="btn btn--primary print--hide js-chart-image-src " data-filename="897f97ce" href="/chartimage?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/897f97ce" data-ga-event="" data-ga-event-category="download-image"
+          data-ga-event-label="Figure 4: Data content within the GDP estimate" download="Figure 4: Data content within the GDP estimate">Image</a>
+        <a class="btn btn--primary print--hide" title="Download as csv" href="/generator?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/897f97ce&amp;format=csv" data-ga-event="" data-ga-event-category="download-csv"
+          data-ga-event-label="Figure 4: Data content within the GDP estimate">.csv</a>
+        <a class="btn btn--primary print--hide" title="Download as xls" href="/generator?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/897f97ce&amp;format=xls" data-ga-event="" data-ga-event-category="download-xls"
+          data-ga-event-label="Figure 4: Data content within the GDP estimate">.xls</a>
+        </div>
+        <p></p>
+        <p>The Index of Production, construction output and Index of Services all feed into the headline GDP estimate. Some small revisions have taken place to previously published estimates, as seen in Table 2. Additional detail for sectors with production and
+          services can be found in the <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/datasets/monthlypathofcomponents">Monthly Path dataset</a>, published alongside this bulletin.</p>
+        <p>
+        </p>
+        <div class="markdown-table-container print--avoid-break">
+          <h4>Table 2: Previously published and current monthly growth rates in Production, Construction and Services</h4>
+          <div class="markdown-table-wrap">
 
-  </article>
+
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <style type="text/css">
+              .b1 {
+                white-space-collapsing: preserve;
+              }
+
+              .t1 {
+                border-collapse: collapse;
+                border-spacing: 0;
+              }
+
+              .r-ad0179b0-7d89-426d-ad29-dc6479c6e860-1 {
+                height: 15.75pt;
+              }
+
+              .r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2 {
+                height: 15.0pt;
+              }
+            </style>
+            <meta content="currin" name="author">
+
+
+            <table class="t1">
+              <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+              </colgroup>
+              <tbody>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-1"></tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2"></tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2">
+                  <td style="white-space:pre-wrap;text-align:left;border-bottom:thin solid black;color: black; ">&nbsp;</td>
+                  <td colspan="2" style="white-space:pre-wrap;text-align:center;border-bottom:thin solid black;color: black; ">Previously Published</td>
+                  <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">&nbsp;</td>
+                  <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">Current</td>
+                  <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">&nbsp;</td>
+                </tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2">
+                  <td style="white-space:pre-wrap;text-align:left;border-top:thin solid black;border-bottom:thin solid black;color: black; ">&nbsp;</td>
+                  <td style="white-space:pre-wrap;text-align:center;border-top:thin solid black;border-bottom:thin solid black;color: black; ">January</td>
+                  <td style="white-space:pre-wrap;text-align:center;border-top:thin solid black;border-bottom:thin solid black;color: black; ">February</td>
+                  <td style="white-space:pre-wrap;text-align:right;border-top:thin solid black;border-bottom:thin solid black;color: black; ">January</td>
+                  <td style="white-space:pre-wrap;text-align:right;border-top:thin solid black;border-bottom:thin solid black;color: black; ">February</td>
+                  <td style="white-space:pre-wrap;text-align:right;border-top:thin solid black;border-bottom:thin solid black;color: black; ">March<sup>1</sup></td>
+                </tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2">
+                  <td style="white-space:pre-wrap;text-align:left;color: black; ">Index of production</td>
+                  <td style="white-space:pre-wrap;text-align:center;color: black; ">-0.3</td>
+                  <td style="white-space:pre-wrap;text-align:center;color: black; ">-0.7</td>
+                  <td style="white-space:pre-wrap;text-align:right;color: black; ">-0.4</td>
+                  <td style="white-space:pre-wrap;text-align:right;color: black; ">-0.8</td>
+                  <td style="white-space:pre-wrap;text-align:right;color: black; ">-0.7</td>
+                </tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2">
+                  <td style="white-space:pre-wrap;text-align:left;color: black; ">Construction output</td>
+                  <td style="white-space:pre-wrap;text-align:center;color: black; ">0.0</td>
+                  <td style="white-space:pre-wrap;text-align:center;color: black; ">-1.7</td>
+                  <td style="white-space:pre-wrap;text-align:right;color: black; ">-0.1</td>
+                  <td style="white-space:pre-wrap;text-align:right;color: black; ">-1.9</td>
+                  <td style="white-space:pre-wrap;text-align:right;color: black; ">0.3</td>
+                </tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2">
+                  <td style="white-space:pre-wrap;text-align:left;border-bottom:thin solid black;color: black; ">Index of services</td>
+                  <td style="white-space:pre-wrap;text-align:center;border-bottom:thin solid black;color: black; ">-0.1</td>
+                  <td style="white-space:pre-wrap;text-align:center;border-bottom:thin solid black;color: black; ">…</td>
+                  <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">-0.1</td>
+                  <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">0.2</td>
+                  <td style="white-space:pre-wrap;text-align:right;border-bottom:thin solid black;color: black; ">0.0</td>
+                </tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2">
+                  <td colspan="6" style="white-space:pre-wrap;text-align:left;border-top:thin solid black;color: black; ">Source: Office for National Statistics</td>
+                </tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2">
+                  <td colspan="6" style="white-space:pre-wrap;text-align:left;color: black; ">1. Based on forecasts and early responses to the March Monthly Business Survey</td>
+                </tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2">
+                  <td colspan="6" style="white-space:pre-wrap;text-align:left;color: black; ">2. No Data represented by …</td>
+                </tr>
+                <tr class="r-ad0179b0-7d89-426d-ad29-dc6479c6e860-2">
+                  <td colspan="6" style="white-space:pre-wrap;text-align:left;color: black; ">3. Percentage change</td>
+                </tr>
+              </tbody>
+            </table><button class="btn btn--mobile-table-hide">Close table</button>
+
+
+          </div><button class="btn btn--mobile-table-show">View table</button>
+          <h5 class="print--hide font-size--h6">Download this table</h5>
+          <a href="/file?uri=/economy/grossdomesticproductgdp/bulletins/grossdomesticproductpreliminaryestimate/jantomar2017/d25c2ef8.xls" title="Download as xls" class="btn btn--primary print--hide" data-ga-event="" data-ga-event-category="download-xls" data-ga-event-label="Table 2: Previously published and current monthly growth rates in Production, Construction and Services">.xls</a>
+        </div>
+        <p></p>
+        {% include back-to-table-of-contents.html %}
+        </section>
+        </div>
+        <div id="links-to-related-statistics" class="section__content--markdown js-sticky-toc__section">
+          <section>
+            <header>
+              <h2><span class="section__content-number">7.</span> Links to related statistics</h2>
+            </header>
+            <p>The preliminary estimate of GDP is based solely on the output approach to measuring GDP and uses the same data that feed into the <a href="https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/indexofservices/august2016">Index of Services</a>,
+              the <a href="https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/indexofproduction/sept2016">Index of Production</a> and <a href="https://www.ons.gov.uk/businessindustryandtrade/constructionindustry/bulletins/constructionoutputingreatbritain/aug2016">Output in the Construction Industry</a>        datasets.</p>
+            <p>In the <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/quarter2aprtojun2016">second estimate of GDP</a> and <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/quarter2aprtojune2016">the quarterly national accounts</a>,
+              the output gross value added (GVA) and GDP estimates are balanced with the equivalent income and expenditure approaches to produce headline estimates of GVA and GDP.</p>
+            {% include back-to-table-of-contents.html %}
+          </section>
+        </div>
+        <div id="quality-and-methodology" class="section__content--markdown js-sticky-toc__section">
+          <section>
+            <header>
+              <h2><span class="section__content-number">8.</span> Quality and methodology</h2>
+            </header>
+            <p>Some general information on the quality of the estimate of GDP can be found in the Things you need to know about this release section in the main part of this statistical bulletin. Further information is available on the <a href="http://webarchive.nationalarchives.gov.uk/20160105160709/http:/www.ons.gov.uk/ons/guide-method/method-quality/specific/economy/output-measure-of-gdp/methods-and-sources/index.html">methods and sources</a>        page of our website.</p>
+            <p>The <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/qmis/grossdomesticproductgdpqmi">GDP Quality and Methodology Information document</a> contains important information on:</p>
+            <ul>
+              <li>the strengths and limitations of the data</li>
+              <li>the quality of the output: including the accuracy of the data and how it compares with related data</li>
+              <li>uses and users</li>
+              <li>how the output was created</li>
+            </ul>
+            <p>The national accounts provide an integrated description of all economic activity within the economic territory of the UK, including activity involving both domestic units (that is, individuals and institutions resident in the UK) and external units
+              (those resident in other countries). In addition to being comprehensive, the accounts are fully integrated and internally consistent. More information can be found in the <a href="http://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/methodologies/nationalaccounts">UK National Accounts: A Short Guide.</a></p>
+            {% include back-to-table-of-contents.html %}
+          </section>
+        </div>
+
+</article>
+
   <div class="col col--md-11 col--lg-20 margin-top-md--3">
-    <div class=" margin-bottom-sm--2 margin-bottom-md--2 print--hide">
-      <a class="btn btn--primary btn--full-width" href="#">
-View all data used in this <span class="lowercase">
-Statistical bulletin
-</span>
-</a>
-    </div>
-    <div class="tiles__item tiles__item--nav-type flush-col">
-      <h3 class="tiles__title-h3 tiles__title-h3--nav">
-Contact details for this <span class="lowercase">
-Statistical bulletin
-</span>
-</h3>
-      <div class="tiles__content--nav">
-        <address>
-Karen Thomas<br>
-<a href="#">email@ons.gsi.gov.uk</a><br>
-Telephone: +44 (0)1234 567890
-</address>
-      </div>
-    </div>
+
+    {% include view-all-data.html %}
+
+    {% include tiles/contact-details.html %}
+
   </div>
   </div>
   </div>
