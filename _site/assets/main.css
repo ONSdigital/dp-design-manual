@@ -622,23 +622,17 @@ a:focus {
 
 .lato {
   font-family: 'Lato', sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700 !important; }
-
-h1 {
-  font-size: 36px !important; }
-
-h2 {
-  font-size: 28px !important; }
-
-h3 {
-  font-size: 22px !important; }
-
-p {
-  font-size: 16px !important;
-  line-height: 1.58em !important; }
-
-a {
-  text-decoration: none !important;
-  border-bottom: solid 1px #206095; }
+  .lato h1, .lato h2, .lato h3, .lato h4, .lato h5, .lato h6 {
+    font-weight: 700 !important; }
+  .lato h1 {
+    font-size: 36px !important; }
+  .lato h2 {
+    font-size: 28px !important; }
+  .lato h3 {
+    font-size: 22px !important; }
+  .lato p {
+    font-size: 16px !important;
+    line-height: 1.58em !important; }
+  .lato a {
+    text-decoration: none !important;
+    border-bottom: solid 1px #206095; }
