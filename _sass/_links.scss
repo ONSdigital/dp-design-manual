@@ -1,16 +1,21 @@
 // Custom styles created for the "basic" template
-.basic {
-  a {
-    text-decoration: underline;
-  }
-  a:visited {
-    color: $census ;
-  }
+.basic a {
+  text-decoration: underline;
+}
+
+.basic a:visited {
+  color: $census;
 }
 
 // A dirty pattern library class to force the visited style onto links
 .visited {
   color: $census !important;
+}
+
+.js-hover-click .background--gallery a:visited,
+.background--mercury.js-hover-click a:visited,
+.page-content a:visited {
+  color: $census;
 }
 
 a:focus {
@@ -22,10 +27,6 @@ a:focus {
   text-decoration: underline;
 }
 
-// a:focus:visited {
-//   color: #fff;
-// }
-
 .section__content--markdown a.btn {
   text-decoration: none;
 }
@@ -34,7 +35,8 @@ a:focus {
   color: #fff;
 }
 
-.btn--primary:visited {
+.btn--primary:visited,
+.page-content .btn--primary:visited {
   color: #fff;
 }
 
