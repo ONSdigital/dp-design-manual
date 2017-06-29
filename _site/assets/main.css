@@ -392,11 +392,17 @@ h3 {
 
 .basic a {
   text-decoration: underline; }
+
 .basic a:visited {
   color: #6E2585; }
 
 .visited {
   color: #6E2585 !important; }
+
+.js-hover-click .background--gallery a:visited,
+.background--mercury.js-hover-click a:visited,
+.page-content a:visited {
+  color: #6E2585; }
 
 a:focus {
   outline: 3px solid #FF9933;
@@ -411,7 +417,8 @@ a:focus {
 .section__content--markdown .btn:visited {
   color: #fff; }
 
-.btn--primary:visited {
+.btn--primary:visited,
+.page-content .btn--primary:visited {
   color: #fff; }
 
 .btn {
