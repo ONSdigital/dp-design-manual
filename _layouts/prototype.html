@@ -7,7 +7,9 @@
 
   <body style="height: auto;">
 
-    {% include banners/warning.html %}
+    {% if page.warning != false %}
+      {% include banners/warning.html %}
+    {% endif %}
 
     {% include header.html %}
 

@@ -1,0 +1,45 @@
+---
+layout: basic
+type:
+title: "Filtered dataset preview exploration"
+intro-content:
+---
+
+<main id="main" role="main" tabindex="-1">
+
+  <div class="basic wrapper padding-top--4 padding-bottom--8">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h1>{{ page.title }}</h1>
+          <h2>User need</h2>
+          <p>I need to preview my filtered dataset online.</p>
+          <h2>Prototype</h2>
+          <ul>
+            <li><a href="example-1">Example 1 - Simple preview - resizing text</a></li>
+            <li><a href="example-2">Example 2 - Fixed left col + cols off screen</a></li>
+            <li><a href="example-3">Example 3 - Fixed head row + cols off screen</a></li>
+            <li><a href="example-4">Example 4 - Simple preview + full dataset link</a></li>
+          </ul>
+          <h2>Notes</h2>
+          <ul>
+            <li>The code within this area is for demo/testing purposes only and may not be accessible or semantically correct.</li>
+            <li>This site has only been tested on the latest Chrome browser.</li>
+          </ul>
+          <h2>Future</h2>
+          <ul>
+            <li>More design decisions need to be made around the preview and how it's presented and what is presented.</li>
+            <li>Affordance needs to be provided to the user to indicate that this is a preview.</li>
+            <li>Affordance needs to be provided to the user to indicate that there might be more content available via a scroll/other mechanism.</li>
+            <li>The full dataset view may need processing/size consideration in it's design i.e. pagination to break up the output of large datasets.</li>
+            <li>The full dataset link/button may need changes to emphasise/clarify it's availablity and use to the user.</li>
+            <li>More work needs to be done to optimise for mobile.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% include footer-basic.html %}

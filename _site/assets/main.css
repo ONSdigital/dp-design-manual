@@ -390,6 +390,77 @@ h3 {
 .table-v2 .cell--align-right {
   text-align: right; }
 
+table.cmd-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+  table.cmd-table th,
+  table.cmd-table td {
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 12px 15px 12px 0;
+    vertical-align: top;
+    line-height: 16px; }
+  table.cmd-table--vw-text th, table.cmd-table--vw-text td {
+    font-size: 1.1vw;
+    line-height: normal;
+    padding: 1em 1em 1em 0; }
+  table.cmd-table--fixed-head thead {
+    display: block; }
+  table.cmd-table--fixed-head tbody {
+    max-height: 300px;
+    overflow-y: auto;
+    display: block; }
+  table.cmd-table--fixed-head th, table.cmd-table--fixed-head td {
+    min-width: 130px; }
+  table.cmd-table th {
+    font-weight: 700; }
+  table.cmd-table td:last-child,
+  table.cmd-table th:last-child {
+    padding-right: 0; }
+  table.cmd-table .numeric {
+    text-align: right; }
+  table.cmd-table caption {
+    text-align: left; }
+
+.fixed-width {
+  max-width: 90%;
+  min-width: 90%;
+  overflow-x: scroll; }
+  .fixed-width th, .fixed-width td {
+    min-width: 200px; }
+
+.cmd-table--fixed-left {
+  position: relative;
+  max-height: 400px;
+  overflow: hidden; }
+  .cmd-table--fixed-left .fixed-width {
+    margin-left: 100px; }
+  .cmd-table--fixed-left table thead {
+    display: block; }
+    .cmd-table--fixed-left table thead th:first-child {
+      position: absolute;
+      left: 0;
+      width: 100px;
+      min-width: 100px;
+      margin-top: 1px; }
+  .cmd-table--fixed-left table tbody {
+    display: block; }
+    .cmd-table--fixed-left table tbody th[scope=row] {
+      position: absolute;
+      left: 0;
+      width: 100px;
+      min-width: 100px;
+      margin-top: 1px; }
+  .cmd-table--fixed-left table th, .cmd-table--fixed-left table td {
+    min-width: 150px;
+    height: 45px !important; }
+
+.example {
+  display: none;
+  overflow: hidden; }
+
 .basic a {
   text-decoration: underline; }
 .basic a:visited {
@@ -596,6 +667,30 @@ a:focus {
 
 .download-options__container .show-hide button[aria-expanded=false]:after, .download-options__container .show-hide button[aria-expanded=true]:after {
   background-image: none; }
+
+details {
+  display: block;
+  clear: both; }
+  details summary {
+    cursor: pointer;
+    color: #206095;
+    text-decoration: underline;
+    display: inline-block; }
+    details summary:focus {
+      outline: 0; }
+    details summary span {
+      color: #206095; }
+      details summary span::-webkit-details-marker {
+        font-size: 20px; }
+  details .panel {
+    border-left: 5px solid #A6A8AB;
+    padding-left: 16px; }
+  details .arrow {
+    color: #206095;
+    padding-right: 5px; }
+    details .arrow[aria-hidden=true] {
+      display: inline-block;
+      visibility: visible; }
 
 .pl-colour-circle {
   -webkit-border-radius: 32px;

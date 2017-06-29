@@ -17,6 +17,8 @@
 
 	{% include primary-nav.html %}
 
-	{% include search.html %}
+	{% if page.search != false %}
+		{% include search.html %}
+	{% endif %}
 
 </header>
