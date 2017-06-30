@@ -2,7 +2,9 @@
   <div class="wrapper">
     <div class="col-wrap">
       <p class="col col--md-16 col--lg-20 meta__item">
-        <a href="#"><img class="meta__image" src="https://www.ons.gov.uk/img/national-statistics.png" alt="National Statistics logo"></a>
+        {% if page.national-statistic != false %}
+          <a href="#"><img class="meta__image" src="https://www.ons.gov.uk/img/national-statistics.png" alt="National Statistics logo"></a>
+        {% endif %}
         <span>Contact: </span><br><a href="#">{{ page.contact-name }}</a>
       </p>
       <p class="col col--md-16 col--lg-20 meta__item">
