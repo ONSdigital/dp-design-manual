@@ -16,30 +16,37 @@ intro-content:
         <ul>
           <li>I need to takeaway the data and use it in my own software</li>
           <li>I need the filename to be recognisable</li>
+          <li>I need the filename to be unique</li>
           <li>I need a link back to the source and metadata</li>
         </ul>
 
         <h2>Prototype</h2>
         <ul>
-          <li><a href="small-area-population-est-2017-06-30-471537.csv">Prototype 1</a></li>
-          <li><a href="alpha-example.csv">Alpha example</a></li>
+          <li><a href="download">Example download page</a></li>
+          <li><a href="small-area-population-est-2017-06-30-471537.csv">CSV with improved formatting</a></li>
+          <li><a href="alpha-example.csv">CSV example from the alpha</a></li>
         </ul>
 
         <h2>Filename examples</h2>
         <h3>A</h3>
         <ul>
           <li>[Dataset title]-[timestamp]-[file-type]</li>
-          <li>Armed-forces-2017-06-30.csv</li>
+          <li>armed-forces-2017-06-30.csv</li>
         </ul>
         <h3>B</h3>
         <ul>
           <li>[Dataset title]-[Dataset ID]-[timestamp]-[file-type]</li>
-          <li>Armed-forces-AFW001-2017-06-30.csv</li>
+          <li>armed-forces-afw001-2017-06-30.csv</li>
         </ul>
         <h3>C</h3>
         <ul>
           <li>[Dataset ID]-[Edition]-[Version]-[timestamp]-[job ID]-[file-type]</li>
-          <li>AFW001-2011-V1-2017-06-30-471537.csv</li>
+          <li>afw001-2011-v1-2017-06-30-471537.csv</li>
+        </ul>
+        <h3>D</h3>
+        <ul>
+          <li>[ONS]-[Dataset title]-[Dataset ID]-[user job count]</li>
+          <li>ons-armed-forces-afw001-1.csv</li>
         </ul>
 
         <h2>Important changes and notes</h2>
@@ -49,6 +56,7 @@ intro-content:
           <li>Changed column ordering to dimension1, dimension2, dimension3, value</li>
           <li>Moved dimension names to column headings</li>
           <li>You can't add source links (in a standard way) need to offer seperate meta data download</li>
+          <li>Timestamp could be confused with release date</li>
         </ul>
 
         <h2>Other notes</h2>
