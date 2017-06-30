@@ -7,6 +7,14 @@
   color: $census;
 }
 
+// Add underline
+
+.link--underline {
+  text-decoration: underline;
+}
+
+// Visited links
+
 // A dirty pattern library class to force the visited style onto links
 .visited {
   color: $census !important;
@@ -18,19 +26,6 @@
   color: $census;
 }
 
-a:focus {
-  outline: 3px solid $carrot;
-  color: $thunder;
-}
-
-.link--underline {
-  text-decoration: underline;
-}
-
-.section__content--markdown a.btn {
-  text-decoration: none;
-}
-
 .section__content--markdown .btn:visited {
   color: #fff;
 }
@@ -40,9 +35,28 @@ a:focus {
   color: #fff;
 }
 
+// Focus
+
+a:focus {
+  outline: 3px solid $carrot;
+  color: $thunder;
+}
+
+// Buttons
+
 .btn {
   margin-right: 0.5em;
+
 }
+
+ .basic a.btn  {
+   text-decoration: none;
+ }
+
+ .section__content--markdown a.btn {
+   text-decoration: none;
+ }
+
 
 .btn:focus {
   outline: 3px solid $carrot;

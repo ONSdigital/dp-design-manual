@@ -467,6 +467,9 @@ table.cmd-table {
 .basic a:visited {
   color: #6E2585; }
 
+.link--underline {
+  text-decoration: underline; }
+
 .visited {
   color: #6E2585 !important; }
 
@@ -475,16 +478,6 @@ table.cmd-table {
 .page-content a:visited {
   color: #6E2585; }
 
-a:focus {
-  outline: 3px solid #FF9933;
-  color: #323132; }
-
-.link--underline {
-  text-decoration: underline; }
-
-.section__content--markdown a.btn {
-  text-decoration: none; }
-
 .section__content--markdown .btn:visited {
   color: #fff; }
 
@@ -492,8 +485,18 @@ a:focus {
 .page-content .btn--primary:visited {
   color: #fff; }
 
+a:focus {
+  outline: 3px solid #FF9933;
+  color: #323132; }
+
 .btn {
   margin-right: 0.5em; }
+
+.basic a.btn {
+  text-decoration: none; }
+
+.section__content--markdown a.btn {
+  text-decoration: none; }
 
 .btn:focus {
   outline: 3px solid #FF9933;
