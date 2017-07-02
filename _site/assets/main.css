@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 .font-color--astral {
   color: #3B7A9E; }
@@ -725,19 +726,11 @@ details {
   content: "Example";
   padding: 16px 0; }
 
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.system {
+  font-family: medium-ui-sans-serif-text-font, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
 .lato {
   font-family: 'Lato', sans-serif; }
-  .lato h1, .lato h2, .lato h3, .lato h4, .lato h5, .lato h6 {
-    font-weight: 700 !important; }
-  .lato h1 {
-    font-size: 36px !important; }
-  .lato h2 {
-    font-size: 28px !important; }
-  .lato h3 {
-    font-size: 22px !important; }
-  .lato p {
-    font-size: 16px !important;
-    line-height: 1.58em !important; }
-  .lato a {
-    text-decoration: none !important;
-    border-bottom: solid 1px #206095; }
