@@ -42,6 +42,11 @@ a:focus {
   color: $thunder;
 }
 
+summary:focus {
+  outline: 3px solid $carrot;
+  color: $thunder;
+}
+
 // Buttons
 
 .btn {

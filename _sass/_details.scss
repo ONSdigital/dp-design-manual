@@ -12,9 +12,9 @@ details {
         text-decoration: underline;
         display: inline-block;
 
-        &:focus {
-            outline:0;
-        }
+        // &:focus {
+        //     outline:0;
+        // }
 
         span {
             color: $matisse;

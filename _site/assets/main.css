@@ -490,6 +490,10 @@ a:focus {
   outline: 3px solid #FF9933;
   color: #323132; }
 
+summary:focus {
+  outline: 3px solid #FF9933;
+  color: #323132; }
+
 .btn {
   margin-right: 0.5em; }
 
@@ -687,8 +691,6 @@ details {
     color: #206095;
     text-decoration: underline;
     display: inline-block; }
-    details summary:focus {
-      outline: 0; }
     details summary span {
       color: #206095; }
       details summary span::-webkit-details-marker {
