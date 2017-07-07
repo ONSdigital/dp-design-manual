@@ -6,6 +6,9 @@
 .font-color--abbey {
   color: #58595B; }
 
+.font-color--aluminium {
+  color: #A6A8AB; }
+
 .font-color--salem {
   color: #0F8243; }
 
@@ -493,8 +496,7 @@ table.cmd-table {
   color: #fff; }
 
 a:focus {
-  outline: 3px solid #FF9933;
-  color: #323132; }
+  outline: 3px solid #FF9933; }
 
 summary:focus {
   outline: 3px solid #FF9933;

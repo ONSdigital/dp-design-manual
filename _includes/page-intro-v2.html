@@ -1,17 +1,15 @@
 <div class="page-intro-v2">
-  <h1 class="page-intro__title">
-    {% if page.type %}
-    <span class="page-intro__type">
-      {{ page.type }}
-    </span>
+  {% if page.type %}<p class="font-size--19 margin-bottom--0">{{ page.type }}</p>{% endif %}
+  <h1 class="page-intro__title col--md-46 font-weight--bold">
+      {% if page.title %}
+      {{ page.title }}
+      {% else %}
+      Page title
+      {% endif %}
+    </h1>
+    {% if page.intro-content %}
+      <p class="page-intro__content col--md-46 margin-bottom--1">
+        {{ page.intro-content }}
+      </p>
     {% endif %}
-    <span class="font-weight--bold">
-    {% if page.title %}{{ page.title }}{% else %}
-    Page title
-  </span>
-    {% endif %}</h1> {% if page.intro-content %}
-  <p class="page-intro__content col--md-46">
-    {{ page.intro-content }}
-  </p>
-  {% endif %}
 </div>
