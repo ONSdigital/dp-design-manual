@@ -508,6 +508,9 @@ summary:focus {
 .basic a.btn {
   text-decoration: none; }
 
+a.btn:hover {
+  text-decoration: none; }
+
 .section__content--markdown a.btn {
   text-decoration: none; }
 
@@ -634,12 +637,8 @@ summary:focus {
 .basic .page-intro__type {
   color: #414042; }
 
-.page-intro-v2 .page-intro__title {
-  margin-top: 0; }
-.page-intro-v2 .page-intro__type {
-  color: #414042; }
 .page-intro-v2 .page-intro__content {
-  margin-bottom: 32px; }
+  line-height: 1.6; }
 
 .pullout:after {
   content: "";
@@ -712,6 +711,16 @@ details {
     details .arrow[aria-hidden=true] {
       display: inline-block;
       visibility: visible; }
+
+.nav-secondary-v2 .nav-secondary-wrap {
+  background: #EAEAEA;
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0; }
+.nav-secondary-v2 .nav-secondary__item:after {
+  color: #A6A8AB;
+  content: '|';
+  padding: 0 4px 0 8px; }
 
 .pl-colour-circle {
   -webkit-border-radius: 32px;
