@@ -1,0 +1,161 @@
+---
+layout: basic
+type: "Status: prototype"
+title: "Page intro component (on product pages)"
+intro-content:
+---
+
+<main id="main" role="main" tabindex="-1">
+
+  <div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+          {% include page-intro.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h2>Current</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+          <nav>
+            <div class="breadcrumb print--hide">
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="#">Economy</a>
+                </li>
+                <li class="breadcrumb__item">
+                  Inflation and price indices
+                </li>
+              </ol>
+            </div>
+          </nav>
+          <div class="col col--md-47 col--lg-48">
+            <h1 class="page-intro__title ">Inflation and price indices</h1>
+            <p class="page-intro__content">The rate of increase in prices for goods and services. Measures of inflation and prices include consumer price inflation, producer price inflation, the house price index, index of private housing rental prices, and construction output price
+              indices. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h2>Iteration 1</h2>
+          <ul>
+            <li>Remove border below breadcrumbs</li>
+            <li>Remove current page from breadcrumbs</li>
+            <li>Make heading 1 bold</li>
+            <li>Shorten line length on page intro</li>
+            <li>Shorten vertical spacing</li>
+            <li>Lighten breadcrumb diveder</li>
+            <li>Underline creadcrumb links</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col margin-bottom--2">
+          <nav>
+            <div class="breadcrumb breadcrumb-v2 print--hide">
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="">Economy</a>
+                </li>
+              </ol>
+            </div>
+          </nav>
+          <div class="page-intro-v2">
+            <h1 class="page-intro__title margin-top--0 col--md-46 font-weight--bold">Inflation and price indices</h1>
+            <p class="page-intro__content col--md-46 padding-top--0 margin-bottom--1">
+              The rate of increase in prices for goods and services. Measures of inflation and prices include consumer price inflation, producer price inflation, the house price index, index of private housing rental prices, and construction output price indices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h2>Iteration 2</h2>
+          <ul>
+            <li>Re-introduce current page breadcrumb (after conversation with GOV.UK team)</li>
+            <li>Simplify page intro content (being careful not to harm search engine optimisation)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col margin-bottom--2">
+          <nav>
+            <div class="breadcrumb breadcrumb-v2 print--hide">
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="">Economy</a>
+                </li>
+                <li class="breadcrumb__item">
+                  Inflation and price indices
+                </li>
+              </ol>
+            </div>
+          </nav>
+          <div class="page-intro-v2">
+            <h1 class="page-intro__title margin-top--0 col--md-46 font-weight--bold">Inflation and price indices</h1>
+            <p class="page-intro__content col--md-46 padding-top--0 margin-bottom--1">
+              The rate of increase in prices for goods and services. Measures include; consumer price inflation (CPI), producer price inflation (PPI) and the house price index.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% include footer-basic.html %}

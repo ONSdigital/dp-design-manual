@@ -1,4 +1,4 @@
-<!-- Copy of ONS.GOV.UK with extra prototype styles included -->
+<!-- A basic layout with minimal header and footer -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,8 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Inflation and price indices - ONS Digital Publishing Design Manual</title>
-  <meta name="description" content="The rate of increase in prices for goods and services. Measures of inflation and prices include consumer price inflation, producer price inflation, the house...">
+  <title>Product page - ONS Digital Publishing Design Manual</title>
+  <meta name="description" content="Iterating on the Product page components">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
@@ -23,17 +23,15 @@
 
   <body>
 
-    
-      <div class="banner background--carrot">
+    <!-- <div class="banner background--carrot">
 	<div class="wrapper">
 		<p class="banner__content font-size--16">
 			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
 	</div>
 </div>
+ -->
 
-    
-
-    <header>
+    <header class="border-bottom--iron-sm border-bottom--iron-md">
 	<a class="skiplink" href="#main" tabindex="0">
 		Skip to main content
 	</a>
@@ -48,516 +46,60 @@
 </div>
 
 
-			<div class="col col--lg-two-thirds col--md-two-thirds hide--sm print--hide language--js__container">
-  <dl class="language js--hide" style="display: none;">
-    <dt class="language__title">Language:</dt>
-    <dd class="language__item">
-      <a href="&#10;&#10;&#10;&#10;    //cy.ons.gov.uk/surveys/informationforbusinesses&#10;" class="language__link icon--hide">Cymraeg (CY)</a>
-    </dd>
-  </dl>
-  <form class="language language--js js--show" style="display: block;">
-    <label class="language--js__label" for="lang">Language:</label>
-    <select class="language--js__select" id="lang" name="lang">
-      <option value="english" data-url="//www.www.ons.gov.uk/surveys/informationforbusinesses" selected="selected">English (EN)</option>
-      <option value="welsh" data-url="//cy.ons.gov.uk/surveys/informationforbusinesses">Cymraeg (CY)</option>
-    </select>
-  </form>
-</div>
-
-
-			<div class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
-  <ul class="secondary-nav__list js-nav-clone__list">
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link  js-nav-clone__link" href="/releasecalendar">Release calendar</a>
-    </li>
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link  js-nav-clone__link" href="/methodology">Methodology</a>
-    </li>
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link  js-nav-clone__link" href="/news">Media</a>
-    </li>
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link  js-nav-clone__link" href="/aboutus">About</a>
-    </li>
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link icon--hide js-nav-clone__link" target="_blank" rel="noopener noreferrer" href="https://blog.ons.gov.uk/">Blog</a>
-    </li>
-  </ul>
-</div>
-
-
 		</div>
 	</div>
-
-	<div class="primary-nav print--hide">
-  <nav>
-    <ul class="nav--controls">
-      <li class="nav--controls__item">
-        <a href="#nav-primary" id="menu-toggle" aria-controls="nav-primary" class="nav--controls__menu">
-          <span class="nav--controls__text">Menu</span>
-        </a>
-      </li>
-      <li class="nav--controls__item ">
-        <a href="#nav-search" id="search-toggle" aria-controls="nav-search" class="nav--controls__search">
-          <span class="nav--controls__text">Search</span>
-        </a>
-      </li>
-    </ul>
-    <div class="wrapper nav-main--hidden" id="nav-primary" aria-expanded="false">
-      <ul class="primary-nav__list">
-        <li class="primary-nav__item  js-nav hide--sm old-ie--display-block"><a class="primary-nav__link col col--md-7 col--lg-9" href="/">Home</a></li>
-        <li class="primary-nav__item js-nav js-expandable">
-          <a class="primary-nav__link col col--md-8 col--lg-10" href="/businessindustryandtrade" aria-haspopup="true">Business, industry and trade</a>
-          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/business">Business</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/changestobusiness">Changes to business</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/constructionindustry">Construction industry</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/itandinternetindustry">IT and internet industry</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/internationaltrade">International trade</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/manufacturingandproductionindustry">Manufacturing and production industry</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/retailindustry">Retail industry</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/tourismindustry">Tourism industry</a>
-            </li>
-          </ul>
-        </li>
-        <li class="primary-nav__item js-nav js-expandable">
-          <a class="primary-nav__link col col--md-8 col--lg-10" href="/economy" aria-haspopup="true">Economy</a>
-          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/economicoutputandproductivity">Economic output and productivity</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/environmentalaccounts">Environmental accounts</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/governmentpublicsectorandtaxes">Government, public sector and taxes</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossdomesticproductgdp">Gross Domestic Product (GDP)</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossvalueaddedgva">Gross Value Added (GVA)</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/inflationandpriceindices">Inflation and price indices</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/investmentspensionsandtrusts">Investments, pensions and trusts</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/nationalaccounts">National accounts</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/regionalaccounts">Regional accounts</a>
-            </li>
-          </ul>
-        </li>
-        <li class="primary-nav__item js-nav js-expandable">
-          <a class="primary-nav__link col col--md-8 col--lg-10" href="/employmentandlabourmarket" aria-haspopup="true">Employment and labour market</a>
-          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peopleinwork">People in work</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peoplenotinwork">People not in work</a>
-            </li>
-          </ul>
-        </li>
-        <li class="primary-nav__item js-nav js-expandable">
-          <a class="primary-nav__link col col--md-8 col--lg-10" href="/peoplepopulationandcommunity" aria-haspopup="true">People, population and community</a>
-          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/birthsdeathsandmarriages">Births, deaths and marriages</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/crimeandjustice">Crime and justice</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/culturalidentity">Cultural identity</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/educationandchildcare">Education and childcare</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/elections">Elections</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/healthandsocialcare">Health and social care</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/householdcharacteristics">Household characteristics</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/housing">Housing</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/leisureandtourism">Leisure and tourism</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/personalandhouseholdfinances">Personal and household finances</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/populationandmigration">Population and migration</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/wellbeing">Well-being</a>
-            </li>
-          </ul>
-        </li>
-        <li class="primary-nav__item  js-nav">
-          <a class="primary-nav__link  col col--md-8 col--lg-10" href="/surveys">
-Taking part in a survey?
-</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
-
-	
-		<div class="search nav-search--hidden print--hide" id="searchBar">
-  <div class="wrapper" role="search">
-    <form class="col-wrap search__form" action="search.html">
-      <label class="search__label col col--md-23 col--lg-24" for="nav-search">Search for a keyword(s) or time series ID</label>
-      <input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-32" id="nav-search" name="q" value="">
-      <button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
-        <span class="visuallyhidden">Search</span>
-        <span class="icon icon-search--light"></span>
-      </button>
-    </form>
-  </div>
-</div>
-
-	
 
 </header>
 
 
     <main id="main" role="main" tabindex="-1">
-  <div class="page-intro background--gallery">
+
+  <div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
     <div class="wrapper">
       <div class="col-wrap">
-        <div class="col margin-bottom--2">
-
-          <nav>
-  <div class="breadcrumb breadcrumb-v2 print--hide">
-    <ol class="breadcrumb__list">
-      
-        
-        <li class="breadcrumb__item">
-          <a class="breadcrumb__link" href="">Home</a>
-        </li>
-        
-        <li class="breadcrumb__item">
-          <a class="breadcrumb__link" href="">Economy</a>
-        </li>
-        
-      
-    </ol>
-  </div>
-</nav>
-
-
-          <div class="page-intro-v2">
+        <div class="col">
+          <div class="col col--md-47 col--lg-48">
+  <h1 class="page-intro__title ">
+    
+    <span class="page-intro__type">
+      Status: prototype
+    </span>
+    
+    Product page</h1> 
+  <p class="page-intro__content">
+    Iterating on the Product page components
+  </p>
   
-  <h1 class="page-intro__title margin-top--0 col--md-46 font-weight--bold">
-      
-      Inflation and price indices
-      
-    </h1>
-    
-      <p class="page-intro__content col--md-46 padding-top--0 margin-bottom--1">
-        The rate of increase in prices for goods and services. Measures of inflation and prices include consumer price inflation, producer price inflation, the house price index, index of private housing rental prices, and construction output price indices.
-      </p>
-    
 </div>
-
 
         </div>
       </div>
     </div>
-
   </div>
 
-  <div class="page-content">
-
-  <div class="padding-bottom-sm--2 padding-bottom-md--4">
-    <section>
-      <div class="wrapper">
-
-        <h2 id="timeseries" class="font-weight--bold margin-top--4">Time series <span class="visuallyhidden">related to <span class="lowercase">Inflation and price indices</span></span></h2>
-
-        <div class="col-wrap">
-          <div class="col col--lg-one-third col--md-half">
-
-            <div class="background--white padding-top--0 padding-left--1 padding-right--1 padding-bottom--2 margin-bottom--2">
-              <h3 class="font-size--h4 margin-bottom--0"><a href="#">CPIH: % change over 12 months</a></h3>
-              <p class="margin-top--0 margin-bottom--1">Not a National Statistic.</p>
-              <div>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="224" height="96" aria-hidden="true"><desc>Created with Highcharts 5.0.7</desc><defs><clipPath id="highcharts-mzo5usb-4"><rect x="0" y="0" width="144" height="36" fill="none"></rect></clipPath></defs><rect fill="none" class="highcharts-background" x="0" y="0" width="224" height="96" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="40" y="10" width="144" height="36"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 40.5 10 L 40.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 41.5 10 L 41.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 42.5 10 L 42.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 43.5 10 L 43.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 44.5 10 L 44.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 45.5 10 L 45.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 46.5 10 L 46.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 47.5 10 L 47.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 48.5 10 L 48.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 50.5 10 L 50.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 51.5 10 L 51.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 52.5 10 L 52.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 53.5 10 L 53.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 54.5 10 L 54.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 55.5 10 L 55.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 56.5 10 L 56.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 57.5 10 L 57.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 58.5 10 L 58.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 59.5 10 L 59.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 60.5 10 L 60.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 61.5 10 L 61.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 62.5 10 L 62.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 63.5 10 L 63.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 64.5 10 L 64.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 65.5 10 L 65.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 66.5 10 L 66.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 67.5 10 L 67.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 68.5 10 L 68.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 69.5 10 L 69.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 71.5 10 L 71.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 72.5 10 L 72.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 73.5 10 L 73.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 74.5 10 L 74.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 75.5 10 L 75.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 76.5 10 L 76.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 77.5 10 L 77.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 78.5 10 L 78.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 79.5 10 L 79.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 80.5 10 L 80.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 81.5 10 L 81.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 82.5 10 L 82.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 83.5 10 L 83.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 84.5 10 L 84.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 85.5 10 L 85.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 86.5 10 L 86.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 87.5 10 L 87.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 88.5 10 L 88.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 89.5 10 L 89.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 91.5 10 L 91.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 92.5 10 L 92.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 93.5 10 L 93.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 94.5 10 L 94.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 95.5 10 L 95.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 96.5 10 L 96.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 97.5 10 L 97.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 98.5 10 L 98.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 99.5 10 L 99.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 100.5 10 L 100.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 101.5 10 L 101.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 102.5 10 L 102.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 103.5 10 L 103.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 104.5 10 L 104.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 105.5 10 L 105.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 106.5 10 L 106.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 107.5 10 L 107.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 108.5 10 L 108.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 109.5 10 L 109.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 110.5 10 L 110.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 112.5 10 L 112.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 113.5 10 L 113.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 114.5 10 L 114.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 115.5 10 L 115.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 116.5 10 L 116.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 117.5 10 L 117.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 118.5 10 L 118.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 119.5 10 L 119.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 120.5 10 L 120.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 121.5 10 L 121.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 122.5 10 L 122.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 123.5 10 L 123.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 124.5 10 L 124.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 125.5 10 L 125.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 126.5 10 L 126.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 127.5 10 L 127.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 128.5 10 L 128.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 129.5 10 L 129.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 130.5 10 L 130.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 131.5 10 L 131.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 133.5 10 L 133.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 134.5 10 L 134.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 135.5 10 L 135.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 136.5 10 L 136.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 137.5 10 L 137.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 138.5 10 L 138.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 139.5 10 L 139.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 140.5 10 L 140.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 141.5 10 L 141.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 142.5 10 L 142.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 143.5 10 L 143.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 144.5 10 L 144.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 145.5 10 L 145.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 146.5 10 L 146.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 147.5 10 L 147.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 148.5 10 L 148.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 149.5 10 L 149.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 150.5 10 L 150.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 151.5 10 L 151.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 153.5 10 L 153.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 154.5 10 L 154.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 155.5 10 L 155.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 156.5 10 L 156.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 157.5 10 L 157.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 158.5 10 L 158.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 159.5 10 L 159.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 160.5 10 L 160.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 161.5 10 L 161.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 162.5 10 L 162.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 163.5 10 L 163.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 164.5 10 L 164.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 165.5 10 L 165.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 166.5 10 L 166.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 167.5 10 L 167.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 168.5 10 L 168.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 169.5 10 L 169.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 170.5 10 L 170.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 171.5 10 L 171.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 172.5 10 L 172.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 174.5 10 L 174.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 175.5 10 L 175.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 176.5 10 L 176.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 177.5 10 L 177.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 178.5 10 L 178.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 179.5 10 L 179.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 180.5 10 L 180.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 181.5 10 L 181.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 182.5 10 L 182.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 183.5 10 L 183.5 46" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 39.5 10 L 39.5 46" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 40 46.5 L 184 46.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="40" y="10" width="144" height="36"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-axis-line" stroke="#707070" stroke-width="1" d="M 40 46.5 L 184 46.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 40 10 L 40 46"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-area-series highcharts-color-undefined " transform="translate(40,10) scale(1 1)" clip-path="url(#highcharts-mzo5usb-4)"><path fill="rgba(0,125,195,0.25)" d="M 0.52554744525547 20.285714285714285 L 1.5766423357664 20.285714285714285 L 2.6277372262774 21.714285714285715 L 3.6788321167883 20.285714285714285 L 4.7299270072993 18.857142857142858 L 5.7810218978102 17.428571428571427 L 6.8321167883212 18.142857142857142 L 7.8832116788321 17.428571428571427 L 8.9343065693431 18.142857142857142 L 9.985401459854 18.142857142857142 L 11.036496350365 16 L 12.087591240876 15.285714285714285 L 13.138686131387 16.71428571428571 L 14.189781021898 16.71428571428571 L 15.240875912409 15.285714285714285 L 16.29197080292 16.71428571428571 L 17.343065693431 18.142857142857142 L 18.394160583942 18.142857142857142 L 19.445255474453 21.714285714285715 L 20.496350364964 21.714285714285715 L 21.547445255474 21.714285714285715 L 22.598540145985 19.571428571428573 L 23.649635036496 20.285714285714285 L 24.700729927007 19.571428571428573 L 25.751824817518 18.857142857142858 L 26.802919708029 17.428571428571427 L 27.85401459854 17.428571428571427 L 28.905109489051 14.57142857142857 L 29.956204379562 12.428571428571427 L 31.007299270073 9.57142857142857 L 32.058394160584 5.9999999999999964 L 33.109489051095 4.571428571428566 L 34.160583941606 1.7142857142857153 L 35.211678832117 5.9999999999999964 L 36.262773722628 8.857142857142858 L 37.313868613139 14.57142857142857 L 38.36496350365 15.285714285714285 L 39.416058394161 13.857142857142854 L 40.467153284672 16 L 41.518248175182 19.571428571428573 L 42.569343065693 21 L 43.620437956204 23.857142857142858 L 44.671532846715 24.57142857142857 L 45.722627737226 26 L 46.773722627737 28.857142857142858 L 47.824817518248 27.42857142857143 L 48.875912408759 25.285714285714285 L 49.92700729927 21 L 50.978102189781 17.428571428571427 L 52.029197080292 21 L 53.080291970803 18.857142857142858 L 54.131386861314 16.71428571428571 L 55.182481751825 18.142857142857142 L 56.233576642336 18.857142857142858 L 57.284671532847 19.571428571428573 L 58.335766423358 18.857142857142858 L 59.386861313869 18.857142857142858 L 60.43795620438 18.142857142857142 L 61.489051094891 17.428571428571427 L 62.540145985401 13.857142857142854 L 63.591240875912 11.714285714285715 L 64.642335766423 9.57142857142857 L 65.693430656934 11 L 66.744525547445 8.857142857142858 L 67.795620437956 8.857142857142858 L 68.846715328467 10.285714285714285 L 69.897810218978 8.857142857142858 L 70.948905109489 8.142857142857142 L 72 3.857142857142854 L 73.051094890511 5.285714285714285 L 74.102189781022 6.714285714285715 L 75.153284671533 9.57142857142857 L 76.204379562044 13.142857142857139 L 77.255474452555 13.857142857142854 L 78.306569343066 13.857142857142854 L 79.357664233577 16 L 80.408759124088 18.142857142857142 L 81.459854014599 19.571428571428573 L 82.510948905109 18.857142857142858 L 83.56204379562 19.571428571428573 L 84.613138686131 21 L 85.664233576642 18.857142857142858 L 86.715328467153 18.857142857142858 L 87.766423357664 18.857142857142858 L 88.817518248175 18.857142857142858 L 89.868613138686 18.142857142857142 L 90.919708029197 18.142857142857142 L 91.970802919708 20.285714285714285 L 93.021897810219 18.857142857142858 L 94.07299270073 17.428571428571427 L 95.124087591241 18.142857142857142 L 96.175182481752 18.857142857142858 L 97.226277372263 18.857142857142858 L 98.277372262774 21.714285714285715 L 99.328467153285 22.42857142857143 L 100.3795620438 22.42857142857143 L 101.43065693431 23.142857142857142 L 102.48175182482 24.57142857142857 L 103.53284671533 25.285714285714285 L 104.58394160584 23.857142857142858 L 105.63503649635 25.285714285714285 L 106.68613138686 23.142857142857142 L 107.73722627737 24.57142857142857 L 108.78832116788 25.285714285714285 L 109.83941605839 26.714285714285715 L 110.89051094891 26.714285714285715 L 111.94160583942 28.142857142857142 L 112.99270072993 31 L 114.04379562044 32.42857142857143 L 115.09489051095 33.14285714285714 L 116.14598540146 33.857142857142854 L 117.19708029197 33.857142857142854 L 118.24817518248 33.14285714285714 L 119.29927007299 33.857142857142854 L 120.3503649635 32.42857142857143 L 121.40145985401 33.14285714285714 L 122.45255474453 34.57142857142857 L 123.50364963504 34.57142857142857 L 124.55474452555 33.14285714285714 L 125.60583941606 32.42857142857143 L 126.65693430657 31.714285714285715 L 127.70802919708 31.714285714285715 L 128.75912408759 30.285714285714285 L 129.8102189781 31 L 130.86131386861 31 L 131.91240875912 30.285714285714285 L 132.96350364964 29.57142857142857 L 134.01459854015 28.857142857142858 L 135.06569343066 26.714285714285715 L 136.11678832117 26.714285714285715 L 137.16788321168 25.285714285714285 L 138.21897810219 23.142857142857142 L 139.2700729927 22.42857142857143 L 140.32116788321 19.571428571428573 L 141.37226277372 19.571428571428573 L 142.42335766423 17.428571428571427 L 143.47445255474 16.71428571428571 L 143.47445255474 36 L 142.42335766423 36 L 141.37226277372 36 L 140.32116788321 36 L 139.2700729927 36 L 138.21897810219 36 L 137.16788321168 36 L 136.11678832117 36 L 135.06569343066 36 L 134.01459854015 36 L 132.96350364964 36 L 131.91240875912 36 L 130.86131386861 36 L 129.8102189781 36 L 128.75912408759 36 L 127.70802919708 36 L 126.65693430657 36 L 125.60583941606 36 L 124.55474452555 36 L 123.50364963504 36 L 122.45255474453 36 L 121.40145985401 36 L 120.3503649635 36 L 119.29927007299 36 L 118.24817518248 36 L 117.19708029197 36 L 116.14598540146 36 L 115.09489051095 36 L 114.04379562044 36 L 112.99270072993 36 L 111.94160583942 36 L 110.89051094891 36 L 109.83941605839 36 L 108.78832116788 36 L 107.73722627737 36 L 106.68613138686 36 L 105.63503649635 36 L 104.58394160584 36 L 103.53284671533 36 L 102.48175182482 36 L 101.43065693431 36 L 100.3795620438 36 L 99.328467153285 36 L 98.277372262774 36 L 97.226277372263 36 L 96.175182481752 36 L 95.124087591241 36 L 94.07299270073 36 L 93.021897810219 36 L 91.970802919708 36 L 90.919708029197 36 L 89.868613138686 36 L 88.817518248175 36 L 87.766423357664 36 L 86.715328467153 36 L 85.664233576642 36 L 84.613138686131 36 L 83.56204379562 36 L 82.510948905109 36 L 81.459854014599 36 L 80.408759124088 36 L 79.357664233577 36 L 78.306569343066 36 L 77.255474452555 36 L 76.204379562044 36 L 75.153284671533 36 L 74.102189781022 36 L 73.051094890511 36 L 72 36 L 70.948905109489 36 L 69.897810218978 36 L 68.846715328467 36 L 67.795620437956 36 L 66.744525547445 36 L 65.693430656934 36 L 64.642335766423 36 L 63.591240875912 36 L 62.540145985401 36 L 61.489051094891 36 L 60.43795620438 36 L 59.386861313869 36 L 58.335766423358 36 L 57.284671532847 36 L 56.233576642336 36 L 55.182481751825 36 L 54.131386861314 36 L 53.080291970803 36 L 52.029197080292 36 L 50.978102189781 36 L 49.92700729927 36 L 48.875912408759 36 L 47.824817518248 36 L 46.773722627737 36 L 45.722627737226 36 L 44.671532846715 36 L 43.620437956204 36 L 42.569343065693 36 L 41.518248175182 36 L 40.467153284672 36 L 39.416058394161 36 L 38.36496350365 36 L 37.313868613139 36 L 36.262773722628 36 L 35.211678832117 36 L 34.160583941606 36 L 33.109489051095 36 L 32.058394160584 36 L 31.007299270073 36 L 29.956204379562 36 L 28.905109489051 36 L 27.85401459854 36 L 26.802919708029 36 L 25.751824817518 36 L 24.700729927007 36 L 23.649635036496 36 L 22.598540145985 36 L 21.547445255474 36 L 20.496350364964 36 L 19.445255474453 36 L 18.394160583942 36 L 17.343065693431 36 L 16.29197080292 36 L 15.240875912409 36 L 14.189781021898 36 L 13.138686131387 36 L 12.087591240876 36 L 11.036496350365 36 L 9.985401459854 36 L 8.9343065693431 36 L 7.8832116788321 36 L 6.8321167883212 36 L 5.7810218978102 36 L 4.7299270072993 36 L 3.6788321167883 36 L 2.6277372262774 36 L 1.5766423357664 36 L 0.52554744525547 36" class="highcharts-area"></path><path fill="none" d="M 0.52554744525547 20.285714285714285 L 1.5766423357664 20.285714285714285 L 2.6277372262774 21.714285714285715 L 3.6788321167883 20.285714285714285 L 4.7299270072993 18.857142857142858 L 5.7810218978102 17.428571428571427 L 6.8321167883212 18.142857142857142 L 7.8832116788321 17.428571428571427 L 8.9343065693431 18.142857142857142 L 9.985401459854 18.142857142857142 L 11.036496350365 16 L 12.087591240876 15.285714285714285 L 13.138686131387 16.71428571428571 L 14.189781021898 16.71428571428571 L 15.240875912409 15.285714285714285 L 16.29197080292 16.71428571428571 L 17.343065693431 18.142857142857142 L 18.394160583942 18.142857142857142 L 19.445255474453 21.714285714285715 L 20.496350364964 21.714285714285715 L 21.547445255474 21.714285714285715 L 22.598540145985 19.571428571428573 L 23.649635036496 20.285714285714285 L 24.700729927007 19.571428571428573 L 25.751824817518 18.857142857142858 L 26.802919708029 17.428571428571427 L 27.85401459854 17.428571428571427 L 28.905109489051 14.57142857142857 L 29.956204379562 12.428571428571427 L 31.007299270073 9.57142857142857 L 32.058394160584 5.9999999999999964 L 33.109489051095 4.571428571428566 L 34.160583941606 1.7142857142857153 L 35.211678832117 5.9999999999999964 L 36.262773722628 8.857142857142858 L 37.313868613139 14.57142857142857 L 38.36496350365 15.285714285714285 L 39.416058394161 13.857142857142854 L 40.467153284672 16 L 41.518248175182 19.571428571428573 L 42.569343065693 21 L 43.620437956204 23.857142857142858 L 44.671532846715 24.57142857142857 L 45.722627737226 26 L 46.773722627737 28.857142857142858 L 47.824817518248 27.42857142857143 L 48.875912408759 25.285714285714285 L 49.92700729927 21 L 50.978102189781 17.428571428571427 L 52.029197080292 21 L 53.080291970803 18.857142857142858 L 54.131386861314 16.71428571428571 L 55.182481751825 18.142857142857142 L 56.233576642336 18.857142857142858 L 57.284671532847 19.571428571428573 L 58.335766423358 18.857142857142858 L 59.386861313869 18.857142857142858 L 60.43795620438 18.142857142857142 L 61.489051094891 17.428571428571427 L 62.540145985401 13.857142857142854 L 63.591240875912 11.714285714285715 L 64.642335766423 9.57142857142857 L 65.693430656934 11 L 66.744525547445 8.857142857142858 L 67.795620437956 8.857142857142858 L 68.846715328467 10.285714285714285 L 69.897810218978 8.857142857142858 L 70.948905109489 8.142857142857142 L 72 3.857142857142854 L 73.051094890511 5.285714285714285 L 74.102189781022 6.714285714285715 L 75.153284671533 9.57142857142857 L 76.204379562044 13.142857142857139 L 77.255474452555 13.857142857142854 L 78.306569343066 13.857142857142854 L 79.357664233577 16 L 80.408759124088 18.142857142857142 L 81.459854014599 19.571428571428573 L 82.510948905109 18.857142857142858 L 83.56204379562 19.571428571428573 L 84.613138686131 21 L 85.664233576642 18.857142857142858 L 86.715328467153 18.857142857142858 L 87.766423357664 18.857142857142858 L 88.817518248175 18.857142857142858 L 89.868613138686 18.142857142857142 L 90.919708029197 18.142857142857142 L 91.970802919708 20.285714285714285 L 93.021897810219 18.857142857142858 L 94.07299270073 17.428571428571427 L 95.124087591241 18.142857142857142 L 96.175182481752 18.857142857142858 L 97.226277372263 18.857142857142858 L 98.277372262774 21.714285714285715 L 99.328467153285 22.42857142857143 L 100.3795620438 22.42857142857143 L 101.43065693431 23.142857142857142 L 102.48175182482 24.57142857142857 L 103.53284671533 25.285714285714285 L 104.58394160584 23.857142857142858 L 105.63503649635 25.285714285714285 L 106.68613138686 23.142857142857142 L 107.73722627737 24.57142857142857 L 108.78832116788 25.285714285714285 L 109.83941605839 26.714285714285715 L 110.89051094891 26.714285714285715 L 111.94160583942 28.142857142857142 L 112.99270072993 31 L 114.04379562044 32.42857142857143 L 115.09489051095 33.14285714285714 L 116.14598540146 33.857142857142854 L 117.19708029197 33.857142857142854 L 118.24817518248 33.14285714285714 L 119.29927007299 33.857142857142854 L 120.3503649635 32.42857142857143 L 121.40145985401 33.14285714285714 L 122.45255474453 34.57142857142857 L 123.50364963504 34.57142857142857 L 124.55474452555 33.14285714285714 L 125.60583941606 32.42857142857143 L 126.65693430657 31.714285714285715 L 127.70802919708 31.714285714285715 L 128.75912408759 30.285714285714285 L 129.8102189781 31 L 130.86131386861 31 L 131.91240875912 30.285714285714285 L 132.96350364964 29.57142857142857 L 134.01459854015 28.857142857142858 L 135.06569343066 26.714285714285715 L 136.11678832117 26.714285714285715 L 137.16788321168 25.285714285714285 L 138.21897810219 23.142857142857142 L 139.2700729927 22.42857142857143 L 140.32116788321 19.571428571428573 L 141.37226277372 19.571428571428573 L 142.42335766423 17.428571428571427 L 143.47445255474 16.71428571428571" class="highcharts-graph" stroke="#007dc3" stroke-width="1" stroke-dasharray="none"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-area-series highcharts-color-undefined " transform="translate(40,10) scale(1 1)" clip-path="none"></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="40.52554744525547" style="color:#707070;cursor:default;font-size:11px;fill:#707070;" text-anchor="middle" transform="translate(0,0)" y="65" opacity="1"><tspan>2006</tspan><tspan dy="14" x="40.52554744525547">JAN</tspan><title>2006 JAN</title></text><text x="183.47445255474454" style="color:#707070;cursor:default;font-size:11px;fill:#707070;" text-anchor="middle" transform="translate(0,0)" y="65" opacity="1"><tspan>2017</tspan><tspan dy="14" x="183.47445255474454">MAY</tspan><title>2017 MAY</title></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g></svg>
-              </div>
-              <p class="margin-top--0 margin-bottom--0 padding-bottom--0"><span class="font-size--h1 font-weight--bold">2.7%</span></p>
-              <p class="margin-top--0 margin-bottom--0 padding-top--0">2017 May</p>
-              <p class="margin-top--0 margin-bottom--0 padding-bottom--0">Release date: 13 June 2017 <br>
-                Next release: 18 July 2017</p>
-            </div>
-
-          </div>
-
-          <div class="col col--lg-one-third col--md-half">
-
-            <div class="background--white padding-top--0 padding-left--1 padding-right--1 padding-bottom--2 margin-bottom--2">
-              <h3 class="font-size--h4 margin-bottom--0"><a href="#">CPIH All Items Index: 2015=100</a></h3>
-              <p class="margin-top--0 margin-bottom--1">Not a National Statistic.</p>
-              <div>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="224" height="96" aria-hidden="true"><desc>Created with Highcharts 5.0.7</desc><defs><clipPath id="highcharts-qc8cn16-7"><rect x="0" y="0" width="144" height="50" fill="none"></rect></clipPath></defs><rect fill="none" class="highcharts-background" x="0" y="0" width="224" height="96" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="40" y="10" width="144" height="50"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 40.5 10 L 40.5 60" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 183.5 10 L 183.5 60" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 39.5 10 L 39.5 60" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 40 60.5 L 184 60.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="40" y="10" width="144" height="50"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-axis-line" stroke="#707070" stroke-width="1" d="M 40 60.5 L 184 60.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 40 10 L 40 60"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-area-series highcharts-color-undefined " transform="translate(40,10) scale(1 1)" clip-path="url(#highcharts-qc8cn16-7)"><path fill="rgba(0,125,195,0.25)" d="M 0.48322147651007 13.975155279503106 L 1.4496644295302 13.883137796181273 L 2.4161073825503 13.745111571198528 L 3.3825503355705 13.607085346215783 L 4.3489932885906 13.46905912123303 L 5.3154362416107 13.46905912123303 L 6.2818791946309 13.423050379572118 L 7.248322147651 13.331032896250285 L 8.2147651006711 13.239015412928453 L 9.1812080536913 13.19300667126754 L 10.147651006711 13.19300667126754 L 11.114093959732 13.054980446284794 L 12.080536912752 13.19300667126754 L 13.046979865772 13.100989187945707 L 14.013422818792 13.008971704623875 L 14.979865771812 12.778927996319297 L 15.946308724832 12.594893029675639 L 16.912751677852 12.502875546353806 L 17.879194630872 12.502875546353806 L 18.845637583893 12.36484932137106 L 19.812080536913 12.318840579710141 L 20.778523489933 12.272831838049228 L 21.744966442953 12.180814354727396 L 22.711409395973 11.996779388083738 L 23.677852348993 12.226823096388316 L 24.644295302013 12.088796871405563 L 25.610738255034 11.904761904761905 L 26.577181208054 11.76673567977916 L 27.543624161074 11.674718196457327 L 28.510067114094 11.582700713135495 L 29.476510067114 11.76673567977916 L 30.442953020134 11.628709454796407 L 31.409395973154 11.582700713135495 L 32.375838926174 11.44467448815275 L 33.342281879195 11.306648263170004 L 34.308724832215 11.122613296526339 L 35.275167785235 11.306648263170004 L 36.241610738255 11.076604554865426 L 37.208053691275 10.938578329882674 L 38.174496644295 10.61651713825627 L 39.140939597315 10.386473429951693 L 40.107382550336 10.156429721647115 L 41.073825503356 10.156429721647115 L 42.040268456376 9.926386013342537 L 43.006711409396 9.742351046698872 L 43.973154362416 9.834368530020704 L 44.939597315436 9.834368530020704 L 45.906040268456 9.926386013342537 L 46.872483221477 10.156429721647115 L 47.838926174497 9.880377271681617 L 48.805369127517 9.834368530020704 L 49.771812080537 9.742351046698872 L 50.738255033557 9.558316080055206 L 51.704697986577 9.466298596733381 L 52.671140939597 9.512307338394294 L 53.637583892617 9.374281113411548 L 54.604026845638 9.374281113411548 L 55.570469798658 9.328272371750629 L 56.536912751678 9.236254888428803 L 57.503355704698 9.09822866344605 L 58.469798657718 9.14423740510697 L 59.436241610738 9.052219921785138 L 60.402684563758 8.868184955141473 L 61.369127516779 8.638141246836895 L 62.335570469799 8.54612376351507 L 63.302013422819 8.50011502185415 L 64.268456375839 8.592132505175982 L 65.234899328859 8.408097538532317 L 66.201342281879 8.408097538532317 L 67.167785234899 8.316080055210492 L 68.134228187919 8.17805383022774 L 69.10067114094 7.809983896940416 L 70.06711409396 7.763975155279503 L 71.03355704698 7.5339314469749254 L 72 7.39590522199218 L 72.96644295302 7.07384403036577 L 73.93288590604 6.981826547043937 L 74.89932885906 6.981826547043937 L 75.865771812081 6.981826547043937 L 76.832214765101 6.797791580400272 L 77.798657718121 6.521739130434781 L 78.765100671141 6.521739130434781 L 79.731543624161 6.429721647112949 L 80.697986577181 6.2916954221302035 L 81.664429530201 6.429721647112949 L 82.630872483221 6.199677938808371 L 83.597315436242 6.107660455486538 L 84.563758389262 5.8776167471819605 L 85.530201342282 5.8776167471819605 L 86.496644295302 6.015642972164713 L 87.463087248322 5.969634230503793 L 88.429530201342 5.785599263860135 L 89.395973154362 5.647573038877383 L 90.362416107383 5.463538072233725 L 91.328859060403 5.371520588911892 L 92.295302013423 5.233494363929147 L 93.261744966443 5.371520588911892 L 94.228187919463 5.141476880607314 L 95.194630872483 5.003450655624569 L 96.161073825503 4.911433172302736 L 97.127516778523 4.819415688980904 L 98.093959731544 4.911433172302736 L 99.060402684564 4.911433172302736 L 100.02684563758 4.727398205659071 L 100.9932885906 4.589371980676326 L 101.95973154362 4.543363239015413 L 102.92617449664 4.543363239015413 L 103.89261744966 4.359328272371748 L 104.85906040268 4.589371980676326 L 105.8255033557 4.405337014032668 L 106.79194630872 4.313319530710835 L 107.75838926174 4.17529330572809 L 108.72483221477 4.17529330572809 L 109.69127516779 4.083275822406257 L 110.65771812081 4.17529330572809 L 111.62416107383 4.0372670807453375 L 112.59060402685 3.9912583390844247 L 113.55704697987 3.945249597423512 L 114.52348993289 4.0372670807453375 L 115.48993288591 4.0372670807453375 L 116.45637583893 4.359328272371748 L 117.42281879195 4.221302047389003 L 118.38926174497 4.17529330572809 L 119.35570469799 4.0372670807453375 L 120.32214765101 3.945249597423512 L 121.28859060403 3.945249597423512 L 122.25503355705 3.9912583390844247 L 123.22147651007 3.8532321141016794 L 124.18791946309 3.899240855762592 L 125.15436241611 3.8532321141016794 L 126.12080536913 3.8532321141016794 L 127.08724832215 3.8072233724407596 L 128.05369127517 4.0372670807453375 L 129.02013422819 3.945249597423512 L 129.98657718121 3.8072233724407596 L 130.95302013423 3.715205889118934 L 131.91946308725 3.6231884057971016 L 132.88590604027 3.531170922475269 L 133.85234899329 3.5771796641361817 L 134.81879194631 3.4391534391534364 L 135.78523489933 3.301127214170691 L 136.75167785235 3.2551184725097784 L 137.71812080537 3.163100989187946 L 138.68456375839 2.9790660225442807 L 139.65100671141 3.163100989187946 L 140.61744966443 2.887048539222448 L 141.58389261745 2.749022314239703 L 142.55033557047 2.518978605935125 L 143.51677852349 2.3809523809523796 L 143.51677852349 50 L 142.55033557047 50 L 141.58389261745 50 L 140.61744966443 50 L 139.65100671141 50 L 138.68456375839 50 L 137.71812080537 50 L 136.75167785235 50 L 135.78523489933 50 L 134.81879194631 50 L 133.85234899329 50 L 132.88590604027 50 L 131.91946308725 50 L 130.95302013423 50 L 129.98657718121 50 L 129.02013422819 50 L 128.05369127517 50 L 127.08724832215 50 L 126.12080536913 50 L 125.15436241611 50 L 124.18791946309 50 L 123.22147651007 50 L 122.25503355705 50 L 121.28859060403 50 L 120.32214765101 50 L 119.35570469799 50 L 118.38926174497 50 L 117.42281879195 50 L 116.45637583893 50 L 115.48993288591 50 L 114.52348993289 50 L 113.55704697987 50 L 112.59060402685 50 L 111.62416107383 50 L 110.65771812081 50 L 109.69127516779 50 L 108.72483221477 50 L 107.75838926174 50 L 106.79194630872 50 L 105.8255033557 50 L 104.85906040268 50 L 103.89261744966 50 L 102.92617449664 50 L 101.95973154362 50 L 100.9932885906 50 L 100.02684563758 50 L 99.060402684564 50 L 98.093959731544 50 L 97.127516778523 50 L 96.161073825503 50 L 95.194630872483 50 L 94.228187919463 50 L 93.261744966443 50 L 92.295302013423 50 L 91.328859060403 50 L 90.362416107383 50 L 89.395973154362 50 L 88.429530201342 50 L 87.463087248322 50 L 86.496644295302 50 L 85.530201342282 50 L 84.563758389262 50 L 83.597315436242 50 L 82.630872483221 50 L 81.664429530201 50 L 80.697986577181 50 L 79.731543624161 50 L 78.765100671141 50 L 77.798657718121 50 L 76.832214765101 50 L 75.865771812081 50 L 74.89932885906 50 L 73.93288590604 50 L 72.96644295302 50 L 72 50 L 71.03355704698 50 L 70.06711409396 50 L 69.10067114094 50 L 68.134228187919 50 L 67.167785234899 50 L 66.201342281879 50 L 65.234899328859 50 L 64.268456375839 50 L 63.302013422819 50 L 62.335570469799 50 L 61.369127516779 50 L 60.402684563758 50 L 59.436241610738 50 L 58.469798657718 50 L 57.503355704698 50 L 56.536912751678 50 L 55.570469798658 50 L 54.604026845638 50 L 53.637583892617 50 L 52.671140939597 50 L 51.704697986577 50 L 50.738255033557 50 L 49.771812080537 50 L 48.805369127517 50 L 47.838926174497 50 L 46.872483221477 50 L 45.906040268456 50 L 44.939597315436 50 L 43.973154362416 50 L 43.006711409396 50 L 42.040268456376 50 L 41.073825503356 50 L 40.107382550336 50 L 39.140939597315 50 L 38.174496644295 50 L 37.208053691275 50 L 36.241610738255 50 L 35.275167785235 50 L 34.308724832215 50 L 33.342281879195 50 L 32.375838926174 50 L 31.409395973154 50 L 30.442953020134 50 L 29.476510067114 50 L 28.510067114094 50 L 27.543624161074 50 L 26.577181208054 50 L 25.610738255034 50 L 24.644295302013 50 L 23.677852348993 50 L 22.711409395973 50 L 21.744966442953 50 L 20.778523489933 50 L 19.812080536913 50 L 18.845637583893 50 L 17.879194630872 50 L 16.912751677852 50 L 15.946308724832 50 L 14.979865771812 50 L 14.013422818792 50 L 13.046979865772 50 L 12.080536912752 50 L 11.114093959732 50 L 10.147651006711 50 L 9.1812080536913 50 L 8.2147651006711 50 L 7.248322147651 50 L 6.2818791946309 50 L 5.3154362416107 50 L 4.3489932885906 50 L 3.3825503355705 50 L 2.4161073825503 50 L 1.4496644295302 50 L 0.48322147651007 50" class="highcharts-area"></path><path fill="none" d="M 0.48322147651007 13.975155279503106 L 1.4496644295302 13.883137796181273 L 2.4161073825503 13.745111571198528 L 3.3825503355705 13.607085346215783 L 4.3489932885906 13.46905912123303 L 5.3154362416107 13.46905912123303 L 6.2818791946309 13.423050379572118 L 7.248322147651 13.331032896250285 L 8.2147651006711 13.239015412928453 L 9.1812080536913 13.19300667126754 L 10.147651006711 13.19300667126754 L 11.114093959732 13.054980446284794 L 12.080536912752 13.19300667126754 L 13.046979865772 13.100989187945707 L 14.013422818792 13.008971704623875 L 14.979865771812 12.778927996319297 L 15.946308724832 12.594893029675639 L 16.912751677852 12.502875546353806 L 17.879194630872 12.502875546353806 L 18.845637583893 12.36484932137106 L 19.812080536913 12.318840579710141 L 20.778523489933 12.272831838049228 L 21.744966442953 12.180814354727396 L 22.711409395973 11.996779388083738 L 23.677852348993 12.226823096388316 L 24.644295302013 12.088796871405563 L 25.610738255034 11.904761904761905 L 26.577181208054 11.76673567977916 L 27.543624161074 11.674718196457327 L 28.510067114094 11.582700713135495 L 29.476510067114 11.76673567977916 L 30.442953020134 11.628709454796407 L 31.409395973154 11.582700713135495 L 32.375838926174 11.44467448815275 L 33.342281879195 11.306648263170004 L 34.308724832215 11.122613296526339 L 35.275167785235 11.306648263170004 L 36.241610738255 11.076604554865426 L 37.208053691275 10.938578329882674 L 38.174496644295 10.61651713825627 L 39.140939597315 10.386473429951693 L 40.107382550336 10.156429721647115 L 41.073825503356 10.156429721647115 L 42.040268456376 9.926386013342537 L 43.006711409396 9.742351046698872 L 43.973154362416 9.834368530020704 L 44.939597315436 9.834368530020704 L 45.906040268456 9.926386013342537 L 46.872483221477 10.156429721647115 L 47.838926174497 9.880377271681617 L 48.805369127517 9.834368530020704 L 49.771812080537 9.742351046698872 L 50.738255033557 9.558316080055206 L 51.704697986577 9.466298596733381 L 52.671140939597 9.512307338394294 L 53.637583892617 9.374281113411548 L 54.604026845638 9.374281113411548 L 55.570469798658 9.328272371750629 L 56.536912751678 9.236254888428803 L 57.503355704698 9.09822866344605 L 58.469798657718 9.14423740510697 L 59.436241610738 9.052219921785138 L 60.402684563758 8.868184955141473 L 61.369127516779 8.638141246836895 L 62.335570469799 8.54612376351507 L 63.302013422819 8.50011502185415 L 64.268456375839 8.592132505175982 L 65.234899328859 8.408097538532317 L 66.201342281879 8.408097538532317 L 67.167785234899 8.316080055210492 L 68.134228187919 8.17805383022774 L 69.10067114094 7.809983896940416 L 70.06711409396 7.763975155279503 L 71.03355704698 7.5339314469749254 L 72 7.39590522199218 L 72.96644295302 7.07384403036577 L 73.93288590604 6.981826547043937 L 74.89932885906 6.981826547043937 L 75.865771812081 6.981826547043937 L 76.832214765101 6.797791580400272 L 77.798657718121 6.521739130434781 L 78.765100671141 6.521739130434781 L 79.731543624161 6.429721647112949 L 80.697986577181 6.2916954221302035 L 81.664429530201 6.429721647112949 L 82.630872483221 6.199677938808371 L 83.597315436242 6.107660455486538 L 84.563758389262 5.8776167471819605 L 85.530201342282 5.8776167471819605 L 86.496644295302 6.015642972164713 L 87.463087248322 5.969634230503793 L 88.429530201342 5.785599263860135 L 89.395973154362 5.647573038877383 L 90.362416107383 5.463538072233725 L 91.328859060403 5.371520588911892 L 92.295302013423 5.233494363929147 L 93.261744966443 5.371520588911892 L 94.228187919463 5.141476880607314 L 95.194630872483 5.003450655624569 L 96.161073825503 4.911433172302736 L 97.127516778523 4.819415688980904 L 98.093959731544 4.911433172302736 L 99.060402684564 4.911433172302736 L 100.02684563758 4.727398205659071 L 100.9932885906 4.589371980676326 L 101.95973154362 4.543363239015413 L 102.92617449664 4.543363239015413 L 103.89261744966 4.359328272371748 L 104.85906040268 4.589371980676326 L 105.8255033557 4.405337014032668 L 106.79194630872 4.313319530710835 L 107.75838926174 4.17529330572809 L 108.72483221477 4.17529330572809 L 109.69127516779 4.083275822406257 L 110.65771812081 4.17529330572809 L 111.62416107383 4.0372670807453375 L 112.59060402685 3.9912583390844247 L 113.55704697987 3.945249597423512 L 114.52348993289 4.0372670807453375 L 115.48993288591 4.0372670807453375 L 116.45637583893 4.359328272371748 L 117.42281879195 4.221302047389003 L 118.38926174497 4.17529330572809 L 119.35570469799 4.0372670807453375 L 120.32214765101 3.945249597423512 L 121.28859060403 3.945249597423512 L 122.25503355705 3.9912583390844247 L 123.22147651007 3.8532321141016794 L 124.18791946309 3.899240855762592 L 125.15436241611 3.8532321141016794 L 126.12080536913 3.8532321141016794 L 127.08724832215 3.8072233724407596 L 128.05369127517 4.0372670807453375 L 129.02013422819 3.945249597423512 L 129.98657718121 3.8072233724407596 L 130.95302013423 3.715205889118934 L 131.91946308725 3.6231884057971016 L 132.88590604027 3.531170922475269 L 133.85234899329 3.5771796641361817 L 134.81879194631 3.4391534391534364 L 135.78523489933 3.301127214170691 L 136.75167785235 3.2551184725097784 L 137.71812080537 3.163100989187946 L 138.68456375839 2.9790660225442807 L 139.65100671141 3.163100989187946 L 140.61744966443 2.887048539222448 L 141.58389261745 2.749022314239703 L 142.55033557047 2.518978605935125 L 143.51677852349 2.3809523809523796" class="highcharts-graph" stroke="#007dc3" stroke-width="1" stroke-dasharray="none"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-area-series highcharts-color-undefined " transform="translate(40,10) scale(1 1)" clip-path="none"></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="40.48322147651007" style="color:#707070;cursor:default;font-size:11px;fill:#707070;" text-anchor="middle" transform="translate(0,0)" y="79" opacity="1"><tspan>2005 JAN</tspan></text><text x="183.51677852348993" style="color:#707070;cursor:default;font-size:11px;fill:#707070;" text-anchor="middle" transform="translate(0,0)" y="79" opacity="1"><tspan>2017 MAY</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g></svg>
-              </div>
-              <p class="margin-top--0 margin-bottom--0 padding-bottom--0"><span class="font-size--h1 font-weight--bold">103.5</span></p>
-              <p class="margin-top--0 margin-bottom--0 padding-top--0 padding-bottom--0"><span class="font-weight--bold font-size--h3">Index, base year = 100</span></p>
-              <p class="margin-top--0 margin-bottom--0 padding-top--0">2017 May</p>
-              <p class="margin-top--0 margin-bottom--0 padding-bottom--0">Release date: 13 June 2017 <br>
-                Next release: 18 July 2017</p>
-            </div>
-
-          </div>
-
-          <div class="col col--lg-one-third col--md-half">
-
-            <div class="background--white padding-top--0 padding-left--1 padding-right--1 padding-bottom--2 margin-bottom--2">
-              <h3 class="font-size--h4 margin-bottom--0"><a href="#">CPI: Consumer Prices Index (% change)</a></h3>
-              <p class="margin-top--0 margin-bottom--1">Not a National Statistic.</p>
-              <div>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="224" height="96" aria-hidden="true"><desc>Created with Highcharts 5.0.7</desc><defs><clipPath id="highcharts-qc8cn16-10"><rect x="0" y="0" width="144" height="50" fill="none"></rect></clipPath></defs><rect fill="none" class="highcharts-background" x="0" y="0" width="224" height="96" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="40" y="10" width="144" height="50"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 39.5 10 L 39.5 60" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 183.5 10 L 183.5 60" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 39.5 10 L 39.5 60" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 40 57.5 L 184 57.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="40" y="10" width="144" height="50"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-axis-line" stroke="#707070" stroke-width="1" d="M 40 60.5 L 184 60.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 40 10 L 40 60"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-area-series highcharts-color-undefined " transform="translate(40,10) scale(1 1)" clip-path="url(#highcharts-qc8cn16-10)"><path fill="rgba(0,125,195,0.25)" d="M 0.21114369501466 21.30021141649048 L 0.63343108504399 20.77167019027484 L 1.0557184750733 20.77167019027484 L 1.4780058651026 19.186046511627904 L 1.900293255132 19.186046511627904 L 2.3225806451613 19.714587737843548 L 2.7448680351906 19.714587737843548 L 3.1671554252199 20.77167019027484 L 3.5894428152493 19.714587737843548 L 4.0117302052786 18.128964059196615 L 4.4340175953079 18.128964059196615 L 4.8563049853372 18.128964059196615 L 5.2785923753666 17.071881606765324 L 5.7008797653959 16.014799154334035 L 6.1231671554252 15.486257928118391 L 6.5454545454545 13.372093023255808 L 6.9677419354839 11.257928118393231 L 7.3900293255132 10.729386892177587 L 7.8123167155425 11.257928118393231 L 8.2346041055718 6.5010570824524265 L 8.6568914956012 4.386892177589857 L 9.0791788856305 4.386892177589857 L 9.5014662756598 5.972515856236782 L 9.9237536656891 7.029598308668078 L 10.346041055718 9.672304439746298 L 10.768328445748 10.200845665961943 L 11.190615835777 10.729386892177587 L 11.612903225806 2.2727272727272734 L 12.035190615836 3.858350951374213 L 12.457478005865 2.8012684989429175 L 12.879765395894 3.3298097251585617 L 13.302052785924 6.5010570824524265 L 13.724340175953 9.672304439746298 L 14.146627565982 11.257928118393231 L 14.568914956012 9.672304439746298 L 14.991202346041 9.143763213530647 L 15.41348973607 10.200845665961943 L 15.8357771261 10.729386892177587 L 16.258064516129 9.672304439746298 L 16.680351906158 22.357293868921772 L 17.102639296188 24.471458773784352 L 17.524926686217 27.114164904862577 L 17.947214076246 28.17124735729387 L 18.369501466276 30.285412262156445 L 18.791788856305 31.342494714587737 L 19.214076246334 31.871035940803385 L 19.636363636364 33.45665961945032 L 20.058651026393 33.45665961945032 L 20.480938416422 35.5708245243129 L 20.903225806452 34.51374207188161 L 21.325513196481 33.98520084566596 L 21.74780058651 33.98520084566596 L 22.17008797654 33.98520084566596 L 22.592375366569 34.51374207188161 L 23.014662756598 33.45665961945032 L 23.436950146628 31.871035940803385 L 23.859237536657 31.342494714587737 L 24.281524926686 33.45665961945032 L 24.703812316716 35.042283298097246 L 25.126099706745 34.51374207188161 L 25.548387096774 32.92811839323467 L 25.970674486804 33.98520084566596 L 26.392961876833 35.5708245243129 L 26.815249266862 36.627906976744185 L 27.237536656891 36.627906976744185 L 27.659824046921 36.627906976744185 L 28.08211143695 38.21353065539112 L 28.504398826979 37.15644820295983 L 28.926686217009 39.270613107822406 L 29.348973607038 39.270613107822406 L 29.771260997067 37.684989429175474 L 30.193548387097 36.627906976744185 L 30.615835777126 34.51374207188161 L 31.038123167155 34.51374207188161 L 31.460410557185 33.45665961945032 L 31.882697947214 35.042283298097246 L 32.304985337243 33.98520084566596 L 32.727272727273 33.45665961945032 L 33.149560117302 33.45665961945032 L 33.571847507331 33.45665961945032 L 33.994134897361 31.342494714587737 L 34.41642228739 31.871035940803385 L 34.838709677419 32.399577167019025 L 35.260997067449 31.342494714587737 L 35.683284457478 32.92811839323467 L 36.105571847507 32.92811839323467 L 36.527859237537 33.45665961945032 L 36.950146627566 33.45665961945032 L 37.372434017595 34.51374207188161 L 37.794721407625 34.51374207188161 L 38.217008797654 35.042283298097246 L 38.639296187683 35.042283298097246 L 39.061583577713 35.042283298097246 L 39.483870967742 33.98520084566596 L 39.906158357771 33.45665961945032 L 40.328445747801 35.042283298097246 L 40.75073313783 36.09936575052854 L 41.173020527859 37.15644820295983 L 41.595307917889 38.21353065539112 L 42.017595307918 38.74207188160676 L 42.439882697947 38.74207188160676 L 42.862170087977 38.21353065539112 L 43.284457478006 36.627906976744185 L 43.706744868035 36.627906976744185 L 44.129032258065 37.684989429175474 L 44.551319648094 37.15644820295983 L 44.973607038123 37.15644820295983 L 45.395894428152 38.21353065539112 L 45.818181818182 39.270613107822406 L 46.240469208211 38.74207188160676 L 46.66275659824 38.21353065539112 L 47.08504398827 37.684989429175474 L 47.507331378299 36.627906976744185 L 47.929618768328 38.21353065539112 L 48.351906158358 39.79915433403805 L 48.774193548387 40.3276955602537 L 49.196480938416 39.79915433403805 L 49.618768328446 39.79915433403805 L 50.041055718475 39.79915433403805 L 50.463343108504 38.74207188160676 L 50.885630498534 38.74207188160676 L 51.307917888563 39.79915433403805 L 51.730205278592 38.21353065539112 L 52.152492668622 39.270613107822406 L 52.574780058651 40.3276955602537 L 52.99706744868 40.3276955602537 L 53.41935483871 40.3276955602537 L 53.841642228739 40.856236786469346 L 54.263929618768 40.856236786469346 L 54.686217008798 41.38477801268499 L 55.108504398827 40.856236786469346 L 55.530791788856 41.38477801268499 L 55.953079178886 42.97040169133192 L 56.375366568915 42.44186046511628 L 56.797653958944 44.02748414376322 L 57.219941348974 44.02748414376322 L 57.642228739003 44.556025369978855 L 58.064516129032 42.97040169133192 L 58.486803519062 42.44186046511628 L 58.909090909091 44.02748414376322 L 59.33137829912 41.913319238900634 L 59.75366568915 41.913319238900634 L 60.175953079179 41.38477801268499 L 60.598240469208 42.97040169133192 L 61.020527859238 42.44186046511628 L 61.442815249267 42.97040169133192 L 61.865102639296 42.44186046511628 L 62.287390029326 40.856236786469346 L 62.709677419355 38.21353065539112 L 63.131964809384 38.21353065539112 L 63.554252199413 39.79915433403805 L 63.976539589443 37.684989429175474 L 64.398826979472 40.3276955602537 L 64.821114369501 40.856236786469346 L 65.243401759531 42.97040169133192 L 65.66568914956 41.38477801268499 L 66.087976539589 38.74207188160676 L 66.510263929619 39.270613107822406 L 66.932551319648 39.270613107822406 L 67.354838709677 39.79915433403805 L 67.777126099707 42.97040169133192 L 68.199413489736 44.02748414376322 L 68.621700879765 41.38477801268499 L 69.043988269795 41.913319238900634 L 69.466275659824 41.913319238900634 L 69.888563049853 39.79915433403805 L 70.310850439883 39.270613107822406 L 70.733137829912 38.21353065539112 L 71.155425219941 40.3276955602537 L 71.577712609971 38.74207188160676 L 72 39.270613107822406 L 72.422287390029 39.79915433403805 L 72.844574780059 40.3276955602537 L 73.266862170088 41.38477801268499 L 73.689149560117 40.3276955602537 L 74.111436950147 39.79915433403805 L 74.533724340176 39.79915433403805 L 74.956011730205 39.79915433403805 L 75.378299120235 40.3276955602537 L 75.800586510264 40.3276955602537 L 76.222873900293 39.79915433403805 L 76.645161290323 40.3276955602537 L 77.067448680352 41.38477801268499 L 77.489736070381 41.38477801268499 L 77.912023460411 39.270613107822406 L 78.33431085044 38.74207188160676 L 78.756598240469 39.79915433403805 L 79.178885630499 40.3276955602537 L 79.601173020528 41.38477801268499 L 80.023460410557 40.856236786469346 L 80.445747800587 39.270613107822406 L 80.868035190616 38.21353065539112 L 81.290322580645 38.74207188160676 L 81.712609970674 38.21353065539112 L 82.134897360704 37.15644820295983 L 82.557184750733 37.15644820295983 L 82.979472140762 37.15644820295983 L 83.401759530792 36.627906976744185 L 83.824046920821 35.042283298097246 L 84.24633431085 34.51374207188161 L 84.66862170088 33.98520084566596 L 85.090909090909 35.042283298097246 L 85.513196480938 36.09936575052854 L 85.935483870968 37.15644820295983 L 86.357771260997 37.15644820295983 L 86.780058651026 36.627906976744185 L 87.202346041056 37.684989429175474 L 87.624633431085 36.627906976744185 L 88.046920821114 35.5708245243129 L 88.469208211144 33.98520084566596 L 88.891495601173 34.51374207188161 L 89.313782991202 33.98520084566596 L 89.736070381232 34.51374207188161 L 90.158357771261 34.51374207188161 L 90.58064516129 32.92811839323467 L 91.00293255132 31.342494714587737 L 91.425219941349 32.92811839323467 L 91.847507331378 32.399577167019025 L 92.269794721408 30.813953488372093 L 92.692082111437 32.399577167019025 L 93.114369501466 33.98520084566596 L 93.536656891496 34.51374207188161 L 93.958944281525 37.15644820295983 L 94.381231671554 37.684989429175474 L 94.803519061584 37.684989429175474 L 95.225806451613 36.09936575052854 L 95.648093841642 36.09936575052854 L 96.070381231672 36.09936575052854 L 96.492668621701 35.5708245243129 L 96.91495601173 33.98520084566596 L 97.33724340176 33.98520084566596 L 97.759530791789 31.342494714587737 L 98.181818181818 29.7568710359408 L 98.604105571848 27.114164904862577 L 99.026392961877 23.942917547568705 L 99.448680351906 22.357293868921772 L 99.870967741935 19.714587737843548 L 100.29325513196 23.414376321353064 L 100.71554252199 25.528541226215644 L 101.13782991202 30.813953488372093 L 101.56011730205 31.342494714587737 L 101.98240469208 30.285412262156445 L 102.40469208211 31.871035940803385 L 102.82697947214 35.042283298097246 L 103.24926686217 35.5708245243129 L 103.6715542522 37.684989429175474 L 104.09384164223 37.684989429175474 L 104.51612903226 38.74207188160676 L 104.93841642229 41.38477801268499 L 105.36070381232 39.270613107822406 L 105.78299120235 37.15644820295983 L 106.20527859238 31.871035940803385 L 106.6275659824 28.699788583509513 L 107.04985337243 31.342494714587737 L 107.47214076246 29.22832980972516 L 107.89442815249 27.64270613107822 L 108.31671554252 29.22832980972516 L 108.73900293255 30.285412262156445 L 109.16129032258 30.813953488372093 L 109.58357771261 30.813953488372093 L 110.00586510264 30.813953488372093 L 110.42815249267 30.285412262156445 L 110.8504398827 29.7568710359408 L 111.27272727273 27.64270613107822 L 111.69501466276 26.05708245243129 L 112.11730205279 23.942917547568705 L 112.53958944282 26.05708245243129 L 112.96187683284 23.414376321353064 L 113.38416422287 23.414376321353064 L 113.8064516129 24.999999999999996 L 114.22873900293 23.942917547568705 L 114.65102639296 23.414376321353064 L 115.07331378299 19.714587737843548 L 115.49560117302 20.77167019027484 L 115.91788856305 21.828752642706128 L 116.34017595308 24.999999999999996 L 116.76246334311 28.17124735729387 L 117.18475073314 29.22832980972516 L 117.60703812317 28.699788583509513 L 118.0293255132 31.342494714587737 L 118.45161290323 32.399577167019025 L 118.87390029326 34.51374207188161 L 119.29618768328 33.45665961945032 L 119.71847507331 33.98520084566596 L 120.14076246334 35.5708245243129 L 120.56304985337 32.92811839323467 L 120.9853372434 32.92811839323467 L 121.40762463343 32.92811839323467 L 121.82991202346 32.92811839323467 L 122.25219941349 32.399577167019025 L 122.67448680352 32.399577167019025 L 123.09677419355 34.51374207188161 L 123.51906158358 32.92811839323467 L 123.94134897361 31.871035940803385 L 124.36363636364 32.399577167019025 L 124.78592375367 32.92811839323467 L 125.2082111437 32.92811839323467 L 125.63049853372 35.5708245243129 L 126.05278592375 36.09936575052854 L 126.47507331378 36.627906976744185 L 126.89736070381 37.15644820295983 L 127.31964809384 38.21353065539112 L 127.74193548387 38.74207188160676 L 128.1642228739 37.684989429175474 L 128.58651026393 39.270613107822406 L 129.00879765396 37.15644820295983 L 129.43108504399 38.74207188160676 L 129.85337243402 39.270613107822406 L 130.27565982405 40.856236786469346 L 130.69794721408 40.3276955602537 L 131.12023460411 41.913319238900634 L 131.54252199413 44.556025369978855 L 131.96480938416 45.61310782241015 L 131.96480938416 47.19873150105708 L 133.23167155425 47.19873150105708 L 133.23167155425 47.72727272727273 L 133.65395894428 46.67019027484144 L 133.65395894428 47.19873150105708 L 134.49853372434 47.19873150105708 L 134.49853372434 46.67019027484144 L 134.49853372434 47.19873150105708 L 135.3431085044 47.19873150105708 L 135.3431085044 47.72727272727273 L 135.76539589443 47.72727272727273 L 136.18768328446 46.67019027484144 L 136.60997067449 46.141649048625794 L 137.03225806452 45.61310782241015 L 137.45454545455 45.61310782241015 L 137.87683284457 44.556025369978855 L 138.2991202346 45.61310782241015 L 138.72140762463 45.61310782241015 L 139.14369501466 44.556025369978855 L 139.56598240469 44.02748414376322 L 139.98826979472 44.02748414376322 L 140.41055718475 41.913319238900634 L 140.83284457478 42.44186046511628 L 141.25513196481 40.856236786469346 L 141.67741935484 38.74207188160676 L 142.09970674487 37.684989429175474 L 142.5219941349 35.042283298097246 L 142.94428152493 35.042283298097246 L 143.36656891496 32.92811839323467 L 143.78885630499 31.871035940803385 L 143.78885630499 47.19873150105708 L 143.36656891496 47.19873150105708 L 142.94428152493 47.19873150105708 L 142.5219941349 47.19873150105708 L 142.09970674487 47.19873150105708 L 141.67741935484 47.19873150105708 L 141.25513196481 47.19873150105708 L 140.83284457478 47.19873150105708 L 140.41055718475 47.19873150105708 L 139.98826979472 47.19873150105708 L 139.56598240469 47.19873150105708 L 139.14369501466 47.19873150105708 L 138.72140762463 47.19873150105708 L 138.2991202346 47.19873150105708 L 137.87683284457 47.19873150105708 L 137.45454545455 47.19873150105708 L 137.03225806452 47.19873150105708 L 136.60997067449 47.19873150105708 L 136.18768328446 47.19873150105708 L 135.76539589443 47.19873150105708 L 135.3431085044 47.19873150105708 L 135.3431085044 47.19873150105708 L 134.49853372434 47.19873150105708 L 134.49853372434 47.19873150105708 L 134.49853372434 47.19873150105708 L 133.65395894428 47.19873150105708 L 133.65395894428 47.19873150105708 L 133.23167155425 47.19873150105708 L 133.23167155425 47.19873150105708 L 131.96480938416 47.19873150105708 L 131.96480938416 47.19873150105708 L 131.54252199413 47.19873150105708 L 131.12023460411 47.19873150105708 L 130.69794721408 47.19873150105708 L 130.27565982405 47.19873150105708 L 129.85337243402 47.19873150105708 L 129.43108504399 47.19873150105708 L 129.00879765396 47.19873150105708 L 128.58651026393 47.19873150105708 L 128.1642228739 47.19873150105708 L 127.74193548387 47.19873150105708 L 127.31964809384 47.19873150105708 L 126.89736070381 47.19873150105708 L 126.47507331378 47.19873150105708 L 126.05278592375 47.19873150105708 L 125.63049853372 47.19873150105708 L 125.2082111437 47.19873150105708 L 124.78592375367 47.19873150105708 L 124.36363636364 47.19873150105708 L 123.94134897361 47.19873150105708 L 123.51906158358 47.19873150105708 L 123.09677419355 47.19873150105708 L 122.67448680352 47.19873150105708 L 122.25219941349 47.19873150105708 L 121.82991202346 47.19873150105708 L 121.40762463343 47.19873150105708 L 120.9853372434 47.19873150105708 L 120.56304985337 47.19873150105708 L 120.14076246334 47.19873150105708 L 119.71847507331 47.19873150105708 L 119.29618768328 47.19873150105708 L 118.87390029326 47.19873150105708 L 118.45161290323 47.19873150105708 L 118.0293255132 47.19873150105708 L 117.60703812317 47.19873150105708 L 117.18475073314 47.19873150105708 L 116.76246334311 47.19873150105708 L 116.34017595308 47.19873150105708 L 115.91788856305 47.19873150105708 L 115.49560117302 47.19873150105708 L 115.07331378299 47.19873150105708 L 114.65102639296 47.19873150105708 L 114.22873900293 47.19873150105708 L 113.8064516129 47.19873150105708 L 113.38416422287 47.19873150105708 L 112.96187683284 47.19873150105708 L 112.53958944282 47.19873150105708 L 112.11730205279 47.19873150105708 L 111.69501466276 47.19873150105708 L 111.27272727273 47.19873150105708 L 110.8504398827 47.19873150105708 L 110.42815249267 47.19873150105708 L 110.00586510264 47.19873150105708 L 109.58357771261 47.19873150105708 L 109.16129032258 47.19873150105708 L 108.73900293255 47.19873150105708 L 108.31671554252 47.19873150105708 L 107.89442815249 47.19873150105708 L 107.47214076246 47.19873150105708 L 107.04985337243 47.19873150105708 L 106.6275659824 47.19873150105708 L 106.20527859238 47.19873150105708 L 105.78299120235 47.19873150105708 L 105.36070381232 47.19873150105708 L 104.93841642229 47.19873150105708 L 104.51612903226 47.19873150105708 L 104.09384164223 47.19873150105708 L 103.6715542522 47.19873150105708 L 103.24926686217 47.19873150105708 L 102.82697947214 47.19873150105708 L 102.40469208211 47.19873150105708 L 101.98240469208 47.19873150105708 L 101.56011730205 47.19873150105708 L 101.13782991202 47.19873150105708 L 100.71554252199 47.19873150105708 L 100.29325513196 47.19873150105708 L 99.870967741935 47.19873150105708 L 99.448680351906 47.19873150105708 L 99.026392961877 47.19873150105708 L 98.604105571848 47.19873150105708 L 98.181818181818 47.19873150105708 L 97.759530791789 47.19873150105708 L 97.33724340176 47.19873150105708 L 96.91495601173 47.19873150105708 L 96.492668621701 47.19873150105708 L 96.070381231672 47.19873150105708 L 95.648093841642 47.19873150105708 L 95.225806451613 47.19873150105708 L 94.803519061584 47.19873150105708 L 94.381231671554 47.19873150105708 L 93.958944281525 47.19873150105708 L 93.536656891496 47.19873150105708 L 93.114369501466 47.19873150105708 L 92.692082111437 47.19873150105708 L 92.269794721408 47.19873150105708 L 91.847507331378 47.19873150105708 L 91.425219941349 47.19873150105708 L 91.00293255132 47.19873150105708 L 90.58064516129 47.19873150105708 L 90.158357771261 47.19873150105708 L 89.736070381232 47.19873150105708 L 89.313782991202 47.19873150105708 L 88.891495601173 47.19873150105708 L 88.469208211144 47.19873150105708 L 88.046920821114 47.19873150105708 L 87.624633431085 47.19873150105708 L 87.202346041056 47.19873150105708 L 86.780058651026 47.19873150105708 L 86.357771260997 47.19873150105708 L 85.935483870968 47.19873150105708 L 85.513196480938 47.19873150105708 L 85.090909090909 47.19873150105708 L 84.66862170088 47.19873150105708 L 84.24633431085 47.19873150105708 L 83.824046920821 47.19873150105708 L 83.401759530792 47.19873150105708 L 82.979472140762 47.19873150105708 L 82.557184750733 47.19873150105708 L 82.134897360704 47.19873150105708 L 81.712609970674 47.19873150105708 L 81.290322580645 47.19873150105708 L 80.868035190616 47.19873150105708 L 80.445747800587 47.19873150105708 L 80.023460410557 47.19873150105708 L 79.601173020528 47.19873150105708 L 79.178885630499 47.19873150105708 L 78.756598240469 47.19873150105708 L 78.33431085044 47.19873150105708 L 77.912023460411 47.19873150105708 L 77.489736070381 47.19873150105708 L 77.067448680352 47.19873150105708 L 76.645161290323 47.19873150105708 L 76.222873900293 47.19873150105708 L 75.800586510264 47.19873150105708 L 75.378299120235 47.19873150105708 L 74.956011730205 47.19873150105708 L 74.533724340176 47.19873150105708 L 74.111436950147 47.19873150105708 L 73.689149560117 47.19873150105708 L 73.266862170088 47.19873150105708 L 72.844574780059 47.19873150105708 L 72.422287390029 47.19873150105708 L 72 47.19873150105708 L 71.577712609971 47.19873150105708 L 71.155425219941 47.19873150105708 L 70.733137829912 47.19873150105708 L 70.310850439883 47.19873150105708 L 69.888563049853 47.19873150105708 L 69.466275659824 47.19873150105708 L 69.043988269795 47.19873150105708 L 68.621700879765 47.19873150105708 L 68.199413489736 47.19873150105708 L 67.777126099707 47.19873150105708 L 67.354838709677 47.19873150105708 L 66.932551319648 47.19873150105708 L 66.510263929619 47.19873150105708 L 66.087976539589 47.19873150105708 L 65.66568914956 47.19873150105708 L 65.243401759531 47.19873150105708 L 64.821114369501 47.19873150105708 L 64.398826979472 47.19873150105708 L 63.976539589443 47.19873150105708 L 63.554252199413 47.19873150105708 L 63.131964809384 47.19873150105708 L 62.709677419355 47.19873150105708 L 62.287390029326 47.19873150105708 L 61.865102639296 47.19873150105708 L 61.442815249267 47.19873150105708 L 61.020527859238 47.19873150105708 L 60.598240469208 47.19873150105708 L 60.175953079179 47.19873150105708 L 59.75366568915 47.19873150105708 L 59.33137829912 47.19873150105708 L 58.909090909091 47.19873150105708 L 58.486803519062 47.19873150105708 L 58.064516129032 47.19873150105708 L 57.642228739003 47.19873150105708 L 57.219941348974 47.19873150105708 L 56.797653958944 47.19873150105708 L 56.375366568915 47.19873150105708 L 55.953079178886 47.19873150105708 L 55.530791788856 47.19873150105708 L 55.108504398827 47.19873150105708 L 54.686217008798 47.19873150105708 L 54.263929618768 47.19873150105708 L 53.841642228739 47.19873150105708 L 53.41935483871 47.19873150105708 L 52.99706744868 47.19873150105708 L 52.574780058651 47.19873150105708 L 52.152492668622 47.19873150105708 L 51.730205278592 47.19873150105708 L 51.307917888563 47.19873150105708 L 50.885630498534 47.19873150105708 L 50.463343108504 47.19873150105708 L 50.041055718475 47.19873150105708 L 49.618768328446 47.19873150105708 L 49.196480938416 47.19873150105708 L 48.774193548387 47.19873150105708 L 48.351906158358 47.19873150105708 L 47.929618768328 47.19873150105708 L 47.507331378299 47.19873150105708 L 47.08504398827 47.19873150105708 L 46.66275659824 47.19873150105708 L 46.240469208211 47.19873150105708 L 45.818181818182 47.19873150105708 L 45.395894428152 47.19873150105708 L 44.973607038123 47.19873150105708 L 44.551319648094 47.19873150105708 L 44.129032258065 47.19873150105708 L 43.706744868035 47.19873150105708 L 43.284457478006 47.19873150105708 L 42.862170087977 47.19873150105708 L 42.439882697947 47.19873150105708 L 42.017595307918 47.19873150105708 L 41.595307917889 47.19873150105708 L 41.173020527859 47.19873150105708 L 40.75073313783 47.19873150105708 L 40.328445747801 47.19873150105708 L 39.906158357771 47.19873150105708 L 39.483870967742 47.19873150105708 L 39.061583577713 47.19873150105708 L 38.639296187683 47.19873150105708 L 38.217008797654 47.19873150105708 L 37.794721407625 47.19873150105708 L 37.372434017595 47.19873150105708 L 36.950146627566 47.19873150105708 L 36.527859237537 47.19873150105708 L 36.105571847507 47.19873150105708 L 35.683284457478 47.19873150105708 L 35.260997067449 47.19873150105708 L 34.838709677419 47.19873150105708 L 34.41642228739 47.19873150105708 L 33.994134897361 47.19873150105708 L 33.571847507331 47.19873150105708 L 33.149560117302 47.19873150105708 L 32.727272727273 47.19873150105708 L 32.304985337243 47.19873150105708 L 31.882697947214 47.19873150105708 L 31.460410557185 47.19873150105708 L 31.038123167155 47.19873150105708 L 30.615835777126 47.19873150105708 L 30.193548387097 47.19873150105708 L 29.771260997067 47.19873150105708 L 29.348973607038 47.19873150105708 L 28.926686217009 47.19873150105708 L 28.504398826979 47.19873150105708 L 28.08211143695 47.19873150105708 L 27.659824046921 47.19873150105708 L 27.237536656891 47.19873150105708 L 26.815249266862 47.19873150105708 L 26.392961876833 47.19873150105708 L 25.970674486804 47.19873150105708 L 25.548387096774 47.19873150105708 L 25.126099706745 47.19873150105708 L 24.703812316716 47.19873150105708 L 24.281524926686 47.19873150105708 L 23.859237536657 47.19873150105708 L 23.436950146628 47.19873150105708 L 23.014662756598 47.19873150105708 L 22.592375366569 47.19873150105708 L 22.17008797654 47.19873150105708 L 21.74780058651 47.19873150105708 L 21.325513196481 47.19873150105708 L 20.903225806452 47.19873150105708 L 20.480938416422 47.19873150105708 L 20.058651026393 47.19873150105708 L 19.636363636364 47.19873150105708 L 19.214076246334 47.19873150105708 L 18.791788856305 47.19873150105708 L 18.369501466276 47.19873150105708 L 17.947214076246 47.19873150105708 L 17.524926686217 47.19873150105708 L 17.102639296188 47.19873150105708 L 16.680351906158 47.19873150105708 L 16.258064516129 47.19873150105708 L 15.8357771261 47.19873150105708 L 15.41348973607 47.19873150105708 L 14.991202346041 47.19873150105708 L 14.568914956012 47.19873150105708 L 14.146627565982 47.19873150105708 L 13.724340175953 47.19873150105708 L 13.302052785924 47.19873150105708 L 12.879765395894 47.19873150105708 L 12.457478005865 47.19873150105708 L 12.035190615836 47.19873150105708 L 11.612903225806 47.19873150105708 L 11.190615835777 47.19873150105708 L 10.768328445748 47.19873150105708 L 10.346041055718 47.19873150105708 L 9.9237536656891 47.19873150105708 L 9.5014662756598 47.19873150105708 L 9.0791788856305 47.19873150105708 L 8.6568914956012 47.19873150105708 L 8.2346041055718 47.19873150105708 L 7.8123167155425 47.19873150105708 L 7.3900293255132 47.19873150105708 L 6.9677419354839 47.19873150105708 L 6.5454545454545 47.19873150105708 L 6.1231671554252 47.19873150105708 L 5.7008797653959 47.19873150105708 L 5.2785923753666 47.19873150105708 L 4.8563049853372 47.19873150105708 L 4.4340175953079 47.19873150105708 L 4.0117302052786 47.19873150105708 L 3.5894428152493 47.19873150105708 L 3.1671554252199 47.19873150105708 L 2.7448680351906 47.19873150105708 L 2.3225806451613 47.19873150105708 L 1.900293255132 47.19873150105708 L 1.4780058651026 47.19873150105708 L 1.0557184750733 47.19873150105708 L 0.63343108504399 47.19873150105708 L 0.21114369501466 47.19873150105708" class="highcharts-area"></path><path fill="none" d="M 0.21114369501466 21.30021141649048 L 0.63343108504399 20.77167019027484 L 1.0557184750733 20.77167019027484 L 1.4780058651026 19.186046511627904 L 1.900293255132 19.186046511627904 L 2.3225806451613 19.714587737843548 L 2.7448680351906 19.714587737843548 L 3.1671554252199 20.77167019027484 L 3.5894428152493 19.714587737843548 L 4.0117302052786 18.128964059196615 L 4.4340175953079 18.128964059196615 L 4.8563049853372 18.128964059196615 L 5.2785923753666 17.071881606765324 L 5.7008797653959 16.014799154334035 L 6.1231671554252 15.486257928118391 L 6.5454545454545 13.372093023255808 L 6.9677419354839 11.257928118393231 L 7.3900293255132 10.729386892177587 L 7.8123167155425 11.257928118393231 L 8.2346041055718 6.5010570824524265 L 8.6568914956012 4.386892177589857 L 9.0791788856305 4.386892177589857 L 9.5014662756598 5.972515856236782 L 9.9237536656891 7.029598308668078 L 10.346041055718 9.672304439746298 L 10.768328445748 10.200845665961943 L 11.190615835777 10.729386892177587 L 11.612903225806 2.2727272727272734 L 12.035190615836 3.858350951374213 L 12.457478005865 2.8012684989429175 L 12.879765395894 3.3298097251585617 L 13.302052785924 6.5010570824524265 L 13.724340175953 9.672304439746298 L 14.146627565982 11.257928118393231 L 14.568914956012 9.672304439746298 L 14.991202346041 9.143763213530647 L 15.41348973607 10.200845665961943 L 15.8357771261 10.729386892177587 L 16.258064516129 9.672304439746298 L 16.680351906158 22.357293868921772 L 17.102639296188 24.471458773784352 L 17.524926686217 27.114164904862577 L 17.947214076246 28.17124735729387 L 18.369501466276 30.285412262156445 L 18.791788856305 31.342494714587737 L 19.214076246334 31.871035940803385 L 19.636363636364 33.45665961945032 L 20.058651026393 33.45665961945032 L 20.480938416422 35.5708245243129 L 20.903225806452 34.51374207188161 L 21.325513196481 33.98520084566596 L 21.74780058651 33.98520084566596 L 22.17008797654 33.98520084566596 L 22.592375366569 34.51374207188161 L 23.014662756598 33.45665961945032 L 23.436950146628 31.871035940803385 L 23.859237536657 31.342494714587737 L 24.281524926686 33.45665961945032 L 24.703812316716 35.042283298097246 L 25.126099706745 34.51374207188161 L 25.548387096774 32.92811839323467 L 25.970674486804 33.98520084566596 L 26.392961876833 35.5708245243129 L 26.815249266862 36.627906976744185 L 27.237536656891 36.627906976744185 L 27.659824046921 36.627906976744185 L 28.08211143695 38.21353065539112 L 28.504398826979 37.15644820295983 L 28.926686217009 39.270613107822406 L 29.348973607038 39.270613107822406 L 29.771260997067 37.684989429175474 L 30.193548387097 36.627906976744185 L 30.615835777126 34.51374207188161 L 31.038123167155 34.51374207188161 L 31.460410557185 33.45665961945032 L 31.882697947214 35.042283298097246 L 32.304985337243 33.98520084566596 L 32.727272727273 33.45665961945032 L 33.149560117302 33.45665961945032 L 33.571847507331 33.45665961945032 L 33.994134897361 31.342494714587737 L 34.41642228739 31.871035940803385 L 34.838709677419 32.399577167019025 L 35.260997067449 31.342494714587737 L 35.683284457478 32.92811839323467 L 36.105571847507 32.92811839323467 L 36.527859237537 33.45665961945032 L 36.950146627566 33.45665961945032 L 37.372434017595 34.51374207188161 L 37.794721407625 34.51374207188161 L 38.217008797654 35.042283298097246 L 38.639296187683 35.042283298097246 L 39.061583577713 35.042283298097246 L 39.483870967742 33.98520084566596 L 39.906158357771 33.45665961945032 L 40.328445747801 35.042283298097246 L 40.75073313783 36.09936575052854 L 41.173020527859 37.15644820295983 L 41.595307917889 38.21353065539112 L 42.017595307918 38.74207188160676 L 42.439882697947 38.74207188160676 L 42.862170087977 38.21353065539112 L 43.284457478006 36.627906976744185 L 43.706744868035 36.627906976744185 L 44.129032258065 37.684989429175474 L 44.551319648094 37.15644820295983 L 44.973607038123 37.15644820295983 L 45.395894428152 38.21353065539112 L 45.818181818182 39.270613107822406 L 46.240469208211 38.74207188160676 L 46.66275659824 38.21353065539112 L 47.08504398827 37.684989429175474 L 47.507331378299 36.627906976744185 L 47.929618768328 38.21353065539112 L 48.351906158358 39.79915433403805 L 48.774193548387 40.3276955602537 L 49.196480938416 39.79915433403805 L 49.618768328446 39.79915433403805 L 50.041055718475 39.79915433403805 L 50.463343108504 38.74207188160676 L 50.885630498534 38.74207188160676 L 51.307917888563 39.79915433403805 L 51.730205278592 38.21353065539112 L 52.152492668622 39.270613107822406 L 52.574780058651 40.3276955602537 L 52.99706744868 40.3276955602537 L 53.41935483871 40.3276955602537 L 53.841642228739 40.856236786469346 L 54.263929618768 40.856236786469346 L 54.686217008798 41.38477801268499 L 55.108504398827 40.856236786469346 L 55.530791788856 41.38477801268499 L 55.953079178886 42.97040169133192 L 56.375366568915 42.44186046511628 L 56.797653958944 44.02748414376322 L 57.219941348974 44.02748414376322 L 57.642228739003 44.556025369978855 L 58.064516129032 42.97040169133192 L 58.486803519062 42.44186046511628 L 58.909090909091 44.02748414376322 L 59.33137829912 41.913319238900634 L 59.75366568915 41.913319238900634 L 60.175953079179 41.38477801268499 L 60.598240469208 42.97040169133192 L 61.020527859238 42.44186046511628 L 61.442815249267 42.97040169133192 L 61.865102639296 42.44186046511628 L 62.287390029326 40.856236786469346 L 62.709677419355 38.21353065539112 L 63.131964809384 38.21353065539112 L 63.554252199413 39.79915433403805 L 63.976539589443 37.684989429175474 L 64.398826979472 40.3276955602537 L 64.821114369501 40.856236786469346 L 65.243401759531 42.97040169133192 L 65.66568914956 41.38477801268499 L 66.087976539589 38.74207188160676 L 66.510263929619 39.270613107822406 L 66.932551319648 39.270613107822406 L 67.354838709677 39.79915433403805 L 67.777126099707 42.97040169133192 L 68.199413489736 44.02748414376322 L 68.621700879765 41.38477801268499 L 69.043988269795 41.913319238900634 L 69.466275659824 41.913319238900634 L 69.888563049853 39.79915433403805 L 70.310850439883 39.270613107822406 L 70.733137829912 38.21353065539112 L 71.155425219941 40.3276955602537 L 71.577712609971 38.74207188160676 L 72 39.270613107822406 L 72.422287390029 39.79915433403805 L 72.844574780059 40.3276955602537 L 73.266862170088 41.38477801268499 L 73.689149560117 40.3276955602537 L 74.111436950147 39.79915433403805 L 74.533724340176 39.79915433403805 L 74.956011730205 39.79915433403805 L 75.378299120235 40.3276955602537 L 75.800586510264 40.3276955602537 L 76.222873900293 39.79915433403805 L 76.645161290323 40.3276955602537 L 77.067448680352 41.38477801268499 L 77.489736070381 41.38477801268499 L 77.912023460411 39.270613107822406 L 78.33431085044 38.74207188160676 L 78.756598240469 39.79915433403805 L 79.178885630499 40.3276955602537 L 79.601173020528 41.38477801268499 L 80.023460410557 40.856236786469346 L 80.445747800587 39.270613107822406 L 80.868035190616 38.21353065539112 L 81.290322580645 38.74207188160676 L 81.712609970674 38.21353065539112 L 82.134897360704 37.15644820295983 L 82.557184750733 37.15644820295983 L 82.979472140762 37.15644820295983 L 83.401759530792 36.627906976744185 L 83.824046920821 35.042283298097246 L 84.24633431085 34.51374207188161 L 84.66862170088 33.98520084566596 L 85.090909090909 35.042283298097246 L 85.513196480938 36.09936575052854 L 85.935483870968 37.15644820295983 L 86.357771260997 37.15644820295983 L 86.780058651026 36.627906976744185 L 87.202346041056 37.684989429175474 L 87.624633431085 36.627906976744185 L 88.046920821114 35.5708245243129 L 88.469208211144 33.98520084566596 L 88.891495601173 34.51374207188161 L 89.313782991202 33.98520084566596 L 89.736070381232 34.51374207188161 L 90.158357771261 34.51374207188161 L 90.58064516129 32.92811839323467 L 91.00293255132 31.342494714587737 L 91.425219941349 32.92811839323467 L 91.847507331378 32.399577167019025 L 92.269794721408 30.813953488372093 L 92.692082111437 32.399577167019025 L 93.114369501466 33.98520084566596 L 93.536656891496 34.51374207188161 L 93.958944281525 37.15644820295983 L 94.381231671554 37.684989429175474 L 94.803519061584 37.684989429175474 L 95.225806451613 36.09936575052854 L 95.648093841642 36.09936575052854 L 96.070381231672 36.09936575052854 L 96.492668621701 35.5708245243129 L 96.91495601173 33.98520084566596 L 97.33724340176 33.98520084566596 L 97.759530791789 31.342494714587737 L 98.181818181818 29.7568710359408 L 98.604105571848 27.114164904862577 L 99.026392961877 23.942917547568705 L 99.448680351906 22.357293868921772 L 99.870967741935 19.714587737843548 L 100.29325513196 23.414376321353064 L 100.71554252199 25.528541226215644 L 101.13782991202 30.813953488372093 L 101.56011730205 31.342494714587737 L 101.98240469208 30.285412262156445 L 102.40469208211 31.871035940803385 L 102.82697947214 35.042283298097246 L 103.24926686217 35.5708245243129 L 103.6715542522 37.684989429175474 L 104.09384164223 37.684989429175474 L 104.51612903226 38.74207188160676 L 104.93841642229 41.38477801268499 L 105.36070381232 39.270613107822406 L 105.78299120235 37.15644820295983 L 106.20527859238 31.871035940803385 L 106.6275659824 28.699788583509513 L 107.04985337243 31.342494714587737 L 107.47214076246 29.22832980972516 L 107.89442815249 27.64270613107822 L 108.31671554252 29.22832980972516 L 108.73900293255 30.285412262156445 L 109.16129032258 30.813953488372093 L 109.58357771261 30.813953488372093 L 110.00586510264 30.813953488372093 L 110.42815249267 30.285412262156445 L 110.8504398827 29.7568710359408 L 111.27272727273 27.64270613107822 L 111.69501466276 26.05708245243129 L 112.11730205279 23.942917547568705 L 112.53958944282 26.05708245243129 L 112.96187683284 23.414376321353064 L 113.38416422287 23.414376321353064 L 113.8064516129 24.999999999999996 L 114.22873900293 23.942917547568705 L 114.65102639296 23.414376321353064 L 115.07331378299 19.714587737843548 L 115.49560117302 20.77167019027484 L 115.91788856305 21.828752642706128 L 116.34017595308 24.999999999999996 L 116.76246334311 28.17124735729387 L 117.18475073314 29.22832980972516 L 117.60703812317 28.699788583509513 L 118.0293255132 31.342494714587737 L 118.45161290323 32.399577167019025 L 118.87390029326 34.51374207188161 L 119.29618768328 33.45665961945032 L 119.71847507331 33.98520084566596 L 120.14076246334 35.5708245243129 L 120.56304985337 32.92811839323467 L 120.9853372434 32.92811839323467 L 121.40762463343 32.92811839323467 L 121.82991202346 32.92811839323467 L 122.25219941349 32.399577167019025 L 122.67448680352 32.399577167019025 L 123.09677419355 34.51374207188161 L 123.51906158358 32.92811839323467 L 123.94134897361 31.871035940803385 L 124.36363636364 32.399577167019025 L 124.78592375367 32.92811839323467 L 125.2082111437 32.92811839323467 L 125.63049853372 35.5708245243129 L 126.05278592375 36.09936575052854 L 126.47507331378 36.627906976744185 L 126.89736070381 37.15644820295983 L 127.31964809384 38.21353065539112 L 127.74193548387 38.74207188160676 L 128.1642228739 37.684989429175474 L 128.58651026393 39.270613107822406 L 129.00879765396 37.15644820295983 L 129.43108504399 38.74207188160676 L 129.85337243402 39.270613107822406 L 130.27565982405 40.856236786469346 L 130.69794721408 40.3276955602537 L 131.12023460411 41.913319238900634 L 131.54252199413 44.556025369978855 L 131.96480938416 45.61310782241015 M 133.23167155425 47.72727272727273 L 133.65395894428 46.67019027484144 M 134.49853372434 46.67019027484144 M 135.3431085044 47.72727272727273 L 135.76539589443 47.72727272727273 L 136.18768328446 46.67019027484144 L 136.60997067449 46.141649048625794 L 137.03225806452 45.61310782241015 L 137.45454545455 45.61310782241015 L 137.87683284457 44.556025369978855 L 138.2991202346 45.61310782241015 L 138.72140762463 45.61310782241015 L 139.14369501466 44.556025369978855 L 139.56598240469 44.02748414376322 L 139.98826979472 44.02748414376322 L 140.41055718475 41.913319238900634 L 140.83284457478 42.44186046511628 L 141.25513196481 40.856236786469346 L 141.67741935484 38.74207188160676 L 142.09970674487 37.684989429175474 L 142.5219941349 35.042283298097246 L 142.94428152493 35.042283298097246 L 143.36656891496 32.92811839323467 L 143.78885630499 31.871035940803385" class="highcharts-graph" stroke="#007dc3" stroke-width="1" stroke-dasharray="none"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-area-series highcharts-color-undefined " transform="translate(40,10) scale(1 1)" clip-path="none"></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="40.21114369501466" style="color:#707070;cursor:default;font-size:11px;fill:#707070;" text-anchor="middle" transform="translate(0,0)" y="79" opacity="1"><tspan>1989 JAN</tspan></text><text x="183.78885630498533" style="color:#707070;cursor:default;font-size:11px;fill:#707070;" text-anchor="middle" transform="translate(0,0)" y="79" opacity="1"><tspan>2017 MAY</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g></svg>
-              </div>
-              <p class="margin-top--0 margin-bottom--0 padding-bottom--0"><span class="font-size--h1 font-weight--bold">2.9%</span></p>
-              <p class="margin-top--0 margin-bottom--0 padding-top--0">2017 May</p>
-              <p class="margin-top--0 margin-bottom--0 padding-bottom--0">Release date: 13 June 2017<br>
-                Next release: 18 July 2017</p>
-            </div>
-
-          </div>
-        </div>
-
-        <a href="#" class="btn btn--primary btn--full-width">View all related time series</a>
-
-        <h2 id="datasets" class="font-weight--bold margin-top--4">Datasets <span class="visuallyhidden">related to <span class="lowercase">Inflation and price indices</span></span></h2>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">Consumer Price Inflation time series dataset<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">Comprehensive database of time series covering measures of inflation data including CPIH, CPI and RPI.</p>
-        </div>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">Producer Price Index time series dataset<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">Producer Price Indices (PPIs) are a series of economic indicators that measure the price movement of goods bought and sold by UK manufacturers.</p>
-        </div>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">Producer Price Index - Statistical bulletin time series dataset<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">A comprehensive selection of data on input and output indices. Contains producer price indices of materials and fuels purchased and output of manufacturing industry by broad sector.</p>
-        </div>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">Looking for user requested data?<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">We also produce data not included in our standard publications.</p>
-        </div>
-
-
-        <a href="#" class="btn btn--primary btn--full-width">View all related datasets</a>
-
-        <h2 id="bulletins" class="font-weight--bold margin-top--4">Statistical bulletins <span class="visuallyhidden">related to <span class="lowercase">Inflation and price indices</span></span></h2>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">UK consumer price inflation: May 2017<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">Price indices, percentage changes and weights for the different measures of consumer price inflation.</p>
-        </div>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">UK producer price inflation: May 2017<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">Changes in the prices of goods bought and sold by UK manufacturers including price indices of materials and fuels purchased (input prices) and factory gate prices (output prices).</p>
-        </div>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">House Price Index, UK: Apr 2017<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">Monthly house price inflation, calculated using data from Land Registry, Registers of Scotland and Land and Property Services Northern Ireland.</p>
-        </div>
-
-        <a href="#" class="btn btn--primary btn--full-width">View all related statistical bulletins</a>
-
-        <h2 id="articles" class="font-weight--bold margin-top--4">Articles <span class="visuallyhidden">related to <span class="lowercase">Inflation and price indices</span></span></h2>
-
-        <div class="col-wrap margin-bottom--2">
-
-          <div class="col col--lg-one-third col--md-one-third">
-            <div class="js-hover-click background--mercury print--hide" style="position: relative;">
-              <div class="box__image padding-top--24 padding-right--1 padding-left--1 padding-bottom--3">
-                <h3 class="flush font-size--h4"><a href="#">The changing price of everyday goods and services<span class="image-holder height--22"><img src="http://visual.ons.gov.uk/wp-content/uploads/2017/07/CPIH-Feature.png" alt="" class="no-border"></span><span class="box__clickable"></span><span class="box__clickable"></span></a></h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="col col--lg-one-third col--md-one-third">
-            <div class="js-hover-click background--mercury print--hide" style="position: relative;">
-              <div class="box__image padding-top--24 padding-right--1 padding-left--1 padding-bottom--3">
-                <h3 class="flush font-size--h4"><a href="#">How inflation changes how much your wages are worth<span class="image-holder height--22"><img src="http://visual.ons.gov.uk/wp-content/uploads/2017/06/Pay-feature-1.png" alt="" class="no-border"></span><span class="box__clickable"></span><span class="box__clickable"></span></a></h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="col col--lg-one-third col--md-one-third">
-            <div class="js-hover-click background--mercury print--hide" style="position: relative;">
-              <div class="box__image padding-top--24 padding-right--1 padding-left--1 padding-bottom--3">
-                <h3 class="flush font-size--h4"><a href="#">Are your wages keeping up with inflation?<span class="image-holder height--22"><img src="http://visual.ons.gov.uk/wp-content/uploads/2017/06/Pay-feature-2.png" alt="" class="no-border"></span><span class="box__clickable"></span><span class="box__clickable"></span></a></h3>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">Consumer price inflation basket of goods and services: 2017<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">The review process for the items making up the inflation basket used to calculate the UK consumer price inflation indices and how and why the various items in the basket are chosen.</p>
-        </div>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">Revisions policy for consumer price inflation statistics<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">This article details the revisions policies for CPIH, CPI and RPI.</p>
-        </div>
-
-        <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--1 margin-bottom--2 js-hover-click">
-          <span class="hide--sm icon icon-arrow-right--dark float-right margin-top-md--4 margin-top-sm--2"></span>
-          <h3 class="font-size--h4 margin-bottom--0"><a href="#">Consumer price inflation, updating weights: 2017<span class="box__clickable"></span></a></h3>
-          <p class="margin-top--0 margin-bottom--1 text">An overview of the latest annual update of CPIH weights, used in the inflation basket to calculate the UK consumer price inflation indices.</p>
-        </div>
-
-        <a href="#" class="btn btn--primary btn--full-width">View all related articles</a>
-
-        <div class="col-wrap margin-top--6">
-          <div class="col col--lg-two-thirds col--md-half">
-            <div class="background--mercury padding-top--1 padding-left--1 padding-right--1 padding-bottom--2 margin-bottom--2">
-              <h2 class="font-weight--bold margin-top--1" id="methodology">Methodology <span class="visuallyhidden">related to <span class="lowercase">Inflation and price indices</span></span></h2>
-                <ul class="list--neutral">
-                  <li class="margin-bottom--2">
-                    <a href="#">Consumer Price Inflation (includes all 3 indices – CPIH, CPI and RPI)</a>
-                  </li>
-                  <li class="margin-bottom--2">
-                    <a href="#">UK House Price Index (HPI) QMI</a>
-                  </li>
-                  </ul>
-                  <a href="#" class="btn btn--primary btn--full-width">View all related methodology</a>
-
-            </div>
-          </div>
-
-          <div class="col col--lg-one-third col--md-half">
-            <div class="js-hover-click background--mercury print--hide">
-              <div class="box__image padding-top--16 padding-right--1 padding-left--1 padding-bottom--3">
-                <h3 class="flush font-size--h4"><a href="/help/localstatistics">Looking for local statistics?<span class="image-holder height--14"><img src="/assets/img/t1-local.png" alt="" class="no-border"></span><span class="box__clickable"></span></a></h3>
-                <p class="box__content flush">A handy guide to let you know where to find local statistics.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
+  <div class="basic wrapper padding-top--4 padding-bottom--8">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+        <h2>Prototype</h2>
+        <ul>
+          <li><a href="page-intro">Page intro</a></li>
+          <li><a href="option-1">Everything on one page</a></li>
+        </ul>
 
       </div>
-    </section>
+    </div>
   </div>
-
 </div>
-
 
 </main>
 
-
-    <footer class="print--hide">
+<footer class="basic print--hide">
 	<h2 class="visuallyhidden">Footer links</h2>
 	<div class="footer">
 		<div class="wrapper">
-			<nav>
-				<div class="footer-nav col-wrap">
-					<div class="col col--lg-one-third col--md-one-third">
-						<h3 class="footer-nav__heading">Help</h3>
-						<ul class="footer-nav__list">
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/help/accessibility">Accessibility</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/help/cookiesandprivacy">Cookies and privacy</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/help/termsandconditions">Terms and conditions</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col col--lg-one-third col--md-one-third">
-						<h3 class="footer-nav__heading">About ONS</h3>
-						<ul class="footer-nav__list">
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/aboutus/whatwedo">What we do</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/aboutus/careers">Careers</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/aboutus/contactus">Contact us</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/news">News</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col col--lg-one-third col--md-one-third">
-						<h3 class="footer-nav__heading">Connect with us</h3>
-						<ul class="footer-nav__list">
-							<li class="footer-nav__item">
-								<a href="https://twitter.com/ONS" class="icon--hide" target="_blank">Twitter</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.facebook.com/ONS" class="icon--hide" target="_blank">Facebook</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide" target="_blank">LinkedIn</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide" target="_blank">Email alerts</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-		<div class="wrapper">
 
-      <div class="footer-license">
+			<div class="footer-license">
   <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
   <p class="footer-license__text margin-left-sm--0">
     All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
@@ -567,9 +109,27 @@ Taking part in a survey?
 
 		</div>
 	</div>
-	<div id="viewport-sm" class="js-viewport-size"></div><div id="viewport-md" class="js-viewport-size"></div><div id="viewport-lg" class="js-viewport-size"></div>
 </footer>
 
+
+
+    <!-- <footer class="basic print--hide">
+	<h2 class="visuallyhidden">Footer links</h2>
+	<div class="footer">
+		<div class="wrapper">
+
+			<div class="footer-license">
+  <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+  <p class="footer-license__text margin-left-sm--0">
+    All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+  </p>
+</div>
+
+
+		</div>
+	</div>
+</footer>
+ -->
 
   </body>
 
