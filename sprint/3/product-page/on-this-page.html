@@ -1,0 +1,163 @@
+---
+layout: basic
+type: "Status: prototype"
+title: "On this page component (on product pages)"
+intro-content: The secondary navigation component that allows users to navigate around a product page
+---
+
+<main id="main" role="main" tabindex="-1">
+
+  <div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+          {% include page-intro.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h2>Current</h2>
+          <ul>
+            <li>Users are confused by combination of page links and anchor links</li>
+            <li>User are confused by difference between publication and bulletin</li>
+            <li>Users put off by height / think they've reached the end of the page</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-secondary-wrap">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <nav>
+          <div class="nav-secondary nav-secondary--border-right-lg col col--lg-half">
+            <h2 class="nav-secondary__title">On this page:</h2>
+            <ul class="nav-secondary__list">
+              <li class="nav-secondary__item"><a href="#timeseries" class="js-scroll">Time series</a></li>
+              <li class="nav-secondary__item"><a href="#datasets" class="js-scroll">Dataset</a>
+              </li>
+              <li class="nav-secondary__item"><a href="#publications" class="js-scroll">Publications</a></li>
+              <li class="nav-secondary__item"><a href="#methodology" class="js-scroll">Methodology</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav>
+          <div class="nav-secondary col col--lg-half">
+            <h2 class="nav-secondary__title">View all content related to this topic:</h2>
+            <ul class="nav-secondary__list">
+              <li class="nav-secondary__item"><a href="#">All data</a></li>
+              <li class="nav-secondary__item"><a href="#">All publications</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h2>Iteration 1</h2>
+          <ul>
+            <li>Removed top border</li>
+            <li>Shortened height</li>
+            <li>Made headings visually smaller (but retained semantics)</li>
+            <li>Removed colons (:)</li>
+            <li>Shortened heading to "related"</li>
+            <li>Made pipes (|) light grey</li>
+            <li>Gave pipes (|) equal spacing</li>
+            <li>Split publications into bulletins and articles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-secondary-v2">
+    <div class="nav-secondary-wrap">
+      <div class="wrapper">
+        <div class="col-wrap">
+          <nav>
+            <div class="nav-secondary col col--lg-half">
+              <h2 class="nav-secondary__title font-size--h4 padding-bottom--0">On this page</h2>
+              <ul class="nav-secondary__list">
+                <li class="nav-secondary__item"><a href="#timeseries" class="js-scroll">Time series</a></li>
+                <li class="nav-secondary__item"><a href="#datasets" class="js-scroll">Datasets</a></li>
+                <li class="nav-secondary__item"><a href="#bulletins" class="js-scroll">Bulletins</a></li>
+                <li class="nav-secondary__item"><a href="#articles" class="js-scroll">Articles</a></li>
+                <li class="nav-secondary__item"><a href="#methodology" class="js-scroll">Methodology</a></li>
+              </ul>
+            </div>
+          </nav>
+          <nav>
+            <div class="nav-secondary col col--lg-half">
+              <h2 class="nav-secondary__title font-size--h4 padding-bottom--0">Related</h2>
+              <ul class="nav-secondary__list">
+                <li class="nav-secondary__item"><a href="#">All data</a></li>
+                <li class="nav-secondary__item"><a href="#">All publications</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h2>Iteration 2</h2>
+          <ul>
+            <li>Removed "related" nav, this reduces the slightly ambiguous choice of "do I want a bit of data" or "do I want all related data"</li>
+            <li>Now component act consistently like a "page contents"</li>
+            <li>"All" is still reachable by scrolling down</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-secondary-v2">
+    <div class="nav-secondary-wrap">
+      <div class="wrapper">
+        <div class="col-wrap">
+          <nav>
+            <div class="nav-secondary col col--lg-half">
+              <h2 class="nav-secondary__title font-size--h4 padding-bottom--0">On this page</h2>
+              <ul class="nav-secondary__list">
+                <li class="nav-secondary__item"><a href="#timeseries" class="js-scroll">Time series</a></li>
+                <li class="nav-secondary__item"><a href="#datasets" class="js-scroll">Datasets</a></li>
+                <li class="nav-secondary__item"><a href="#bulletins" class="js-scroll">Bulletins</a></li>
+                <li class="nav-secondary__item"><a href="#articles" class="js-scroll">Articles</a></li>
+                <li class="nav-secondary__item"><a href="#methodology" class="js-scroll">Methodology</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% include footer-basic.html %}
