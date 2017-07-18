@@ -32,3 +32,13 @@
 .download-options__container .show-hide button[aria-expanded=false]:after, .download-options__container .show-hide button[aria-expanded=true]:after {
   background-image: none;
 }
+
+.show-hide-v2 {
+  .js-show-hide__button {
+    color: $matisse;
+    text-decoration: underline;
+  }
+  .show-hide button:focus {
+    outline: 3px solid $carrot;
+  }
+}
