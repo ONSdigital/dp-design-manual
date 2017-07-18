@@ -597,8 +597,6 @@ a.btn:hover {
   border-bottom: none !important; }
   .breadcrumb-v2 a {
     text-decoration: underline; }
-  .breadcrumb-v2 .breadcrumb__item:after {
-    color: #A6A8AB; }
 
 .download-options__container {
   margin-bottom: 15em; }
