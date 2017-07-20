@@ -16,7 +16,7 @@
 title: Digital Publishing Design Manual
 email: benjamin.stanton@ons.gov.uk
 description: A place for ONS website user experience and design stuff.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/dp-design-manual" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ONSdigital
 github_username:  ONSdigital
