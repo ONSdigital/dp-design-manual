@@ -5,7 +5,7 @@
 
   <title>{% if page.title %}{{ page.title | escape }} - ONS Digital Publishing Design Manual{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.intro-content | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
-
+  {% include base.html %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
