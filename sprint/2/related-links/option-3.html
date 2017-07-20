@@ -1,62 +1,49 @@
 ---
-layout: basic
-type: "Status: prototype"
-title: "Related links component"
-intro-content:
+layout: prototype
+type: "Article"
+title: "How well does my job pay?"
+intro-content: "Have you ever wondered who earns more: a pilot or a doctor?"
+contact-name: Earnings team
+contact-email: earnings@ons.gov.uk
+contact-tel: 01234 567890
+release-date: 15 January 2015
+next-release:
+breadcrumbs:
+- label: Home
+  link: #
+- label: Employment and labour market
+  link: #
+- label: People in work
+  link: #
 ---
 
 <main id="main" role="main" tabindex="-1">
 
-  <div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+  <div class="page-intro background--gallery">
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          {% include page-intro.html %}
+
+          {% include breadcrumbs-v2.html %}
+
+          {% include page-intro-v2.html %}
+
         </div>
       </div>
     </div>
+
+    <!-- Alert is hidden as this is a one-off release -->
+    <!-- {% include alerts/alert.html %} -->
+
+    {% include meta-v2.html %}
+
   </div>
 
-  <div class="basic wrapper padding-top--4 padding-bottom--0">
+  <div class="wrapper margin-top--3 margin-bottom--0">
     <div class="col-wrap">
       <div class="col">
         <div class="col col--md-36 col--lg-36">
-          <h2>Current website</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper margin-bottom--4">
-    <div class="col-wrap">
-      <div class="col">
-        <div class="col col--md-36 col--lg-36">
-
-          {% include tiles/related-links.html
-            link-text-1="How inflation changes how much your wages are worth"
-            link-text-2="What’s changed in the year since the Brexit vote?"
-            link-text-3="How do earnings vary across Great Britain?"
-          %}
-
-          </div>
-        </div>
-    </div>
-  </div>
-
-
-  <div class="basic wrapper padding-top--4 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col">
-        <div class="col col--md-36 col--lg-36">
-          <h2>Iteration 1</h2>
-          <ul>
-            <li>Change heading to related (hypothesis: there are too many places currently to put related links, users are overwhelmed)</li>
-            <li>Changed heading to bold</li>
-            <li>Removed border</li>
-            <li>Made links consistent with search results</li>
-            <li>Made links more consistent with Visual (e.g. add content type and description)</li>
-            <li>Made more consistent with the way business areas add related links to content area (e.g. add descriptive content)</li>
-          </ul>
+          <p>This interactive allows you to explore the data within the <a href="#">2014 Annual Survey of Hours and Earnings</a> release. It illustrates the occupations with the highest and lowest earnings, allows you to compare occupations with similar salaries and even tests your knowledge via a couple of quizzes.</p>
         </div>
       </div>
     </div>
@@ -65,30 +52,44 @@ intro-content:
   <div class="wrapper margin-bottom--4">
     <div class="col-wrap">
       <div class="col">
-        <div class="col col--md-36 col--lg-36">
-
-          <div class="margin-bottom--4">{% include tiles/related-links-v2.html %}</div>
-
-          </div>
-        </div>
+        <h2 class="font-size--h4 font-weight--bold">Median gross full-time annual earnings by occupation, Great Britain, April 2014</h2>
+        <iframe src="https://www.ons.gov.uk/visualisations/nesscontent/dvc205/ashe.html?initialWidth=1090&amp;childId=pym_59300adf77713#panel=y2&amp;occ=0" width="100%" scrolling="no" marginheight="0" frameborder="0" height="847px"></iframe>
+      </div>
     </div>
   </div>
 
-  <div class="basic wrapper padding-top--4 padding-bottom--0">
+  <div class="wrapper margin-bottom--2">
     <div class="col-wrap">
-      <div class="col">
-        <div class="col col--md-36 col--lg-36">
-          <h2>Iteration 2</h2>
-          <ul>
-            <li>Switch to image tile layout</li>
-          </ul>
+        <div class="col">
+
+          <div class="margin-bottom-sm--2 margin-bottom-md--2 print--hide">
+            <a class="btn btn--primary " href="#">
+              View all data used in this <span class="lowercase">{{ page.type }}</span></a>
+          </div>
+
+          <h2 class="font-size--h4 font-weight--bold margin-top--4 margin-bottom--0">
+            Contact
+          </h2>
+          <address>
+            {% if page.contact-name %}
+            {{ page.contact-name }}<br>
+            {% endif %}
+
+            <a href="#">{{ page.contact-email }}</a>
+
+            {% if page.contact-tel %}
+            <br>Telephone: {{ page.contact-tel }}
+            {% endif %}
+          </address>
         </div>
-      </div>
     </div>
   </div>
 
   <div class="wrapper">
-    <div class="col-wrap margin-bottom--2">
+    <div class="col-wrap margin-bottom--8">
+      <div class="col">
+        <h2 class="font-weight--bold margin-bottom--2">Related</h2>
+      </div>
 
       <div class="col col--lg-one-third col--md-one-third margin-bottom--2">
         <div class="js-hover-click background--mercury print--hide">
@@ -117,17 +118,6 @@ intro-content:
     </div>
   </div>
 
-      <div class="basic wrapper padding-top--4 padding-bottom--0">
-        <div class="col-wrap">
-          <div class="col">
-            <div class="col col--md-36 col--lg-36">
-              <p>&nbsp;</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
+    </div>
+  </div>
 </main>
-
-{% include footer-basic.html %}
