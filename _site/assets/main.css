@@ -355,7 +355,8 @@
   line-height: 1.2; }
 
 .font-size--19 {
-  font-size: 19px; }
+  font-size: 19px;
+  line-height: 1.5; }
 
 .text {
   max-width: 36em; }
@@ -538,6 +539,9 @@ a.btn:hover {
 
 .border-top--iron {
   border-top: 1px solid #D0D2D3; }
+
+.border-none {
+  border: none; }
 
 .search__input.search__input--postcode {
   background: #FFFFFF;
