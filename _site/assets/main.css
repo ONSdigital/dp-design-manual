@@ -369,7 +369,7 @@ h3 {
 .basic h1, .basic h2, .basic h3, .basic h4, .basic h5, .basic h6 {
   font-weight: bold;
   padding: 0;
-  margin: 41px 0 24px 0;
+  margin: 40px 0 24px 0;
   line-height: 1.2; }
 .basic ul, .basic ol {
   margin: 0;
