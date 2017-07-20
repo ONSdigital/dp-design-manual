@@ -1,0 +1,90 @@
+---
+layout: basic
+type: "Status: prototype"
+title: "Related links component"
+intro-content:
+---
+
+<main id="main" role="main" tabindex="-1">
+
+  <div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+          {% include page-intro.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h2>Current website</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper margin-bottom--4">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+
+          {% include tiles/related-links.html
+            link-text-1="How inflation changes how much your wages are worth"
+            link-text-2="What’s changed in the year since the Brexit vote?"
+            link-text-3="How do earnings vary across Great Britain?"
+          %}
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="basic wrapper padding-top--4 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+          <h2>Iteration 1</h2>
+          <ul>
+            <li>Change heading to related (hypothesis: there are too many places currently to put related links, users are overwhelmed)</li>
+            <li>Changed heading to bold</li>
+            <li>Removed border</li>
+            <li>Made links consistent with search results</li>
+            <li>Made links more consistent with Visual (e.g. add content type and description)</li>
+            <li>Made more consistent with the way business areas add related links to content area (e.g. add descriptive content)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper margin-bottom--4">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-36 col--lg-36">
+
+          <div class="margin-bottom--4">{% include tiles/related-links-v2.html %}</div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+      <div class="basic wrapper padding-top--4 padding-bottom--0">
+        <div class="col-wrap">
+          <div class="col">
+            <div class="col col--md-36 col--lg-36">
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</main>
+
+{% include footer-basic.html %}
