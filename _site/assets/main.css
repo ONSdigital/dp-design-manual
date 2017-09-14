@@ -806,8 +806,14 @@ details {
   padding-left: 0;
   padding-right: 48px; }
 
+.area-list .icon {
+  position: relative;
+  left: 5px;
+  top: 2px; }
+
 .area-list--comma-separated {
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 48px; }
 
 .area-list--comma-separated li {
   font-size: 16px;
