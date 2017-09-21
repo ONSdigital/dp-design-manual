@@ -1,0 +1,80 @@
+---
+layout: prototype
+type:
+title: "England"
+breadcrumbs:
+  - label: Home
+    link: #
+---
+
+
+<main id="main" role="main" tabindex="-1">
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper padding-bottom--2">
+      <div class="col-wrap">
+        <div class="col">
+
+          {% include breadcrumbs-v2.html %}
+          {% include page-intro-v2.html %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper margin-top--6 margin-bottom--0">
+    <div class="col-wrap">
+      <div class="col col--md-one-third col--lg-one-third border--iron padding-top--1 padding-left--1 padding-right--1">
+
+        <h2 class="font-weight--bold margin-top--0">Key figures</h2>
+        <p class="padding-bottom--0">Population<br />
+          <span class="font-size--24 font-weight--bold">53,010,000</span> <a class="link--underline" href="#">Source</a>
+        </p>
+        <p class="padding-bottom--0">Employment rate<br />
+          <span class="font-size--24 font-weight--bold">75.3%</span> <a class="link--underline" href="#">Source</a>
+        </p>
+
+      </div>
+      <div class="col col--md-two-thirds col--lg-two-thirds border--iron padding-top--1 padding-left--1 padding-right--1">
+        <div class="">
+
+          <h2 class="font-weight--bold margin-top--0">Explore {{page.title}}</h2>
+          <ul class="area-list">
+            <li><a href="#">East Midlands</a></li>
+            <li><a href="#">East of England</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">North East</a></li>
+            <li><a href="#">North West</a></li>
+            <li><a href="south-east">South East</a></li>
+            <li><a href="#">South West</a></li>
+            <li><a href="#">West Midlands</a></li>
+            <li><a href="#">Yorkshire and the Humber</a></li>
+          </ul>
+          <p class="font-size--16 margin-top--3">
+            <img width="16px" src="{{ "/assets/img/your-location.svg" | relative_url }}" alt="">
+            <a class="link--underline" href="southampton">Go to your location</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper margin-top--2 margin-bottom--6">
+    <div class="col-wrap">
+      <div class="col col--md-one-third col--lg-one-third">
+        &nbsp;
+      </div>
+      <div class="col col--md-two-thirds col--lg-two-thirds">
+        <h3 class="font-size--h5 padding-bottom--0">Other countries in United Kingdom</h2>
+        <ul class="area-list--comma-separated">
+          <li><a href="#">Northern Ireland</a></li>
+          <li><a href="#">Scotland</a></li>
+          <li><a href="#">Wales</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</main>
