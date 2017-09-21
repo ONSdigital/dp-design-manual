@@ -359,6 +359,14 @@
   font-size: 19px;
   line-height: 1.5; }
 
+.font-size--21 {
+  font-size: 21px;
+  line-height: 1.5; }
+
+.font-size--24 {
+  font-size: 24px;
+  line-height: 1.5; }
+
 .text {
   max-width: 36em; }
 
@@ -797,7 +805,8 @@ details {
 .area-list li {
   font-size: 16px;
   text-decoration: underline;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 .area-list li a {
   text-decoration: underline; }

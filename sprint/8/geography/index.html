@@ -1,0 +1,103 @@
+---
+layout: prototype
+type:
+title: "United Kingdom"
+breadcrumbs:
+  - label: Home
+    link: #
+---
+
+
+<main id="main" role="main" tabindex="-1">
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper padding-bottom--2">
+      <div class="col-wrap">
+        <div class="col">
+
+          {% include breadcrumbs-v2.html %}
+          {% include page-intro-v2.html %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper margin-top--6 margin-bottom--6">
+    <div class="col-wrap">
+      <div class="col col--md-one-third col--lg-one-third border--iron padding-top--1 padding-left--1 padding-right--1">
+
+        <h2 class="font-weight--bold margin-top--0">Data for {{page.title}}</h2>
+        <p class="padding-bottom--0">Population<br />
+          <span class="font-size--21 font-weight--bold">65,648,000</span> <a class="link--underline" href="#">Source</a>
+        </p>
+        <p class="padding-bottom--0">Area<br />
+          <span class="font-size--21 font-weight--bold">50,301 m²</span> <a class="link--underline" href="#">Source</a>
+        </p>
+        <p class="padding-bottom--0">Employment rate<br />
+          <span class="font-size--21 font-weight--bold">75.3%</span> <a class="link--underline" href="#">Source</a>
+        </p>
+        <p class="padding-bottom--0">Average house price<br />
+          <span class="font-size--21 font-weight--bold">£234,000</span> <a class="link--underline" href="#">Source</a>
+        </p>
+
+      </div>
+      <div class="col col--md-two-thirds col--lg-two-thirds border--iron padding-top--1 padding-left--1 padding-right--1">
+        <div class="">
+
+          <h2 class="font-weight--bold margin-top--0">Explore {{page.title}}</h2>
+          <ul class="area-list">
+            <li><a href="england">England</a></li>
+            <li><a href="#">Northern Ireland</a></li>
+            <li><a href="#">Scotland</a></li>
+            <li><a href="#">Wales</a></li>
+          </ul>
+          <p class="font-size--16 margin-top--3">
+            <img width="16px" src="{{ "/assets/img/your-location.svg" | relative_url }}" alt="">
+            <a class="link--underline" href="newport">Go to your location</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="wrapper margin-top--2 margin-bottom--8">
+    <div class="col-wrap">
+      <div class="col col--md-one-third col--lg-one-third">
+        <h2 class="font-weight--bold">Get data</h2>
+        <ul class="area-list">
+          <li><a href="#">United Kingdom</a></li>
+          <li><a href="#">Great Britain</a></li>
+          <li><a href="#">England and Wales</a></li>
+        </ul>
+      </div>
+      <div class="col col--md-one-third col--lg-one-third">
+        <h2 class="font-weight--bold">Popular locations</h2>
+        <ul class="area-list--comma-separated">
+          <li><a href="#">London</a></li>
+          <li><a href="#">Manchester</a></li>
+          <li><a href="#">Edinburgh</a></li>
+          <li><a href="#">Liverpool</a></li>
+          <li><a href="#">Glasgow</a></li>
+        </ul>
+      </div>
+      <div class="col col--md-one-third col--lg-one-third">
+        <h2 class="font-weight--bold">Geographical information</h2>
+        <p class="font-size--16">
+          <a class="link--underline" href="#">Get shape files, code lists and boundary files</a>
+        </p>
+      </div>
+      <!-- <div class="col col--md-one-third col--lg-one-third">
+        <h2 class="font-weight--bold">Themes</h2>
+        <ul class="area-list">
+          <li><a href="#">Business, industry and trade</a></li>
+          <li><a href="#">Economy</a></li>
+          <li><a href="#">Employment and labour market</a></li>
+          <li><a href="#">People, population and community</a></li>
+        </ul>
+      </div> -->
+    </div>
+    </div> -->
+
+</main>
