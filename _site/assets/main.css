@@ -738,6 +738,16 @@ a.btn:hover {
 .show-hide-v2 .show-hide button:focus {
   outline: 3px solid #FF9933; }
 
+.show-hide--slim .js-show-hide__button {
+  padding: 0; }
+.show-hide--slim .show-hide__title {
+  padding-right: 40px; }
+
+.js-show-hide--slim .show-hide--slim button[aria-expanded=false]:after,
+.js-show-hide--slim .show-hide--slim button[aria-expanded=true]:after {
+  top: 24%;
+  right: 0; }
+
 details {
   display: block;
   clear: both; }
