@@ -821,6 +821,9 @@ details {
 .area-list li a {
   text-decoration: underline; }
 
+.area-list li a:hover {
+  color: #1E3D50; }
+
 .area-list {
   padding-left: 0;
   padding-right: 48px; }
@@ -841,6 +844,9 @@ details {
 
 .area-list--comma-separated li a {
   text-decoration: underline; }
+
+.area-list--comma-separated li a:hover {
+  color: #1E3D50; }
 
 .area-list--comma-separated li:after {
   content: ", "; }
