@@ -853,3 +853,7 @@ details {
 
 .area-list--comma-separated li:last-child:after {
   content: none; }
+
+.target {
+  position: relative;
+  top: 3px; }
