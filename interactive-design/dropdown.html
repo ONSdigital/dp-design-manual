@@ -1,0 +1,65 @@
+---
+layout: basic
+type: "Status: prototype"
+title: Dropdown menu
+intro-content: Interactive design dropdown menu.
+---
+
+<main id="main" role="main" tabindex="-1">
+
+<div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        {% include page-intro.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="basic wrapper margin-top--6 margin-bottom--8">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+
+        <h3>To do list</h3>
+        <ul>
+          <li>Accessibility check</li>
+          <li>Code review</li>
+        </ul><br>
+
+        <!--Primary buttons-->
+
+        <h3>Standard dropdown menu</h3>
+
+        <p class="form-text">Is your home rented or owned?</p>
+
+        <select class="dropdown">
+            <option selected disabled hidden>Please select</option>
+            <option value="week" >Owned or owned with mortgage</option>
+            <option value="month">Social renter</option>
+            <option value="year">Private renter</option>
+        </select>
+
+        <br><br>
+
+        <h3>Thin dropdown menu</h3>
+
+        <p class="form-text">Is your home rented or owned?</p>
+
+        <select class="dropdown-thin">
+            <option selected disabled hidden>Please select</option>
+            <option value="week" >Owned or owned with mortgage</option>
+            <option value="month">Social renter</option>
+            <option value="year">Private renter</option>
+        </select>
+
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
