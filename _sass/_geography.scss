@@ -2,10 +2,15 @@
   font-size: 16px;
   text-decoration: underline;
   padding: 0;
+  list-style: none;
 }
 
 .area-list li a {
   text-decoration: underline;
+}
+
+.area-list li a:hover {
+  color: #1E3D50;
 }
 
 .area-list {
@@ -35,10 +40,19 @@
   text-decoration: underline;
 }
 
+.area-list--comma-separated li a:hover {
+  color: #1E3D50;
+}
+
 .area-list--comma-separated li:after {
   content: ", ";
 }
 
 .area-list--comma-separated li:last-child:after {
   content: none;
+}
+
+.target {
+  position: relative;
+  top: 3px;
 }

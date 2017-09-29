@@ -1,0 +1,217 @@
+---
+layout: prototype
+type:
+title: "Southampton"
+breadcrumbs:
+  - label: Home
+    link: #
+  - label: United Kingdom
+    link: index
+  - label: England
+    link: england
+  - label: South East
+    link: south-east
+---
+
+
+<main id="main" role="main" tabindex="-1">
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper padding-bottom--2">
+      <div class="col-wrap">
+        <div class="col">
+
+          {% include breadcrumbs-v2.html %}
+          {% include page-intro-v2.html %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper margin-top--6 margin-bottom--0">
+    <div class="col-wrap">
+      <div class="col col--md-one-quarter col--lg-one-quarter border--iron padding-top--1 padding-left--1 padding-right--1 padding-bottom--2 margin-bottom-sm--2">
+
+        <h2 class="font-size--h3 font-weight--bold margin-top--0">Data</h2>
+
+        <div class="js-show-hide js-show-hide--slim">
+          <div class="show-hide show-hide--slim show-hide--light">
+            <div class="js-show-hide__title">
+              <h2 class="show-hide__title font-size--16">
+                Business, industry and trade
+              </h2>
+            </div>
+            <div class="js-show-hide__content">
+              <ul class="area-list">
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Changes to business</a></li>
+                <li><a href="#">Contruction industry</a></li>
+                <li><a href="#">International trade</a></li>
+                <li><a href="#">IT and internet industry</a></li>
+                <li><a href="#">Manufacturing and production industry</a></li>
+                <li><a href="#">Retail industry</a></li>
+                <li><a href="#">Tourism industry</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="js-show-hide js-show-hide--slim">
+          <div class="show-hide show-hide--slim show-hide--light border-top--iron">
+            <div class="js-show-hide__title">
+              <h2 class="show-hide__title font-size--16">
+              Economy
+              </h2>
+            </div>
+            <div class="js-show-hide__content">
+              <ul class="area-list">
+                <li><a href="#">Economic output and productivity</a></li>
+                <li><a href="#">Environmental accounts</a></li>
+                <li><a href="#">Government, public sector and taxes</a></li>
+                <li><a href="#">Gross Domestic Product (GDP)</a></li>
+                <li><a href="#">Gross Value Added (GVA)</a></li>
+                <li><a href="#">Inflation and price indices</a></li>
+                <li><a href="#">Investments, pensions and trusts</a></li>
+                <li><a href="#">National accounts</a></li>
+                <li><a href="#">Regional accounts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="js-show-hide js-show-hide--slim">
+          <div class="show-hide show-hide--slim show-hide--light border-top--iron">
+            <div class="js-show-hide__title">
+              <h2 class="show-hide__title font-size--16">
+                Employment and labour market
+              </h2>
+            </div>
+            <div class="js-show-hide__content">
+              <ul class="area-list">
+                <li><a href="#">People in work</a></li>
+                <li><a href="#">People not in work</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="js-show-hide js-show-hide--slim">
+          <div class="show-hide show-hide--slim show-hide--light border-top--iron">
+            <div class="js-show-hide__title">
+              <h2 class="show-hide__title font-size--16">
+                People, population and community
+              </h2>
+            </div>
+            <div class="js-show-hide__content">
+              <ul class="area-list">
+                <li><a href="#">Births, deaths and marriages</a></li>
+                <li><a href="crime-justice">Crime and justice</a></li>
+                <li><a href="#">Cultural identity</a></li>
+                <li><a href="#">Education and childcare</a></li>
+                <li><a href="#">Elections</a></li>
+                <li><a href="#">Health and social care</a></li>
+                <li><a href="#">Household characteristics</a></li>
+                <li><a href="#">Housing</a></li>
+                <li><a href="#">Leisure and tourism</a></li>
+                <li><a href="#">Personal and household finances</a></li>
+                <li><a href="#">Population and migration</a></li>
+                <li><a href="#">Well-being</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col col--md-half col--lg-half">
+
+        <img style="width:100%;" src="{{ "/assets/img/map/southampton.png" | relative_url }}" alt="Map of Southampton">
+
+      </div>
+      <div class="col col--md-one-quarter col--lg-one-quarter padding-top--1 padding-right--1">
+
+        <h3 class="font-weight--bold margin-top--0 padding-bottom--0">Similar areas</h2>
+        <ul class="area-list">
+          <li><a href="http://statistics.data.gov.uk/doc/statistical-geography/E06000045">Southampton Unitary Authority</a></li>
+          <li><a href="http://statistics.data.gov.uk/doc/statistical-geography/E28000137">Southampton Registration District</a></li>
+          <li><a href="http://statistics.data.gov.uk/doc/statistical-geography/E14000956">Southampton Westminster Parliamentary Constituency</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper margin-top--2 margin-bottom--6">
+    <div class="col-wrap">
+      <div class="col col--md-one-quarter col--lg-one-quarter">
+        &nbsp;
+      </div>
+      <div class="col col--md-three-quarters col--lg-three-quarters">
+        <h3 class="font-weight--bold padding-bottom--0">Electoral Wards in {{page.title}}</h2>
+        <ul class="area-list--comma-separated">
+          <li><a href="#">Bargate</a></li>
+          <li><a href="#">Bassett</a></li>
+          <li><a href="#">Bevois</a></li>
+          <li><a href="#">Bitterne</a></li>
+          <li><a href="#">Bitterne Park</a></li>
+          <li><a href="#">Coxford</a></li>
+          <li><a href="#">Freemantle</a></li>
+          <li><a href="#">Harefield</a></li>
+          <li><a href="#">Millbrook</a></li>
+          <li><a href="#">Peartree</a></li>
+          <li><a href="#">Portswood</a></li>
+          <li><a href="#">Redbridge</a></li>
+          <li><a href="#">Shirley</a></li>
+          <li><a href="#">Sholing</a></li>
+          <li><a href="#">Swaythling</a></li>
+          <li><a href="#">Woolston</a></li>
+        </ul>
+
+        <h3 class="font-weight--bold padding-bottom--0">Postcodes in {{page.title}}</h2>
+        <ul class="area-list--comma-separated">
+          <li><a href="so14/" >SO14</a></li>
+          <li><a href="so15/" >SO15</a></li>
+          <li><a href="so16/" >SO16</a></li>
+          <li><a href="so17/" >SO17</a></li>
+          <li><a href="so18/" >SO18</a></li>
+          <li><a href="so19/" >SO19</a></li>
+          <li><a href="so20/" >SO20</a></li>
+          <li><a href="so21/" >SO21</a></li>
+          <li><a href="so22/" >SO22</a></li>
+          <li><a href="so23/" >SO23</a></li>
+          <li><a href="so24/" >SO24</a></li>
+          <li><a href="so30/" >SO30</a></li>
+          <li><a href="so31/" >SO31</a></li>
+          <li><a href="so32/" >SO32</a></li>
+          <li><a href="so40/" >SO40</a></li>
+          <li><a href="so41/" >SO41</a></li>
+          <li><a href="so42/" >SO42</a></li>
+          <li><a href="so43/" >SO43</a></li>
+          <li><a href="so45/" >SO45</a></li>
+          <li><a href="so50/" >SO50</a></li>
+          <li><a href="so51/" >SO51</a></li>
+          <li><a href="so52/" >SO52</a></li>
+          <li><a href="so53/" >SO53</a></li>
+        </ul>
+
+        <h4 class="font-size--h5 font-weight--bold padding-bottom--0">Other areas in South East</h2>
+        <ul class="area-list--comma-separated">
+          <li><a href="#">Berkshire</a></li>
+          <li><a href="#">Brighton and Hove</a></li>
+          <li><a href="#">Buckinghamshire</a></li>
+          <li><a href="#">East Sussex</a></li>
+          <li><a href="#">Hampshire</a></li>
+          <li><a href="#">Isle of Wight</a></li>
+          <li><a href="#">Kent</a></li>
+          <li><a href="#">Medway</a></li>
+          <li><a href="#">Milton Keynes</a></li>
+          <li><a href="#">Oxfordshire</a></li>
+          <li><a href="#">Portsmouth</a></li>
+          <li><a href="#">Surrey</a></li>
+          <li><a href="#">West Sussex</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</main>

@@ -1,0 +1,267 @@
+<!-- A basic layout with minimal header and footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Button groups - ONS Digital Publishing Design Manual</title>
+  <meta name="description" content="Buttons groups for interactive design.">
+  <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/dp-design-manual/interactive-design/buttons/button-groups.html">
+  <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
+  <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
+
+  <meta name="robots" content="noindex, nofollow">
+
+</head>
+
+
+  <body>
+
+    <!-- <div class="banner background--carrot">
+	<div class="wrapper">
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
+	</div>
+</div>
+ -->
+
+    <header class="border-bottom--iron-sm border-bottom--iron-md">
+	<a class="skiplink" href="#main" tabindex="0">
+		Skip to main content
+	</a>
+
+	<div class="wrapper">
+		<div class="header col-wrap">
+
+			<div class="col col--lg-one-third col--md-one-third">
+  <a href="/dp-design-manual/">
+    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
+  </a>
+</div>
+
+
+		</div>
+	</div>
+
+</header>
+
+
+    <main id="main" role="main" tabindex="-1">
+
+<div class="basic page-intro background--gallery padding-top--1 padding-bottom--4 ">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-47 col--lg-48">
+  <h1 class="page-intro__title ">
+    
+    <span class="page-intro__type">
+      Status: prototype
+    </span>
+    
+    Button groups</h1> 
+  <p class="page-intro__content">
+    Buttons groups for interactive design.
+  </p>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="basic wrapper margin-top--6 margin-bottom--8">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="col col--md-36 col--lg-36">
+
+        <h3>To do list</h3>
+        <ul>
+          <li>Accessibility check</li>
+          <li>Code review</li>
+          <li>Build in capability to swap SVG icon</li>
+          <li>Mobile styles and break points</li>
+
+        </ul><br>
+
+        <!--Primary buttons-->
+
+        <h3>Primary button group (fixed width)</h3>
+
+        <form class="btn-form" role="radiogroup">
+          <div class="form-group" role="radio" tabindex="0">
+            <input id="button-1" class="radio-primary" type="radio" name="button" value="1" aria-checked="true" checked>
+            <label class="label-primary" for="button-1">Button 1</label>
+          </div>
+          <div class="form-group" role="radio" tabindex="2">
+            <input id="button-2" class="radio-primary" type="radio" name="button" value="2" aria-checked="false">
+            <label class="label-primary" for="button-2">Button 2</label>
+          </div>
+          <div class="form-group" role="radio" tabindex="3">
+            <input id="button-3" class="radio-primary" type="radio" name="button" value="3" aria-checked="false">
+            <label class="label-primary" for="button-3">Button 3</label>
+          </div>
+        </form>
+
+        <h3>Secondary button group (fixed width)</h3>
+
+        <form class="btn-form" role="radiogroup">
+          <div class="form-group" role="radio" tabindex="4">
+            <input id="button-4" class="radio-secondary" type="radio" name="button" value="4" aria-checked="true" checked>
+            <label class="label-secondary" for="button-4">Button 4</label>
+          </div>
+          <div class="form-group" role="radio" tabindex="5">
+            <input id="button-5" class="radio-secondary" type="radio" name="button" value="5" aria-checked="false">
+            <label class="label-secondary" for="button-5">Button 5</label>
+          </div>
+          <div class="form-group" role="radio" tabindex="6">
+            <input id="button-6" class="radio-secondary" type="radio" name="button" value="6" aria-checked="false">
+            <label class="label-secondary" for="button-6">Button 6</label>
+          </div>
+        </form>
+
+        <h3>Neutral button group (fixed width)</h3>
+
+        <form class="btn-form" role="radiogroup">
+          <div class="form-group" role="radio" tabindex="7">
+            <input id="button-7" class="radio-neutral" type="radio" name="button" value="7" aria-checked="false" checked>
+            <label class="label-neutral" for="button-7">Button 7</label>
+          </div>
+          <div class="form-group" role="radio" tabindex="8">
+            <input id="button-8" class="radio-neutral" type="radio" name="button" value="8" aria-checked="false">
+            <label class="label-neutral" for="button-8">Button 8</label>
+          </div>
+          <div class="form-group" role="radio" tabindex="9">
+            <input id="button-9" class="radio-neutral" type="radio" name="button" value="9" aria-checked="false">
+            <label class="label-neutral" for="button-9">Button 9</label>
+          </div>
+        </form>
+
+        <h3>Teal button group (fixed width)</h3>
+
+        <form class="btn-form" role="radiogroup">
+          <div class="form-group" role="radio" tabindex="10">
+            <input id="button-10" class="radio-teal" type="radio" name="button" value="10" aria-checked="true" checked>
+            <label class="label-teal" for="button-10">Button 10</label>
+          </div>
+          <div class="form-group" role="radio" tabindex="11">
+            <input id="button-11" class="radio-teal" type="radio" name="button" value="11" aria-checked="false">
+            <label class="label-teal" for="button-11">Button 11</label>
+          </div>
+          <div class="form-group" role="radio" tabindex="12">
+            <input id="button-12" class="radio-teal" type="radio" name="button" value="12" aria-checked="false">
+            <label class="label-teal" for="button-12">Button 12</label>
+          </div>
+        </form>
+
+        <h3>Button group with % width values</h3>
+
+          <form class="btn-form-fullwidth" role="radiogroup">
+          <div class="form-group-fullwidth" role="radio" tabindex="13">
+            <input id="button-13" class="radio-primary-fullwidth" type="radio" name="button" value="1" aria-checked="true" checked>
+            <label class="label-primary-fullwidth" for="button-13">Button 1</label>
+          </div>
+          <div class="form-group-fullwidth" role="radio" tabindex="14">
+            <input id="button-14" class="radio-primary-fullwidth" type="radio" name="button" value="2" aria-checked="false">
+            <label class="label-primary-fullwidth" for="button-14">Button 2</label>
+          </div>
+          <div class="form-group-fullwidth" role="radio" tabindex="15">
+            <input id="button-15" class="radio-primary-fullwidth" type="radio" name="button" value="3" aria-checked="false">
+            <label class="label-primary-fullwidth" for="button-15">Button 3</label>
+          </div>
+        </form>
+
+        <h3>Primary button group with icon</h3>
+
+        <form class="btn-form-icon" role="radiogroup">
+          <div class="form-group-icon" role="radio" tabindex="0">
+            <input id="button-16" class="radio-primary-icon" type="radio" name="button" value="1" aria-checked="true" checked>
+            <label class="label-primary-icon male" for="button-16">Male</label>
+          </div>
+          <div class="form-group-icon" role="radio" tabindex="2">
+            <input id="button-17" class="radio-primary-icon" type="radio" name="button" value="2" aria-checked="false">
+            <label class="label-primary-icon female" for="button-17">Female</label>
+          </div>
+        </form>
+
+        <h3>Secondary button group with icon</h3>
+
+        <form class="btn-form-icon" role="radiogroup">
+          <div class="form-group-icon" role="radio" tabindex="3">
+            <input id="button-18" class="radio-secondary-icon" type="radio" name="button" value="4" aria-checked="true" checked>
+            <label class="label-secondary-icon male" for="button-18">Male</label>
+          </div>
+          <div class="form-group-icon" role="radio" tabindex="4">
+            <input id="button-19" class="radio-secondary-icon" type="radio" name="button" value="5" aria-checked="false">
+            <label class="label-secondary-icon female" for="button-19">Female</label>
+          </div>
+        </form>
+
+        <h3>Neutral button group with icon</h3>
+
+        <form class="btn-form-icon" role="radiogroup">
+          <div class="form-group-icon" role="radio" tabindex="5">
+            <input id="button-20" class="radio-neutral-icon" type="radio" name="button" value="7" aria-checked="false" checked>
+            <label class="label-neutral-icon male-neutral" for="button-20">Male</label>
+          </div>
+          <div class="form-group-icon" role="radio" tabindex="6">
+            <input id="button-21" class="radio-neutral-icon" type="radio" name="button" value="8" aria-checked="false">
+            <label class="label-neutral-icon female-neutral" for="button-21">Female</label>
+          </div>
+        </form>
+
+        <h3>Teal button group</h3>
+
+        <form class="btn-form-icon" role="radiogroup">
+          <div class="form-group-icon" role="radio" tabindex="7">
+            <input id="button-22" class="radio-teal-icon" type="radio" name="button" value="10" aria-checked="true" checked>
+            <label class="label-teal-icon male" for="button-22">Male</label>
+          </div>
+          <div class="form-group-icon" role="radio" tabindex="8">
+            <input id="button-23" class="radio-teal-icon" type="radio" name="button" value="11" aria-checked="false">
+            <label class="label-teal-icon female" for="button-23">Female</label>
+          </div>
+        </form>
+
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+
+    <!-- <footer class="basic print--hide">
+	<h2 class="visuallyhidden">Footer links</h2>
+	<div class="footer">
+		<div class="wrapper">
+
+			<div class="footer-license">
+  <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+  <p class="footer-license__text margin-left-sm--0">
+    All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+  </p>
+</div>
+
+
+		</div>
+	</div>
+</footer>
+ -->
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+  <script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script>
+
+</html>
