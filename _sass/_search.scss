@@ -1,0 +1,78 @@
+#postcode-wrapper {
+      width: 304px;
+      display: inline-block;
+      float: left;
+      margin-left: 3px;
+      margin-bottom: 16px;
+    }
+
+    #pcInput {
+      width: 192px;
+      height: 40px;
+      border-style: solid;
+      border-width: 1px;
+      padding-left: 8px;
+      padding-right: 8px;
+      font-size: 16px;
+      font-family: 'Open Sans', Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      border-color: #414042;
+    }
+		
+		.btnSearch {
+			height: 40px;
+			border: none;
+			width: 40px;
+			background-color: #206095;
+			vertical-align: top;
+			margin-left: -4px;
+			cursor: pointer;
+			padding: 0;
+		}
+
+		button:focus {
+			outline: 3px solid #FF9933 !important;
+    	outline-offset: 0;
+		}
+
+		.btnSearch:hover {
+			background-color: #003C57;
+			position: relative;
+		}
+
+		input[type=search] {
+			position: relative;
+			color: #777777 !important;
+		}
+
+		input[type=search]:focus {
+    	outline: 3px solid #FF9933 !important;
+    	outline-offset: 0;
+    	color: #414042 !important;
+    } 
+
+    p.form-text {
+    	font-size: 16px;
+    	line-height: 24px;
+      padding: 0 0 8px 0;
+      margin: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      border-color: #414042;
+    }
+
+    .btn-primary1 {
+      background-color: #0F8243;
+      color: #fff;
+    }
+    
+    .btn-primary1:hover,.btn-primary1:focus {
+      background-color:#206095;
+    }
+
+    .icon:after {
+      content: url('../img/location.svg');
+      position: absolute;
+      top: 0;
+      margin-left: -6px;
+    }
