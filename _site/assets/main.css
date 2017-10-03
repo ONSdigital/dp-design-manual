@@ -1499,13 +1499,13 @@ h1.interactive {
   margin: 16px 0 24px 0; }
 
 h2.interactive {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 32px;
   margin: 16px 0 24px 0; }
 
 h3.interactive {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 32px;
   margin: 16px 0 24px 0; }
@@ -1585,13 +1585,13 @@ p.table-text {
     margin: 0 0 24px 0; }
 
   h2.interactive {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 32px;
     margin: 16px 0 24px 0; }
 
   h3.interactive {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 32px;
     margin: 16px 0 24px 0; }
@@ -1614,7 +1614,7 @@ p.table-text {
     margin: 0 0 24px 0; }
 
   h2.interactive {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 700;
     line-height: 32px;
     margin: 32px 0 24px 0; }
