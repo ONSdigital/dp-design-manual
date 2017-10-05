@@ -75,6 +75,57 @@ h3 {
   }
 }
 
+// Styles created for sprint 9 "visual article interation #2004" Oct 2017
+
+  .visual-article-interation {
+
+  h1,h2,h3,h4,h5,h6,
+  .heading-xlarge,.heading-large,.heading-medium,.heading-small,.heading-xsmall,.heading-xxsmall {
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  h1, .heading-xlarge {
+    font-size: 32px;
+    @media (min-width: 768px) {font-size: 38px}
+  }
+
+  h2, .heading-large {
+    font-size: 24px;
+    @media (min-width: 768px) {font-size: 30px}
+  }
+
+  h3, .heading-medium {
+    font-size: 18px;
+    @media (min-width: 768px) {font-size: 24px}
+  }
+
+  h4, .heading-small {
+    font-size: 16px;
+    @media (min-width: 768px) {font-size: 20px}
+  }
+
+
+  h5, .heading-xsmall {
+    font-size: 16px;
+    @media (min-width: 768px) {font-size: 18px}
+  }
+
+  h6, .heading-xxsmall {
+    font-size: 14px;
+    @media (min-width: 768px) {font-size: 16px}
+  }
+
+
+  p {
+    font-size: 16px;
+    @media (min-width: 768px) {font-size: 18px}
+    line-height: 1.6;
+  }
+
+}
+
+
 // Custom styles created for the "social media" section
 
   .heading1 {

@@ -398,6 +398,47 @@ h3 {
 .basic .page-intro__content, .basic .lede {
   font-size: 21px; }
 
+.visual-article-interation h1, .visual-article-interation h2, .visual-article-interation h3, .visual-article-interation h4, .visual-article-interation h5, .visual-article-interation h6,
+.visual-article-interation .heading-xlarge, .visual-article-interation .heading-large, .visual-article-interation .heading-medium, .visual-article-interation .heading-small, .visual-article-interation .heading-xsmall, .visual-article-interation .heading-xxsmall {
+  line-height: 1.2;
+  font-weight: bold; }
+.visual-article-interation h1, .visual-article-interation .heading-xlarge {
+  font-size: 32px; }
+  @media (min-width: 768px) {
+    .visual-article-interation h1, .visual-article-interation .heading-xlarge {
+      font-size: 38px; } }
+.visual-article-interation h2, .visual-article-interation .heading-large {
+  font-size: 24px; }
+  @media (min-width: 768px) {
+    .visual-article-interation h2, .visual-article-interation .heading-large {
+      font-size: 30px; } }
+.visual-article-interation h3, .visual-article-interation .heading-medium {
+  font-size: 18px; }
+  @media (min-width: 768px) {
+    .visual-article-interation h3, .visual-article-interation .heading-medium {
+      font-size: 24px; } }
+.visual-article-interation h4, .visual-article-interation .heading-small {
+  font-size: 16px; }
+  @media (min-width: 768px) {
+    .visual-article-interation h4, .visual-article-interation .heading-small {
+      font-size: 20px; } }
+.visual-article-interation h5, .visual-article-interation .heading-xsmall {
+  font-size: 16px; }
+  @media (min-width: 768px) {
+    .visual-article-interation h5, .visual-article-interation .heading-xsmall {
+      font-size: 18px; } }
+.visual-article-interation h6, .visual-article-interation .heading-xxsmall {
+  font-size: 14px; }
+  @media (min-width: 768px) {
+    .visual-article-interation h6, .visual-article-interation .heading-xxsmall {
+      font-size: 16px; } }
+.visual-article-interation p {
+  font-size: 16px;
+  line-height: 1.6; }
+  @media (min-width: 768px) {
+    .visual-article-interation p {
+      font-size: 18px; } }
+
 .heading1 {
   font-weight: 700;
   font-size: 52px !important;
