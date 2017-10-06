@@ -1,14 +1,14 @@
 <div class="tiles__item tiles__item--nav-type flush-col">
-  <h2 class="tiles__title-h3 background--gallery font-weight--bold">
+  <h3 class="tiles__title-h3 background--gallery font-weight--bold">
     Contact
-  </h2>
-  <div class="tiles__content padding-top--2 padding-bottom--3 background--gallery">
+  </h3>
+  <div class="tiles__content padding-top--1 padding-bottom--3 background--gallery">
     <address>
       {% if page.contact-name %}
       {{ page.contact-name }}<br>
       {% endif %}
 
-      <a href="#">{{ page.contact-email }}</a>
+      <a href="#" class="link--underline">{{ page.contact-email }}</a>
 
       {% if page.contact-tel %}
       <br>Telephone: {{ page.contact-tel }}

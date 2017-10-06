@@ -78,15 +78,17 @@
 // Styles created for sprint 9 "visual article interation #2004" Oct 2017
 
   .visual-article-interation {
+
   .breadcrumb {
     padding-bottom: 8px;
   }
 
-  h1,h2,h3,h4,h5,h6 {
+  h1,h2,h3,h4,h5,h6,
+  .heading-xlarge,.heading-large, .heading-medium, .heading-small, .heading-xsmall, .heading-xxsmall {
     font-weight: bold;
   }
 
-  h1 {
+  h1, .heading-xlarge {
     font-size: 32px;
     line-height: 40px;
     @media (min-width: 768px) {
@@ -95,7 +97,7 @@
     }
   }
 
-  h2 {
+  h2, .heading-large {
     font-size: 24px;
     line-height: 32px;
     @media (min-width: 768px) {
@@ -104,7 +106,7 @@
     }
   }
 
-  h3 {
+  h3, .heading-medium {
     font-size: 18px;
     line-height: 24px;
     @media (min-width: 768px) {
@@ -113,7 +115,7 @@
     }
   }
 
-  h4 {
+  h4, .heading-small {
     font-size: 16px;
     line-height: 24px;
     @media (min-width: 768px) {
@@ -123,7 +125,7 @@
   }
 
 
-  h5 {
+  h5, .heading-xsmall {
     font-size: 16px;
     line-height: 24px;
     @media (min-width: 768px) {
@@ -132,7 +134,7 @@
     }
   }
 
-  h6 {
+  h6, .heading-xxsmall {
     font-size: 14px;
     line-height: 24px;
     @media (min-width: 768px) {
@@ -142,7 +144,7 @@
   }
 
 
-  p {
+  p,address {
     font-size: 16px;
     line-height: 24px;
     @media (min-width: 768px) {

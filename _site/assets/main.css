@@ -394,55 +394,56 @@
 
 .visual-article-interation .breadcrumb {
   padding-bottom: 8px; }
-.visual-article-interation h1, .visual-article-interation h2, .visual-article-interation h3, .visual-article-interation h4, .visual-article-interation h5, .visual-article-interation h6 {
+.visual-article-interation h1, .visual-article-interation h2, .visual-article-interation h3, .visual-article-interation h4, .visual-article-interation h5, .visual-article-interation h6,
+.visual-article-interation .heading-xlarge, .visual-article-interation .heading-large, .visual-article-interation .heading-medium, .visual-article-interation .heading-small, .visual-article-interation .heading-xsmall, .visual-article-interation .heading-xxsmall {
   font-weight: bold; }
-.visual-article-interation h1 {
+.visual-article-interation h1, .visual-article-interation .heading-xlarge {
   font-size: 32px;
   line-height: 40px; }
   @media (min-width: 768px) {
-    .visual-article-interation h1 {
+    .visual-article-interation h1, .visual-article-interation .heading-xlarge {
       font-size: 38px;
       line-height: 48px; } }
-.visual-article-interation h2 {
+.visual-article-interation h2, .visual-article-interation .heading-large {
   font-size: 24px;
   line-height: 32px; }
   @media (min-width: 768px) {
-    .visual-article-interation h2 {
+    .visual-article-interation h2, .visual-article-interation .heading-large {
       font-size: 30px;
       line-height: 40px; } }
-.visual-article-interation h3 {
+.visual-article-interation h3, .visual-article-interation .heading-medium {
   font-size: 18px;
   line-height: 24px; }
   @media (min-width: 768px) {
-    .visual-article-interation h3 {
+    .visual-article-interation h3, .visual-article-interation .heading-medium {
       font-size: 24px;
       line-height: 32px; } }
-.visual-article-interation h4 {
+.visual-article-interation h4, .visual-article-interation .heading-small {
   font-size: 16px;
   line-height: 24px; }
   @media (min-width: 768px) {
-    .visual-article-interation h4 {
+    .visual-article-interation h4, .visual-article-interation .heading-small {
       font-size: 20px;
       line-height: 24px; } }
-.visual-article-interation h5 {
+.visual-article-interation h5, .visual-article-interation .heading-xsmall {
   font-size: 16px;
   line-height: 24px; }
   @media (min-width: 768px) {
-    .visual-article-interation h5 {
+    .visual-article-interation h5, .visual-article-interation .heading-xsmall {
       font-size: 18px;
       line-height: 32px; } }
-.visual-article-interation h6 {
+.visual-article-interation h6, .visual-article-interation .heading-xxsmall {
   font-size: 14px;
   line-height: 24px; }
   @media (min-width: 768px) {
-    .visual-article-interation h6 {
+    .visual-article-interation h6, .visual-article-interation .heading-xxsmall {
       font-size: 16px;
       line-height: 32px; } }
-.visual-article-interation p {
+.visual-article-interation p, .visual-article-interation address {
   font-size: 16px;
   line-height: 24px; }
   @media (min-width: 768px) {
-    .visual-article-interation p {
+    .visual-article-interation p, .visual-article-interation address {
       font-size: 18px;
       line-height: 32px; } }
 .visual-article-interation .page-intro__content {
