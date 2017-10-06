@@ -17,35 +17,25 @@ breadcrumbs:
   link: #
 ---
 
-<style>
-
-
-</style>
-
-
 <main id="main" role="main" tabindex="-1" class="visual-article-interation">
 
-  <div class="page-intro background--gallery">
+  <div class="page-intro background--alabaster">
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
 
           {% include breadcrumbs-v2.html %}
 
-          <div class="page-intro-v2">
+          <div id="intro" class="page-intro-v2 col col--md-47 col--lg-50">
             {% if page.type %}<p class="margin-bottom--0 margin-top--1">{{ page.type }}</p>{% endif %}
             <h1 class="page-intro__title margin-top--0">
-                {% if page.title %}
-                {{ page.title }}
-                {% else %}
-                Page title
-                {% endif %}
-              </h1>
-              {% if page.intro-content %}
-                <p class="page-intro__content col--md-46 padding-top--0 margin-bottom--1">
-                  {{ page.intro-content }}
-                </p>
+              {% if page.title %}
+              {{ page.title }}
+              {% else %}
+              Page title
               {% endif %}
+            </h1>
+            <p class="page-intro__content margin-bottom--1">Enter your wages into our <a href="#anchor" class="link--underline">inflation calculator</a>, to see if your salary is keeping up with inflation.</p>
           </div>
 
 
@@ -56,7 +46,7 @@ breadcrumbs:
     <div class="meta-v2 meta-wrap">
       <div class="wrapper">
         <div class="col-wrap">
-          <p class="col col--md-11 col--lg-11 meta__item">
+          <p class="col col--md-11 col--lg-11 meta__item font-xsmall">
             {{ page.release-date }}
           </p>
         </div>
@@ -76,15 +66,16 @@ breadcrumbs:
           <p>Where the inflation rate outstrips wage increases, you lose money in real terms. You need to spend a higher proportion of your wages to buy the same goods, so your living costs increase.</p>
           <p>Where your wage grows at a higher rate than inflation, you have gained money in real terms. You can buy the same goods for a lower proportion of your wages, effectively enjoying a higher standard of living.</p>
 
-          <h3>Love thy neighbour?</h3>
+          <h3 id="anchor">How does geography impact UK exports and imports to the rest of the world?</h3>
           <p>Trade relationships are usually stronger between neighbouring countries, and with countries with large economies. China and the US are large economies and are important UK trading partners even accounting for their distance from us.</p>
-          <p>However, distance is important. The value of the UK’s  trading relationship with Ireland is higher than the value of UK trade with Italy or Spain. Ireland is the UK’s neighbour, even though the total size of its economy is much smaller than Italy's or Spain’s.</p>
+          <p>However, distance is important. The value of the UK’s trading relationship with Ireland is higher than the value of UK trade with Italy or Spain. Ireland is the UK’s neighbour, even though the total size of its economy is much smaller than Italy's or Spain’s.</p>
+          <p><a href="#intro" class="link--underline">Back to top</a></p>
 
-          <h4>How does geography impact UK exports and imports  to the rest of the world?</h4>
+          <h4>Source: Balance of Payments annual geographical data tables ONS</h4>
           <p>The UK runs a trade deficit (we import more than we export) with the biggest economies of the European Union.</p>
           <p>The US is also the country from which the UK earns the most through trade. Exports to the US (£96bn) are higher than imports from the US (£59bn). So in 2015 the UK ran a trade surplus4 with the US of £37bn.</p>
 
-          <h5>UK Exports by distance from UK, 2015</h5>
+          <h5>How does geography impact UK exports and imports to the rest of the world?</h5>
           <p>When it comes to trade surpluses2 (exporting more than we import), aside from the US , the UK has a trade surpluses with 108 territories, including Ireland, Switzerland, the United Arab Emirates, Saudi Arabia, Australia and Brazil.</p>
 
           <h6>Source: Balance of Payments annual geographical data tables ONS</h6>

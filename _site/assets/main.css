@@ -370,12 +370,6 @@
 .text {
   max-width: 36em; }
 
-h2 {
-  line-height: 1.4 !important; }
-
-h3 {
-  line-height: 1.4 !important; }
-
 .basic h1, .basic h2, .basic h3, .basic h4, .basic h5, .basic h6 {
   font-weight: bold;
   padding: 0;
@@ -398,46 +392,78 @@ h3 {
 .basic .page-intro__content, .basic .lede {
   font-size: 21px; }
 
-.visual-article-interation h1, .visual-article-interation h2, .visual-article-interation h3, .visual-article-interation h4, .visual-article-interation h5, .visual-article-interation h6,
-.visual-article-interation .heading-xlarge, .visual-article-interation .heading-large, .visual-article-interation .heading-medium, .visual-article-interation .heading-small, .visual-article-interation .heading-xsmall, .visual-article-interation .heading-xxsmall {
-  line-height: 1.2;
+.visual-article-interation h1, .visual-article-interation h2, .visual-article-interation h3, .visual-article-interation h4, .visual-article-interation h5, .visual-article-interation h6 {
   font-weight: bold; }
-.visual-article-interation h1, .visual-article-interation .heading-xlarge {
-  font-size: 32px; }
+.visual-article-interation h1 {
+  font-size: 32px;
+  line-height: 40px; }
   @media (min-width: 768px) {
-    .visual-article-interation h1, .visual-article-interation .heading-xlarge {
-      font-size: 38px; } }
-.visual-article-interation h2, .visual-article-interation .heading-large {
-  font-size: 24px; }
+    .visual-article-interation h1 {
+      font-size: 38px;
+      line-height: 48px; } }
+.visual-article-interation h2 {
+  font-size: 24px;
+  line-height: 32px; }
   @media (min-width: 768px) {
-    .visual-article-interation h2, .visual-article-interation .heading-large {
-      font-size: 30px; } }
-.visual-article-interation h3, .visual-article-interation .heading-medium {
-  font-size: 18px; }
+    .visual-article-interation h2 {
+      font-size: 30px;
+      line-height: 40px; } }
+.visual-article-interation h3 {
+  font-size: 18px;
+  line-height: 24px; }
   @media (min-width: 768px) {
-    .visual-article-interation h3, .visual-article-interation .heading-medium {
-      font-size: 24px; } }
-.visual-article-interation h4, .visual-article-interation .heading-small {
-  font-size: 16px; }
+    .visual-article-interation h3 {
+      font-size: 24px;
+      line-height: 32px; } }
+.visual-article-interation h4 {
+  font-size: 16px;
+  line-height: 24px; }
   @media (min-width: 768px) {
-    .visual-article-interation h4, .visual-article-interation .heading-small {
-      font-size: 20px; } }
-.visual-article-interation h5, .visual-article-interation .heading-xsmall {
-  font-size: 16px; }
+    .visual-article-interation h4 {
+      font-size: 20px;
+      line-height: 24px; } }
+.visual-article-interation h5 {
+  font-size: 16px;
+  line-height: 24px; }
   @media (min-width: 768px) {
-    .visual-article-interation h5, .visual-article-interation .heading-xsmall {
-      font-size: 18px; } }
-.visual-article-interation h6, .visual-article-interation .heading-xxsmall {
-  font-size: 14px; }
+    .visual-article-interation h5 {
+      font-size: 18px;
+      line-height: 32px; } }
+.visual-article-interation h6 {
+  font-size: 14px;
+  line-height: 24px; }
   @media (min-width: 768px) {
-    .visual-article-interation h6, .visual-article-interation .heading-xxsmall {
-      font-size: 16px; } }
+    .visual-article-interation h6 {
+      font-size: 16px;
+      line-height: 32px; } }
 .visual-article-interation p {
   font-size: 16px;
-  line-height: 1.6; }
+  line-height: 24px; }
   @media (min-width: 768px) {
     .visual-article-interation p {
-      font-size: 18px; } }
+      font-size: 18px;
+      line-height: 32px; } }
+.visual-article-interation .page-intro__content {
+  font-size: 18px;
+  line-height: 24px; }
+  @media (min-width: 768px) {
+    .visual-article-interation .page-intro__content {
+      font-size: 24px;
+      line-height: 32px; } }
+.visual-article-interation .font-xsmall {
+  font-size: 14px;
+  line-height: 24px; }
+  @media (min-width: 768px) {
+    .visual-article-interation .font-xsmall {
+      font-size: 16px;
+      line-height: 24px; } }
+.visual-article-interation .font-xxsmall {
+  font-size: 14px;
+  line-height: 24px; }
+  @media (min-width: 768px) {
+    .visual-article-interation .font-xxsmall {
+      font-size: 14px;
+      line-height: 24px; } }
 
 .heading1 {
   font-weight: 700;
@@ -721,9 +747,6 @@ a.btn:hover {
   margin-bottom: 16px; }
 .basic .page-intro__type {
   color: #414042; }
-
-.page-intro-v2 .page-intro__content {
-  line-height: 1.6; }
 
 .pullout:after {
   content: "";

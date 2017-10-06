@@ -33,13 +33,13 @@
   max-width: 36em;
 }
 
-h2 {
-  line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
-}
-
-h3 {
-  line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
-}
+// h2 {
+//   line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
+// }
+//
+// h3 {
+//   line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
+// }
 
 // Custom styles created for the "basic" template
 .basic {
@@ -79,48 +79,104 @@ h3 {
 
   .visual-article-interation {
 
-  h1,h2,h3,h4,h5,h6,
-  .heading-xlarge,.heading-large,.heading-medium,.heading-small,.heading-xsmall,.heading-xxsmall {
-    line-height: 1.2;
+  h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
   }
 
-  h1, .heading-xlarge {
+  h1 {
     font-size: 32px;
-    @media (min-width: 768px) {font-size: 38px}
+    line-height: 40px;
+    @media (min-width: 768px) {
+      font-size: 38px;
+      line-height: 48px;
+    }
   }
 
-  h2, .heading-large {
+  h2 {
     font-size: 24px;
-    @media (min-width: 768px) {font-size: 30px}
+    line-height: 32px;
+    @media (min-width: 768px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 
-  h3, .heading-medium {
+  h3 {
     font-size: 18px;
-    @media (min-width: 768px) {font-size: 24px}
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
-  h4, .heading-small {
+  h4 {
     font-size: 16px;
-    @media (min-width: 768px) {font-size: 20px}
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
 
-  h5, .heading-xsmall {
+  h5 {
     font-size: 16px;
-    @media (min-width: 768px) {font-size: 18px}
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 32px;
+    }
   }
 
-  h6, .heading-xxsmall {
+  h6 {
     font-size: 14px;
-    @media (min-width: 768px) {font-size: 16px}
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
   }
 
 
   p {
     font-size: 16px;
-    @media (min-width: 768px) {font-size: 18px}
-    line-height: 1.6;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+  }
+
+  .page-intro__content {
+    font-size: 18px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+  }
+
+  .font-xsmall {
+    font-size: 14px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  }
+
+  .font-xxsmall {
+    font-size: 14px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
   }
 
 }
