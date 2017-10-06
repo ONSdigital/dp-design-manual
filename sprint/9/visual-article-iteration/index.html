@@ -1,0 +1,139 @@
+---
+layout: prototype
+type: "Article"
+title: "Are your wages keeping up with inflation?"
+intro-content:
+contact-name: Earnings team
+contact-email: earnings@ons.gov.uk
+contact-tel: 01234 567890
+release-date: 20 June 2017
+next-release:
+breadcrumbs:
+- label: Home
+  link: #
+- label: Inflation and price indices
+  link: #
+- label: Economy
+  link: #
+---
+
+<main id="main" role="main" tabindex="-1" class="visual-article-interation">
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+
+          {% include breadcrumbs-v2.html %}
+
+          <div id="intro" class="page-intro-v2 col col--md-47 col--lg-50">
+            {% if page.type %}<p class="margin-bottom--0 margin-top--1">{{ page.type }}</p>{% endif %}
+            <h1 class="page-intro__title margin-top--0">
+              {% if page.title %}
+              {{ page.title }}
+              {% else %}
+              Page title
+              {% endif %}
+            </h1>
+            <p class="page-intro__content margin-bottom--1">Enter your wages into our <a href="#anchor" class="link--underline">inflation calculator</a>, to see if your salary is keeping up with inflation.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="meta-v2 meta-wrap">
+      <div class="wrapper">
+        <div class="col-wrap">
+          <p class="col col--md-11 col--lg-11 meta__item font-xsmall">
+            {{ page.release-date }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="wrapper margin-top--3 margin-bottom--0">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-40 col--lg-40">
+          <p>Inflation is the rate at which the cost of goods and services rises year-on-year. In order to be able to buy the same amount of goods, your salary must increase by at least the same level as inflation.</p>
+          <p>Where the inflation rate outstrips wage increases, you lose money in real terms. You need to spend a higher proportion of your wages to buy the same goods, so your living costs increase.</p>
+          <p>Where your wage grows at a higher rate than inflation, you have gained money in real terms. You can buy the same goods for a lower proportion of your wages, effectively enjoying a higher standard of living.</p>
+
+          <h2 id="anchor">How does your salary increase compare with the change in inflation?</h2>
+
+          <div class="pym-interactive"><iframe src="https://www.ons.gov.uk/visualisations/dvc409/calc/index.html?initialWidth=700&amp;childId=ae7-472e-a6ca-f3c8d68eac3e" width="100%" scrolling="no" marginheight="0" frameborder="0" height="300px"></iframe></div>
+
+          <p><a href="#intro" class="link--underline">Back to top</a></p>
+          <p>Note: This interactive is an illustrative example and should not be used to make financial decisions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper margin-bottom--8">
+    <div class="col-wrap">
+      <div class="col">
+        <div class="col col--md-40 col--lg-40">
+
+          <div class="tiles__item tiles__item--nav-type flush-col margin-bottom--4">
+            <h2 class="heading-medium background--gallery font-weight--bold padding-top--4 padding-left--2 padding-right--2">
+              Related
+            </h2>
+            <div class="tiles__content padding-top--0 padding-bottom--1 padding-left--2 padding-right--2 background--gallery">
+              <ul class="list--neutral">
+
+                <li class="margin-bottom--2">
+                  <h3><a href="#" class="heading-xsmall link--underline">How inflation changes how much your wages are worth</a></h3>
+                  <p class="font-xxsmall margin-top--0 margin-bottom--0 padding-top--0 padding-bottom--0">Article <span class="font-color--aluminium">&nbsp;|&nbsp;</span> 26 June 2017</p>
+                  <p class="margin-top--0">Workers have started to feel the squeeze in their finances, after wage growth recently fell below inflation for the first time since 2014.</p>
+                </li>
+
+                <li class="margin-bottom--2">
+                  <h3><a href="#" class="heading-xsmall link--underline">What’s changed in the year since the Brexit vote?</a></h3>
+                  <p class="font-xxsmall margin-top--0 margin-bottom--0 padding-top--0 padding-bottom--0">Article <span class="font-color--aluminium">&nbsp;|&nbsp;</span> 23 June 2017</p>
+                  <p class="margin-top--0">It’s been a year since the UK voted to leave the EU after more than 40 years of membership.</p>
+                </li>
+
+                <li class="margin-bottom--2">
+                  <h3><a href="#" class="heading-xsmall link--underline">How do earnings vary across Great Britain?</a></h3>
+                  <p class="font-xxsmall margin-top--0 margin-bottom--0 padding-top--0 padding-bottom--0">Article <span class="font-color--aluminium">&nbsp;|&nbsp;</span> 15 January 2015</p>
+                  <p class="margin-top--0">Did you know that full-time employees in the UK earned £528 per week on average in 2015, and that on average women earned 9.4% less than men per hour?</p>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+
+
+          <div class="tiles__item tiles__item--nav-type flush-col">
+            <h3 class="heading-medium background--gallery font-weight--bold padding-top--4 padding-left--2 padding-right--2">
+              Contact
+            </h3>
+            <div class="tiles__content padding-top--1 padding-bottom--4 padding-left--2 padding-right--2 background--gallery">
+              <address>
+                {% if page.contact-name %}
+                {{ page.contact-name }}<br>
+                {% endif %}
+
+                <a href="#" class="link--underline">{{ page.contact-email }}</a>
+
+                {% if page.contact-tel %}
+                <br>Telephone: {{ page.contact-tel }}
+                {% endif %}
+              </address>
+            </div>
+          </div>
+
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+</main>

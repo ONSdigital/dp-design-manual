@@ -33,13 +33,13 @@
   max-width: 36em;
 }
 
-h2 {
-  line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
-}
-
-h3 {
-  line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
-}
+// h2 {
+//   line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
+// }
+//
+// h3 {
+//   line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
+// }
 
 // Custom styles created for the "basic" template
 .basic {
@@ -74,6 +74,118 @@ h3 {
     font-size: 21px;
   }
 }
+
+// Styles created for sprint 9 "visual article interation #2004" Oct 2017
+
+  .visual-article-interation {
+
+  .breadcrumb {
+    padding-bottom: 8px;
+  }
+
+  h1,h2,h3,h4,h5,h6,
+  .heading-xlarge,.heading-large, .heading-medium, .heading-small, .heading-xsmall, .heading-xxsmall {
+    font-weight: bold;
+  }
+
+  h1, .heading-xlarge {
+    font-size: 32px;
+    line-height: 40px;
+    @media (min-width: 768px) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+  }
+
+  h2, .heading-large {
+    font-size: 24px;
+    line-height: 32px;
+    @media (min-width: 768px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  h3, .heading-medium {
+    font-size: 18px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  h4, .heading-small {
+    font-size: 16px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+
+  h5, .heading-xsmall {
+    font-size: 16px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  h6, .heading-xxsmall {
+    font-size: 14px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+
+
+  p,address {
+    font-size: 16px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+  }
+
+  .page-intro__content {
+    font-size: 20px;
+    line-height: 32px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+  }
+
+  .font-xsmall {
+    font-size: 14px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  }
+
+  .font-xxsmall {
+    font-size: 14px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+  }
+
+}
+
 
 // Custom styles created for the "social media" section
 
