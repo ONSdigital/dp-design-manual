@@ -392,6 +392,8 @@
 .basic .page-intro__content, .basic .lede {
   font-size: 21px; }
 
+.visual-article-interation .breadcrumb {
+  padding-bottom: 8px; }
 .visual-article-interation h1, .visual-article-interation h2, .visual-article-interation h3, .visual-article-interation h4, .visual-article-interation h5, .visual-article-interation h6 {
   font-weight: bold; }
 .visual-article-interation h1 {
