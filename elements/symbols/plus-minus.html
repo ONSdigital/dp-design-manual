@@ -36,10 +36,14 @@ intro-content: What's the best way to mark-up plus and minus symbols?
         <p>-3</p>
         <p>-</p>
 
-        <p>JAWS 16 reads out "minus" when the hyphen is next to a number</p>
+        <p>JAWS 16 reads out "minus" only when the hyphen is next to a number</p>
         <p>JAWS 16 reads out "dash" when the hyphen is by itself</p>
-        <p>VoiceOver for Mac doesn't read "minus"</p>
-        <p>VoiceOver for iOS reads "minus"</p>
+        <p>VoiceOver for Mac skips a hyphen by itself by default</p>
+        <p>VoiceOver for iOS reads "minus" only when the hyphen is next to a number</p>
+        <p>VoiceOver for iOS reads out "hyphen" when the hyphen is by itself</p>
+        <p>NVDA reads out "minus" only when the hyphen is next to a number</p>
+        <p>NVDA skips a hyphen by itself by default</p>
+
 
 
         <h3>Option 3: plus and minus symbols</h3>
@@ -47,9 +51,10 @@ intro-content: What's the best way to mark-up plus and minus symbols?
         <p>&minus;3</p>
         <p>&minus;</p>
 
-        <p>JAWS 16 reads out "minus"</p>
+        <p>JAWS 16 reads "minus"</p>
         <p>VoiceOver for Mac reads "minus"</p>
         <p>VoiceOver for iOS reads "minus"</p>
+        <p>NVDA reads "minus"</p>
 
 
         <h3>Option 3: HTML abbr tag (abbreviation)</h3>
