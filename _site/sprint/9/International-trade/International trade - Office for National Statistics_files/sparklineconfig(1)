@@ -1,0 +1,121 @@
+ 
+(function(){
+
+var series = [{"name":"1997 JAN", "y": null },{"name":"1997 FEB", "y": null },{"name":"1997 MAR", "y": null },{"name":"1997 APR", "y": null },{"name":"1997 MAY", "y": null },{"name":"1997 JUN", "y": null },{"name":"1997 JUL", "y": null },{"name":"1997 AUG", "y": null },{"name":"1997 SEP", "y": null },{"name":"1997 OCT", "y": null },{"name":"1997 NOV", "y": null },{"name":"1997 DEC", "y": null },{"name":"1998 JAN", "y": 19144.0 },{"name":"1998 FEB", "y": 20034.0 },{"name":"1998 MAR", "y": 20668.0 },{"name":"1998 APR", "y": 20015.0 },{"name":"1998 MAY", "y": 20558.0 },{"name":"1998 JUN", "y": 20822.0 },{"name":"1998 JUL", "y": 20189.0 },{"name":"1998 AUG", "y": 19682.0 },{"name":"1998 SEP", "y": 20328.0 },{"name":"1998 OCT", "y": 20101.0 },{"name":"1998 NOV", "y": 20472.0 },{"name":"1998 DEC", "y": 20653.0 },{"name":"1999 JAN", "y": 20614.0 },{"name":"1999 FEB", "y": 20555.0 },{"name":"1999 MAR", "y": 21192.0 },{"name":"1999 APR", "y": 20794.0 },{"name":"1999 MAY", "y": 20625.0 },{"name":"1999 JUN", "y": 21600.0 },{"name":"1999 JUL", "y": 21826.0 },{"name":"1999 AUG", "y": 22179.0 },{"name":"1999 SEP", "y": 21839.0 },{"name":"1999 OCT", "y": 22352.0 },{"name":"1999 NOV", "y": 22853.0 },{"name":"1999 DEC", "y": 22585.0 },{"name":"2000 JAN", "y": 22769.0 },{"name":"2000 FEB", "y": 22750.0 },{"name":"2000 MAR", "y": 23014.0 },{"name":"2000 APR", "y": 23696.0 },{"name":"2000 MAY", "y": 23800.0 },{"name":"2000 JUN", "y": 24444.0 },{"name":"2000 JUL", "y": 24414.0 },{"name":"2000 AUG", "y": 24558.0 },{"name":"2000 SEP", "y": 24664.0 },{"name":"2000 OCT", "y": 25061.0 },{"name":"2000 NOV", "y": 25604.0 },{"name":"2000 DEC", "y": 25884.0 },{"name":"2001 JAN", "y": 25699.0 },{"name":"2001 FEB", "y": 25986.0 },{"name":"2001 MAR", "y": 25858.0 },{"name":"2001 APR", "y": 25675.0 },{"name":"2001 MAY", "y": 25855.0 },{"name":"2001 JUN", "y": 26430.0 },{"name":"2001 JUL", "y": 25354.0 },{"name":"2001 AUG", "y": 25697.0 },{"name":"2001 SEP", "y": 24408.0 },{"name":"2001 OCT", "y": 24925.0 },{"name":"2001 NOV", "y": 24344.0 },{"name":"2001 DEC", "y": 24394.0 },{"name":"2002 JAN", "y": 25244.0 },{"name":"2002 FEB", "y": 25525.0 },{"name":"2002 MAR", "y": 26120.0 },{"name":"2002 APR", "y": 26725.0 },{"name":"2002 MAY", "y": 27157.0 },{"name":"2002 JUN", "y": 26321.0 },{"name":"2002 JUL", "y": 27346.0 },{"name":"2002 AUG", "y": 25575.0 },{"name":"2002 SEP", "y": 25790.0 },{"name":"2002 OCT", "y": 26191.0 },{"name":"2002 NOV", "y": 26163.0 },{"name":"2002 DEC", "y": 25324.0 },{"name":"2003 JAN", "y": 26743.0 },{"name":"2003 FEB", "y": 26790.0 },{"name":"2003 MAR", "y": 27404.0 },{"name":"2003 APR", "y": 26623.0 },{"name":"2003 MAY", "y": 26626.0 },{"name":"2003 JUN", "y": 26561.0 },{"name":"2003 JUL", "y": 26567.0 },{"name":"2003 AUG", "y": 26510.0 },{"name":"2003 SEP", "y": 27440.0 },{"name":"2003 OCT", "y": 27789.0 },{"name":"2003 NOV", "y": 27423.0 },{"name":"2003 DEC", "y": 27351.0 },{"name":"2004 JAN", "y": 27428.0 },{"name":"2004 FEB", "y": 26589.0 },{"name":"2004 MAR", "y": 27200.0 },{"name":"2004 APR", "y": 27953.0 },{"name":"2004 MAY", "y": 27988.0 },{"name":"2004 JUN", "y": 28484.0 },{"name":"2004 JUL", "y": 28732.0 },{"name":"2004 AUG", "y": 28916.0 },{"name":"2004 SEP", "y": 28937.0 },{"name":"2004 OCT", "y": 29944.0 },{"name":"2004 NOV", "y": 29737.0 },{"name":"2004 DEC", "y": 29615.0 },{"name":"2005 JAN", "y": 29872.0 },{"name":"2005 FEB", "y": 29233.0 },{"name":"2005 MAR", "y": 29771.0 },{"name":"2005 APR", "y": 31250.0 },{"name":"2005 MAY", "y": 30511.0 },{"name":"2005 JUN", "y": 31109.0 },{"name":"2005 JUL", "y": 31578.0 },{"name":"2005 AUG", "y": 32716.0 },{"name":"2005 SEP", "y": 32421.0 },{"name":"2005 OCT", "y": 32431.0 },{"name":"2005 NOV", "y": 33080.0 },{"name":"2005 DEC", "y": 33872.0 },{"name":"2006 JAN", "y": 35458.0 },{"name":"2006 FEB", "y": 36612.0 },{"name":"2006 MAR", "y": 37853.0 },{"name":"2006 APR", "y": 38523.0 },{"name":"2006 MAY", "y": 39300.0 },{"name":"2006 JUN", "y": 36659.0 },{"name":"2006 JUL", "y": 33864.0 },{"name":"2006 AUG", "y": 34160.0 },{"name":"2006 SEP", "y": 33161.0 },{"name":"2006 OCT", "y": 33208.0 },{"name":"2006 NOV", "y": 33723.0 },{"name":"2006 DEC", "y": 33593.0 },{"name":"2007 JAN", "y": 33251.0 },{"name":"2007 FEB", "y": 33316.0 },{"name":"2007 MAR", "y": 34851.0 },{"name":"2007 APR", "y": 33532.0 },{"name":"2007 MAY", "y": 34077.0 },{"name":"2007 JUN", "y": 35062.0 },{"name":"2007 JUL", "y": 35577.0 },{"name":"2007 AUG", "y": 35599.0 },{"name":"2007 SEP", "y": 36043.0 },{"name":"2007 OCT", "y": 36030.0 },{"name":"2007 NOV", "y": 36775.0 },{"name":"2007 DEC", "y": 35973.0 },{"name":"2008 JAN", "y": 37458.0 },{"name":"2008 FEB", "y": 38097.0 },{"name":"2008 MAR", "y": 37843.0 },{"name":"2008 APR", "y": 39586.0 },{"name":"2008 MAY", "y": 39520.0 },{"name":"2008 JUN", "y": 40833.0 },{"name":"2008 JUL", "y": 40800.0 },{"name":"2008 AUG", "y": 39647.0 },{"name":"2008 SEP", "y": 39158.0 },{"name":"2008 OCT", "y": 38505.0 },{"name":"2008 NOV", "y": 38265.0 },{"name":"2008 DEC", "y": 36784.0 },{"name":"2009 JAN", "y": 36315.0 },{"name":"2009 FEB", "y": 35986.0 },{"name":"2009 MAR", "y": 36352.0 },{"name":"2009 APR", "y": 36342.0 },{"name":"2009 MAY", "y": 34668.0 },{"name":"2009 JUN", "y": 35166.0 },{"name":"2009 JUL", "y": 35475.0 },{"name":"2009 AUG", "y": 34737.0 },{"name":"2009 SEP", "y": 36377.0 },{"name":"2009 OCT", "y": 37239.0 },{"name":"2009 NOV", "y": 36820.0 },{"name":"2009 DEC", "y": 37625.0 },{"name":"2010 JAN", "y": 37484.0 },{"name":"2010 FEB", "y": 37466.0 },{"name":"2010 MAR", "y": 39703.0 },{"name":"2010 APR", "y": 39587.0 },{"name":"2010 MAY", "y": 40105.0 },{"name":"2010 JUN", "y": 41075.0 },{"name":"2010 JUL", "y": 41412.0 },{"name":"2010 AUG", "y": 41018.0 },{"name":"2010 SEP", "y": 41146.0 },{"name":"2010 OCT", "y": 42243.0 },{"name":"2010 NOV", "y": 42627.0 },{"name":"2010 DEC", "y": 43050.0 },{"name":"2011 JAN", "y": 42255.0 },{"name":"2011 FEB", "y": 41515.0 },{"name":"2011 MAR", "y": 42075.0 },{"name":"2011 APR", "y": 42220.0 },{"name":"2011 MAY", "y": 44401.0 },{"name":"2011 JUN", "y": 43465.0 },{"name":"2011 JUL", "y": 44924.0 },{"name":"2011 AUG", "y": 43864.0 },{"name":"2011 SEP", "y": 45228.0 },{"name":"2011 OCT", "y": 44871.0 },{"name":"2011 NOV", "y": 45259.0 },{"name":"2011 DEC", "y": 43956.0 },{"name":"2012 JAN", "y": 44395.0 },{"name":"2012 FEB", "y": 43797.0 },{"name":"2012 MAR", "y": 45325.0 },{"name":"2012 APR", "y": 45020.0 },{"name":"2012 MAY", "y": 45089.0 },{"name":"2012 JUN", "y": 44637.0 },{"name":"2012 JUL", "y": 44034.0 },{"name":"2012 AUG", "y": 45457.0 },{"name":"2012 SEP", "y": 43983.0 },{"name":"2012 OCT", "y": 44699.0 },{"name":"2012 NOV", "y": 43912.0 },{"name":"2012 DEC", "y": 44071.0 },{"name":"2013 JAN", "y": 43583.0 },{"name":"2013 FEB", "y": 44696.0 },{"name":"2013 MAR", "y": 46130.0 },{"name":"2013 APR", "y": 45672.0 },{"name":"2013 MAY", "y": 46818.0 },{"name":"2013 JUN", "y": 47938.0 },{"name":"2013 JUL", "y": 46664.0 },{"name":"2013 AUG", "y": 46510.0 },{"name":"2013 SEP", "y": 46673.0 },{"name":"2013 OCT", "y": 47911.0 },{"name":"2013 NOV", "y": 47698.0 },{"name":"2013 DEC", "y": 44987.0 },{"name":"2014 JAN", "y": 46763.0 },{"name":"2014 FEB", "y": 45620.0 },{"name":"2014 MAR", "y": 46048.0 },{"name":"2014 APR", "y": 45792.0 },{"name":"2014 MAY", "y": 46034.0 },{"name":"2014 JUN", "y": 45634.0 },{"name":"2014 JUL", "y": 46922.0 },{"name":"2014 AUG", "y": 44863.0 },{"name":"2014 SEP", "y": 46337.0 },{"name":"2014 OCT", "y": 46005.0 },{"name":"2014 NOV", "y": 46310.0 },{"name":"2014 DEC", "y": 49428.0 },{"name":"2015 JAN", "y": 46404.0 },{"name":"2015 FEB", "y": 47791.0 },{"name":"2015 MAR", "y": 45497.0 },{"name":"2015 APR", "y": 45650.0 },{"name":"2015 MAY", "y": 45438.0 },{"name":"2015 JUN", "y": 45456.0 },{"name":"2015 JUL", "y": 45162.0 },{"name":"2015 AUG", "y": 45205.0 },{"name":"2015 SEP", "y": 45126.0 },{"name":"2015 OCT", "y": 47059.0 },{"name":"2015 NOV", "y": 45910.0 },{"name":"2015 DEC", "y": 44833.0 },{"name":"2016 JAN", "y": 44919.0 },{"name":"2016 FEB", "y": 46457.0 },{"name":"2016 MAR", "y": 47550.0 },{"name":"2016 APR", "y": 48636.0 },{"name":"2016 MAY", "y": 46286.0 },{"name":"2016 JUN", "y": 48422.0 },{"name":"2016 JUL", "y": 49234.0 },{"name":"2016 AUG", "y": 51935.0 },{"name":"2016 SEP", "y": 52227.0 },{"name":"2016 OCT", "y": 49748.0 },{"name":"2016 NOV", "y": 52294.0 },{"name":"2016 DEC", "y": 52778.0 },{"name":"2017 JAN", "y": 52252.0 },{"name":"2017 FEB", "y": 51591.0 },{"name":"2017 MAR", "y": 54442.0 },{"name":"2017 APR", "y": 52084.0 },{"name":"2017 MAY", "y": 53162.0 },{"name":"2017 JUN", "y": 53902.0 },{"name":"2017 JUL", "y": 54075.0 },{"name":"2017 AUG", "y": 55779.0 },]
+var description = {"title":"Balance of Payments: Trade in Goods & Services: Total imports: CP SA £m","contact":{"email":"trade.in.goods@ons.gsi.gov.uk ","name":"Craig Taylor ","telephone":"+44 (0)1633 456333 "},"releaseDate":"2017-10-09T23:00:00.000Z","nextRelease":"10 November 2017","datasetId":"MRET","datasetUri":"/economy/nationalaccounts/balanceofpayments/datasets/tradeingoodsmretsallbopeu2013timeseriesspreadsheet","cdid":"IKBI","unit":"m","preUnit":"£","source":"","date":"2017 AUG","number":"55779","sampleSize":"0"};
+
+var sparklineIKBI = {
+	chart: {
+		backgroundColor: null,
+		borderWidth: 0,
+		type: 'area',
+		
+        marginRight:40,
+		marginLeft:40,
+		
+		skipClone: true
+	},
+	title: {
+		text: ''
+	},
+	subtitle: {
+		text: '',
+		y: 110
+	},
+	credits: {
+		enabled: false
+	},
+	xAxis: {
+		categories: ["1997 JAN","1997 FEB","1997 MAR","1997 APR","1997 MAY","1997 JUN","1997 JUL","1997 AUG","1997 SEP","1997 OCT","1997 NOV","1997 DEC","1998 JAN","1998 FEB","1998 MAR","1998 APR","1998 MAY","1998 JUN","1998 JUL","1998 AUG","1998 SEP","1998 OCT","1998 NOV","1998 DEC","1999 JAN","1999 FEB","1999 MAR","1999 APR","1999 MAY","1999 JUN","1999 JUL","1999 AUG","1999 SEP","1999 OCT","1999 NOV","1999 DEC","2000 JAN","2000 FEB","2000 MAR","2000 APR","2000 MAY","2000 JUN","2000 JUL","2000 AUG","2000 SEP","2000 OCT","2000 NOV","2000 DEC","2001 JAN","2001 FEB","2001 MAR","2001 APR","2001 MAY","2001 JUN","2001 JUL","2001 AUG","2001 SEP","2001 OCT","2001 NOV","2001 DEC","2002 JAN","2002 FEB","2002 MAR","2002 APR","2002 MAY","2002 JUN","2002 JUL","2002 AUG","2002 SEP","2002 OCT","2002 NOV","2002 DEC","2003 JAN","2003 FEB","2003 MAR","2003 APR","2003 MAY","2003 JUN","2003 JUL","2003 AUG","2003 SEP","2003 OCT","2003 NOV","2003 DEC","2004 JAN","2004 FEB","2004 MAR","2004 APR","2004 MAY","2004 JUN","2004 JUL","2004 AUG","2004 SEP","2004 OCT","2004 NOV","2004 DEC","2005 JAN","2005 FEB","2005 MAR","2005 APR","2005 MAY","2005 JUN","2005 JUL","2005 AUG","2005 SEP","2005 OCT","2005 NOV","2005 DEC","2006 JAN","2006 FEB","2006 MAR","2006 APR","2006 MAY","2006 JUN","2006 JUL","2006 AUG","2006 SEP","2006 OCT","2006 NOV","2006 DEC","2007 JAN","2007 FEB","2007 MAR","2007 APR","2007 MAY","2007 JUN","2007 JUL","2007 AUG","2007 SEP","2007 OCT","2007 NOV","2007 DEC","2008 JAN","2008 FEB","2008 MAR","2008 APR","2008 MAY","2008 JUN","2008 JUL","2008 AUG","2008 SEP","2008 OCT","2008 NOV","2008 DEC","2009 JAN","2009 FEB","2009 MAR","2009 APR","2009 MAY","2009 JUN","2009 JUL","2009 AUG","2009 SEP","2009 OCT","2009 NOV","2009 DEC","2010 JAN","2010 FEB","2010 MAR","2010 APR","2010 MAY","2010 JUN","2010 JUL","2010 AUG","2010 SEP","2010 OCT","2010 NOV","2010 DEC","2011 JAN","2011 FEB","2011 MAR","2011 APR","2011 MAY","2011 JUN","2011 JUL","2011 AUG","2011 SEP","2011 OCT","2011 NOV","2011 DEC","2012 JAN","2012 FEB","2012 MAR","2012 APR","2012 MAY","2012 JUN","2012 JUL","2012 AUG","2012 SEP","2012 OCT","2012 NOV","2012 DEC","2013 JAN","2013 FEB","2013 MAR","2013 APR","2013 MAY","2013 JUN","2013 JUL","2013 AUG","2013 SEP","2013 OCT","2013 NOV","2013 DEC","2014 JAN","2014 FEB","2014 MAR","2014 APR","2014 MAY","2014 JUN","2014 JUL","2014 AUG","2014 SEP","2014 OCT","2014 NOV","2014 DEC","2015 JAN","2015 FEB","2015 MAR","2015 APR","2015 MAY","2015 JUN","2015 JUL","2015 AUG","2015 SEP","2015 OCT","2015 NOV","2015 DEC","2016 JAN","2016 FEB","2016 MAR","2016 APR","2016 MAY","2016 JUN","2016 JUL","2016 AUG","2016 SEP","2016 OCT","2016 NOV","2016 DEC","2017 JAN","2017 FEB","2017 MAR","2017 APR","2017 MAY","2017 JUN","2017 JUL","2017 AUG",],
+		labels: {
+			crop: false,
+			style: {
+				'color': '#707070',
+			},
+			formatter: function() {
+				if (this.isFirst) {
+					return this.value;
+				}
+				if (this.isLast) {
+					return this.value;
+				}
+			},
+			step: 1
+		},
+		tickLength: 0,
+		lineColor: '#707070'
+		
+	},
+	yAxis: {
+		endOnTick: false,
+		startOnTick: false,
+		labels: {
+			enabled: false
+		},
+		title: {
+			text: null
+		},
+		tickPositions: [0]
+	},
+	legend: {
+		enabled: false
+	},
+	tooltip: {
+		enabled: false
+	},
+	plotOptions: {
+		series: {
+			animation: false,
+			turboThreshold:0,
+			lineWidth: 1,
+			shadow: false,
+			states: {
+				hover: {
+					lineWidth: 1
+				}
+			},
+			marker: {
+				radius: 1,
+				states: {
+					hover: {
+						radius: 1
+					}
+				}
+			},
+			fillOpacity: 0.25,
+			enableMouseTracking: false,
+		},
+		column: {
+			negativeColor: '#910000',
+			borderColor: 'silver'
+		}
+	},
+	exporting: {
+		enabled: false
+	},
+	annotationsOptions: {
+		enabledButtons: false 
+	},
+	series: [{
+		name: '',
+		data : series,
+		color: '#007dc3',
+		marker: {
+			symbol: 'circle',
+			states: {
+				hover: {
+					
+					radiusPlus: 0,
+					lineWidthPlus: 0
+				}
+			}
+		},
+		dashStyle: 'Solid',
+	}]
+};
+
+window.sparklineIKBI = sparklineIKBI;
+return sparklineIKBI;
+
+
+ })()
