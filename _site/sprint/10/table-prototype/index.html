@@ -1,0 +1,1140 @@
+<!-- Copy of ONS.GOV.UK with extra prototype styles included -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Table prototype - ONS Digital Publishing Design Manual</title>
+  <meta name="description" content="A place for ONS website user experience and design stuff.">
+  <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/10/table-prototype/">
+  <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
+  <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
+
+  <meta name="robots" content="noindex, nofollow">
+
+</head>
+
+
+  <body>
+
+    
+      <div class="banner background--carrot">
+	<div class="wrapper">
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
+	</div>
+</div>
+
+    
+
+    <header>
+	<a class="skiplink" href="#main" tabindex="0">
+		Skip to main content
+	</a>
+
+	<div class="wrapper">
+		<div class="header col-wrap">
+
+			<div class="col col--lg-one-third col--md-one-third">
+  <a href="/dp-design-manual/">
+    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
+  </a>
+</div>
+
+
+			<div class="col col--lg-two-thirds col--md-two-thirds hide--sm print--hide language--js__container">
+  <dl class="language js--hide" style="display: none;">
+    <dt class="language__title">Language:</dt>
+    <dd class="language__item">
+      <a href="&#10;&#10;&#10;&#10;    //cy.ons.gov.uk/surveys/informationforbusinesses&#10;" class="language__link icon--hide">Cymraeg (CY)</a>
+    </dd>
+  </dl>
+  <form class="language language--js js--show" style="display: block;">
+    <label class="language--js__label" for="lang">Language:</label>
+    <select class="language--js__select" id="lang" name="lang">
+      <option value="english" data-url="//www.www.ons.gov.uk/surveys/informationforbusinesses" selected="selected">English (EN)</option>
+      <option value="welsh" data-url="//cy.ons.gov.uk/surveys/informationforbusinesses">Cymraeg (CY)</option>
+    </select>
+  </form>
+</div>
+
+
+			<div class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
+  <ul class="secondary-nav__list js-nav-clone__list">
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/releasecalendar">Release calendar</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/methodology">Methodology</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/news">Media</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/aboutus">About</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link icon--hide js-nav-clone__link" target="_blank" rel="noopener noreferrer" href="https://blog.ons.gov.uk/">Blog</a>
+    </li>
+  </ul>
+</div>
+
+
+		</div>
+	</div>
+
+	<div class="primary-nav print--hide">
+  <nav>
+    <ul class="nav--controls">
+      <li class="nav--controls__item">
+        <a href="#nav-primary" id="menu-toggle" aria-controls="nav-primary" class="nav--controls__menu">
+          <span class="nav--controls__text">Menu</span>
+        </a>
+      </li>
+      <li class="nav--controls__item ">
+        <a href="#nav-search" id="search-toggle" aria-controls="nav-search" class="nav--controls__search">
+          <span class="nav--controls__text">Search</span>
+        </a>
+      </li>
+    </ul>
+    <div class="wrapper nav-main--hidden" id="nav-primary" aria-expanded="false">
+      <ul class="primary-nav__list">
+        <li class="primary-nav__item  js-nav hide--sm old-ie--display-block"><a class="primary-nav__link col col--md-7 col--lg-9" href="/">Home</a></li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/businessindustryandtrade" aria-haspopup="true">Business, industry and trade</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/business">Business</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/changestobusiness">Changes to business</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/constructionindustry">Construction industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/itandinternetindustry">IT and internet industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/internationaltrade">International trade</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/manufacturingandproductionindustry">Manufacturing and production industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/retailindustry">Retail industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/tourismindustry">Tourism industry</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/economy" aria-haspopup="true">Economy</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/economicoutputandproductivity">Economic output and productivity</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/environmentalaccounts">Environmental accounts</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/governmentpublicsectorandtaxes">Government, public sector and taxes</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossdomesticproductgdp">Gross Domestic Product (GDP)</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossvalueaddedgva">Gross Value Added (GVA)</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/inflationandpriceindices">Inflation and price indices</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/investmentspensionsandtrusts">Investments, pensions and trusts</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/nationalaccounts">National accounts</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/regionalaccounts">Regional accounts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/employmentandlabourmarket" aria-haspopup="true">Employment and labour market</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peopleinwork">People in work</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peoplenotinwork">People not in work</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/peoplepopulationandcommunity" aria-haspopup="true">People, population and community</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/birthsdeathsandmarriages">Births, deaths and marriages</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/crimeandjustice">Crime and justice</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/culturalidentity">Cultural identity</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/educationandchildcare">Education and childcare</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/elections">Elections</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/healthandsocialcare">Health and social care</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/householdcharacteristics">Household characteristics</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/housing">Housing</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/leisureandtourism">Leisure and tourism</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/personalandhouseholdfinances">Personal and household finances</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/populationandmigration">Population and migration</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/wellbeing">Well-being</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item  js-nav">
+          <a class="primary-nav__link  col col--md-8 col--lg-10" href="/surveys">
+Taking part in a survey?
+</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+	
+		<div class="search nav-search--hidden print--hide" id="searchBar">
+  <div class="wrapper" role="search">
+    <form class="col-wrap search__form" action="search.html">
+      <label class="search__label col col--md-23 col--lg-24" for="nav-search">Search for a keyword(s) or time series ID</label>
+      <input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-32" id="nav-search" name="q" value="">
+      <button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
+        <span class="visuallyhidden">Search</span>
+        <span class="icon icon-search--light"></span>
+      </button>
+    </form>
+  </div>
+</div>
+
+	
+
+</header>
+
+
+    <main id="main" role="main" tabindex="-1">
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper padding-top--3 padding-bottom--2">
+      <div class="col-wrap">
+        <div class="col">
+
+          <div class="page-intro-v2">
+  
+  <h1 class="page-intro__title margin-top--0 col--md-46 font-weight--bold">
+      
+      Table prototype
+      
+    </h1>
+    
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap margin-bottom--8">
+      <div class="col col--md-two-thirds col--lg-two-thirds">
+        <h2 class="font-weight--bold">Table example 1</h2>
+        <p><a class="link--underline" href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/may2017#the-cpih-inflation-rate-has-climbed-steadily-to-its-highest-since-april-2012">Sourced from: UK consumer price inflation: May 2017</a></p>
+
+        <div class="markdown-table-container print--avoid-break">
+          <h4 class="font-weight--bold">Table 1: CPIH, OOH component and CPI index values and 12-month rates: May 2016 to May 2017</h4>
+          <div class="markdown-table-wrap">
+            <table class="table-v2 margin-top--4 margin-bottom--4">
+                <tr>
+                  <th colspan="8">UK</th>
+                </tr>
+                <tr>
+                  <th>Year</th>
+                  <th>Month</th>
+                  <th class="cell--align-right">CPIH Index<sup>1,2</sup> (UK, 2015 = 100)</th>
+                  <th class="cell--align-right">CPIH 12- month<sup>2</sup> rate </th>
+                  <th class="cell--align-right">CPI Index<sup>1  </sup> (UK, 2015=100)</th>
+                  <th class="cell--align-right">CPI 12- month rate</th>
+                  <th class="cell--align-right">OOH Index<sup> 1,2</sup> (UK, 2015=100)</th>
+                  <th class="cell--align-right">OOH 12- month<sup>2 </sup>rate</th>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td>May</td>
+                  <td class="cell--align-right">100.8</td>
+                  <td class="cell--align-right">0.7</td>
+                  <td class="cell--align-right">100.4</td>
+                  <td class="cell--align-right">0.3</td>
+                  <td class="cell--align-right">102.1</td>
+                  <td class="cell--align-right">2.3</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Jun</td>
+                  <td class="cell--align-right">101.0</td>
+                  <td class="cell--align-right">0.8</td>
+                  <td class="cell--align-right">100.6</td>
+                  <td class="cell--align-right">0.5</td>
+                  <td class="cell--align-right">102.2</td>
+                  <td class="cell--align-right">2.3</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Jul</td>
+                  <td class="cell--align-right">100.9</td>
+                  <td class="cell--align-right">0.9</td>
+                  <td class="cell--align-right">100.6</td>
+                  <td class="cell--align-right">0.6</td>
+                  <td class="cell--align-right">102.4</td>
+                  <td class="cell--align-right">2.4</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Aug</td>
+                  <td class="cell--align-right">101.2</td>
+                  <td class="cell--align-right">1.0</td>
+                  <td class="cell--align-right">100.9</td>
+                  <td class="cell--align-right">0.6</td>
+                  <td class="cell--align-right">102.7</td>
+                  <td class="cell--align-right">2.4</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Sep</td>
+                  <td class="cell--align-right">101.5</td>
+                  <td class="cell--align-right">1.3</td>
+                  <td class="cell--align-right">101.1</td>
+                  <td class="cell--align-right">1.0</td>
+                  <td class="cell--align-right">102.8</td>
+                  <td class="cell--align-right">2.4</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Oct</td>
+                  <td class="cell--align-right">101.6</td>
+                  <td class="cell--align-right">1.3</td>
+                  <td class="cell--align-right">101.2</td>
+                  <td class="cell--align-right">0.9</td>
+                  <td class="cell--align-right">103.2</td>
+                  <td class="cell--align-right">2.7</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Nov</td>
+                  <td class="cell--align-right">101.8</td>
+                  <td class="cell--align-right">1.5</td>
+                  <td class="cell--align-right">101.4</td>
+                  <td class="cell--align-right">1.2</td>
+                  <td class="cell--align-right">103.4</td>
+                  <td class="cell--align-right">2.6</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Dec</td>
+                  <td class="cell--align-right">102.2</td>
+                  <td class="cell--align-right">1.8</td>
+                  <td class="cell--align-right">101.9</td>
+                  <td class="cell--align-right">1.6</td>
+                  <td class="cell--align-right">103.6</td>
+                  <td class="cell--align-right">2.6</td>
+                </tr>
+                <tr>
+                  <td>2017</td>
+                  <td>Jan</td>
+                  <td class="cell--align-right">101.8</td>
+                  <td class="cell--align-right">1.9</td>
+                  <td class="cell--align-right">101.4</td>
+                  <td class="cell--align-right">1.8</td>
+                  <td class="cell--align-right">103.8</td>
+                  <td class="cell--align-right">2.5</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Feb</td>
+                  <td class="cell--align-right">102.4</td>
+                  <td class="cell--align-right">2.3</td>
+                  <td class="cell--align-right">102.1</td>
+                  <td class="cell--align-right">2.3</td>
+                  <td class="cell--align-right">103.9</td>
+                  <td class="cell--align-right">2.5</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Mar</td>
+                  <td class="cell--align-right">102.7</td>
+                  <td class="cell--align-right">2.3</td>
+                  <td class="cell--align-right">102.5</td>
+                  <td class="cell--align-right">2.3</td>
+                  <td class="cell--align-right">104.0</td>
+                  <td class="cell--align-right">2.4</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Apr</td>
+                  <td class="cell--align-right">103.2</td>
+                  <td class="cell--align-right">2.6</td>
+                  <td class="cell--align-right">102.9</td>
+                  <td class="cell--align-right">2.7</td>
+                  <td class="cell--align-right">104.1</td>
+                  <td class="cell--align-right">2.2</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>May</td>
+                  <td class="cell--align-right">103.5</td>
+                  <td class="cell--align-right">2.7</td>
+                  <td class="cell--align-right">103.3</td>
+                  <td class="cell--align-right">2.9</td>
+                  <td class="cell--align-right">104.2</td>
+                  <td class="cell--align-right">2.1</td>
+                </tr>
+            </table>
+
+            <button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
+
+          </div>
+
+          <button class="btn btn--secondary btn--mobile-table-show">View table</button>
+          <h5 class="print--hide font-size--h6">Download this table</h5>
+          <a href="#" title="Download as xls" class="btn btn--primary print--hide">.xls</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap margin-bottom--8">
+      <div class="col col--md-two-thirds col--lg-two-thirds">
+        <h2 class="font-weight--bold">Table example 2</h2>
+        <p><a class="link--underline" href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/overviewoftheukpopulation/mar2017#why-is-the-population-growing">Overview of the UK population: March 2017</a></p>
+
+        <div class="markdown-table-container print--avoid-break">
+        <h4 class="font-weight--bold">Table 2: Age distribution of the UK population, 1975 to 2045 (projected)</h4>
+        <div class="markdown-table-wrap">
+          <table class="table-v2 margin-top--4 margin-bottom--4">
+              <tr>
+                <th>Year</th>
+                <th class="cell--align-right">UK Population</th>
+                <th class="cell--align-right">0 to 15 years (%)</th>
+                <th class="cell--align-right">16 to 64 years (%)</th>
+                <th class="cell--align-right">65 years and over (%)</th>
+              </tr>
+              <tr>
+                <td>1975</td>
+                <td class="cell--align-right">56,226,000</td>
+                <td class="cell--align-right">24.9</td>
+                <td class="cell--align-right">61.0</td>
+                <td class="cell--align-right">14.1</td>
+              </tr>
+              <tr>
+                <td>1985</td>
+                <td class="cell--align-right">56,554,000</td>
+                <td class="cell--align-right">20.7</td>
+                <td class="cell--align-right">64.1</td>
+                <td class="cell--align-right">15.2</td>
+              </tr>
+              <tr>
+                <td>1995</td>
+                <td class="cell--align-right">58,025,000</td>
+                <td class="cell--align-right">20.7</td>
+                <td class="cell--align-right">63.4</td>
+                <td class="cell--align-right">15.8</td>
+              </tr>
+              <tr>
+                <td>2005</td>
+                <td class="cell--align-right">60,413,000</td>
+                <td class="cell--align-right">19.3</td>
+                <td class="cell--align-right">64.7</td>
+                <td class="cell--align-right">15.9</td>
+              </tr>
+              <tr>
+                <td>2015</td>
+                <td class="cell--align-right">65,110,000</td>
+                <td class="cell--align-right">18.8</td>
+                <td class="cell--align-right">63.3</td>
+                <td class="cell--align-right">17.8</td>
+              </tr>
+              <tr>
+                <td>2025</td>
+                <td class="cell--align-right">69,444,000</td>
+                <td class="cell--align-right">18.9</td>
+                <td class="cell--align-right">60.9</td>
+                <td class="cell--align-right">20.2</td>
+              </tr>
+              <tr>
+                <td>2035</td>
+                <td class="cell--align-right">73,044,000</td>
+                <td class="cell--align-right">18.1</td>
+                <td class="cell--align-right">58.3</td>
+                <td class="cell--align-right">23.6</td>
+              </tr>
+              <tr>
+                <td>2045</td>
+                <td class="cell--align-right">76,055,000</td>
+                <td class="cell--align-right">17.7</td>
+                <td class="cell--align-right">57.8</td>
+                <td class="cell--align-right">24.6</td>
+              </tr>
+          </table>
+
+          <button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
+
+        </div>
+
+        <button class="btn btn--secondary btn--mobile-table-show">View table</button>
+        <h5 class="print--hide font-size--h6">Download this table</h5>
+        <a href="#" class="btn btn--primary print--hide">.xls</a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap margin-bottom--8">
+      <div class="col col--md-two-thirds col--lg-two-thirds">
+        <h2 class="font-weight--bold">Table example 3</h2>
+        <p><a class="link--underline" href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/apr2017#house-price-index-by-uk-local-authority-district">House price index, by UK local authority district</a></p>
+
+        <div class="markdown-table-container print--avoid-break">
+        <h4 class="font-weight--bold">Table 3: Top and bottom five UK local authorities, by annual growth in the year to April 2017</h4>
+        <div class="markdown-table-wrap">
+          <table class="table-v2">
+            <tbody>
+              <tr>
+                <th>Top 5 Local Authorities </th>
+                <th class="cell--align-right">% change</th>
+                <th class="cell--align-right">Average price (£)</th>
+              </tr>
+              <tr>
+                <td>Orkney Islands</td>
+                <td class="cell--align-right">24.1</td>
+                <td class="cell--align-right">151,543</td>
+              </tr>
+              <tr>
+                <td>Dartford</td>
+                <td class="cell--align-right">13.1</td>
+                <td class="cell--align-right">306,405</td>
+              </tr>
+              <tr>
+                <td>Chiltern</td>
+                <td class="cell--align-right">13.0</td>
+                <td class="cell--align-right">562,604</td>
+              </tr>
+              <tr>
+                <td>Rutland</td>
+                <td class="cell--align-right">12.8</td>
+                <td class="cell--align-right">289,853</td>
+              </tr>
+              <tr>
+                <td>Forest Heath</td>
+                <td class="cell--align-right">12.4</td>
+                <td class="cell--align-right">216,720</td>
+              </tr>
+              <tr>
+                <th>Bottom 5 Local Authorities</th>
+                <th class="cell--align-right">% change</th>
+                <th class="cell--align-right">Average price (£)</th>
+              </tr>
+              <tr>
+                <td>Na h-Eileanan Siar</td>
+                <td class="cell--align-right">-15.3</td>
+                <td class="cell--align-right">85,093</td>
+              </tr>
+              <tr>
+                <td>South Hams</td>
+                <td class="cell--align-right">-6.9</td>
+                <td class="cell--align-right">276,609</td>
+              </tr>
+              <tr>
+                <td>City of Aberdeen</td>
+                <td class="cell--align-right">-4.3</td>
+                <td class="cell--align-right">167,630</td>
+              </tr>
+              <tr>
+                <td>Rhondda Cynon Taf</td>
+                <td class="cell--align-right">-3.1</td>
+                <td class="cell--align-right">97,763</td>
+              </tr>
+              <tr>
+                <td>Shetland Islands</td>
+                <td class="cell--align-right">-3.1</td>
+                <td class="cell--align-right">143,024</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
+
+
+        </div>
+        <button class="btn btn--secondary btn--mobile-table-show">View table</button>
+        <h5 class="print--hide font-size--h6">Download this table</h5>
+        <a href="#" class="btn btn--primary print--hide">.xls</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap margin-bottom--8">
+      <div class="col col--md-two-thirds col--lg-two-thirds">
+        <h2 class="font-weight--bold">Table example 4</h2>
+        <p><a class="link--underline" href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2015#oliver-and-amelia-most-popular-names-in-wales-and-most-english-regions">Baby names in England and Wales: 2015</a></p>
+
+        <div class="markdown-table-container print--avoid-break">
+        <h4 class="font-weight--bold">Table 4: Most popular names for baby boys and girls in 2015</h4>
+        <div class="markdown-table-wrap">
+
+          <table class="table-v2">
+            <tbody>
+              <tr>
+                <th>Country / Region</th>
+                <th>Most popular boys name</th>
+                <th>Most popular girls name</th>
+              </tr>
+              <tr>
+                <td>England</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>North East</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>North West</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>Yorkshire and The Humber</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>East Midlands</td>
+                <td>Oliver</td>
+                <td>Olivia</td>
+              </tr>
+              <tr>
+                <td>West Midlands</td>
+                <td>Muhammad</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>East</td>
+                <td>Oliver</td>
+                <td>Olivia</td>
+              </tr>
+              <tr>
+                <td>London</td>
+                <td>Muhammad</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>South East</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>South West</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>Wales</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+            </tbody>
+          </table><button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
+
+
+        </div>
+        <button class="btn btn--secondary btn--mobile-table-show">View table</button>
+        <h5 class="print--hide font-size--h6">Download this table</h5>
+        <a href="#" class="btn btn--primary print--hide">.xls</a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap margin-bottom--8">
+      <div class="col col--md-two-thirds col--lg-two-thirds">
+        <h2 class="font-weight--bold">Table example 5</h2>
+        <p><a class="link--underline" href="https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/june2017#overview-of-crime">Crime in England and Wales: year ending June 2017</a></p>
+
+        <div class="markdown-table-wrap">
+
+            <table class="table-v2">
+              <tbody>
+                <tr>
+                  <th colspan="7">England and Wales, adults aged 16 and over/households</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th colspan="2">Jul 16 to Jun 17</th>
+                  <th colspan="4">Jul 16 to Jun 17 compared with:</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th>Jan 95 to Dec 95</th>
+                  <th>Apr 06 to Mar 07</th>
+                  <th>Apr 11 to Mar 12</th>
+                  <th>Jul 05 to Jun 16</th>
+                </tr>
+                <tr>
+                  <th>Offence group<sup>2</sup></th>
+                  <th>Rate per 1,000 population<sup>3</sup></th>
+                  <th>Number of incidents (thousands)<sup>4</sup></th>
+                  <th colspan="4">Number of incidents - percentage change and significance<sup>5</sup></th>
+                </tr>
+                <tr>
+                  <td>Violence</td>
+                  <td>27</td>
+                  <td>1,241</td>
+                  <td>-68*</td>
+                  <td>-41*</td>
+                  <td>-29*</td>
+                  <td>-4</td>
+                </tr>
+                <tr>
+                  <td>with injury</td>
+                  <td>12</td>
+                  <td>571</td>
+                  <td>-75*</td>
+                  <td>-49*</td>
+                  <td>-37*</td>
+                  <td>-5</td>
+                </tr>
+                <tr>
+                  <td>without injury </td>
+                  <td>14</td>
+                  <td>671</td>
+                  <td>-57*</td>
+                  <td>-32*</td>
+                  <td>-20*</td>
+                  <td>-3</td>
+                </tr>
+                <tr>
+                  <td>Robbery</td>
+                  <td>3</td>
+                  <td>132</td>
+                  <td>-61*</td>
+                  <td>-58*</td>
+                  <td>-46*</td>
+                  <td>-12</td>
+                </tr>
+                <tr>
+                  <td>Theft offences<sup>6</sup></td>
+                  <td>:</td>
+                  <td>3,311</td>
+                  <td>-72*</td>
+                  <td>-41*</td>
+                  <td>-38*</td>
+                  <td>-11*</td>
+                </tr>
+                <tr>
+                  <td>Theft from the person</td>
+                  <td>8</td>
+                  <td>354</td>
+                  <td>-48*</td>
+                  <td>-37*</td>
+                  <td>-42*</td>
+                  <td>-12</td>
+                </tr>
+                <tr>
+                  <td>Other theft of personal property</td>
+                  <td>13</td>
+                  <td>584</td>
+                  <td>-72*</td>
+                  <td>-48*</td>
+                  <td>-45*</td>
+                  <td>-27*</td>
+                </tr>
+                <tr>
+                  <td>Unweighted base - number of adults</td>
+                  <td>35,187</td>
+                  <td>35,187</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="row--group-start">
+                  <td>Domestic burglary</td>
+                  <td>27</td>
+                  <td>667</td>
+                  <td>-72*</td>
+                  <td>-34*</td>
+                  <td>-28*</td>
+                  <td>-4</td>
+                </tr>
+                <tr>
+                  <td>in a dwelling</td>
+                  <td>20</td>
+                  <td>485</td>
+                  <td>-72*</td>
+                  <td>-32*</td>
+                  <td>-30*</td>
+                  <td>-2</td>
+                </tr>
+                <tr>
+                  <td>in a non-connected building to a dwelling</td>
+                  <td>7</td>
+                  <td>182</td>
+                  <td>-72*</td>
+                  <td>-39*</td>
+                  <td>-21*</td>
+                  <td>-10</td>
+                </tr>
+                <tr>
+                  <td>Other household theft</td>
+                  <td>24</td>
+                  <td>585</td>
+                  <td>-63*</td>
+                  <td>-33*</td>
+                  <td>-48*</td>
+                  <td>-10</td>
+                </tr>
+                <tr class="row--group-end">
+                  <td>Unweighted base - number of households</td>
+                  <td>35,106</td>
+                  <td>35,106</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr  class="row--group-start">
+                  <td>Vehicle-related theft</td>
+                  <td>44</td>
+                  <td>845</td>
+                  <td>-80*</td>
+                  <td>-48*</td>
+                  <td>-30*</td>
+                  <td>-2</td>
+                </tr>
+                <tr class="row--group-end">
+                  <td>Unweighted base - number of vehicle owners</td>
+                  <td>28,080</td>
+                  <td>28,080</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="row--group-start">
+                  <td>Bicycle theft</td>
+                  <td>22</td>
+                  <td>276</td>
+                  <td>-58*</td>
+                  <td>-40*</td>
+                  <td>-38*</td>
+                  <td>-5</td>
+                </tr>
+                <tr class="row--group-end">
+                  <td>Unweighted base - number of bicycle owners</td>
+                  <td>16,722</td>
+                  <td>16,722</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="row--group-start">
+                  <td>Criminal damage</td>
+                  <td>46</td>
+                  <td>1,128</td>
+                  <td>-66</td>
+                  <td>-61*</td>
+                  <td>-44*</td>
+                  <td>-10*</td>
+                </tr>
+                <tr class="row--group-end">
+                  <td>Unweighted base - number of households</td>
+                  <td>35,106</td>
+                  <td>35,106</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="row--group-start row--group-end">
+                  <td>All CSEW crime<sup>6</sup></td>
+                  <td>:</td>
+                  <td>5,812</td>
+                  <td>-70*</td>
+                  <td>-47*</td>
+                  <td>-38*</td>
+                  <td>-9*</td>
+                </tr>
+                <tr class="row--group-start">
+                  <td>Fraud and computer misuse(ES)<sup>7,8</sup></td>
+                  <td>107</td>
+                  <td>4,946</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+                <tr>
+                  <td>Fraud</td>
+                  <td>72</td>
+                  <td>3,339</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+                <tr>
+                  <td>Bank and credit account fraud</td>
+                  <td>54</td>
+                  <td>2,513</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+                <tr>
+                  <td>Consumer and retail fraud<sup>9</sup></td>
+                  <td>16</td>
+                  <td>727</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+                <tr>
+                  <td>Advance fee fraud</td>
+                  <td>1</td>
+                  <td>40</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+                <tr>
+                  <td>Other fraud</td>
+                  <td>1</td>
+                  <td>60</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+                <tr>
+                  <td>Computer misuse</td>
+                  <td>35</td>
+                  <td>1,607</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+                <tr>
+                  <td>Computer virus</td>
+                  <td>23</td>
+                  <td>1,071</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+                <tr>
+                  <td>Unauthorised access to personal information (including hacking)</td>
+                  <td>12</td>
+                  <td>535</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+                <tr  class="row--group-end">
+                  <td>Unweighted base - number of adults</td>
+                  <td>17,029</td>
+                  <td>17,029</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr  class="row--group-start row--group-end">
+                  <td>All CSEW crime including fraud and computer miuse(ES)<sup>10</sup></td>
+                  <td>..</td>
+                  <td>10,758</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
+
+          </div>
+          <button class="btn btn--secondary btn--mobile-table-show">View table</button>
+          <h5 class="print--hide font-size--h6">Download this table</h5>
+          <a href="#" class="btn btn--primary print--hide">.xls</a>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap margin-bottom--8">
+      <div class="col col--md-two-thirds col--lg-two-thirds">
+
+        <h2 class="font-weight--bold">Add these things to tabile builder backlog</h2>
+        <ul>
+          <li>Remove title attribute from button, but replace it with descriptive visually hidden text</li>
+          <li>Add file size to button text</li>
+          <li>Add sortable tables</li>
+          <li>Do spanned coloumns and rows help?</li>
+          <li>Allow visual grouping of rows?</li>
+          <li>The crime one is a train wreck</li>
+        </ul>
+
+        <h2 class="font-weight--bold">Fot style guide</h2>
+        <ul>
+          <li>Don't split asterisks and figures in different cells</li>
+          <li>Don't do all caps</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+    <footer class="print--hide">
+	<h2 class="visuallyhidden">Footer links</h2>
+	<div class="footer">
+		<div class="wrapper">
+			<nav>
+				<div class="footer-nav col-wrap">
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">Help</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/help/accessibility">Accessibility</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/help/cookiesandprivacy">Cookies and privacy</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/help/termsandconditions">Terms and conditions</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">About ONS</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/whatwedo">What we do</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/careers">Careers</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/contactus">Contact us</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/news">News</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">Connect with us</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://twitter.com/ONS" class="icon--hide" target="_blank">Twitter</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.facebook.com/ONS" class="icon--hide" target="_blank">Facebook</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide" target="_blank">LinkedIn</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide" target="_blank">Email alerts</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="wrapper">
+
+      <div class="footer-license">
+  <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+  <p class="footer-license__text margin-left-sm--0">
+    All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+  </p>
+</div>
+
+
+		</div>
+	</div>
+	<div id="viewport-sm" class="js-viewport-size"></div><div id="viewport-md" class="js-viewport-size"></div><div id="viewport-lg" class="js-viewport-size"></div>
+</footer>
+
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+  <script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script>
+
+</html>
