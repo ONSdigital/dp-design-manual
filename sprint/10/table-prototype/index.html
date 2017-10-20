@@ -1,6 +1,5 @@
 ---
 layout: prototype
-type: "Prototype:"
 title: "Table prototype"
 ---
 
@@ -9,7 +8,7 @@ title: "Table prototype"
 <main id="main" role="main" tabindex="-1">
 
   <div class="page-intro background--gallery">
-    <div class="wrapper padding-bottom--2">
+    <div class="wrapper padding-top--3 padding-bottom--2">
       <div class="col-wrap">
         <div class="col">
 
@@ -30,12 +29,12 @@ title: "Table prototype"
           <h4 class="font-weight--bold">Table 1: CPIH, OOH component and CPI index values and 12-month rates: May 2016 to May 2017</h4>
           <div class="markdown-table-wrap">
             <table class="table-v2 margin-top--4 margin-bottom--4">
-              <thead>
                 <tr>
                   <th colspan="8">UK</th>
                 </tr>
                 <tr>
-                  <td colspan="2">&nbsp;</td>
+                  <th>Year</th>
+                  <th>Month</th>
                   <th class="cell--align-right">CPIH Index<sup>1,2</sup> (UK, 2015 = 100)</th>
                   <th class="cell--align-right">CPIH 12- month<sup>2</sup> rate </th>
                   <th class="cell--align-right">CPI Index<sup>1  </sup> (UK, 2015=100)</th>
@@ -43,8 +42,6 @@ title: "Table prototype"
                   <th class="cell--align-right">OOH Index<sup> 1,2</sup> (UK, 2015=100)</th>
                   <th class="cell--align-right">OOH 12- month<sup>2 </sup>rate</th>
                 </tr>
-              </thead>
-              <tbody>
                 <tr>
                   <td>2016</td>
                   <td>May</td>
@@ -175,7 +172,6 @@ title: "Table prototype"
                   <td class="cell--align-right">104.2</td>
                   <td class="cell--align-right">2.1</td>
                 </tr>
-              </tbody>
             </table>
 
             <button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
@@ -198,10 +194,9 @@ title: "Table prototype"
         <p><a class="link--underline" href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/overviewoftheukpopulation/mar2017#why-is-the-population-growing">Overview of the UK population: March 2017</a></p>
 
         <div class="markdown-table-container print--avoid-break">
-        <h4 class="font-weight--bold">Table 1: Age distribution of the UK population, 1975 to 2045 (projected)</h4>
+        <h4 class="font-weight--bold">Table 2: Age distribution of the UK population, 1975 to 2045 (projected)</h4>
         <div class="markdown-table-wrap">
           <table class="table-v2 margin-top--4 margin-bottom--4">
-            <thead>
               <tr>
                 <th>Year</th>
                 <th class="cell--align-right">UK Population</th>
@@ -209,8 +204,6 @@ title: "Table prototype"
                 <th class="cell--align-right">16 to 64 years (%)</th>
                 <th class="cell--align-right">65 years and over (%)</th>
               </tr>
-            </thead>
-            <tbody>
               <tr>
                 <td>1975</td>
                 <td class="cell--align-right">56,226,000</td>
@@ -267,7 +260,6 @@ title: "Table prototype"
                 <td class="cell--align-right">57.8</td>
                 <td class="cell--align-right">24.6</td>
               </tr>
-            </tbody>
           </table>
 
           <button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
@@ -287,10 +279,182 @@ title: "Table prototype"
   <div class="wrapper">
     <div class="col-wrap margin-bottom--8">
       <div class="col col--md-two-thirds col--lg-two-thirds">
+        <h2 class="font-weight--bold">Table example 3</h2>
+        <p><a class="link--underline" href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/apr2017#house-price-index-by-uk-local-authority-district">House price index, by UK local authority district</a></p>
+
+        <div class="markdown-table-container print--avoid-break">
+        <h4 class="font-weight--bold">Table 3: Top and bottom five UK local authorities, by annual growth in the year to April 2017</h4>
+        <div class="markdown-table-wrap">
+          <table class="table-v2">
+            <tbody>
+              <tr>
+                <th>Top 5 Local Authorities </th>
+                <th class="cell--align-right">% change</th>
+                <th class="cell--align-right">Average price (£)</th>
+              </tr>
+              <tr>
+                <td>Orkney Islands</td>
+                <td class="cell--align-right">24.1</td>
+                <td class="cell--align-right">151,543</td>
+              </tr>
+              <tr>
+                <td>Dartford</td>
+                <td class="cell--align-right">13.1</td>
+                <td class="cell--align-right">306,405</td>
+              </tr>
+              <tr>
+                <td>Chiltern</td>
+                <td class="cell--align-right">13.0</td>
+                <td class="cell--align-right">562,604</td>
+              </tr>
+              <tr>
+                <td>Rutland</td>
+                <td class="cell--align-right">12.8</td>
+                <td class="cell--align-right">289,853</td>
+              </tr>
+              <tr>
+                <td>Forest Heath</td>
+                <td class="cell--align-right">12.4</td>
+                <td class="cell--align-right">216,720</td>
+              </tr>
+              <tr>
+                <th>Bottom 5 Local Authorities</th>
+                <th class="cell--align-right">% change</th>
+                <th class="cell--align-right">Average price (£)</th>
+              </tr>
+              <tr>
+                <td>Na h-Eileanan Siar</td>
+                <td class="cell--align-right">-15.3</td>
+                <td class="cell--align-right">85,093</td>
+              </tr>
+              <tr>
+                <td>South Hams</td>
+                <td class="cell--align-right">-6.9</td>
+                <td class="cell--align-right">276,609</td>
+              </tr>
+              <tr>
+                <td>City of Aberdeen</td>
+                <td class="cell--align-right">-4.3</td>
+                <td class="cell--align-right">167,630</td>
+              </tr>
+              <tr>
+                <td>Rhondda Cynon Taf</td>
+                <td class="cell--align-right">-3.1</td>
+                <td class="cell--align-right">97,763</td>
+              </tr>
+              <tr>
+                <td>Shetland Islands</td>
+                <td class="cell--align-right">-3.1</td>
+                <td class="cell--align-right">143,024</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
+
+
+        </div>
+        <button class="btn btn--secondary btn--mobile-table-show">View table</button>
+        <h5 class="print--hide font-size--h6">Download this table</h5>
+        <a href="#" class="btn btn--primary print--hide">.xls</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap margin-bottom--8">
+      <div class="col col--md-two-thirds col--lg-two-thirds">
+        <h2 class="font-weight--bold">Table example 4</h2>
+        <p><a class="link--underline" href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2015#oliver-and-amelia-most-popular-names-in-wales-and-most-english-regions">Baby names in England and Wales: 2015</a></p>
+
+        <div class="markdown-table-container print--avoid-break">
+        <h4 class="font-weight--bold">Table 4: Most popular names for baby boys and girls in 2015</h4>
+        <div class="markdown-table-wrap">
+
+          <table class="table-v2">
+            <tbody>
+              <tr>
+                <th>Country / Region</th>
+                <th>Most popular boys name</th>
+                <th>Most popular girls name</th>
+              </tr>
+              <tr>
+                <td>England</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>North East</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>North West</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>Yorkshire and The Humber</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>East Midlands</td>
+                <td>Oliver</td>
+                <td>Olivia</td>
+              </tr>
+              <tr>
+                <td>West Midlands</td>
+                <td>Muhammad</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>East</td>
+                <td>Oliver</td>
+                <td>Olivia</td>
+              </tr>
+              <tr>
+                <td>London</td>
+                <td>Muhammad</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>South East</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>South West</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+              <tr>
+                <td>Wales</td>
+                <td>Oliver</td>
+                <td>Amelia</td>
+              </tr>
+            </tbody>
+          </table><button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
+
+
+        </div>
+        <button class="btn btn--secondary btn--mobile-table-show">View table</button>
+        <h5 class="print--hide font-size--h6">Download this table</h5>
+        <a href="#" class="btn btn--primary print--hide">.xls</a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap margin-bottom--8">
+      <div class="col col--md-two-thirds col--lg-two-thirds">
 
         <h2 class="font-weight--bold">Add these things to tabile builder backlog</h2>
         <ul>
-          <li>Mark-up should be clean and valid</li>
           <li>Remove title attribute from button, but replace it with descriptive visually hidden text</li>
           <li>Add file size to button text</li>
           <li>Add sortable tables</li>
