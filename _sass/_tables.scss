@@ -11,13 +11,19 @@
     padding: .8em 2em .8em 0;
   }
   th {
-    border-top: 2px solid $iron;
-    border-bottom: 2px solid $iron;
+    border-top: 3px solid $iron;
+    border-bottom: 3px solid $iron;
   }
   td:last-child, th:last-child {
     padding-right: 0;
   }
   .cell--align-right {
     text-align: right;
+  }
+  .row--group-start {
+    border-top: 3px solid $iron;
+  }
+  .row--group-end {
+    border-bottom: 3px solid $iron;
   }
 }
