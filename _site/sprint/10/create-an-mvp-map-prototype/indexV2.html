@@ -1,0 +1,450 @@
+<!-- Copy of ONS.GOV.UK with extra prototype styles included -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Create an MVP map prototype - ONS Digital Publishing Design Manual</title>
+  <meta name="description" content="A place for ONS website user experience and design stuff.">
+  <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/10/create-an-mvp-map-prototype/indexV2.html">
+  <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
+  <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
+
+  <meta name="robots" content="noindex, nofollow">
+
+</head>
+
+
+  <body>
+
+    
+      <div class="banner background--carrot">
+	<div class="wrapper">
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
+	</div>
+</div>
+
+    
+
+    <header>
+	<a class="skiplink" href="#main" tabindex="0">
+		Skip to main content
+	</a>
+
+	<div class="wrapper">
+		<div class="header col-wrap">
+
+			<div class="col col--lg-one-third col--md-one-third">
+  <a href="/dp-design-manual/">
+    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
+  </a>
+</div>
+
+
+			<div class="col col--lg-two-thirds col--md-two-thirds hide--sm print--hide language--js__container">
+  <dl class="language js--hide" style="display: none;">
+    <dt class="language__title">Language:</dt>
+    <dd class="language__item">
+      <a href="&#10;&#10;&#10;&#10;    //cy.ons.gov.uk/surveys/informationforbusinesses&#10;" class="language__link icon--hide">Cymraeg (CY)</a>
+    </dd>
+  </dl>
+  <form class="language language--js js--show" style="display: block;">
+    <label class="language--js__label" for="lang">Language:</label>
+    <select class="language--js__select" id="lang" name="lang">
+      <option value="english" data-url="//www.www.ons.gov.uk/surveys/informationforbusinesses" selected="selected">English (EN)</option>
+      <option value="welsh" data-url="//cy.ons.gov.uk/surveys/informationforbusinesses">Cymraeg (CY)</option>
+    </select>
+  </form>
+</div>
+
+
+			<div class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
+  <ul class="secondary-nav__list js-nav-clone__list">
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/releasecalendar">Release calendar</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/methodology">Methodology</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/news">Media</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/aboutus">About</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link icon--hide js-nav-clone__link" target="_blank" rel="noopener noreferrer" href="https://blog.ons.gov.uk/">Blog</a>
+    </li>
+  </ul>
+</div>
+
+
+		</div>
+	</div>
+
+	<div class="primary-nav print--hide">
+  <nav>
+    <ul class="nav--controls">
+      <li class="nav--controls__item">
+        <a href="#nav-primary" id="menu-toggle" aria-controls="nav-primary" class="nav--controls__menu">
+          <span class="nav--controls__text">Menu</span>
+        </a>
+      </li>
+      <li class="nav--controls__item ">
+        <a href="#nav-search" id="search-toggle" aria-controls="nav-search" class="nav--controls__search">
+          <span class="nav--controls__text">Search</span>
+        </a>
+      </li>
+    </ul>
+    <div class="wrapper nav-main--hidden" id="nav-primary" aria-expanded="false">
+      <ul class="primary-nav__list">
+        <li class="primary-nav__item  js-nav hide--sm old-ie--display-block"><a class="primary-nav__link col col--md-7 col--lg-9" href="/">Home</a></li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/businessindustryandtrade" aria-haspopup="true">Business, industry and trade</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/business">Business</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/changestobusiness">Changes to business</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/constructionindustry">Construction industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/itandinternetindustry">IT and internet industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/internationaltrade">International trade</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/manufacturingandproductionindustry">Manufacturing and production industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/retailindustry">Retail industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/tourismindustry">Tourism industry</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/economy" aria-haspopup="true">Economy</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/economicoutputandproductivity">Economic output and productivity</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/environmentalaccounts">Environmental accounts</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/governmentpublicsectorandtaxes">Government, public sector and taxes</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossdomesticproductgdp">Gross Domestic Product (GDP)</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossvalueaddedgva">Gross Value Added (GVA)</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/inflationandpriceindices">Inflation and price indices</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/investmentspensionsandtrusts">Investments, pensions and trusts</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/nationalaccounts">National accounts</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/regionalaccounts">Regional accounts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/employmentandlabourmarket" aria-haspopup="true">Employment and labour market</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peopleinwork">People in work</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peoplenotinwork">People not in work</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/peoplepopulationandcommunity" aria-haspopup="true">People, population and community</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/birthsdeathsandmarriages">Births, deaths and marriages</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/crimeandjustice">Crime and justice</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/culturalidentity">Cultural identity</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/educationandchildcare">Education and childcare</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/elections">Elections</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/healthandsocialcare">Health and social care</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/householdcharacteristics">Household characteristics</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/housing">Housing</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/leisureandtourism">Leisure and tourism</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/personalandhouseholdfinances">Personal and household finances</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/populationandmigration">Population and migration</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/wellbeing">Well-being</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item  js-nav">
+          <a class="primary-nav__link  col col--md-8 col--lg-10" href="/surveys">
+Taking part in a survey?
+</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+	
+		<div class="search nav-search--hidden print--hide" id="searchBar">
+  <div class="wrapper" role="search">
+    <form class="col-wrap search__form" action="search.html">
+      <label class="search__label col col--md-23 col--lg-24" for="nav-search">Search for a keyword(s) or time series ID</label>
+      <input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-32" id="nav-search" name="q" value="">
+      <button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
+        <span class="visuallyhidden">Search</span>
+        <span class="icon icon-search--light"></span>
+      </button>
+    </form>
+  </div>
+</div>
+
+	
+
+</header>
+
+
+    <main id="main" role="main" tabindex="-1">
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper padding-bottom--2">
+      <div class="col-wrap">
+        <div class="col">
+
+
+
+         
+          <div class="page-intro-v2">
+  <p class="font-size--19 margin-bottom--0 margin-top--1">Prototype:</p>
+  <h1 class="page-intro__title margin-top--0 col--md-46 font-weight--bold">
+      
+      Create an MVP map prototype
+      
+    </h1>
+    
+</div>
+
+
+   
+       
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="wrapper">
+  <div class="col-wrap">
+        <div class="col col--md-two-thirds col--lg-two-thirds">
+        
+      
+  
+
+          <div id="main-points" class="section__content--markdown js-sticky-toc__section">
+<section>
+<header>
+<h2><span class="section__content-number">1.</span> This is dummy copy</h2>
+</header>
+<p>In 2012 to 2014, males at birth in England could expect to spend a higher proportion (79.7%) of their remaining lives in “Good” health, compared with females (76.9%). </p><p>London had the largest inequality in healthy life expectancy (HLE) at birth between upper tier local authorities (UTLAs) for males and females at 13.6 years and 17.6 years respectively. </p><p>At birth, males in Wokingham could expect to live 15.5 years longer in “Good” health than males in Blackpool (70.5 years compared with 55.0 years).</p><p>At birth, females in Richmond upon Thames could expect to live 17.8 years longer in “Good” health than females in Manchester (72.2 years compared with 54.4 years). </p><p>There were 20 UTLAs for males and 25 UTLAs for females that had a significantly higher HLE than the current state pension age of 65. </p><p>For women at age 65, London had a significantly lower HLE than the England average at 10.9 years, despite having a higher life expectancy (LE) than any other part of the country. </p><p>Harrow had the largest significant improvements in HLE since 2009 to 2011, for males at birth and men at age 65 (5.7 years and 4.7 years respectively). </p><p>In the most deprived areas, males at birth could expect to live 19.0 years less of their lives in “Good” health compared with the least deprived areas as measured by the slope index of inequality (SII). For females, it was 20.2 years less.</p>
+
+    
+
+
+           
+           
+            <h3>Figure 1: 2011 Area Classification for Local Authorities in the UK: Supergroups</h3>
+            <h6 style="font-size:16px;">UK</h6>
+            
+      
+            
+ 
+
+
+
+    
+         
+         
+         
+         <h6 class="flush--third--bottom">Source: Office for National Statistics licensed under the Open Government Licence v.3.0</h6>
+         <h6 class="flush--third--bottom js-notes-title">Notes:</h6>
+         <ol>
+         <li>1 The superscript &#40;<sup>r</sup>&#41; indicates that these are the corrected and revised supergroup clusters</li>
+        </ol>
+         
+         <h6 class="print--hide" style="font-size:16px;">Download this map</h6>
+         <a class="btn btn--primary print--hide" title="Download as png" data-gtm-title="Map 1" data-gtm-type="download-png" href="/file?uri=/methodology/geography/geographicalproducts/areaclassifications/2011areaclassifications/maps/07e9a425.png">Image</a>
+         <a class="btn btn--primary print--hide" title="Download Excel file" data-gtm-title="Map 1" data-gtm-type="download-png" href="">.xls</a>
+         <a class="btn btn--primary print--hide" title="Download as CSV file" data-gtm-title="Map 1" data-gtm-type="download-png" href="">.csv</a>
+         
+         <br>
+         <br>
+         <hr>
+        
+    
+        
+          <div class="col-wrap">
+        <div class="col col--md-one col--lg-one">
+            <h3>Use of a tool tip</h3>
+        
+        <br><br>
+        
+        <img src="images/Screen%20Shot%202017-10-20%20at%2013.05.39.png" alt="Mountain View">
+        </div>
+    </div>
+   </section>
+        <div class="col col--md-one-third col--lg-one-third">
+            <p>one third column</p>
+        </div>
+         
+            </div>
+              
+        
+         
+           </div>
+         
+         </div>
+       
+          
+            
+       
+    </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+
+    <footer class="print--hide">
+	<h2 class="visuallyhidden">Footer links</h2>
+	<div class="footer">
+		<div class="wrapper">
+			<nav>
+				<div class="footer-nav col-wrap">
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">Help</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/help/accessibility">Accessibility</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/help/cookiesandprivacy">Cookies and privacy</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/help/termsandconditions">Terms and conditions</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">About ONS</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/whatwedo">What we do</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/careers">Careers</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/contactus">Contact us</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/news">News</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">Connect with us</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://twitter.com/ONS" class="icon--hide" target="_blank">Twitter</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.facebook.com/ONS" class="icon--hide" target="_blank">Facebook</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide" target="_blank">LinkedIn</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide" target="_blank">Email alerts</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="wrapper">
+
+      <div class="footer-license">
+  <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+  <p class="footer-license__text margin-left-sm--0">
+    All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+  </p>
+</div>
+
+
+		</div>
+	</div>
+	<div id="viewport-sm" class="js-viewport-size"></div><div id="viewport-md" class="js-viewport-size"></div><div id="viewport-lg" class="js-viewport-size"></div>
+</footer>
+
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+  <script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script>
+
+</html>
