@@ -512,8 +512,10 @@
 .table-v2 .cell--align-right {
   text-align: right; }
 .table-v2 .row--group-start {
-  border-top: 3px solid #D0D2D3; }
+  border-top: 3px solid #D0D2D3;
+  border-bottom: 3px solid #D0D2D3; }
 .table-v2 .row--group-end {
+  border-top: 3px solid #D0D2D3;
   border-bottom: 3px solid #D0D2D3; }
 
 table.cmd-table {

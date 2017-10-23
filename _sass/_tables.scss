@@ -22,8 +22,10 @@
   }
   .row--group-start {
     border-top: 3px solid $iron;
+    border-bottom: 3px solid $iron;
   }
   .row--group-end {
+    border-top: 3px solid $iron;
     border-bottom: 3px solid $iron;
   }
 }
