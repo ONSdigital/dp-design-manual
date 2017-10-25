@@ -1,0 +1,215 @@
+---
+layout: prototype
+title: "Typography prototype"
+---
+
+<style>
+
+ p {
+    font-size: 16px;
+      margin: 19px 0 0 0;
+  }
+
+    h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h6 {
+    font-size: 16px;
+}
+    
+    h3 {
+    font-size: 16px;
+    margin: 12px 0 0 0;
+        
+}
+    
+        h4 {
+    font-size: 16px;
+    margin: 13px 0 0 0;
+        
+}
+    
+    
+    li {
+    font-size: 16px;
+         margin: 16px 0 0 0;
+}
+    
+
+    
+    a {
+    font-size: 16px;
+       text-decoration:  underline;
+    }
+      
+    hr {
+        
+        margin-top:8px;!important
+        
+    }
+
+        
+</style>
+
+<main id="main" role="main" tabindex="-1">
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper padding-top--3 padding-bottom--2">
+      <div class="col-wrap">
+        <div class="col">
+
+          {% include page-intro-v2.html %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="wrapper">
+  
+   <div class="col-wrap">
+       
+        <div class="col col--md-two-thirds col--lg-two-thirds">
+           <h2>Headings in bold</h2>
+           <h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6 <font color="red">Do we need this now? same as heading 5</font></h6>
+      
+       <br><hr>
+        <div>
+        <h2>Body copy and list items at 16px</h2>
+    <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+    <ul>
+        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</li>
+        <li>Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula</li>
+        <li>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque
+            nec, egestas non nisi.</li>
+    </ul>
+</div>
+         <br><hr>
+<h2>Links at 16px and underlined</h2> 
+         <div>        <!--Normal link-->
+<a href="https://www.ons.gov.uk">ONS website</a></div>
+
+<!--External link with icon--><div> 
+<a href="https://bbc.co.uk">BBC<span class="icon icon-external--dark-small"></span></a></div>
+
+<!--External link with '_blank' target attribute--><div> 
+<a href="https://www.gov.uk" target="_blank">GOV.UK</a></div>
+          
+           <br><hr>
+            <h2>Breadcrumb at 16px</h2> 
+             <div class="breadcrumb breadcrumb-v2 print--hide">
+    <ol class="breadcrumb__list">
+      
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="">Home</a>
+        </li>
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="">Inflation and price indices</a>
+        </li>
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="">Economy</a>
+        </li>
+    </ol>
+  </div>
+             <br><hr>
+             
+             <div class="col-wrap border-bottom--iron-md">
+<div class="col col--md-31 col--lg-41 margin-left-md--1">
+<div class="table-of-contents js-sticky-toc print--avoid-break">
+<h2 class="table-of-contents__title">Table of contents at 16px</h2>
+<ol id="toc" class="table-of-contents__list">
+<li class="table-of-contents__item">
+<a href="#main-points" class="js-scroll">Main points</a>
+</li>
+<li class="table-of-contents__item">
+<a href="#things-you-need-to-know-about-this-release" class="js-scroll">Things you need to know about this release</a>
+</li>
+<li class="table-of-contents__item">
+<a href="#whats-changed-in-this-release" class="js-scroll">What’s changed in this release</a>
+</li>
+<li class="table-of-contents__item">
+ <a href="#whole-economy-labour-costs-increase-by-11" class="js-scroll">Whole economy labour costs increase by 1.1%</a>
+</li>
+<li class="table-of-contents__item">
+<a href="#what-are-the-trends-in-whole-economy-labour-costs" class="js-scroll">What are the trends in whole economy labour costs?</a>
+</li>
+<li class="table-of-contents__item">
+<a href="#financial-and-insurance-activities-industry-sees-highest-year-on-year-growth" class="js-scroll">Financial and insurance activities industry sees highest year-on-year growth</a>
+</li>
+<li class="table-of-contents__item">
+<a href="#mining-and-quarrying-industry-sees-highest-quarter-on-quarter-growth" class="js-scroll">Mining and quarrying industry sees highest quarter-on-quarter growth</a>
+</li>
+<li class="table-of-contents__item">
+<a href="#user-engagement" class="js-scroll">User engagement</a>
+</li>
+<li class="table-of-contents__item">
+<a href="#quality-and-methodology" class="js-scroll">Quality and methodology</a>
+</li>
+</ol>
+</div>
+             
+             
+             
+              <br><hr>
+              
+                 <h2>Source and notes in 16px</h2>
+              
+              <h5 class="flush--third--bottom font-size--h6 clear-left" style="font-size:16px;">Source: Monthly Wages and Salaries Survey (MWSS); Labour Force Survey (LFS)</h5>
+              
+              <h6 class="flush--third--bottom js-notes-title">Notes:</h6>
+              <ol>
+<li>Q1 refers to Quarter 1 (January to March), Q2 refers to Quarter 2 (April to June), Q3 refers to Quarter 3 (July to September) and Q4 refers to Quarter 4 (October to December).</li>
+</ol>
+              
+              
+          <br><hr>    
+              
+              
+              
+                 </div></div></div>
+       
+           
+            
+             
+              
+               
+                
+                  <div class="col col--md-one-third col--lg-one-third">
+            <div class="col col--md-11 col--lg-20 margin-top-md--3">
+<div class=" margin-bottom-sm--2 margin-bottom-md--2 print--hide">
+<a class="btn btn--primary btn--full-width" style="font-size:16px;">
+Button in 16px
+</span>
+</a>
+</div>
+<div class="tiles__item tiles__item--nav-type flush-col">
+<h3 class="tiles__title-h3 tiles__title-h3--nav">
+Contact details for this prototype
+</span>
+</h3>
+<div class="tiles__content--nav"style="font-size:16px;">
+<address>
+Tom Davy <br>
+<a href="mailto:earnings@ons.gsi.gov.uk"style="font-size:16px;">tom.davy@ons.gov.uk </a><br>
+Telephone: +44 (0)1633 000000
+</address>
+</div>
+</div>
+</div>
+        </div>
+    </div>
+    
+    </div>
+
+ 
+
+</main>
