@@ -37,10 +37,12 @@
   .js-show-hide__button {
     color: $matisse;
     text-decoration: underline;
+      
   }
   .show-hide button:focus {
     outline: 3px solid $carrot;
   }
+    
 }
 
 .show-hide--slim {
