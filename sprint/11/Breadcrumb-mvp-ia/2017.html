@@ -77,7 +77,47 @@ hr {
     border-top: 1px solid #D0D2D3;
     padding: 0; 
 }
-      
+  
+    
+.border-bottom--abbey-md {
+    border-bottom: 1px solid #D0D2D3;
+    margin-bottom: -1px;
+    
+    
+    }
+    
+.border-top--abbey-md {
+    border-top: 1px solid #D0D2D3;
+    margin-top: -1px;
+    }
+    
+    
+    
+  .show-hide button:focus {
+    outline: 0px solid !important; 
+  }    
+    
+    .meta-wrap {
+        
+        height: auto;
+        
+    }
+
+    
+    .meta__item
+    {
+        
+        height: auto;
+        min-height: auto;
+        
+    }
+    
+/*
+    .js-show-hide__button:focus {
+  background: none;
+  border-bottom: none;           
+}
+*/
 /*
      hr {
         
@@ -93,10 +133,12 @@ hr {
         vertical-align: baseline;
 }
 
+/*
       .show-hide button {
     border-bottom: 1px solid #D0D2D3;
-    border-top: 1px solid #D0D2D3;
+   
   }
+*/
         
 </style>
 
@@ -124,14 +166,11 @@ hr {
 <div class="wrapper">
 <div class="col-wrap">
 <p class="col col--md-16 col--lg-20 meta__item">
-<span>Release date: </span><br> 23 July 2017
-</p>
+Release date: 23 July 2017</p>
 <p class="col col--md-16 col--lg-20 meta__item">
-<span>Next release:  </span><br>July 2018<br>
-</p>
+Next release: July 2018</p>
 <p class="col col--md-16 col--lg-20 meta__item">
-<span>Release frequency: </span><br>Annual 
-</p>
+Release frequency: Annual </p>
 </div>
 </div>
 </div>
@@ -150,15 +189,16 @@ hr {
             <button class="btn btn--primary">
     Filter and download
 </button><br><br>
-
-           <div class="js-show-hide">
+           
+  
+   <div class="js-show-hide border-top--abbey-md border-bottom--abbey-md  ">
     <div class="show-hide show-hide--light">
-        <div class="js-show-hide__title">
+        <div class="js-show-hide__title"><button class="js-show-hide__button" type="button" aria-expanded="false" aria-controls="collapsible-0">
             <h3 class="show-hide__title">
                 Other download options
             </h3>
-        </div>
-        <div class="js-show-hide__content">
+        </button></div>
+        <div class="js-show-hide__content" id="collapsible-0" aria-hidden="true">
             <p>Complete dataset</p>
             <button class="btn btn--primary btn--thin">
     Excel (10.2kb)
@@ -180,12 +220,14 @@ hr {
               </div>
              
             </details>
-        <hr>
+
        
         </div>
     </div>
 
 </div>
+
+         
             
             <div class="table-of-contents js-sticky-toc print--avoid-break" id="toc">
 <h2 class="table-of-contents__title">Supporting information: table of contents</h2>
@@ -367,7 +409,7 @@ Citation: www.ons.gov.uk 2017, Source 2011 CensusDesign review</p>
 <header>
 <h2><span class="section__content-number"id="9">9.</span>Previous versions</h2>
 </header>
-    <p><a href="">Previous versions</a> of this dataset are available </p>  <br>
+    <p><a href="versions.html">Previous versions</a> of this dataset are available </p>  <br>
                                         
             
 <a class="print--hide js-scroll" href="#toc">Back to table of contents</a> 
