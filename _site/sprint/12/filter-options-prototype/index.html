@@ -254,6 +254,11 @@ Taking part in a survey?
     font-size: 16px;
     font-weight: bold;
   }
+  .filter {
+    padding-left: 0;
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
   .filter--item {
     list-style-type: none;
     background-color: white;
@@ -265,11 +270,16 @@ Taking part in a survey?
   .filter--item span {
     display: inline-block;
   }
-  .filter {
-    padding-left: 0;
-    margin-bottom: 32px;
-    margin-top: 0;
+  .filter--item--label {
+    font-weight: bold;
+    font-size: 19px;
   }
+
+  .filter--item--green {
+    outline: 3px solid green;
+    color: green;
+  }
+
 </style>
 
 <main id="main" role="main" tabindex="-1">
@@ -300,6 +310,7 @@ Taking part in a survey?
     <div class="col">
       <div class="">
         <h1>Filter options</h1>
+        <p>Add filters from the list</p>
       </div>
     </div>
   </div>
@@ -313,14 +324,18 @@ Taking part in a survey?
         <ul class="filter">
           <li class="filter--item">
             <span class="width--5"><a class="btn btn--primary" href="goods-and-services">Add</a></span>
-            <span class="width--10">Goods and services</span>
+            <span class="width--14 filter--item--label">Goods and services</span>
             Nothing added</li>
           <li class="filter--item">
-            <span class="width--5"><a href="#">Edit</a></span>
-            <span class="width--10">Weeks</span>
+            <span class="width--5"><a class="btn btn--primary" href="months">Add</a></span>
+            <span class="width--14 filter--item--label">Months</span>
             Nothing added</li>
+          <li class="filter--item">
+            <span class="width--5"><a class="btn" href="#">Edit</a></span>
+            <span class="width--14 filter--item--label">Geography</span>
+            1 area added: United Kingdom</li>
         </ul>
-        <a class="btn btn--primary btn--wide" href="#">Apply filters</a>
+        <form action="search.html"><input type="submit" disabled="" value="Apply filters" class="btn btn--primary btn--primary-disabled btn--thick btn--wide btn--big btn--focus margin-right--2 font-weight-700 font-size--17" name="apply-filters"></form>
       </div>
     </div>
   </div>

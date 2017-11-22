@@ -8,11 +8,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Goods and services - ONS Digital Publishing Design Manual</title>
+  <title>Filter options - ONS Digital Publishing Design Manual</title>
   <meta name="description" content="A place for ONS website user experience and design stuff.">
   <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
   <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/12/filter-options-prototype/goods-and-services.html">
+  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/12/filter-options-prototype/filter-options-step-1.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
   <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
 
@@ -235,30 +235,51 @@ Taking part in a survey?
 </header>
 
 
-    <link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/9c4f688/css/main.css">
-
-<style media="screen">
-  .banner p {
-    padding: 6px 0 10px 0;
-  }
-
+    <style media="screen">
   .breadcrumb {
-    border-bottom: none;
+    border-bottom:none;
   }
-
   h1 {
     margin-top: 0;
     margin-bottom: 16px;
     font-weight: bold;
   }
-
-  p,label {
+  p {
     font-size: 16px;
   }
-
   p a {
     text-decoration: underline;
   }
+  .btn {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .filter {
+    padding-left: 0;
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
+  .filter--item {
+    list-style-type: none;
+    background-color: white;
+    padding: 16px 16px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .filter--item span {
+    display: inline-block;
+  }
+  .filter--item--label {
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  .filter--item--green {
+    outline: 3px solid green;
+    color: green;
+  }
+
 </style>
 
 <main id="main" role="main" tabindex="-1">
@@ -277,13 +298,9 @@ Taking part in a survey?
           <a class="breadcrumb__link" href="">Consumer Price Inflation</a>
         </li>
         
-        <li class="breadcrumb__item">
-          <a class="breadcrumb__link" href="">Filter options</a>
-        </li>
-        
       
       <li class="breadcrumb__item">
-        Goods and services
+        Filter options
       </li>
     </ol>
   </div>
@@ -292,130 +309,29 @@ Taking part in a survey?
   <div class="col-wrap">
     <div class="col">
       <div class="">
-        <h1>Goods and services</h1>
+        <h1>Filter options</h1>
       </div>
     </div>
   </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper background--gallery margin-bottom--6">
   <div class="col-wrap">
     <div class="col">
-      <div class="checkbox-group margin-top--2 padding-top--1" id="checkboxes-0">
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter checked" id="id-0" name="cpi1dim1T10000" checked="">
-													<label id="cpi1dim1T10000" class="checkbox__label" for="id-0">
-														01 Food and non-alcoholic beverages
-													</label>
-												</div>
-											</div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-1" name="cpi1dim1T20000">
-													<label id="cpi1dim1T20000" class="checkbox__label" for="id-1">
-														02 Alcoholic beverages and tobacco
-													</label>
-												</div>
-											</div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-2" name="cpi1dim1T30000">
-													<label id="cpi1dim1T30000" class="checkbox__label" for="id-2">
-														03 Clothing and footwear
-													</label>
-												</div>
-                      </div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-3" name="cpi1dim1T40000">
-													<label id="cpi1dim1T40000" class="checkbox__label" for="id-3">
-														04 Housing, water, electricity, gas and other fuels
-													</label>
-												</div>
-                      </div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-4" name="cpi1dim1T50000">
-													<label id="cpi1dim1T50000" class="checkbox__label" for="id-4">
-														05 Furniture, household equipment and maintenance
-													</label>
-												</div>
-                      </div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-5" name="cpi1dim1T60000">
-													<label id="cpi1dim1T60000" class="checkbox__label" for="id-5">
-														06 Health
-													</label>
-												</div>
-                      </div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-6" name="cpi1dim1T70000">
-													<label id="cpi1dim1T70000" class="checkbox__label" for="id-6">
-														07 Transport
-													</label>
-												</div>
-                      </div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-7" name="cpi1dim1T80000">
-													<label id="cpi1dim1T80000" class="checkbox__label" for="id-7">
-														08 Communication
-													</label>
-												</div>
-                      </div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-8" name="cpi1dim1T90000">
-													<label id="cpi1dim1T90000" class="checkbox__label" for="id-8">
-														09 Recreation and culture
-													</label>
-												</div>
-                      </div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-9" name="cpi1dim1T100000">
-													<label id="cpi1dim1T100000" class="checkbox__label" for="id-9">
-														10 Education
-													</label>
-												</div>
-                      </div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-10" name="cpi1dim1T110000">
-													<label id="cpi1dim1T110000" class="checkbox__label" for="id-10">
-														11 Restaurants and hotels
-													</label>
-												</div>
-                      </div>
-
-											<div class="checkbox margin-bottom--1 clearfix">
-												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter" id="id-11" name="cpi1dim1T120000">
-													<label id="cpi1dim1T120000" class="checkbox__label" for="id-11">
-														12 Miscellaneous goods and services
-													</label>
-												</div>
-                      </div>
-
-										</div>
-
-                    <div class="margin-bottom--8 margin-top--5">
-                      <form action="index"><input type="submit" value="Save and return" class="btn btn--primary btn--thick btn--wide btn--big btn--focus margin-right--2 font-weight-700 font-size--17" name="save-and-return"></form>
-                  </div>
+      <div class="padding-left--2 padding-right--2 padding-bottom--4">
+        <p style="text-align:right; margin:8px 0;"><a href="#">Clear filters</a></p>
+        <ul class="filter">
+          <li class="filter--item">
+            <span class="width--5"><a class="btn" href="goods-and-services">Edit</a></span>
+            <span class="width--14 filter--item--label">Goods and services</span>
+            1 item added: Furniture, household equipment and maintenance</li>
+          <li class="filter--item">
+            <span class="width--5"><a class="btn btn--primary" href="months">Add</a></span>
+            <span class="width--14 filter--item--label">Months</span>
+            Nothing added</li>
+        </ul>
+        <a class="btn btn--primary btn--wide" href="#">Apply filters</a>
+      </div>
     </div>
   </div>
 </div>
