@@ -1,0 +1,1015 @@
+<!-- A basic layout with minimal header and footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Record specification - ONS Digital Publishing Design Manual</title>
+  <meta name="description" content="A place for ONS website user experience and design stuff.">
+  <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/12/record-spec/">
+  <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
+  <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
+
+  <meta name="robots" content="noindex, nofollow">
+
+</head>
+
+
+  <body>
+
+    <!-- <div class="banner background--carrot">
+	<div class="wrapper">
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
+	</div>
+</div>
+ -->
+
+    <header class="border-bottom--iron-sm border-bottom--iron-md">
+	<a class="skiplink" href="#main" tabindex="0">
+		Skip to main content
+	</a>
+
+	<div class="wrapper">
+		<div class="header col-wrap">
+
+			<div class="col col--lg-one-third col--md-one-third">
+  <a href="/dp-design-manual/">
+    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
+  </a>
+</div>
+
+
+		</div>
+	</div>
+
+</header>
+
+
+    <main id="main" role="main" tabindex="-1">
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper padding-top--3 padding-bottom--2">
+      <div class="col-wrap">
+        <div class="col">
+
+          <div class="page-intro-v2">
+  
+  <h1 class="page-intro__title margin-top--0 col--md-46 font-weight--bold">
+      
+      Record specification
+      
+    </h1>
+    
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="basic col col--md-one col--lg-one padding-top--3">
+        <p><a href="https://onsdigital.github.io/postcode-lookup/">Back <span class="visuallyhidden">to Postcode Directory look-up</span></a></p>
+        <h2>Download</h2>
+        <a class="btn btn--primary btn--thick" href="#"><span class="visuallyhidden">Download record specification </span>Spreadsheet (XLS, 56KB)</a>
+
+        <h2>View</h2>
+        <!-- <div class="markdown-table-container print--avoid-break">
+          <div class="markdown-table-wrap"> -->
+            <table class="table-v2 margin-top--4 margin-bottom--4">
+              <tr>
+                <th>
+                  <p>Length</p>
+                </th>
+                <th>
+                  <p>Data description</p>
+                </th>
+                <th>
+                  <p>Range of codes/ Entity code</p>
+                </th>
+                <th>
+                  <p>Comments</p>
+                </th>
+                <th>
+                  <p>Field name</p>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <p>7</p>
+                </td>
+                <td>
+                  <p>Unit postcode &ndash; 7 character version</p>
+                </td>
+                <td>
+                  <p>AB1&Delta;1AA-ZE999ZZ (maximum range)</p>
+                </td>
+                <td>
+                  <p>All current (&lsquo;live&rsquo;) postcodes within the United Kingdom, the Channel Islands and the Isle of Man, received monthly from Royal Mail.</p>
+                  <p>Also, all terminated (&lsquo;closed&rsquo;) postcodes that have not been subsequently re-used by Royal Mail within the United Kingdom and by the postal administrations in the Channel Islands and the Isle of Man.</p>
+                  <p>2, 3 or 4 character outward code &ndash; left aligned;</p>
+                  <p>3 character inward code &ndash; right aligned;</p>
+                  <p>3rd and 4th characters may be blank (&Delta;)</p>
+                </td>
+                <td>
+                  <p>PCD</p>
+                  <p>Postcode (7-char)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>8</p>
+                </td>
+                <td>
+                  <p>Unit postcode &ndash; 8 character version</p>
+                </td>
+                <td>
+                  <p>AB1&Delta;&Delta;1AA-ZE99&Delta;9ZZ (maximum range)</p>
+                </td>
+                <td>
+                  <p>As above, except:</p>
+                  <p>2, 3 or 4-character outward code &ndash; left aligned;</p>
+                  <p>3-character inward code &ndash; right aligned;</p>
+                  <p>5th character always blank and 3rd and 4th characters may be blank (&Delta;)</p>
+                </td>
+                <td>
+                  <p>PCD2</p>
+                  <p>Postcode (8-char)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>8</p>
+                </td>
+                <td>
+                  <p>Unit postcode - variable length (e-Gif) version</p>
+                </td>
+                <td>
+                  <p>AB1&Delta;1AA&Delta;-ZE99&Delta;9ZZ (maximum range)</p>
+                </td>
+                <td>
+                  <p>2, 3 or 4-character outward code;</p>
+                  <p>Single space (&Delta;);</p>
+                  <p>3-character inward code</p>
+                </td>
+                <td>
+                  <p>PCDS</p>
+                  <p>Postcode (e-Gif)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>6</p>
+                </td>
+                <td>
+                  <p>Date of introduction</p>
+                </td>
+                <td>
+                  <p>YYYYMM</p>
+                  <p>(year and month)</p>
+                </td>
+                <td>
+                  <p>The most recent occurrence of the postcode&rsquo;s date of introduction.</p>
+                </td>
+                <td>
+                  <p>DOINTR</p>
+                  <p>Date of Introduction</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>6</p>
+                </td>
+                <td>
+                  <p>Date of termination</p>
+                </td>
+                <td>
+                  <p>YYYYMM</p>
+                  <p>(year and month)</p>
+                  <p>or null</p>
+                </td>
+                <td>
+                  <p>If present, the most recent occurrence of the postcode&rsquo;s date of termination, otherwise:</p>
+                  <p>null = &lsquo;live&rsquo; postcode</p>
+                </td>
+                <td>
+                  <p>DOTERM</p>
+                  <p>Date of Termination</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>County</p>
+                </td>
+                <td>
+                  <p>E10, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The current county to which the postcode has been assigned. Pseudo codes are included for English UAs, Wales, Scotland, Northern Ireland, Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E10000002 &ndash; E10000034 = England;</p>
+                  <p>E99999999 (pseudo) = England (UA/MD/LB);</p>
+                  <p>W99999999 (pseudo) = Wales;</p>
+                  <p>S99999999 (pseudo) = Scotland;</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>OSCTY</p>
+                  <p>County</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Local authority district (LAD)/unitary authority (UA)/ metropolitan district (MD)/ London borough (LB)/ council area (CA)/district council area (DCA)</p>
+                </td>
+                <td>
+                  <p>E06, E07, E08, E09, W06, S12, N09, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The current LAD/UA to which the postcode has been assigned. Pseudo codes are included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E06000001 &ndash; E06000057 = England (UA);</p>
+                  <p>E07000004 &ndash; E07000243 = England (LAD);</p>
+                  <p>E08000001 &ndash; E08000037 = England (MD);</p>
+                  <p>E09000001 &ndash; E09000033 = England (LB);</p>
+                  <p>W06000001 &ndash; W06000024 = Wales (UA);</p>
+                  <p>S12000005 &ndash; S12000046 = Scotland (CA);</p>
+                  <p>N09000001 &ndash; N09000011 = Northern Ireland (DCA);</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>OSLAUA</p>
+                  <p>Local Authority</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>(Electoral) ward/division</p>
+                </td>
+                <td>
+                  <p>E05, W05, S13, N08, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The current administrative/electoral area to which the postcode has been assigned. Pseudo codes are included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E05000026 &ndash; E05011089 = England;</p>
+                  <p>W05000041 &ndash; W05001036 = Wales;</p>
+                  <p>S13002516 &ndash; S13003136 = Scotland;</p>
+                  <p>N08000101 &ndash; N08001140 = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>OSWARD</p>
+                  <p>Ward</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>1</p>
+                </td>
+                <td>
+                  <p>Postcode user type</p>
+                </td>
+                <td>
+                  <p>0 or 1</p>
+                </td>
+                <td>
+                  <p>Shows whether the postcode is a small or large user.</p>
+                  <p>0 = small user;</p>
+                  <p>1 = large user</p>
+                </td>
+                <td>
+                  <p>USERTYPE</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>6</p>
+                </td>
+                <td>
+                  <p>National grid reference - Easting</p>
+                </td>
+                <td>
+                  <p>numeric or null</p>
+                </td>
+                <td>
+                  <p>The OS grid reference Easting to 1 metre resolution; blank for postcodes in the Channel Islands and the Isle of Man. Grid references for postcodes in Northern Ireland relate to the Irish National Grid.</p>
+                </td>
+                <td>
+                  <p>OSEAST1M</p>
+                  <p>Easting</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>7</p>
+                </td>
+                <td>
+                  <p>National grid reference - Northing</p>
+                </td>
+                <td>
+                  <p>numeric or null</p>
+                </td>
+                <td>
+                  <p>The OS grid reference Northing to 1 metre resolution; blank for postcodes in the Channel Islands and the Isle of Man. Grid references for postcodes in Northern Ireland relate to the Irish National Grid.</p>
+                </td>
+                <td>
+                  <p>OSNRTH1M</p>
+                  <p>Northing</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>1</p>
+                </td>
+                <td>
+                  <p>Grid reference positional quality indicator</p>
+                </td>
+                <td>
+                  <p>1-6, 8-9</p>
+                </td>
+                <td>
+                  <p>Shows the status of the assigned grid reference.</p>
+                  <p>1 = within the building of the matched address closest to the postcode mean;</p>
+                  <p>2 = as for status value 1, except by visual inspection of Landline maps (Scotland only);</p>
+                  <p>3 = approximate to within 50 metres;</p>
+                  <p>4 = postcode unit mean (mean of matched addresses with the same postcode, but not snapped to a building);</p>
+                  <p>5 = imputed by ONS, by reference to surrounding postcode grid references;</p>
+                  <p>6 = postcode sector mean, (mainly PO Boxes);</p>
+                  <p>8 = postcode terminated prior to Gridlink&reg; initiative, last known ONS postcode grid reference1;</p>
+                  <p>9 = no grid reference available</p>
+                </td>
+                <td>
+                  <p>OSGRDIND</p>
+                  <p>OS Gridref Indicator</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Former Strategic Health Authority (SHA)/ Local Health Board (LHB)/ Health Board (HB)/ Health Authority (HA)/ Health &amp; Social Care Board (HSCB)</p>
+                </td>
+                <td>
+                  <p>E18, W11, S08, ZB001, L00, M00 or null</p>
+                </td>
+                <td>
+                  <p>The health area code for the postcode. SHAs were abolished in England in 2013 but the codes remain as a &lsquo;frozen&rsquo; geography. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E18000001 &ndash; E18000010 = England (SHA);</p>
+                  <p>W11000023 &ndash; W11000029 = Wales (LHB);</p>
+                  <p>S08000015 &ndash; S08000028 = Scotland (HB);</p>
+                  <p>ZB001 = Northern Ireland (HSCB);</p>
+                  <p>L00000001 &ndash; L00000003 = Channel Islands (HA);</p>
+                  <p>M00000001 = Isle of Man (HA);</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>OSHLTHAU</p>
+                  <p>Health Authority</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Country</p>
+                </td>
+                <td>
+                  <p>E92, W92, S92, N92, L93 or M83</p>
+                </td>
+                <td>
+                  <p>The code for the appropriate country (i.e. one of the four constituent countries of the UK or Crown dependencies - the Channel Islands or the Isle of Man) to which each postcode is assigned.</p>
+                  <p>E92000001 = England;</p>
+                  <p>W92000004 = Wales;</p>
+                  <p>S92000003 = Scotland;</p>
+                  <p>N92000002 = Northern Ireland;</p>
+                  <p>L93000001 = Channel Islands;</p>
+                  <p>M83000003 = Isle of Man</p>
+                </td>
+                <td>
+                  <p>CTRY</p>
+                  <p>Country</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Region</p>
+                  <p>(former GOR)</p>
+                </td>
+                <td>
+                  <p>E12, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The region code for each postcode. Pseudo codes are included for Wales, Scotland, Northern Ireland, Channel Island and Isle of Man. The field will be blank for postcodes in England with no grid reference.</p>
+                  <p>E12000001 &ndash; E12000009 = England;</p>
+                  <p>W99999999 (pseudo) = Wales;</p>
+                  <p>S99999999 (pseudo) = Scotland;</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>GOR</p>
+                  <p>Region</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Westminster parliamentary constituency</p>
+                </td>
+                <td>
+                  <p>E14, W07, S14, N06, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The Westminster parliamentary constituency code for each postcode. Pseudo codes are included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E14000530 &ndash; E14001062 = England;</p>
+                  <p>W07000041 &ndash; W07000080 = Wales;</p>
+                  <p>S14000001 &ndash; S14000059 = Scotland;</p>
+                  <p>N06000001 &ndash; N06000018 = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>PCON</p>
+                  <p>Parliamentary Constituency</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>European Electoral Region</p>
+                  <p>(EER)</p>
+                </td>
+                <td>
+                  <p>E15, W08, S15, N07, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The EER code for each postcode. Pseudo codes are included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E15000001 &ndash; E15000009 = England;</p>
+                  <p>W08000001 = Wales;</p>
+                  <p>S15000001 = Scotland;</p>
+                  <p>N07000001 = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>EER</p>
+                  <p>European Electoral Region</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Travel to Work Area</p>
+                  <p>(TTWA)</p>
+                </td>
+                <td>
+                  <p>E30, W22, S22, K01, N12, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The TTWA code for the postcode. Pseudo codes are included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E30000004 &ndash; E30000294 = England;</p>
+                  <p>W22000003 &ndash; W22000034 = Wales;</p>
+                  <p>S22000005 &ndash; S22000083 = Scotland;</p>
+                  <p>K01000009 &ndash; K01000014 = cross-border;</p>
+                  <p>N12000001 &ndash; N12000010 = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>TTWA</p>
+                  <p>Travel To Work Area</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>10</p>
+                </td>
+                <td>
+                  <p>LAU2 areas</p>
+                </td>
+                <td>
+                  <p>E05, W05, S31, UKN0100001-UKN0507021, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The national LAU2-equivalent code for each postcode. Pseudo codes are included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E05000026 &ndash; E05011089 = England;</p>
+                  <p>W05000041 &ndash; W05000991 = Wales;</p>
+                  <p>S31000001 &ndash; S31001229 = Scotland;</p>
+                  <p>UKN0100001 &ndash; UKN0507021 = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>NUTS</p>
+                  <p>LAU2</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>National park</p>
+                </td>
+                <td>
+                  <p>E26, W18, W31, S21, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The national parks cover parts of England, Wales and Scotland. Pseudo codes are included for Northern Ireland, Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E26000001 &ndash; E26000012 = England;</p>
+                  <p>E99999999 (pseudo) = England (non-national park);</p>
+                  <p>W18000001 &ndash; W18000003 = Wales;</p>
+                  <p>W31000001 = Wales (non-national park);</p>
+                  <p>S21000002 &ndash; S21000003 = Scotland;</p>
+                  <p>S99999999 (pseudo) = Scotland (non-national park);</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>PARK</p>
+                  <p>National Park</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>2011 Census Output Area (OA)/ Small Area (SA)</p>
+                </td>
+                <td>
+                  <p>E00, W00, S00, N00, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The 2011 Census OAs in GB and SAs in Northern Ireland were based on 2001 Census OAs, and they form the building bricks for defining higher level geographies. Pseudo codes are included for Channel Islands and Isle of Man. The field will otherwise be
+                    blank for postcodes with no grid reference.</p>
+                  <p>E00000001 &ndash; E00176774 = England;</p>
+                  <p>W00000001 &ndash; W00010265 = Wales;</p>
+                  <p>S00088956 &ndash; S00135306 = Scotland;</p>
+                  <p>N00000001 &ndash; N00004537 = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>OA11</p>
+                  <p>Output Area</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>2011 Census Lower Layer Super Output Area (LSOA)/ Data Zone (DZ)/ SOA</p>
+                </td>
+                <td>
+                  <p>E01, W01, S01, 95AA01S1&ndash; 95ZZ16S2, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The 2011 Census LSOA (England and Wales), SOA (Northern Ireland) and DZ (Scotland) code. Pseudo codes are included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference. N.B. NI SOAs remain unchanged
+                    from 2001.</p>
+                  <p>E01000001 &ndash; E01033768 = England;</p>
+                  <p>W01000001 &ndash; W01001958 = Wales;</p>
+                  <p>S01006506 &ndash; S01013481 = Scotland;</p>
+                  <p>95AA01S1 &ndash; 95ZZ16S2 = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>LSOA11</p>
+                  <p>Lower Layer Super Output Area</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>2011 Census Middle Layer Super Output Area (MSOA)/ Intermediate Zone (IZ)</p>
+                </td>
+                <td>
+                  <p>E02, W02, S02, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The 2011 Census MSOA code for England and Wales and IZ zone for Scotland. Pseudo codes are included for Northern Ireland, Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E02000001 &ndash; E02006934 = England;</p>
+                  <p>W02000001 &ndash; W02000423 = Wales;</p>
+                  <p>S02001236 &ndash; S02002514 = Scotland;</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>MSOA11</p>
+                  <p>Middle Layer Super Output Area</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Parish/ community</p>
+                </td>
+                <td>
+                  <p>E04, W04, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The parish (also known as 'civil parish') or unparished area code in England or community code in Wales. Pseudo codes are included for Scotland, Northern Ireland, Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with
+                    no grid reference.</p>
+                  <p>E04000001 &ndash; E04012344 = England (parish);</p>
+                  <p>E43000001 &ndash; E43000237 = England (unparished area);</p>
+                  <p>W04000001 &ndash; W04000979 = Wales (community);</p>
+                  <p>S99999999 (pseudo) = Scotland;</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>PARISH</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>2011 Census Workplace Zone (WZ)</p>
+                </td>
+                <td>
+                  <p>E33, W35, S34, N19, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The UK WZ code. Pseudo codes are included for Channel Islands and Isle of Man. The field will be blank for UK postcodes with no grid reference.</p>
+                  <p>E33000001 &ndash; E33050868 = England;</p>
+                  <p>W35000001 &ndash; W35002710 = Wales;</p>
+                  <p>S34000001 &ndash; S34005375 = Scotland;</p>
+                  <p>N19000001 &ndash; N19001756 = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>WZ11</p>
+                  <p>Workplace Zone</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Clinical Commissioning Group (CCG)/ Local Health Board (LHB)/ Community Health Partnership (CHP)/ Local Commissioning Group (LCG)/ Primary Healthcare Directorate (PHD)</p>
+                </td>
+                <td>
+                  <p>E38, W11, S03, ZC010&ndash; ZC050, M01, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The code for the CCG areas (England), LHBs (Wales), CHPs (Scotland), LCG (Northern Ireland) and PHD (Isle of Man; there are no equivalent areas in the Channel Islands (for which a pseudo code is included). The field will otherwise be blank for postcodes
+                    with no grid reference.</p>
+                  <p>E38000001 &ndash; E38000219 = England (CCG);</p>
+                  <p>W11000023 &ndash; W11000029 = Wales (LHB);</p>
+                  <p>S03000001 &ndash; S03000044 = Scotland (CHP);</p>
+                  <p>ZC010 &ndash; ZC050 = Northern Ireland (LCG);</p>
+                  <p>M01000001 = Isle of Man (PHD);</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>CCG</p>
+                  <p>Clinical Commissioning Group</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Built-up Area (BUA)</p>
+                </td>
+                <td>
+                  <p>E34, W37, K05, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The code for the BUAs in England and Wales. A pseudo code is included for those areas not classed as &lsquo;built-up&rsquo; and cross-border codes are included for areas straddling the English/Welsh border. Pseudo codes are included for Scotland,
+                    Northern Ireland, Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E34000001 &ndash; E34005360 = England;</p>
+                  <p>E34999999 (pseudo) = England (not covered);</p>
+                  <p>W37000001 &ndash; W37000459 = Wales;</p>
+                  <p>W37999999 (pseudo) = Wales (not covered);</p>
+                  <p>K05000001 &ndash; K05000011 = cross-border;</p>
+                  <p>S99999999 (pseudo) = Scotland;</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>BUA11</p>
+                  <p>Built-up Area</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Built-up Area Sub-division (BUASD)</p>
+                </td>
+                <td>
+                  <p>E35, W38, K06, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The code for the BUASDs in England and Wales. A pseudo code is included for those areas not classed as &lsquo;built-up&rsquo; and cross-border codes are included for areas straddling the English/Welsh border. Pseudo codes are included for Scotland,
+                    Northern Ireland, Channel Islands and Isle of Man. The field will be blank for postcodes in England or Wales with no grid reference.</p>
+                  <p>E35000001 &ndash; E35001672 = England;</p>
+                  <p>E35999999 (pseudo) = England (not covered);</p>
+                  <p>W38000001 &ndash; W38000160 = Wales;</p>
+                  <p>W38999999 (pseudo) = Wales (not covered);</p>
+                  <p>K06000001 &ndash; K06000004 = cross-border;</p>
+                  <p>S99999999 (pseudo) = Scotland;</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>BUASD11</p>
+                  <p>Built-up Area Sub Division</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>2</p>
+                </td>
+                <td>
+                  <p>2011 Census rural-urban classification</p>
+                </td>
+                <td>
+                  <p>A1-F2, 1-8, TBA, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The 2011 Census rural-urban classification of OAs for England and Wales, Scotland and Northern Ireland. A pseudo code is included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>A1 &ndash; F2 = England and Wales:</p>
+                  <p>1 &ndash; 8 = Scotland;</p>
+                  <p>TBA = Northern Ireland;</p>
+                  <p>Z9 (pseudo) = Channel Islands/Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>RU11IND</p>
+                  <p>Rural Urban Indicator</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>3</p>
+                </td>
+                <td>
+                  <p>2011 Census Output Area classification (OAC)</p>
+                </td>
+                <td>
+                  <p>1A1-8B3, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The 2011 Census OAC code for each postcode in the UK. A pseudo code is included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>1A1 &ndash; 8D3 = UK;</p>
+                  <p>9Z9 (pseudo) = Channel Islands/Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>OAC11</p>
+                  <p>Output Area Classification</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>10</p>
+                </td>
+                <td>
+                  <p>Decimal degrees latitude</p>
+                </td>
+                <td>
+                  <p>Numeric</p>
+                </td>
+                <td>
+                  <p>The postcode coordinates in degrees latitude to six decimal places; 99.999999 for postcodes in the Channel Islands and the Isle of Man, and for postcodes with no grid reference.</p>
+                </td>
+                <td>
+                  <p>LAT</p>
+                  <p>Latitude</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>10</p>
+                </td>
+                <td>
+                  <p>Decimal degrees longitude</p>
+                </td>
+                <td>
+                  <p>Numeric</p>
+                </td>
+                <td>
+                  <p>The postcode coordinates in degrees longitude for each postcode to six decimal places; 0.000000 for postcodes in the Channel Islands and the Isle of Man, and for postcodes with no grid reference.</p>
+                </td>
+                <td>
+                  <p>LONG</p>
+                  <p>Longitude</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Local Enterprise Partnership (LEP) - first instance</p>
+                </td>
+                <td>
+                  <p>E37, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The primary LEP code for each English postcode. Pseudo codes are included for the rest of the UK. The field will be blank for English postcodes with no grid reference.</p>
+                  <p>E37000001 &ndash; E37000041 = England;</p>
+                  <p>W99999999 (pseudo) = Wales;</p>
+                  <p>S99999999 (pseudo) = Scotland;</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>LEP1</p>
+                  <p>Local Enterprise Partnership</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Local Enterprise Partnership (LEP) &ndash; second instance</p>
+                </td>
+                <td>
+                  <p>E37, pseudo or null</p>
+                </td>
+                <td>
+                  <p>Where LEPs overlap, the secondary code for each affected English postcode. Pseudo codes are included for the rest of the UK. The field will be blank for English postcodes with no grid reference.</p>
+                  <p>E370000001 &ndash; E37000041 = England;</p>
+                  <p>W99999999 (pseudo) = Wales;</p>
+                  <p>S99999999 (pseudo) = Scotland;</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>LEP2</p>
+                  <p>Local Enterprise Partnership 2</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>9</p>
+                </td>
+                <td>
+                  <p>Police Force Area (PFA)</p>
+                </td>
+                <td>
+                  <p>E23, W15, S23, pseudo or null</p>
+                </td>
+                <td>
+                  <p>The PFA code for each postcode. A single PFA covers each of Scotland and Northern Ireland (not coded). A pseudo code is included for Channel Islands and Isle of Man. The field will otherwise be blank for postcodes with no grid reference.</p>
+                  <p>E23000001 &ndash; E23000039 = England;</p>
+                  <p>W15000001 &ndash; W15000004 = Wales;</p>
+                  <p>S23000009 = Scotland;</p>
+                  <p>N99999999 (pseudo) = Northern Ireland;</p>
+                  <p>L99999999 (pseudo) = Channel Islands;</p>
+                  <p>M99999999 (pseudo) = Isle of Man;</p>
+                  <p>null = no information available</p>
+                </td>
+                <td>
+                  <p>PFA</p>
+                  <p>Police Force Area</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>5</p>
+                </td>
+                <td>
+                  <p>Index of Multiple Deprivation (IMD)</p>
+                </td>
+                <td>
+                  <p>Numeric</p>
+                </td>
+                <td>
+                  <p>The IMD rank for the LSOA (or OA or DZ) of each postcode, where 1 is the most deprived. A zero is included for Channel Islands and Isle of Man, also for postcodes with no grid reference.</p>
+                  <p>1 &ndash; 32844 = England;</p>
+                  <p>1 &ndash; 1909 = Wales;</p>
+                  <p>1 &ndash; 6976 = Scotland;</p>
+                  <p>1 &ndash; 5022 = Northern Ireland;</p>
+                  <p>0 = Channel Islands;</p>
+                  <p>0 = Isle of Man;</p>
+                  <p>0 = no information available</p>
+                </td>
+                <td>
+                  <p>IMD</p>
+                  <p>Index of Multiple Deprivation</p>
+                </td>
+              </tr>
+            </table>
+
+            <h2 class="font-size--h6">Notes:</h5>
+            <ol>
+              <li>Postcodes with an &lsquo;8&rsquo; code are those that were terminated prior to the Gridlink<sup>&reg;</sup> initiative which became operational in November 2000. The grid references are those assigned by ONS for postcodes in England and Wales and those assigned by the General Register Office for Scotland and the Department for Economic Development in Northern Ireland for their respective postcodes. Consequently, the grid references for England and Wales will be mainly to 100 metre resolution while the grid references for other parts of the UK will be to 10 metre resolution. Postcodes terminated since November 2000 retain the same positional quality indicators as they had prior to their termination.</li>
+            </ol>
+          <!-- </div>
+
+            <button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
+
+          </div>
+
+          <button class="btn btn--secondary btn--mobile-table-show">View table</button>
+
+        </div> -->
+
+        <p><a href="#main">Back to top</a></p>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+    <!-- <footer class="basic print--hide">
+	<h2 class="visuallyhidden">Footer links</h2>
+	<div class="footer">
+		<div class="wrapper">
+
+			<div class="footer-license">
+  <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+  <p class="footer-license__text margin-left-sm--0">
+    All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+  </p>
+</div>
+
+
+		</div>
+	</div>
+</footer>
+ -->
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+  <script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script>
+
+</html>
