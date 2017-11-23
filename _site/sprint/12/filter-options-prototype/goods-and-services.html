@@ -8,11 +8,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Table footnotes prototype - ONS Digital Publishing Design Manual</title>
+  <title>Goods and services - ONS Digital Publishing Design Manual</title>
   <meta name="description" content="A place for ONS website user experience and design stuff.">
   <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/11/table-footnotes/option-1.html">
+  <link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/9c4f688/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/12/filter-options-prototype/goods-and-services.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
   <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
 
@@ -231,228 +231,192 @@ Taking part in a survey?
 
 
 	
-		<div class="search nav-search--hidden print--hide" id="searchBar">
-  <div class="wrapper" role="search">
-    <form class="col-wrap search__form" action="search.html">
-      <label class="search__label col col--md-23 col--lg-24" for="nav-search">Search for a keyword(s) or time series ID</label>
-      <input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-32" id="nav-search" name="q" value="">
-      <button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
-        <span class="visuallyhidden">Search</span>
-        <span class="icon icon-search--light"></span>
-      </button>
-    </form>
-  </div>
-</div>
-
-	
 
 </header>
 
 
-    <main id="main" role="main" tabindex="-1">
+    <style media="screen">
+  .banner p {
+    padding: 6px 0 10px 0;
+  }
 
-  <div class="page-intro background--gallery">
-    <div class="wrapper padding-top--3 padding-bottom--2">
-      <div class="col-wrap">
-        <div class="col">
+  .breadcrumb {
+    border-bottom: none;
+  }
 
-          <div class="page-intro-v2">
-  
-  <h1 class="page-intro__title margin-top--0 col--md-46 font-weight--bold">
+  h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+
+  p,label {
+    font-size: 16px;
+  }
+
+  p a {
+    text-decoration: underline;
+  }
+</style>
+
+<main id="main" role="main" tabindex="-1">
+
+<div class="wrapper">
+  <nav>
+  <div class="breadcrumb print--hide">
+    <ol class="breadcrumb__list">
       
-      Table footnotes prototype
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="">Home</a>
+        </li>
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="">Consumer Price Inflation</a>
+        </li>
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="index">Filter options</a>
+        </li>
+        
       
-    </h1>
-    
+      <li class="breadcrumb__item">
+        Goods and services
+      </li>
+    </ol>
+  </div>
+</nav>
+
+  <div class="col-wrap">
+    <div class="col">
+      <div class="">
+        <h1>Goods and services</h1>
+      </div>
+    </div>
+  </div>
 </div>
 
+<div class="wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <div class="checkbox-group margin-top--2 padding-top--1" id="checkboxes-0">
 
-        </div>
-      </div>
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-0" name="cpi1dim1T10000">
+													<label id="cpi1dim1T10000" class="checkbox__label" for="id-0">
+														01 Food and non-alcoholic beverages
+													</label>
+												</div>
+											</div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-1" name="cpi1dim1T20000">
+													<label id="cpi1dim1T20000" class="checkbox__label" for="id-1">
+														02 Alcoholic beverages and tobacco
+													</label>
+												</div>
+											</div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-2" name="cpi1dim1T30000">
+													<label id="cpi1dim1T30000" class="checkbox__label" for="id-2">
+														03 Clothing and footwear
+													</label>
+												</div>
+                      </div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-3" name="cpi1dim1T40000">
+													<label id="cpi1dim1T40000" class="checkbox__label" for="id-3">
+														04 Housing, water, electricity, gas and other fuels
+													</label>
+												</div>
+                      </div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-4" name="cpi1dim1T50000">
+													<label id="cpi1dim1T50000" class="checkbox__label" for="id-4">
+														05 Furniture, household equipment and maintenance
+													</label>
+												</div>
+                      </div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-5" name="cpi1dim1T60000">
+													<label id="cpi1dim1T60000" class="checkbox__label" for="id-5">
+														06 Health
+													</label>
+												</div>
+                      </div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-6" name="cpi1dim1T70000">
+													<label id="cpi1dim1T70000" class="checkbox__label" for="id-6">
+														07 Transport
+													</label>
+												</div>
+                      </div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-7" name="cpi1dim1T80000">
+													<label id="cpi1dim1T80000" class="checkbox__label" for="id-7">
+														08 Communication
+													</label>
+												</div>
+                      </div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-8" name="cpi1dim1T90000">
+													<label id="cpi1dim1T90000" class="checkbox__label" for="id-8">
+														09 Recreation and culture
+													</label>
+												</div>
+                      </div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-9" name="cpi1dim1T100000">
+													<label id="cpi1dim1T100000" class="checkbox__label" for="id-9">
+														10 Education
+													</label>
+												</div>
+                      </div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-10" name="cpi1dim1T110000">
+													<label id="cpi1dim1T110000" class="checkbox__label" for="id-10">
+														11 Restaurants and hotels
+													</label>
+												</div>
+                      </div>
+
+											<div class="checkbox margin-bottom--1 clearfix">
+												<div class="width-md--25 float-el--left-md">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-11" name="cpi1dim1T120000">
+													<label id="cpi1dim1T120000" class="checkbox__label" for="id-11">
+														12 Miscellaneous goods and services
+													</label>
+												</div>
+                      </div>
+
+										</div>
+
+                    <div class="margin-bottom--8 margin-top--5">
+                      <form action="filter-options-step-1"><input type="submit" value="Save and return" class="btn btn--primary btn--thick btn--wide btn--big btn--focus margin-right--2 font-weight-700 font-size--17" name="save-and-return"></form>
+                  </div>
     </div>
   </div>
-
-  <div class="wrapper">
-    <div class="col-wrap">
-      <div class="col col--md-one col--lg-two-thirds">
-        <h2 class="font-weight--bold">Table example 1</h2>
-        <p><a class="link--underline" href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/may2017#the-cpih-inflation-rate-has-climbed-steadily-to-its-highest-since-april-2012">Sourced from: UK consumer price inflation: May 2017</a></p>
-
-        <div id="table-1" class="markdown-table-container print--avoid-break">
-          <h4 class="font-weight--bold">Table 1: CPIH, OOH component and CPI index values and 12-month rates: May 2016 to May 2017</h4>
-          <div class="markdown-table-wrap">
-            <table class="table-v2 margin-top--4 margin-bottom--4">
-                <tr>
-                  <th colspan="8">UK</th>
-                </tr>
-                <tr>
-                  <th>Year</th>
-                  <th>Month</th>
-                  <th class="cell--align-right">CPIH Index <sup id="fnref:1"><a href="#fn:1" class="footnote__link"><span class="visuallyhidden">Footnote </span>1</a></sup><sup>,</sup> <sup id="fnref:2"><a href="#fn:2" class="footnote__link"><span class="visuallyhidden">Footnote </span>2</a></sup> (UK, 2015 = 100)</th>
-                  <th class="cell--align-right">CPIH 12- month <sup id="fnref:2"><a href="#fn:2" class="footnote__link"><span class="visuallyhidden">Footnote </span>2</a></sup> rate </th>
-                  <th class="cell--align-right">CPI Index <sup id="fnref:1"><a href="#fn:1" class="footnote__link"><span class="visuallyhidden">Footnote </span>1</a></sup> (UK, 2015=100)</th>
-                  <th class="cell--align-right">CPI 12- month rate</th>
-                  <th class="cell--align-right">OOH Index <sup id="fnref:1"><a href="#fn:1" class="footnote__link"><span class="visuallyhidden">Footnote </span>1</a></sup><sup>,</sup> <sup id="fnref:2"><a href="#fn:2" class="footnote__link"><span class="visuallyhidden">Footnote </span>2</a></sup> (UK, 2015=100)</th>
-                  <th class="cell--align-right">OOH 12- month <sup id="fnref:2"><a href="#fn:2" class="footnote__link"><span class="visuallyhidden">Footnote </span>2</a></sup> rate</th>
-                </tr>
-                <tr>
-                  <td>2016</td>
-                  <td>May</td>
-                  <td class="cell--align-right">100.8</td>
-                  <td class="cell--align-right">0.7</td>
-                  <td class="cell--align-right">100.4</td>
-                  <td class="cell--align-right">0.3</td>
-                  <td class="cell--align-right">102.1</td>
-                  <td class="cell--align-right">2.3</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Jun</td>
-                  <td class="cell--align-right">101.0</td>
-                  <td class="cell--align-right">0.8</td>
-                  <td class="cell--align-right">100.6</td>
-                  <td class="cell--align-right">0.5</td>
-                  <td class="cell--align-right">102.2</td>
-                  <td class="cell--align-right">2.3</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Jul</td>
-                  <td class="cell--align-right">100.9</td>
-                  <td class="cell--align-right">0.9</td>
-                  <td class="cell--align-right">100.6</td>
-                  <td class="cell--align-right">0.6</td>
-                  <td class="cell--align-right">102.4</td>
-                  <td class="cell--align-right">2.4</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Aug</td>
-                  <td class="cell--align-right">101.2</td>
-                  <td class="cell--align-right">1.0</td>
-                  <td class="cell--align-right">100.9</td>
-                  <td class="cell--align-right">0.6</td>
-                  <td class="cell--align-right">102.7</td>
-                  <td class="cell--align-right">2.4</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Sep</td>
-                  <td class="cell--align-right">101.5</td>
-                  <td class="cell--align-right">1.3</td>
-                  <td class="cell--align-right">101.1</td>
-                  <td class="cell--align-right">1.0</td>
-                  <td class="cell--align-right">102.8</td>
-                  <td class="cell--align-right">2.4</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Oct</td>
-                  <td class="cell--align-right">101.6</td>
-                  <td class="cell--align-right">1.3</td>
-                  <td class="cell--align-right">101.2</td>
-                  <td class="cell--align-right">0.9</td>
-                  <td class="cell--align-right">103.2</td>
-                  <td class="cell--align-right">2.7</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Nov</td>
-                  <td class="cell--align-right">101.8</td>
-                  <td class="cell--align-right">1.5</td>
-                  <td class="cell--align-right">101.4</td>
-                  <td class="cell--align-right">1.2</td>
-                  <td class="cell--align-right">103.4</td>
-                  <td class="cell--align-right">2.6</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Dec</td>
-                  <td class="cell--align-right">102.2</td>
-                  <td class="cell--align-right">1.8</td>
-                  <td class="cell--align-right">101.9</td>
-                  <td class="cell--align-right">1.6</td>
-                  <td class="cell--align-right">103.6</td>
-                  <td class="cell--align-right">2.6</td>
-                </tr>
-                <tr>
-                  <td>2017</td>
-                  <td>Jan</td>
-                  <td class="cell--align-right">101.8</td>
-                  <td class="cell--align-right">1.9</td>
-                  <td class="cell--align-right">101.4</td>
-                  <td class="cell--align-right">1.8</td>
-                  <td class="cell--align-right">103.8</td>
-                  <td class="cell--align-right">2.5</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Feb</td>
-                  <td class="cell--align-right">102.4</td>
-                  <td class="cell--align-right">2.3</td>
-                  <td class="cell--align-right">102.1</td>
-                  <td class="cell--align-right">2.3</td>
-                  <td class="cell--align-right">103.9</td>
-                  <td class="cell--align-right">2.5</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Mar</td>
-                  <td class="cell--align-right">102.7</td>
-                  <td class="cell--align-right">2.3</td>
-                  <td class="cell--align-right">102.5</td>
-                  <td class="cell--align-right">2.3</td>
-                  <td class="cell--align-right">104.0</td>
-                  <td class="cell--align-right">2.4</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Apr</td>
-                  <td class="cell--align-right">103.2</td>
-                  <td class="cell--align-right">2.6</td>
-                  <td class="cell--align-right">102.9</td>
-                  <td class="cell--align-right">2.7</td>
-                  <td class="cell--align-right">104.1</td>
-                  <td class="cell--align-right">2.2</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>May</td>
-                  <td class="cell--align-right">103.5</td>
-                  <td class="cell--align-right">2.7</td>
-                  <td class="cell--align-right">103.3</td>
-                  <td class="cell--align-right">2.9</td>
-                  <td class="cell--align-right">104.2</td>
-                  <td class="cell--align-right">2.1</td>
-                </tr>
-            </table>
-
-            <button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
-
-          </div>
-
-          <button class="btn btn--secondary btn--mobile-table-show">View table</button>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <div class="col-wrap margin-bottom--8">
-      <div class="col col--md-two-thirds col--lg-two-thirds">
-
-          <h5 class="font-size--h6"><span class="visuallyhidden">Table 1</span> Notes:</h5>
-          <ol>
-            <li id="fn:1">From February 2016, CPI and CPIH indices have been re-referenced and published with 2015=100. This does not impact on published inflation rates. <a href="#table-1" class="footnote__back-link">Back to table <span class="visuallyhidden">1</span></a></li>
-            <li id="fn:2">CPIH has been re-assessed to evaluate the extent to which it meets the professional standards set out in the Code of Practice for Official Statistics. The assessment report includes a number of requirements that need to be implemented for CPIH to regain its status as a National Statistic and we are working to address these. <a href="#table-1" class="footnote__back-link">Back to table <span class="visuallyhidden">1</span></a></li>
-          </ol>
-        </div>
-
-      </div>
-    </div>
-  </div>
+</div>
 
 </main>
 

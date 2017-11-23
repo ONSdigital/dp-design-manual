@@ -8,7 +8,7 @@
     border-bottom: 1px solid $iron;
     text-align: left;
     line-height: 1.3;
-    padding: .8em 2em .8em 0;
+    padding: .8em 1em .8em 0;
   }
   th {
     border-top: 3px solid $iron;
@@ -27,5 +27,8 @@
   .row--group-end {
     border-top: 3px solid $iron;
     border-bottom: 3px solid $iron;
+  }
+  sup {
+    vertical-align: baseline;
   }
 }

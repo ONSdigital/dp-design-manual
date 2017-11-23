@@ -1,0 +1,73 @@
+---
+layout: prototype-cmd
+title: "Filtered dataset"
+search: false
+breadcrumbs:
+- label: Home
+  link: #
+- label: Consumer Price Inflation
+  link: #
+- label: Filter options
+  link: index
+---
+
+<style media="screen">
+  .breadcrumb {
+    border-bottom:none;
+  }
+  h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+  }
+  p a {
+    text-decoration: underline;
+  }
+  .btn {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .filter--item {
+    list-style-type: none;
+    background-color: white;
+    padding: 16px 16px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .filter--item span {
+    display: inline-block;
+  }
+  .filter {
+    padding-left: 0;
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
+</style>
+
+<main id="main" role="main" tabindex="-1">
+
+<div class="wrapper">
+  {% include breadcrumbs.html %}
+  <div class="col-wrap">
+    <div class="col">
+      <div class="">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper margin-bottom--6">
+  <div class="col-wrap">
+    <div class="col">
+      <p><a href="filter-options-step-2">< Adjust filter options</a></p>
+      <p>Loading dataset please wait...</p>
+    </div>
+  </div>
+</div>
+
+</main>

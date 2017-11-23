@@ -18,7 +18,7 @@
       -webkit-font-smoothing: antialiased;
       border-color: #414042;
     }
-		
+
 		.btnSearch {
 			height: 40px;
 			border: none;
@@ -49,7 +49,7 @@
     	outline: 3px solid #FF9933 !important;
     	outline-offset: 0;
     	color: #414042 !important;
-    } 
+    }
 
     p.form-text {
     	font-size: 16px;
@@ -65,13 +65,13 @@
       background-color: #0F8243;
       color: #fff;
     }
-    
+
     .btn-primary1:hover,.btn-primary1:focus {
       background-color:#206095;
     }
 
     .icon:after {
-      content: url('../img/location.svg');
+      // content: url('../img/location.svg');
       position: absolute;
       top: 0;
       margin-left: -6px;
