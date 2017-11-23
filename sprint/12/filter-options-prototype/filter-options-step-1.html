@@ -10,6 +10,9 @@ breadcrumbs:
 ---
 
 <style media="screen">
+.banner p {
+  padding: 6px 0 10px 0;
+}
   .breadcrumb {
     border-bottom:none;
   }
@@ -56,9 +59,10 @@ breadcrumbs:
     font-size: 19px;
   }
 
-  .filter--item--green {
-    outline: 3px solid green;
-    color: green;
+  .filter--item--highlight {
+    border-left: 3px solid #206095;
+    /*outline: 3px solid green;
+    color: green;*/
   }
 
 </style>
@@ -86,9 +90,9 @@ breadcrumbs:
             <span class="width--5"><a class="btn btn--neutral" href="goods-and-services">Edit</a></span>
             <span class="width--14 filter--item--label">Goods and services</span>
             1 item added: Furniture, household equipment and maintenance</li>
-          <li class="filter--item">
+          <li class="filter--item filter--item--highlight">
             <span class="width--5"><a class="btn btn--primary" href="months">Add</a></span>
-            <span class="width--14 filter--item--label">Months</span>
+            <span class="width--14 filter--item--label">Time</span>
             Nothing added</li>
           <li class="filter--item">
             <span class="width--5"><a class="btn btn--neutral" href="geography">Edit</a></span>

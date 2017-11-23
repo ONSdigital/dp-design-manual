@@ -236,6 +236,9 @@ Taking part in a survey?
 
 
     <style media="screen">
+.banner p {
+  padding: 6px 0 10px 0;
+}
   .wrapper,.col, .col-wrap {
     overflow: auto !important;
   }
@@ -271,10 +274,11 @@ Taking part in a survey?
   .filter--item {
     list-style-type: none;
     background-color: white;
-    padding: 16px 16px;
+    padding: 24px 16px;
     margin-bottom: 16px;
     margin-top: 0;
     font-size: 16px;
+    position: relative;
   }
   .filter--item span {
     display: inline-block;
@@ -284,12 +288,29 @@ Taking part in a survey?
     font-size: 19px;
   }
 
-  .filter--item--green {
-    outline: 3px solid green;
-    color: green;
+  .filter--item--highlight {
+    border-left: 3px solid #206095;
+    /*outline: 3px solid green;
+    color: green;*/
   }
 
-  .filter--item a {}
+  .filter--item a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: left;
+    padding-top: 0;
+
+    padding-right: 0;
+  }
+
+  .filter--item a .btn {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
 
 </style>
 
@@ -332,16 +353,16 @@ Taking part in a survey?
       <div class="padding-left--2 padding-right--2 padding-bottom--4">
         <p style="text-align:right; margin:8px 0;"><a href="#">Clear filters</a></p>
         <ul class="filter">
-          <li class="filter--item">
-            <span class="width--5"><a class="btn btn--primary" href="goods-and-services">Add</a></span>
+          <li class="filter--item filter--item--highlight">
+            <span class="width--5"><a href="goods-and-services"><span class="btn btn--primary">Add</span></a></span>
             <span class="width--14 filter--item--label">Goods and services</span>
             Nothing added</li>
-          <li class="filter--item">
-            <span class="width--5"><a class="btn btn--primary" href="months">Add</a></span>
-            <span class="width--14 filter--item--label">Months</span>
+          <li class="filter--item filter--item--highlight">
+            <span class="width--5"><a href="months"><span class="btn btn--primary">Add</a></a></span>
+            <span class="width--14 filter--item--label">Time</span>
             Nothing added</li>
           <li class="filter--item">
-            <span class="width--5"><a class="btn btn--neutral" href="geography">Edit</a></span>
+            <span class="width--5"><a href="geography"><span class="btn btn--neutral">Edit</span></a></span>
             <span class="width--14 filter--item--label">Geography</span>
             1 area added: United Kingdom</li>
         </ul>
