@@ -31,8 +31,7 @@ title: "Record specification"
         <h2>View</h2>
         <!-- <div class="markdown-table-container print--avoid-break">
           <div class="markdown-table-wrap"> -->
-            <table style="display: block;
-        overflow-x: auto;" class="table-v2 margin-top--4 margin-bottom--4">
+            <table id="table-1" class="table-v2 margin-top--4 margin-bottom--4">
               <tr>
                 <th>
                   <p>Length</p>
@@ -305,7 +304,7 @@ title: "Record specification"
                   <p>4 = postcode unit mean (mean of matched addresses with the same postcode, but not snapped to a building);</p>
                   <p>5 = imputed by ONS, by reference to surrounding postcode grid references;</p>
                   <p>6 = postcode sector mean, (mainly PO Boxes);</p>
-                  <p>8 = postcode terminated prior to Gridlink&reg; initiative, last known ONS postcode grid reference1;</p>
+                  <p>8 = postcode terminated prior to Gridlink&reg; initiative, last known ONS postcode grid reference<sup id="fnref:1"><a href="#fn:1" class="footnote__link"><span class="visuallyhidden">Footnote </span>1</a></sup>;</p>
                   <p>9 = no grid reference available</p>
                 </td>
                 <td>
@@ -915,7 +914,7 @@ title: "Record specification"
 
             <h2 class="font-size--h6">Notes:</h5>
             <ol>
-              <li>Postcodes with an &lsquo;8&rsquo; code are those that were terminated prior to the Gridlink<sup>&reg;</sup> initiative which became operational in November 2000. The grid references are those assigned by ONS for postcodes in England and Wales and those assigned by the General Register Office for Scotland and the Department for Economic Development in Northern Ireland for their respective postcodes. Consequently, the grid references for England and Wales will be mainly to 100 metre resolution while the grid references for other parts of the UK will be to 10 metre resolution. Postcodes terminated since November 2000 retain the same positional quality indicators as they had prior to their termination.</li>
+              <li id="fn:1">Postcodes with an &lsquo;8&rsquo; code are those that were terminated prior to the Gridlink<sup>&reg;</sup> initiative which became operational in November 2000. The grid references are those assigned by ONS for postcodes in England and Wales and those assigned by the General Register Office for Scotland and the Department for Economic Development in Northern Ireland for their respective postcodes. Consequently, the grid references for England and Wales will be mainly to 100 metre resolution while the grid references for other parts of the UK will be to 10 metre resolution. Postcodes terminated since November 2000 retain the same positional quality indicators as they had prior to their termination. <a href="#fnref:1" class="footnote__back-link">Back to table</a></li>
             </ol>
           <!-- </div>
 
