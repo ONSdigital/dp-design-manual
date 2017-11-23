@@ -1,0 +1,699 @@
+<!-- Copy of ONS.GOV.UK with extra prototype styles included -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Internal migration - Matrices of moves between Local Authorities and Regions (including the countries of Wales, Scotland and Northern Ireland) - ONS Digital Publishing Design Manual</title>
+  <meta name="description" content="A place for ONS website user experience and design stuff.">
+  <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/12/breadcrumb/prototype3.html">
+  <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
+  <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
+
+  <meta name="robots" content="noindex, nofollow">
+
+</head>
+
+
+  <body>
+
+    
+      <div class="banner background--carrot">
+	<div class="wrapper">
+		<p class="banner__content font-size--16">
+			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
+	</div>
+</div>
+
+    
+
+    <header>
+	<a class="skiplink" href="#main" tabindex="0">
+		Skip to main content
+	</a>
+
+	<div class="wrapper">
+		<div class="header col-wrap">
+
+			<div class="col col--lg-one-third col--md-one-third">
+  <a href="/dp-design-manual/">
+    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
+  </a>
+</div>
+
+
+			<div class="col col--lg-two-thirds col--md-two-thirds hide--sm print--hide language--js__container">
+  <dl class="language js--hide" style="display: none;">
+    <dt class="language__title">Language:</dt>
+    <dd class="language__item">
+      <a href="&#10;&#10;&#10;&#10;    //cy.ons.gov.uk/surveys/informationforbusinesses&#10;" class="language__link icon--hide">Cymraeg (CY)</a>
+    </dd>
+  </dl>
+  <form class="language language--js js--show" style="display: block;">
+    <label class="language--js__label" for="lang">Language:</label>
+    <select class="language--js__select" id="lang" name="lang">
+      <option value="english" data-url="//www.www.ons.gov.uk/surveys/informationforbusinesses" selected="selected">English (EN)</option>
+      <option value="welsh" data-url="//cy.ons.gov.uk/surveys/informationforbusinesses">Cymraeg (CY)</option>
+    </select>
+  </form>
+</div>
+
+
+			<div class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
+  <ul class="secondary-nav__list js-nav-clone__list">
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/releasecalendar">Release calendar</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/methodology">Methodology</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/news">Media</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/aboutus">About</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link icon--hide js-nav-clone__link" target="_blank" rel="noopener noreferrer" href="https://blog.ons.gov.uk/">Blog</a>
+    </li>
+  </ul>
+</div>
+
+
+		</div>
+	</div>
+
+	<div class="primary-nav print--hide">
+  <nav>
+    <ul class="nav--controls">
+      <li class="nav--controls__item">
+        <a href="#nav-primary" id="menu-toggle" aria-controls="nav-primary" class="nav--controls__menu">
+          <span class="nav--controls__text">Menu</span>
+        </a>
+      </li>
+      <li class="nav--controls__item ">
+        <a href="#nav-search" id="search-toggle" aria-controls="nav-search" class="nav--controls__search">
+          <span class="nav--controls__text">Search</span>
+        </a>
+      </li>
+    </ul>
+    <div class="wrapper nav-main--hidden" id="nav-primary" aria-expanded="false">
+      <ul class="primary-nav__list">
+        <li class="primary-nav__item  js-nav hide--sm old-ie--display-block"><a class="primary-nav__link col col--md-7 col--lg-9" href="/">Home</a></li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/businessindustryandtrade" aria-haspopup="true">Business, industry and trade</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/business">Business</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/changestobusiness">Changes to business</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/constructionindustry">Construction industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/itandinternetindustry">IT and internet industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/internationaltrade">International trade</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/manufacturingandproductionindustry">Manufacturing and production industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/retailindustry">Retail industry</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/tourismindustry">Tourism industry</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/economy" aria-haspopup="true">Economy</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/economicoutputandproductivity">Economic output and productivity</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/environmentalaccounts">Environmental accounts</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/governmentpublicsectorandtaxes">Government, public sector and taxes</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossdomesticproductgdp">Gross Domestic Product (GDP)</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossvalueaddedgva">Gross Value Added (GVA)</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/inflationandpriceindices">Inflation and price indices</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/investmentspensionsandtrusts">Investments, pensions and trusts</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/nationalaccounts">National accounts</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/economy/regionalaccounts">Regional accounts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/employmentandlabourmarket" aria-haspopup="true">Employment and labour market</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peopleinwork">People in work</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peoplenotinwork">People not in work</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item js-nav js-expandable">
+          <a class="primary-nav__link col col--md-8 col--lg-10" href="/peoplepopulationandcommunity" aria-haspopup="true">People, population and community</a>
+          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/birthsdeathsandmarriages">Births, deaths and marriages</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/crimeandjustice">Crime and justice</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/culturalidentity">Cultural identity</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/educationandchildcare">Education and childcare</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/elections">Elections</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/healthandsocialcare">Health and social care</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/householdcharacteristics">Household characteristics</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/housing">Housing</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/leisureandtourism">Leisure and tourism</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/personalandhouseholdfinances">Personal and household finances</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/populationandmigration">Population and migration</a>
+            </li>
+            <li class="primary-nav__child-item  js-expandable__child">
+              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/wellbeing">Well-being</a>
+            </li>
+          </ul>
+        </li>
+        <li class="primary-nav__item  js-nav">
+          <a class="primary-nav__link  col col--md-8 col--lg-10" href="/surveys">
+Taking part in a survey?
+</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+	
+		<div class="search nav-search--hidden print--hide" id="searchBar">
+  <div class="wrapper" role="search">
+    <form class="col-wrap search__form" action="search.html">
+      <label class="search__label col col--md-23 col--lg-24" for="nav-search">Search for a keyword(s) or time series ID</label>
+      <input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-32" id="nav-search" name="q" value="">
+      <button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
+        <span class="visuallyhidden">Search</span>
+        <span class="icon icon-search--light"></span>
+      </button>
+    </form>
+  </div>
+</div>
+
+	
+
+</header>
+
+
+    <!--
+<style>
+
+
+ p {
+    font-size: 16px;
+      margin: 19px 0 0 0;
+  }
+
+    h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h6 {
+    font-size: 16px;
+}
+    
+    h3 {
+    font-size: 16px;
+    margin: 12px 0 0 0;
+        
+}
+    
+        h4 {
+    font-size: 16px;
+    margin: 13px 0 0 0;
+        
+}
+    
+    
+    li {
+    font-size: 16px;
+         margin: 16px 0 0 3px;
+}
+    
+
+    
+    a {
+    font-size: 16px;
+       text-decoration:  underline;
+    }
+      
+    hr {
+        
+        margin-top:8px;!important
+        
+    }
+
+        
+</style>
+-->
+
+
+
+<main id="main" role="main" tabindex="-1">
+
+  <div class="page-intro background--gallery">
+    <div class="wrapper padding-bottom--2">
+      <div class="col-wrap">
+        <div class="col">
+
+      
+         <nav>
+  <div class="breadcrumb breadcrumb-v2 print--hide">
+    <ol class="breadcrumb__list">
+      
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="https://www.ons.gov.uk/">Home</a>
+        </li>
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="https://www.ons.gov.uk/peoplepopulationandcommunity">People, population and community</a>
+        </li>
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration">Population and migration</a>
+        </li>
+        
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk">Migration within the UK</a>
+        </li>
+        
+      
+      <li class="breadcrumb__item">
+        Internal migration - Matrices of moves between Local Autho...
+      </li>
+    </ol>
+  </div>
+</nav>
+
+         
+         
+          <div class="page-intro-v2">
+  <p class="font-size--19 margin-bottom--0 margin-top--1">Editions:</p>
+  <h1 class="page-intro__title margin-top--0 col--md-46 font-weight--bold">
+      
+      Internal migration - Matrices of moves between Local Authorities and Regions (including the countries of Wales, Scotland and Northern Ireland)
+      
+    </h1>
+    
+</div>
+
+
+      
+       
+        </div>
+      </div>
+    </div>
+  </div>
+   
+   <div class="nav-secondary-wrap">
+<div class="wrapper">
+<div class="col-wrap">
+<nav>
+<div class="nav-secondary nav-secondary--border-right-lg col col--lg-half">
+<h2 class="nav-secondary__title">On this page:</h2>
+<ul class="nav-secondary__list">
+<li class="nav-secondary__item"><a href="#datasets" class="js-scroll">Dataset</a>
+</li>
+<li class="nav-secondary__item"><a href="#publications" class="js-scroll">Publications</a></li>
+<li class="nav-secondary__item"><a href="#methodology" class="js-scroll">Methodology</a></li>
+</ul>
+</div>
+</nav>
+<nav>
+<div class="nav-secondary col col--lg-half">
+<h2 class="nav-secondary__title">View all content related to this topic:</h2>
+<ul class="nav-secondary__list">
+<li class="nav-secondary__item"><a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/datalist">All data</a></li>
+<li class="nav-secondary__item"><a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/publications">All publications</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+  
+  
+<div class="page-content border-top--iron-sm border-top--iron-md">
+<div class="slate--alabaster padding-bottom-sm--2 padding-bottom-md--4">
+<section>
+<div class="wrapper">
+<div class="tiles">
+<div class="col-wrap">
+<div class="col">
+<h2>Highlights</h2>
+</div>
+
+
+<div class="col ">
+<div class="background--iron-light margin-top-md--1 margin-bottom-md--2 js-hover-click" style="position: relative;">
+<div class="background--abbey height--35 overflow--hidden">
+<img src="//cdn.ons.gov.uk/assets/images/latest-publications.png" class="width-md--23 width-lg--29 height-md--35" alt="">
+ </div>
+<div class="js-equal-height box__content padding-top-sm--2 padding-right-sm--1 padding-bottom-sm--2 padding-left-sm--1 padding-top-md--2 padding-right-md--1 padding-bottom-md--2 padding-left-md--1" style="height: 288px;">
+<h3>
+<a href="/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2016">Population Estimates for UK, England and Wales, Scotland and Northern Ireland: mid-2016<span class="box__clickable"></span></a>
+</h3>
+<h4>What's in the bulletin?</h4>
+<ul>
+<li>The population of the UK at 30 June 2016 is estimated to be 65,648,000 people.</li>
+<li>Over the year to mid-2016, the number of people resident in the UK increased by 0.8% (538,000), this growth rate is similar to the average annual growth rate since 2005.</li>
+<li>The population increase of the UK reflected increases of 193,000 people through natural growth (35.8% of the total increase), 336,000 through net international migration (62.4% of the total increase) and an increase of 9,500 people in the armed forces population based in the UK.</li>
+</ul>
+</div>
+<div class="background--iron-light box__content height--7 border-top--iron-sm border-top--iron-md padding-top-sm--1 padding-left-sm--1 padding-top-md--1 padding-left-md--1">
+<a href="/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2016" class="block">Read this statistical bulletin</a>
+</div>
+</div>
+<a href="#publications" class="btn btn--primary btn--full-width margin-top--2 js-scroll">More publications</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="slate--alabaster padding-bottom-sm--2 padding-bottom-md--4">
+<section>
+<div class="wrapper">
+<div class="col-wrap">
+<div class="col">
+<h2 id="datasets">Datasets</h2>
+</div>
+</div>
+<ul class="list--neutral margin-top--half">
+<li class="col-wrap background--mercury flush-col padding-top--2 padding-bottom--4 padding-left--1 js-hover-click" style="position: relative;">
+<div class="col col--lg-38">
+<div class="box__content">
+<h4>
+<a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/datasets/localareamigrationindicatorsunitedkingdom">
+Local Area Migration Indicators, UK
+<span class="box__clickable"></span></a>
+</h4>
+<p class="flush">Interactive product bringing together different migration-related data sources at local authority level.</p>
+</div>
+</div>
+<div class="col col--lg-20">
+</div>
+</li>
+<li class="col-wrap background--mercury flush-col padding-top--2 padding-bottom--4 padding-left--1 js-hover-click" style="position: relative;">
+<div class="col col--lg-38">
+<div class="box__content">
+<h4>
+<a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/datasets/internalmigrationbyoriginanddestinationlocalauthoritiessexandsingleyearofagedetailedestimatesdataset">
+Internal migration - Detailed estimates dataset by origin and destination local authorities, sex and single year of age
+<span class="box__clickable"></span></a>
+</h4>
+<p class="flush">Table 1a/b Moves into and out of each local authority (LA) within England and Wales (including moves to and from Scotland and Northern Ireland).</p>
+</div>
+</div>
+<div class="col col--lg-20">
+</div>
+</li>
+<li class="col-wrap background--mercury flush-col padding-top--2 padding-bottom--4 padding-left--1 js-hover-click" style="position: relative;">
+<div class="col col--lg-38">
+<div class="box__content">
+<h4>
+<a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/datasets/2011censusdetailedukmigrationstatistics">
+2011 Census: Detailed UK migration statistics
+<span class="box__clickable"></span></a>
+</h4>
+<p class="flush">2011 Census internal migration statistics for the UK give estimates that classify people and households in areas within the UK and those having moved from each area to elsewhere within the UK in the year preceding the Census.</p>
+</div>
+</div>
+<div class="col col--lg-20">
+</div>
+</li>
+<li class="col-wrap background--mercury flush-col padding-top--2 padding-bottom--4 padding-left--1 js-hover-click" style="position: relative;">
+<div class="col col--lg-38">
+<div class="box__content">
+<h4>
+<a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/datasets/internalmigrationmovesbylocalauthoritiesandregionsinenglandandwalesby5yearagegroupandsex">
+Internal migration - Moves by Local Authorities and Regions in England and Wales by 5 year age group and sex
+<span class="box__clickable"></span></a>
+</h4>
+<p class="flush">2 tables: Table T5 Internal migration by local authorities in England and Wales by 5 year age group and sex Table T6 Internal migration by regions in England and Wales by 5 year age group and sex.</p>
+</div>
+</div>
+<div class="col col--lg-20">
+</div>
+</li>
+<li class="col-wrap background--mercury flush-col padding-top--2 padding-bottom--4 padding-left--1 js-hover-click" style="position: relative;">
+<div class="col col--lg-38">
+<div class="box__content">
+<h4>
+<a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/datasets/internalmigrationlaandregionmovesandbysexandsingleyearofagetotals">
+Internal migration - LA and Region moves and by sex and single year of age totals
+<span class="box__clickable"></span></a>
+</h4>
+<p class="flush">3 tables: Table T2 Internal migration by local authorities in England and Wales Table T3 Internal migration by English regions and Wales Table T4 Internal migration by sex and single year of age.</p>
+</div>
+</div>
+<div class="col col--lg-20">
+</div>
+</li>
+</ul>
+<a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/datalist?filter=datasets" class="btn btn--primary btn--full-width">View all datasets related to Migration within the UK</a>
+</div>
+</section>
+<div class="wrapper">
+<div id="user-requested-container" class="section-container">
+<h2 id="user-requested" class="section-title">User requested data</h2>
+<div class="background--iron-light js-hover-click" style="position: relative;">
+<div class="box__content padding-top-sm--3 padding-bottom-sm--2 padding-left-sm--1 padding-right-sm--1 padding-top-md--3 padding-right-md--1 padding-bottom-md--2 padding-left-md--1">
+<span class="icon icon-arrow-right--dark float-right margin-top-md--2 margin-top-sm--2"></span>
+<h3>Looking for our user requested data?</h3>
+<p><a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/datalist?sortBy=release_date&amp;filter=user_requested_data">We also produce data not included in our standard publications<span class="box__clickable"></span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slate--mercury padding-bottom-sm--2 padding-bottom-md--4">
+<section>
+<div class="wrapper">
+<div class="col-wrap">
+<div class="col">
+<h2 id="publications" style="">Publications</h2>
+</div>
+</div>
+<div class="col-wrap">
+<div class="col">
+<h3>Bulletins</h3>
+</div>
+</div>
+<div class="col-wrap">
+<div class="col col--lg-40">
+<ul class="tiles__list margin-top--half">
+<li class="col-wrap tiles__item--list-type-simple flush-col">
+<h4 class="tiles__title tiles__title-h4">
+<a href="/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2016">
+Population Estimates for UK, England and Wales, Scotland and Northern Ireland: mid-2016
+</a>
+</h4>
+<p class="tiles__content">
+Estimates of the usual resident population as at 30 June 2016. This release includes national and subnational population estimates for England and Wales, Scotland, and Northern Ireland. Presented as available by administrative area, single year of age, sex and components of population change. This statistical bulletin covers both the UK mid-year population estimates for 2016 and the mid-2016 internal migration estimates for England and Wales.
+</p>
+</li>
+<li class="col-wrap tiles__item--list-type-simple flush-col">
+<h4 class="tiles__title tiles__title-h4">
+<a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/bulletins/internalmigrationbylocalauthoritiesinenglandandwales/yearendingjune2015">
+Internal migration, England and Wales: Year Ending June 2015
+</a>
+</h4>
+<p class="tiles__content">
+Residential moves between local authorities and regions in England and Wales, as well as moves to or from the rest of the UK (Scotland and Northern Ireland).
+</p>
+</li>
+</ul>
+<a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/publications?filter=bulletin" class="btn btn--primary btn--full-width">View all related statistical bulletins</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="margin-top padding-bottom-sm--2 padding-bottom-md--4">
+<section>
+<div class="wrapper">
+<div class="col-wrap">
+<div class="col col--lg-two-thirds">
+<div class="background--mercury margin-top--0 margin-left-md--0 margin-bottom-sm--2 padding-top--0 padding-right--0 padding-bottom--2 padding-left--0">
+<div class="background--gallery padding-top--0 padding-left--0 padding-right--0">
+<h2 id="methodology" class="tiles__title-h2 tiles__title-h2--nav font-size--h3" style="">Methodology</h2>
+</div>
+<div class="border-top--iron-sm border-top--iron-md padding-right--1 padding-left--1">
+<div class="box__content padding-top--1 padding-bottom--1">
+<ul class="list--neutral">
+<li class="flush-top"><a href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/qmis/internalmigrationestimatesqmi">Internal migration estimates QMI</a></li>
+ <li class="flush-top"><a href="/peoplepopulationandcommunity/populationandmigration/internationalmigration/qmis/localareamigrationindicatorssuiteqmi">Local area migration indicators suite QMI</a></li>
+</ul>
+</div>
+<a class="btn btn--primary btn--full-width" href="/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/topicspecificmethodology">View all related methodology</a>
+</div>
+</div>
+</div>
+<div class="col col--lg-one-third">
+<div class=" js-hover-click height--31 background--mercury print--hide" style="position: relative;">
+<div class="box__image padding-top--16 padding-right--1 padding-left--1">
+<h3 class="flush"><a href="/help/localstatistics">Looking for local statistics?<span class="image-holder height--14"><img src="/img/t1-local.png" alt="" class="no-border"></span><span class="box__clickable"></span></a></h3>
+<p class="box__content flush">A handy guide to let you know where to find local statistics.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+            
+           
+            
+            
+            
+        </div>
+        
+        
+        
+    </div>
+    </div>
+  
+
+</main>
+
+
+    <footer class="print--hide">
+	<h2 class="visuallyhidden">Footer links</h2>
+	<div class="footer">
+		<div class="wrapper">
+			<nav>
+				<div class="footer-nav col-wrap">
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">Help</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/help/accessibility">Accessibility</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/help/cookiesandprivacy">Cookies and privacy</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/help/termsandconditions">Terms and conditions</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">About ONS</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/whatwedo">What we do</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/careers">Careers</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/contactus">Contact us</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/news">News</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">Connect with us</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://twitter.com/ONS" class="icon--hide" target="_blank">Twitter</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.facebook.com/ONS" class="icon--hide" target="_blank">Facebook</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide" target="_blank">LinkedIn</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide" target="_blank">Email alerts</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="wrapper">
+
+      <div class="footer-license">
+  <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+  <p class="footer-license__text margin-left-sm--0">
+    All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+  </p>
+</div>
+
+
+		</div>
+	</div>
+	<div id="viewport-sm" class="js-viewport-size"></div><div id="viewport-md" class="js-viewport-size"></div><div id="viewport-lg" class="js-viewport-size"></div>
+</footer>
+
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+  <script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script>
+
+</html>
