@@ -1,0 +1,25 @@
+<!-- Copy of ONS.GOV.UK with extra prototype styles included -->
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head-cmd.html %}
+
+  <body>
+
+    {% if page.warning != false %}
+      {% include banners/warning.html %}
+    {% endif %}
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+  <script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script>
+
+</html>

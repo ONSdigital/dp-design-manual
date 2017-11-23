@@ -1759,7 +1759,6 @@ p.form-text {
   background-color: #206095; }
 
 .icon:after {
-  content: url("../img/location.svg");
   position: absolute;
   top: 0;
   margin-left: -6px; }

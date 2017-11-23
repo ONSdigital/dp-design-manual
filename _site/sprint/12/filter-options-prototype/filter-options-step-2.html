@@ -11,7 +11,7 @@
   <title>Filter options - ONS Digital Publishing Design Manual</title>
   <meta name="description" content="A place for ONS website user experience and design stuff.">
   <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
+  <link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/9c4f688/css/main.css">
   <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/12/filter-options-prototype/filter-options-step-2.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
   <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
@@ -254,6 +254,12 @@ Taking part in a survey?
     font-size: 16px;
     font-weight: bold;
   }
+  .btn--neutral {
+    text-decoration: underline;
+  }
+  .btn--neutral:active,.btn--neutral:focus  {
+    color: #206095;
+  }
   .filter {
     padding-left: 0;
     margin-bottom: 32px;
@@ -319,18 +325,24 @@ Taking part in a survey?
   <div class="col-wrap">
     <div class="col">
       <div class="padding-left--2 padding-right--2 padding-bottom--4">
-        <p style="text-align:right; margin:8px 0;"><a href="#">Clear filters</a></p>
+        <p style="text-align:right; margin:8px 0;"><a href="index">Clear filters</a></p>
         <ul class="filter">
           <li class="filter--item">
-            <span class="width--5"><a class="btn" href="goods-and-services">Edit</a></span>
+            <span class="width--5"><a class="btn btn--neutral" href="goods-and-services">Edit</a></span>
             <span class="width--14 filter--item--label">Goods and services</span>
             1 item added: Furniture, household equipment and maintenance</li>
           <li class="filter--item">
-            <span class="width--5"><a class="btn" href="months">Add</a></span>
+            <span class="width--5"><a class="btn btn--neutral" href="months">Add</a></span>
             <span class="width--14 filter--item--label">Months</span>
             1 item added: June 2015</li>
+          <li class="filter--item">
+            <span class="width--5"><a class="btn btn--neutral" href="geography">Edit</a></span>
+            <span class="width--14 filter--item--label">Geography</span>
+            1 area added: United Kingdom</li>
         </ul>
-        <a class="btn btn--primary btn--wide" href="filtered-dataset">Apply filters</a>
+        <div class="margin-top--5">
+          <form action="filtered-dataset"><input type="submit" value="Apply filters" class="btn btn--primary btn--thick btn--wide btn--big btn--focus margin-right--2 font-weight-700 font-size--17" name="apply-filters"></form>
+      </div>
       </div>
     </div>
   </div>

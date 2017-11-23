@@ -1,5 +1,5 @@
 ---
-layout: prototype
+layout: prototype-cmd
 title: "Filter options"
 search: false
 breadcrumbs:
@@ -10,6 +10,9 @@ breadcrumbs:
 ---
 
 <style media="screen">
+  .wrapper,.col, .col-wrap {
+    overflow: auto !important;
+  }
   .breadcrumb {
     border-bottom:none;
   }
@@ -27,6 +30,12 @@ breadcrumbs:
   .btn {
     font-size: 16px;
     font-weight: bold;
+  }
+  .btn--neutral {
+    text-decoration: underline;
+  }
+  .btn--neutral:active,.btn--neutral:focus  {
+    color: #206095;
   }
   .filter {
     padding-left: 0;
@@ -53,6 +62,8 @@ breadcrumbs:
     outline: 3px solid green;
     color: green;
   }
+
+  .filter--item a {}
 
 </style>
 
@@ -84,11 +95,11 @@ breadcrumbs:
             <span class="width--14 filter--item--label">Months</span>
             Nothing added</li>
           <li class="filter--item">
-            <span class="width--5"><a class="btn" href="#">Edit</a></span>
+            <span class="width--5"><a class="btn btn--neutral" href="geography">Edit</a></span>
             <span class="width--14 filter--item--label">Geography</span>
             1 area added: United Kingdom</li>
         </ul>
-        <form action="search.html"><input type="submit" disabled="" value="Apply filters" class="btn btn--primary btn--primary-disabled btn--thick btn--wide btn--big btn--focus margin-right--2 font-weight-700 font-size--17" name="apply-filters"></form>
+        <form action="#"><input type="submit" disabled="" value="Apply filters" class="btn btn--primary btn--primary-disabled btn--thick btn--wide btn--big btn--focus margin-right--2 font-weight-700 font-size--17" name="apply-filters"></form>
       </div>
     </div>
   </div>

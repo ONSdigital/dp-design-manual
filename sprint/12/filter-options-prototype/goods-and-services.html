@@ -1,5 +1,5 @@
 ---
-layout: prototype
+layout: prototype-cmd
 title: "Goods and services"
 search: false
 breadcrumbs:
@@ -8,9 +8,8 @@ breadcrumbs:
 - label: Consumer Price Inflation
   link: #
 - label: Filter options
-  link: #
+  link: index
 ---
-<link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/9c4f688/css/main.css">
 
 <style media="screen">
   .banner p {
@@ -56,7 +55,7 @@ breadcrumbs:
 
 											<div class="checkbox margin-bottom--1 clearfix">
 												<div class="width-md--25 float-el--left-md">
-													<input type="checkbox" class="checkbox__input js-filter checked" id="id-0" name="cpi1dim1T10000" checked="">
+													<input type="checkbox" class="checkbox__input js-filter" id="id-0" name="cpi1dim1T10000">
 													<label id="cpi1dim1T10000" class="checkbox__label" for="id-0">
 														01 Food and non-alcoholic beverages
 													</label>
@@ -165,7 +164,7 @@ breadcrumbs:
 										</div>
 
                     <div class="margin-bottom--8 margin-top--5">
-                      <form action="index"><input type="submit" value="Save and return" class="btn btn--primary btn--thick btn--wide btn--big btn--focus margin-right--2 font-weight-700 font-size--17" name="save-and-return"></form>
+                      <form action="filter-options-step-1"><input type="submit" value="Save and return" class="btn btn--primary btn--thick btn--wide btn--big btn--focus margin-right--2 font-weight-700 font-size--17" name="save-and-return"></form>
                   </div>
     </div>
   </div>
