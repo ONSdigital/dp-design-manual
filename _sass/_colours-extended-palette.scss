@@ -1,7 +1,7 @@
 // Extended colour palette
 
 $ons-blue:		#003C57;
-$blue:			$cb-blue;
+$blue:			$astral;
 $light-blue:	#36ADD9;
 $green:			$salem;
 $ons-green:		#A8BD3A;
@@ -97,7 +97,7 @@ $slate:    #5F7682;
 }
 
 .background--blue {
-  background-color: $cb-blue;
+  background-color: $blue;
   color: #fff;
 }
 
