@@ -1,0 +1,121 @@
+ 
+(function(){
+
+var series = [{"name":"2000 JAN", "y": 293.0 },{"name":"2000 FEB", "y": 293.0 },{"name":"2000 MAR", "y": 293.0 },{"name":"2000 APR", "y": 293.0 },{"name":"2000 MAY", "y": 294.0 },{"name":"2000 JUN", "y": 295.0 },{"name":"2000 JUL", "y": 296.0 },{"name":"2000 AUG", "y": 297.0 },{"name":"2000 SEP", "y": 299.0 },{"name":"2000 OCT", "y": 300.0 },{"name":"2000 NOV", "y": 302.0 },{"name":"2000 DEC", "y": 303.0 },{"name":"2001 JAN", "y": 304.0 },{"name":"2001 FEB", "y": 304.0 },{"name":"2001 MAR", "y": 306.0 },{"name":"2001 APR", "y": 309.0 },{"name":"2001 MAY", "y": 309.0 },{"name":"2001 JUN", "y": 309.0 },{"name":"2001 JUL", "y": 311.0 },{"name":"2001 AUG", "y": 313.0 },{"name":"2001 SEP", "y": 314.0 },{"name":"2001 OCT", "y": 315.0 },{"name":"2001 NOV", "y": 316.0 },{"name":"2001 DEC", "y": 316.0 },{"name":"2002 JAN", "y": 317.0 },{"name":"2002 FEB", "y": 320.0 },{"name":"2002 MAR", "y": 321.0 },{"name":"2002 APR", "y": 321.0 },{"name":"2002 MAY", "y": 321.0 },{"name":"2002 JUN", "y": 324.0 },{"name":"2002 JUL", "y": 324.0 },{"name":"2002 AUG", "y": 323.0 },{"name":"2002 SEP", "y": 324.0 },{"name":"2002 OCT", "y": 325.0 },{"name":"2002 NOV", "y": 326.0 },{"name":"2002 DEC", "y": 325.0 },{"name":"2003 JAN", "y": 328.0 },{"name":"2003 FEB", "y": 329.0 },{"name":"2003 MAR", "y": 330.0 },{"name":"2003 APR", "y": 331.0 },{"name":"2003 MAY", "y": 332.0 },{"name":"2003 JUN", "y": 333.0 },{"name":"2003 JUL", "y": 334.0 },{"name":"2003 AUG", "y": 335.0 },{"name":"2003 SEP", "y": 336.0 },{"name":"2003 OCT", "y": 337.0 },{"name":"2003 NOV", "y": 338.0 },{"name":"2003 DEC", "y": 339.0 },{"name":"2004 JAN", "y": 340.0 },{"name":"2004 FEB", "y": 340.0 },{"name":"2004 MAR", "y": 341.0 },{"name":"2004 APR", "y": 343.0 },{"name":"2004 MAY", "y": 344.0 },{"name":"2004 JUN", "y": 345.0 },{"name":"2004 JUL", "y": 346.0 },{"name":"2004 AUG", "y": 348.0 },{"name":"2004 SEP", "y": 348.0 },{"name":"2004 OCT", "y": 350.0 },{"name":"2004 NOV", "y": 351.0 },{"name":"2004 DEC", "y": 353.0 },{"name":"2005 JAN", "y": 354.0 },{"name":"2005 FEB", "y": 354.0 },{"name":"2005 MAR", "y": 357.0 },{"name":"2005 APR", "y": 357.0 },{"name":"2005 MAY", "y": 358.0 },{"name":"2005 JUN", "y": 359.0 },{"name":"2005 JUL", "y": 361.0 },{"name":"2005 AUG", "y": 363.0 },{"name":"2005 SEP", "y": 364.0 },{"name":"2005 OCT", "y": 365.0 },{"name":"2005 NOV", "y": 366.0 },{"name":"2005 DEC", "y": 366.0 },{"name":"2006 JAN", "y": 368.0 },{"name":"2006 FEB", "y": 369.0 },{"name":"2006 MAR", "y": 370.0 },{"name":"2006 APR", "y": 371.0 },{"name":"2006 MAY", "y": 373.0 },{"name":"2006 JUN", "y": 375.0 },{"name":"2006 JUL", "y": 374.0 },{"name":"2006 AUG", "y": 375.0 },{"name":"2006 SEP", "y": 377.0 },{"name":"2006 OCT", "y": 379.0 },{"name":"2006 NOV", "y": 380.0 },{"name":"2006 DEC", "y": 381.0 },{"name":"2007 JAN", "y": 382.0 },{"name":"2007 FEB", "y": 384.0 },{"name":"2007 MAR", "y": 385.0 },{"name":"2007 APR", "y": 386.0 },{"name":"2007 MAY", "y": 388.0 },{"name":"2007 JUN", "y": 390.0 },{"name":"2007 JUL", "y": 392.0 },{"name":"2007 AUG", "y": 393.0 },{"name":"2007 SEP", "y": 394.0 },{"name":"2007 OCT", "y": 394.0 },{"name":"2007 NOV", "y": 396.0 },{"name":"2007 DEC", "y": 397.0 },{"name":"2008 JAN", "y": 398.0 },{"name":"2008 FEB", "y": 400.0 },{"name":"2008 MAR", "y": 402.0 },{"name":"2008 APR", "y": 404.0 },{"name":"2008 MAY", "y": 403.0 },{"name":"2008 JUN", "y": 404.0 },{"name":"2008 JUL", "y": 405.0 },{"name":"2008 AUG", "y": 406.0 },{"name":"2008 SEP", "y": 407.0 },{"name":"2008 OCT", "y": 408.0 },{"name":"2008 NOV", "y": 409.0 },{"name":"2008 DEC", "y": 409.0 },{"name":"2009 JAN", "y": 409.0 },{"name":"2009 FEB", "y": 410.0 },{"name":"2009 MAR", "y": 410.0 },{"name":"2009 APR", "y": 411.0 },{"name":"2009 MAY", "y": 412.0 },{"name":"2009 JUN", "y": 412.0 },{"name":"2009 JUL", "y": 411.0 },{"name":"2009 AUG", "y": 411.0 },{"name":"2009 SEP", "y": 413.0 },{"name":"2009 OCT", "y": 413.0 },{"name":"2009 NOV", "y": 413.0 },{"name":"2009 DEC", "y": 415.0 },{"name":"2010 JAN", "y": 417.0 },{"name":"2010 FEB", "y": 416.0 },{"name":"2010 MAR", "y": 418.0 },{"name":"2010 APR", "y": 417.0 },{"name":"2010 MAY", "y": 417.0 },{"name":"2010 JUN", "y": 418.0 },{"name":"2010 JUL", "y": 420.0 },{"name":"2010 AUG", "y": 421.0 },{"name":"2010 SEP", "y": 422.0 },{"name":"2010 OCT", "y": 422.0 },{"name":"2010 NOV", "y": 423.0 },{"name":"2010 DEC", "y": 423.0 },{"name":"2011 JAN", "y": 426.0 },{"name":"2011 FEB", "y": 425.0 },{"name":"2011 MAR", "y": 425.0 },{"name":"2011 APR", "y": 426.0 },{"name":"2011 MAY", "y": 427.0 },{"name":"2011 JUN", "y": 426.0 },{"name":"2011 JUL", "y": 427.0 },{"name":"2011 AUG", "y": 427.0 },{"name":"2011 SEP", "y": 429.0 },{"name":"2011 OCT", "y": 430.0 },{"name":"2011 NOV", "y": 430.0 },{"name":"2011 DEC", "y": 431.0 },{"name":"2012 JAN", "y": 430.0 },{"name":"2012 FEB", "y": 432.0 },{"name":"2012 MAR", "y": 433.0 },{"name":"2012 APR", "y": 433.0 },{"name":"2012 MAY", "y": 434.0 },{"name":"2012 JUN", "y": 435.0 },{"name":"2012 JUL", "y": 435.0 },{"name":"2012 AUG", "y": 436.0 },{"name":"2012 SEP", "y": 435.0 },{"name":"2012 OCT", "y": 435.0 },{"name":"2012 NOV", "y": 436.0 },{"name":"2012 DEC", "y": 436.0 },{"name":"2013 JAN", "y": 434.0 },{"name":"2013 FEB", "y": 435.0 },{"name":"2013 MAR", "y": 436.0 },{"name":"2013 APR", "y": 438.0 },{"name":"2013 MAY", "y": 438.0 },{"name":"2013 JUN", "y": 438.0 },{"name":"2013 JUL", "y": 439.0 },{"name":"2013 AUG", "y": 438.0 },{"name":"2013 SEP", "y": 438.0 },{"name":"2013 OCT", "y": 439.0 },{"name":"2013 NOV", "y": 439.0 },{"name":"2013 DEC", "y": 441.0 },{"name":"2014 JAN", "y": 441.0 },{"name":"2014 FEB", "y": 440.0 },{"name":"2014 MAR", "y": 439.0 },{"name":"2014 APR", "y": 440.0 },{"name":"2014 MAY", "y": 440.0 },{"name":"2014 JUN", "y": 441.0 },{"name":"2014 JUL", "y": 442.0 },{"name":"2014 AUG", "y": 443.0 },{"name":"2014 SEP", "y": 446.0 },{"name":"2014 OCT", "y": 448.0 },{"name":"2014 NOV", "y": 446.0 },{"name":"2014 DEC", "y": 448.0 },{"name":"2015 JAN", "y": 449.0 },{"name":"2015 FEB", "y": 451.0 },{"name":"2015 MAR", "y": 452.0 },{"name":"2015 APR", "y": 452.0 },{"name":"2015 MAY", "y": 453.0 },{"name":"2015 JUN", "y": 454.0 },{"name":"2015 JUL", "y": 455.0 },{"name":"2015 AUG", "y": 455.0 },{"name":"2015 SEP", "y": 455.0 },{"name":"2015 OCT", "y": 456.0 },{"name":"2015 NOV", "y": 457.0 },{"name":"2015 DEC", "y": 458.0 },{"name":"2016 JAN", "y": 460.0 },{"name":"2016 FEB", "y": 461.0 },{"name":"2016 MAR", "y": 462.0 },{"name":"2016 APR", "y": 464.0 },{"name":"2016 MAY", "y": 463.0 },{"name":"2016 JUN", "y": 465.0 },{"name":"2016 JUL", "y": 465.0 },{"name":"2016 AUG", "y": 466.0 },{"name":"2016 SEP", "y": 467.0 },{"name":"2016 OCT", "y": 467.0 },{"name":"2016 NOV", "y": 469.0 },{"name":"2016 DEC", "y": 469.0 },{"name":"2017 JAN", "y": 469.0 },{"name":"2017 FEB", "y": 469.0 },{"name":"2017 MAR", "y": 470.0 },{"name":"2017 APR", "y": 472.0 },{"name":"2017 MAY", "y": 473.0 },{"name":"2017 JUN", "y": 474.0 },{"name":"2017 JUL", "y": 475.0 },{"name":"2017 AUG", "y": 477.0 },{"name":"2017 SEP", "y": 478.0 },{"name":"2017 OCT", "y": 478.0 },]
+var description = {"title":"LMSB SA AWE regular pay WE","contact":{"email":"earnings@ons.gov.uk","name":"Roger Smith","telephone":"+44 (0)1633 455277"},"releaseDate":"2017-12-13T00:00:00.000Z","nextRelease":"24 January 2018","datasetId":"EMP","datasetUri":"/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/averageweeklyearnings","cdid":"KAI7","unit":"","preUnit":"£","source":"","date":"2017 OCT","number":"478","sampleSize":"0"};
+
+var sparklineKAI7 = {
+	chart: {
+		backgroundColor: null,
+		borderWidth: 0,
+		type: 'area',
+		
+        marginRight:40,
+		marginLeft:40,
+		
+		skipClone: true
+	},
+	title: {
+		text: ''
+	},
+	subtitle: {
+		text: '',
+		y: 110
+	},
+	credits: {
+		enabled: false
+	},
+	xAxis: {
+		categories: ["2000 JAN","2000 FEB","2000 MAR","2000 APR","2000 MAY","2000 JUN","2000 JUL","2000 AUG","2000 SEP","2000 OCT","2000 NOV","2000 DEC","2001 JAN","2001 FEB","2001 MAR","2001 APR","2001 MAY","2001 JUN","2001 JUL","2001 AUG","2001 SEP","2001 OCT","2001 NOV","2001 DEC","2002 JAN","2002 FEB","2002 MAR","2002 APR","2002 MAY","2002 JUN","2002 JUL","2002 AUG","2002 SEP","2002 OCT","2002 NOV","2002 DEC","2003 JAN","2003 FEB","2003 MAR","2003 APR","2003 MAY","2003 JUN","2003 JUL","2003 AUG","2003 SEP","2003 OCT","2003 NOV","2003 DEC","2004 JAN","2004 FEB","2004 MAR","2004 APR","2004 MAY","2004 JUN","2004 JUL","2004 AUG","2004 SEP","2004 OCT","2004 NOV","2004 DEC","2005 JAN","2005 FEB","2005 MAR","2005 APR","2005 MAY","2005 JUN","2005 JUL","2005 AUG","2005 SEP","2005 OCT","2005 NOV","2005 DEC","2006 JAN","2006 FEB","2006 MAR","2006 APR","2006 MAY","2006 JUN","2006 JUL","2006 AUG","2006 SEP","2006 OCT","2006 NOV","2006 DEC","2007 JAN","2007 FEB","2007 MAR","2007 APR","2007 MAY","2007 JUN","2007 JUL","2007 AUG","2007 SEP","2007 OCT","2007 NOV","2007 DEC","2008 JAN","2008 FEB","2008 MAR","2008 APR","2008 MAY","2008 JUN","2008 JUL","2008 AUG","2008 SEP","2008 OCT","2008 NOV","2008 DEC","2009 JAN","2009 FEB","2009 MAR","2009 APR","2009 MAY","2009 JUN","2009 JUL","2009 AUG","2009 SEP","2009 OCT","2009 NOV","2009 DEC","2010 JAN","2010 FEB","2010 MAR","2010 APR","2010 MAY","2010 JUN","2010 JUL","2010 AUG","2010 SEP","2010 OCT","2010 NOV","2010 DEC","2011 JAN","2011 FEB","2011 MAR","2011 APR","2011 MAY","2011 JUN","2011 JUL","2011 AUG","2011 SEP","2011 OCT","2011 NOV","2011 DEC","2012 JAN","2012 FEB","2012 MAR","2012 APR","2012 MAY","2012 JUN","2012 JUL","2012 AUG","2012 SEP","2012 OCT","2012 NOV","2012 DEC","2013 JAN","2013 FEB","2013 MAR","2013 APR","2013 MAY","2013 JUN","2013 JUL","2013 AUG","2013 SEP","2013 OCT","2013 NOV","2013 DEC","2014 JAN","2014 FEB","2014 MAR","2014 APR","2014 MAY","2014 JUN","2014 JUL","2014 AUG","2014 SEP","2014 OCT","2014 NOV","2014 DEC","2015 JAN","2015 FEB","2015 MAR","2015 APR","2015 MAY","2015 JUN","2015 JUL","2015 AUG","2015 SEP","2015 OCT","2015 NOV","2015 DEC","2016 JAN","2016 FEB","2016 MAR","2016 APR","2016 MAY","2016 JUN","2016 JUL","2016 AUG","2016 SEP","2016 OCT","2016 NOV","2016 DEC","2017 JAN","2017 FEB","2017 MAR","2017 APR","2017 MAY","2017 JUN","2017 JUL","2017 AUG","2017 SEP","2017 OCT",],
+		labels: {
+			crop: false,
+			style: {
+				'color': '#707070',
+			},
+			formatter: function() {
+				if (this.isFirst) {
+					return this.value;
+				}
+				if (this.isLast) {
+					return this.value;
+				}
+			},
+			step: 1
+		},
+		tickLength: 0,
+		lineColor: '#707070'
+		
+	},
+	yAxis: {
+		endOnTick: false,
+		startOnTick: false,
+		labels: {
+			enabled: false
+		},
+		title: {
+			text: null
+		},
+		tickPositions: [0]
+	},
+	legend: {
+		enabled: false
+	},
+	tooltip: {
+		enabled: false
+	},
+	plotOptions: {
+		series: {
+			animation: false,
+			turboThreshold:0,
+			lineWidth: 1,
+			shadow: false,
+			states: {
+				hover: {
+					lineWidth: 1
+				}
+			},
+			marker: {
+				radius: 1,
+				states: {
+					hover: {
+						radius: 1
+					}
+				}
+			},
+			fillOpacity: 0.25,
+			enableMouseTracking: false,
+		},
+		column: {
+			negativeColor: '#910000',
+			borderColor: 'silver'
+		}
+	},
+	exporting: {
+		enabled: false
+	},
+	annotationsOptions: {
+		enabledButtons: false 
+	},
+	series: [{
+		name: '',
+		data : series,
+		color: '#007dc3',
+		marker: {
+			symbol: 'circle',
+			states: {
+				hover: {
+					
+					radiusPlus: 0,
+					lineWidthPlus: 0
+				}
+			}
+		},
+		dashStyle: 'Solid',
+	}]
+};
+
+window.sparklineKAI7 = sparklineKAI7;
+return sparklineKAI7;
+
+
+ })()
