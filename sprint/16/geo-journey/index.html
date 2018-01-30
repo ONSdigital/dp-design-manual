@@ -144,7 +144,7 @@ hr {
 
      .st1:hover
   {
-    fill: #1E3D4F;
+    fill: #1E3D4F!important;
   }
     
          .st2
@@ -255,14 +255,18 @@ hr {
            <h2 style="margin-top: 16px;">Explore</h2>
             
         <br>   
-        <div><a href="england.html">England</a></div>
+        <div class="locations">
+        <div> <a class="layer5" a href="england.html">England</a></div>
         <hr>
-        <div> <a href="url">Northern Ireland</a></div>
+        <div> <a class="layer3" a href="url">Northern Ireland</a></div>
         <hr>
-        <div> <a href="url">Scotland</a></div>
+        <div> <a class="layer1" a href="url">Scotland</a></div>
         <hr>
-        <div> <a href="url">Wales</a></div>
+        <div> <a class="layer6" href="url">Wales</a></div>
         <hr>    
+         </div>
+          
+         
            
           
                
@@ -1228,3 +1232,20 @@ hr {
 </main>
 
 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+       </script>
+       
+      <script>
+       
+       $(document).ready(function(){
+        var listElement = $('.locations a');
+        listElement.hover(function(){
+            var getLocation = $(this).attr('class');
+            $('.map #' + getLocation + ' path').css('fill', '#1E3D4F');
+        }, function() {
+            var getLocation = $(this).attr('class');
+            $('.map #' + getLocation + ' path').css('fill', '#3B7A9E');
+        });
+       });
+       
+       </script>
