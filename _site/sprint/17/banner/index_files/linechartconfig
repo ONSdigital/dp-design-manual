@@ -1,0 +1,248 @@
+ 
+(function(){
+
+
+
+var series = [{"name":"1971 JAN-MAR", "y": 72.2 },{"name":"1971 FEB-APR", "y": 72.1 },{"name":"1971 MAR-MAY", "y": 72.0 },{"name":"1971 APR-JUN", "y": 72.0 },{"name":"1971 MAY-JUL", "y": 71.9 },{"name":"1971 JUN-AUG", "y": 71.8 },{"name":"1971 JUL-SEP", "y": 71.7 },{"name":"1971 AUG-OCT", "y": 71.6 },{"name":"1971 SEP-NOV", "y": 71.5 },{"name":"1971 OCT-DEC", "y": 71.5 },{"name":"1971 NOV-JAN", "y": 71.5 },{"name":"1971 DEC-FEB", "y": 71.6 },{"name":"1972 JAN-MAR", "y": 71.8 },{"name":"1972 FEB-APR", "y": 71.9 },{"name":"1972 MAR-MAY", "y": 71.9 },{"name":"1972 APR-JUN", "y": 71.9 },{"name":"1972 MAY-JUL", "y": 71.9 },{"name":"1972 JUN-AUG", "y": 71.9 },{"name":"1972 JUL-SEP", "y": 72.0 },{"name":"1972 AUG-OCT", "y": 72.0 },{"name":"1972 SEP-NOV", "y": 72.1 },{"name":"1972 OCT-DEC", "y": 72.2 },{"name":"1972 NOV-JAN", "y": 72.4 },{"name":"1972 DEC-FEB", "y": 72.6 },{"name":"1973 JAN-MAR", "y": 72.8 },{"name":"1973 FEB-APR", "y": 72.9 },{"name":"1973 MAR-MAY", "y": 73.0 },{"name":"1973 APR-JUN", "y": 73.0 },{"name":"1973 MAY-JUL", "y": 72.9 },{"name":"1973 JUN-AUG", "y": 72.9 },{"name":"1973 JUL-SEP", "y": 72.9 },{"name":"1973 AUG-OCT", "y": 72.9 },{"name":"1973 SEP-NOV", "y": 73.0 },{"name":"1973 OCT-DEC", "y": 73.0 },{"name":"1973 NOV-JAN", "y": 73.0 },{"name":"1973 DEC-FEB", "y": 73.0 },{"name":"1974 JAN-MAR", "y": 72.9 },{"name":"1974 FEB-APR", "y": 72.9 },{"name":"1974 MAR-MAY", "y": 72.9 },{"name":"1974 APR-JUN", "y": 73.0 },{"name":"1974 MAY-JUL", "y": 73.0 },{"name":"1974 JUN-AUG", "y": 73.1 },{"name":"1974 JUL-SEP", "y": 73.1 },{"name":"1974 AUG-OCT", "y": 73.1 },{"name":"1974 SEP-NOV", "y": 73.1 },{"name":"1974 OCT-DEC", "y": 73.1 },{"name":"1974 NOV-JAN", "y": 73.0 },{"name":"1974 DEC-FEB", "y": 72.9 },{"name":"1975 JAN-MAR", "y": 72.9 },{"name":"1975 FEB-APR", "y": 72.8 },{"name":"1975 MAR-MAY", "y": 72.7 },{"name":"1975 APR-JUN", "y": 72.7 },{"name":"1975 MAY-JUL", "y": 72.7 },{"name":"1975 JUN-AUG", "y": 72.6 },{"name":"1975 JUL-SEP", "y": 72.6 },{"name":"1975 AUG-OCT", "y": 72.5 },{"name":"1975 SEP-NOV", "y": 72.4 },{"name":"1975 OCT-DEC", "y": 72.3 },{"name":"1975 NOV-JAN", "y": 72.3 },{"name":"1975 DEC-FEB", "y": 72.2 },{"name":"1976 JAN-MAR", "y": 72.1 },{"name":"1976 FEB-APR", "y": 72.0 },{"name":"1976 MAR-MAY", "y": 72.0 },{"name":"1976 APR-JUN", "y": 72.0 },{"name":"1976 MAY-JUL", "y": 71.9 },{"name":"1976 JUN-AUG", "y": 71.9 },{"name":"1976 JUL-SEP", "y": 71.9 },{"name":"1976 AUG-OCT", "y": 71.8 },{"name":"1976 SEP-NOV", "y": 71.8 },{"name":"1976 OCT-DEC", "y": 71.8 },{"name":"1976 NOV-JAN", "y": 71.8 },{"name":"1976 DEC-FEB", "y": 71.8 },{"name":"1977 JAN-MAR", "y": 71.8 },{"name":"1977 FEB-APR", "y": 71.7 },{"name":"1977 MAR-MAY", "y": 71.7 },{"name":"1977 APR-JUN", "y": 71.6 },{"name":"1977 MAY-JUL", "y": 71.6 },{"name":"1977 JUN-AUG", "y": 71.6 },{"name":"1977 JUL-SEP", "y": 71.6 },{"name":"1977 AUG-OCT", "y": 71.6 },{"name":"1977 SEP-NOV", "y": 71.5 },{"name":"1977 OCT-DEC", "y": 71.5 },{"name":"1977 NOV-JAN", "y": 71.5 },{"name":"1977 DEC-FEB", "y": 71.5 },{"name":"1978 JAN-MAR", "y": 71.5 },{"name":"1978 FEB-APR", "y": 71.5 },{"name":"1978 MAR-MAY", "y": 71.5 },{"name":"1978 APR-JUN", "y": 71.5 },{"name":"1978 MAY-JUL", "y": 71.5 },{"name":"1978 JUN-AUG", "y": 71.5 },{"name":"1978 JUL-SEP", "y": 71.5 },{"name":"1978 AUG-OCT", "y": 71.6 },{"name":"1978 SEP-NOV", "y": 71.6 },{"name":"1978 OCT-DEC", "y": 71.7 },{"name":"1978 NOV-JAN", "y": 71.8 },{"name":"1978 DEC-FEB", "y": 71.8 },{"name":"1979 JAN-MAR", "y": 71.8 },{"name":"1979 FEB-APR", "y": 71.7 },{"name":"1979 MAR-MAY", "y": 71.7 },{"name":"1979 APR-JUN", "y": 71.7 },{"name":"1979 MAY-JUL", "y": 71.8 },{"name":"1979 JUN-AUG", "y": 71.8 },{"name":"1979 JUL-SEP", "y": 71.8 },{"name":"1979 AUG-OCT", "y": 71.8 },{"name":"1979 SEP-NOV", "y": 71.8 },{"name":"1979 OCT-DEC", "y": 71.7 },{"name":"1979 NOV-JAN", "y": 71.7 },{"name":"1979 DEC-FEB", "y": 71.6 },{"name":"1980 JAN-MAR", "y": 71.5 },{"name":"1980 FEB-APR", "y": 71.4 },{"name":"1980 MAR-MAY", "y": 71.3 },{"name":"1980 APR-JUN", "y": 71.2 },{"name":"1980 MAY-JUL", "y": 71.1 },{"name":"1980 JUN-AUG", "y": 70.9 },{"name":"1980 JUL-SEP", "y": 70.7 },{"name":"1980 AUG-OCT", "y": 70.4 },{"name":"1980 SEP-NOV", "y": 70.2 },{"name":"1980 OCT-DEC", "y": 69.9 },{"name":"1980 NOV-JAN", "y": 69.7 },{"name":"1980 DEC-FEB", "y": 69.5 },{"name":"1981 JAN-MAR", "y": 69.3 },{"name":"1981 FEB-APR", "y": 69.1 },{"name":"1981 MAR-MAY", "y": 68.9 },{"name":"1981 APR-JUN", "y": 68.7 },{"name":"1981 MAY-JUL", "y": 68.5 },{"name":"1981 JUN-AUG", "y": 68.4 },{"name":"1981 JUL-SEP", "y": 68.2 },{"name":"1981 AUG-OCT", "y": 68.1 },{"name":"1981 SEP-NOV", "y": 67.9 },{"name":"1981 OCT-DEC", "y": 67.7 },{"name":"1981 NOV-JAN", "y": 67.6 },{"name":"1981 DEC-FEB", "y": 67.5 },{"name":"1982 JAN-MAR", "y": 67.4 },{"name":"1982 FEB-APR", "y": 67.3 },{"name":"1982 MAR-MAY", "y": 67.2 },{"name":"1982 APR-JUN", "y": 67.1 },{"name":"1982 MAY-JUL", "y": 66.9 },{"name":"1982 JUN-AUG", "y": 66.8 },{"name":"1982 JUL-SEP", "y": 66.6 },{"name":"1982 AUG-OCT", "y": 66.5 },{"name":"1982 SEP-NOV", "y": 66.3 },{"name":"1982 OCT-DEC", "y": 66.1 },{"name":"1982 NOV-JAN", "y": 65.9 },{"name":"1982 DEC-FEB", "y": 65.8 },{"name":"1983 JAN-MAR", "y": 65.7 },{"name":"1983 FEB-APR", "y": 65.6 },{"name":"1983 MAR-MAY", "y": 65.6 },{"name":"1983 APR-JUN", "y": 65.6 },{"name":"1983 MAY-JUL", "y": 65.6 },{"name":"1983 JUN-AUG", "y": 65.7 },{"name":"1983 JUL-SEP", "y": 65.9 },{"name":"1983 AUG-OCT", "y": 66.0 },{"name":"1983 SEP-NOV", "y": 66.2 },{"name":"1983 OCT-DEC", "y": 66.3 },{"name":"1983 NOV-JAN", "y": 66.4 },{"name":"1983 DEC-FEB", "y": 66.4 },{"name":"1984 JAN-MAR", "y": 66.5 },{"name":"1984 FEB-APR", "y": 66.6 },{"name":"1984 MAR-MAY", "y": 66.6 },{"name":"1984 APR-JUN", "y": 66.7 },{"name":"1984 MAY-JUL", "y": 66.7 },{"name":"1984 JUN-AUG", "y": 66.8 },{"name":"1984 JUL-SEP", "y": 66.8 },{"name":"1984 AUG-OCT", "y": 66.9 },{"name":"1984 SEP-NOV", "y": 67.0 },{"name":"1984 OCT-DEC", "y": 67.1 },{"name":"1984 NOV-JAN", "y": 67.1 },{"name":"1984 DEC-FEB", "y": 67.2 },{"name":"1985 JAN-MAR", "y": 67.3 },{"name":"1985 FEB-APR", "y": 67.3 },{"name":"1985 MAR-MAY", "y": 67.3 },{"name":"1985 APR-JUN", "y": 67.4 },{"name":"1985 MAY-JUL", "y": 67.4 },{"name":"1985 JUN-AUG", "y": 67.4 },{"name":"1985 JUL-SEP", "y": 67.5 },{"name":"1985 AUG-OCT", "y": 67.5 },{"name":"1985 SEP-NOV", "y": 67.5 },{"name":"1985 OCT-DEC", "y": 67.5 },{"name":"1985 NOV-JAN", "y": 67.5 },{"name":"1985 DEC-FEB", "y": 67.6 },{"name":"1986 JAN-MAR", "y": 67.6 },{"name":"1986 FEB-APR", "y": 67.6 },{"name":"1986 MAR-MAY", "y": 67.6 },{"name":"1986 APR-JUN", "y": 67.6 },{"name":"1986 MAY-JUL", "y": 67.6 },{"name":"1986 JUN-AUG", "y": 67.7 },{"name":"1986 JUL-SEP", "y": 67.8 },{"name":"1986 AUG-OCT", "y": 67.8 },{"name":"1986 SEP-NOV", "y": 67.9 },{"name":"1986 OCT-DEC", "y": 67.9 },{"name":"1986 NOV-JAN", "y": 68.0 },{"name":"1986 DEC-FEB", "y": 68.0 },{"name":"1987 JAN-MAR", "y": 68.1 },{"name":"1987 FEB-APR", "y": 68.2 },{"name":"1987 MAR-MAY", "y": 68.3 },{"name":"1987 APR-JUN", "y": 68.5 },{"name":"1987 MAY-JUL", "y": 68.7 },{"name":"1987 JUN-AUG", "y": 68.9 },{"name":"1987 JUL-SEP", "y": 69.1 },{"name":"1987 AUG-OCT", "y": 69.3 },{"name":"1987 SEP-NOV", "y": 69.5 },{"name":"1987 OCT-DEC", "y": 69.7 },{"name":"1987 NOV-JAN", "y": 69.9 },{"name":"1987 DEC-FEB", "y": 70.0 },{"name":"1988 JAN-MAR", "y": 70.2 },{"name":"1988 FEB-APR", "y": 70.4 },{"name":"1988 MAR-MAY", "y": 70.5 },{"name":"1988 APR-JUN", "y": 70.7 },{"name":"1988 MAY-JUL", "y": 70.8 },{"name":"1988 JUN-AUG", "y": 70.9 },{"name":"1988 JUL-SEP", "y": 71.1 },{"name":"1988 AUG-OCT", "y": 71.3 },{"name":"1988 SEP-NOV", "y": 71.4 },{"name":"1988 OCT-DEC", "y": 71.5 },{"name":"1988 NOV-JAN", "y": 71.7 },{"name":"1988 DEC-FEB", "y": 71.9 },{"name":"1989 JAN-MAR", "y": 72.1 },{"name":"1989 FEB-APR", "y": 72.3 },{"name":"1989 MAR-MAY", "y": 72.4 },{"name":"1989 APR-JUN", "y": 72.4 },{"name":"1989 MAY-JUL", "y": 72.5 },{"name":"1989 JUN-AUG", "y": 72.5 },{"name":"1989 JUL-SEP", "y": 72.6 },{"name":"1989 AUG-OCT", "y": 72.6 },{"name":"1989 SEP-NOV", "y": 72.7 },{"name":"1989 OCT-DEC", "y": 72.8 },{"name":"1989 NOV-JAN", "y": 72.8 },{"name":"1989 DEC-FEB", "y": 72.8 },{"name":"1990 JAN-MAR", "y": 72.8 },{"name":"1990 FEB-APR", "y": 72.8 },{"name":"1990 MAR-MAY", "y": 72.8 },{"name":"1990 APR-JUN", "y": 72.8 },{"name":"1990 MAY-JUL", "y": 72.8 },{"name":"1990 JUN-AUG", "y": 72.8 },{"name":"1990 JUL-SEP", "y": 72.7 },{"name":"1990 AUG-OCT", "y": 72.6 },{"name":"1990 SEP-NOV", "y": 72.4 },{"name":"1990 OCT-DEC", "y": 72.3 },{"name":"1990 NOV-JAN", "y": 72.1 },{"name":"1990 DEC-FEB", "y": 71.9 },{"name":"1991 JAN-MAR", "y": 71.7 },{"name":"1991 FEB-APR", "y": 71.5 },{"name":"1991 MAR-MAY", "y": 71.2 },{"name":"1991 APR-JUN", "y": 71.0 },{"name":"1991 MAY-JUL", "y": 70.7 },{"name":"1991 JUN-AUG", "y": 70.5 },{"name":"1991 JUL-SEP", "y": 70.3 },{"name":"1991 AUG-OCT", "y": 70.1 },{"name":"1991 SEP-NOV", "y": 69.9 },{"name":"1991 OCT-DEC", "y": 69.8 },{"name":"1991 NOV-JAN", "y": 69.6 },{"name":"1991 DEC-FEB", "y": 69.5 },{"name":"1992 JAN-MAR", "y": 69.4 },{"name":"1992 FEB-APR", "y": 69.3 },{"name":"1992 MAR-MAY", "y": 69.2 },{"name":"1992 APR-JUN", "y": 69.1 },{"name":"1992 MAY-JUL", "y": 69.0 },{"name":"1992 JUN-AUG", "y": 68.9 },{"name":"1992 JUL-SEP", "y": 68.9 },{"name":"1992 AUG-OCT", "y": 68.8 },{"name":"1992 SEP-NOV", "y": 68.7 },{"name":"1992 OCT-DEC", "y": 68.5 },{"name":"1992 NOV-JAN", "y": 68.4 },{"name":"1992 DEC-FEB", "y": 68.3 },{"name":"1993 JAN-MAR", "y": 68.4 },{"name":"1993 FEB-APR", "y": 68.3 },{"name":"1993 MAR-MAY", "y": 68.4 },{"name":"1993 APR-JUN", "y": 68.4 },{"name":"1993 MAY-JUL", "y": 68.4 },{"name":"1993 JUN-AUG", "y": 68.4 },{"name":"1993 JUL-SEP", "y": 68.5 },{"name":"1993 AUG-OCT", "y": 68.5 },{"name":"1993 SEP-NOV", "y": 68.5 },{"name":"1993 OCT-DEC", "y": 68.5 },{"name":"1993 NOV-JAN", "y": 68.5 },{"name":"1993 DEC-FEB", "y": 68.6 },{"name":"1994 JAN-MAR", "y": 68.7 },{"name":"1994 FEB-APR", "y": 68.8 },{"name":"1994 MAR-MAY", "y": 68.8 },{"name":"1994 APR-JUN", "y": 68.8 },{"name":"1994 MAY-JUL", "y": 69.0 },{"name":"1994 JUN-AUG", "y": 69.0 },{"name":"1994 JUL-SEP", "y": 69.0 },{"name":"1994 AUG-OCT", "y": 69.0 },{"name":"1994 SEP-NOV", "y": 69.1 },{"name":"1994 OCT-DEC", "y": 69.1 },{"name":"1994 NOV-JAN", "y": 69.0 },{"name":"1994 DEC-FEB", "y": 69.1 },{"name":"1995 JAN-MAR", "y": 69.2 },{"name":"1995 FEB-APR", "y": 69.3 },{"name":"1995 MAR-MAY", "y": 69.4 },{"name":"1995 APR-JUN", "y": 69.4 },{"name":"1995 MAY-JUL", "y": 69.5 },{"name":"1995 JUN-AUG", "y": 69.6 },{"name":"1995 JUL-SEP", "y": 69.6 },{"name":"1995 AUG-OCT", "y": 69.7 },{"name":"1995 SEP-NOV", "y": 69.7 },{"name":"1995 OCT-DEC", "y": 69.9 },{"name":"1995 NOV-JAN", "y": 70.0 },{"name":"1995 DEC-FEB", "y": 69.9 },{"name":"1996 JAN-MAR", "y": 69.9 },{"name":"1996 FEB-APR", "y": 69.9 },{"name":"1996 MAR-MAY", "y": 69.9 },{"name":"1996 APR-JUN", "y": 69.9 },{"name":"1996 MAY-JUL", "y": 69.9 },{"name":"1996 JUN-AUG", "y": 70.0 },{"name":"1996 JUL-SEP", "y": 70.0 },{"name":"1996 AUG-OCT", "y": 70.1 },{"name":"1996 SEP-NOV", "y": 70.3 },{"name":"1996 OCT-DEC", "y": 70.3 },{"name":"1996 NOV-JAN", "y": 70.5 },{"name":"1996 DEC-FEB", "y": 70.6 },{"name":"1997 JAN-MAR", "y": 70.8 },{"name":"1997 FEB-APR", "y": 70.9 },{"name":"1997 MAR-MAY", "y": 70.9 },{"name":"1997 APR-JUN", "y": 71.0 },{"name":"1997 MAY-JUL", "y": 70.9 },{"name":"1997 JUN-AUG", "y": 70.9 },{"name":"1997 JUL-SEP", "y": 71.1 },{"name":"1997 AUG-OCT", "y": 71.1 },{"name":"1997 SEP-NOV", "y": 71.2 },{"name":"1997 OCT-DEC", "y": 71.2 },{"name":"1997 NOV-JAN", "y": 71.2 },{"name":"1997 DEC-FEB", "y": 71.2 },{"name":"1998 JAN-MAR", "y": 71.3 },{"name":"1998 FEB-APR", "y": 71.3 },{"name":"1998 MAR-MAY", "y": 71.3 },{"name":"1998 APR-JUN", "y": 71.3 },{"name":"1998 MAY-JUL", "y": 71.4 },{"name":"1998 JUN-AUG", "y": 71.6 },{"name":"1998 JUL-SEP", "y": 71.6 },{"name":"1998 AUG-OCT", "y": 71.6 },{"name":"1998 SEP-NOV", "y": 71.8 },{"name":"1998 OCT-DEC", "y": 71.8 },{"name":"1998 NOV-JAN", "y": 71.9 },{"name":"1998 DEC-FEB", "y": 71.9 },{"name":"1999 JAN-MAR", "y": 71.9 },{"name":"1999 FEB-APR", "y": 71.8 },{"name":"1999 MAR-MAY", "y": 71.8 },{"name":"1999 APR-JUN", "y": 71.9 },{"name":"1999 MAY-JUL", "y": 71.9 },{"name":"1999 JUN-AUG", "y": 72.0 },{"name":"1999 JUL-SEP", "y": 72.1 },{"name":"1999 AUG-OCT", "y": 72.1 },{"name":"1999 SEP-NOV", "y": 72.2 },{"name":"1999 OCT-DEC", "y": 72.3 },{"name":"1999 NOV-JAN", "y": 72.2 },{"name":"1999 DEC-FEB", "y": 72.2 },{"name":"2000 JAN-MAR", "y": 72.3 },{"name":"2000 FEB-APR", "y": 72.3 },{"name":"2000 MAR-MAY", "y": 72.4 },{"name":"2000 APR-JUN", "y": 72.5 },{"name":"2000 MAY-JUL", "y": 72.6 },{"name":"2000 JUN-AUG", "y": 72.7 },{"name":"2000 JUL-SEP", "y": 72.6 },{"name":"2000 AUG-OCT", "y": 72.5 },{"name":"2000 SEP-NOV", "y": 72.4 },{"name":"2000 OCT-DEC", "y": 72.5 },{"name":"2000 NOV-JAN", "y": 72.7 },{"name":"2000 DEC-FEB", "y": 72.6 },{"name":"2001 JAN-MAR", "y": 72.6 },{"name":"2001 FEB-APR", "y": 72.7 },{"name":"2001 MAR-MAY", "y": 72.7 },{"name":"2001 APR-JUN", "y": 72.7 },{"name":"2001 MAY-JUL", "y": 72.6 },{"name":"2001 JUN-AUG", "y": 72.6 },{"name":"2001 JUL-SEP", "y": 72.5 },{"name":"2001 AUG-OCT", "y": 72.5 },{"name":"2001 SEP-NOV", "y": 72.6 },{"name":"2001 OCT-DEC", "y": 72.6 },{"name":"2001 NOV-JAN", "y": 72.5 },{"name":"2001 DEC-FEB", "y": 72.5 },{"name":"2002 JAN-MAR", "y": 72.5 },{"name":"2002 FEB-APR", "y": 72.6 },{"name":"2002 MAR-MAY", "y": 72.6 },{"name":"2002 APR-JUN", "y": 72.7 },{"name":"2002 MAY-JUL", "y": 72.6 },{"name":"2002 JUN-AUG", "y": 72.7 },{"name":"2002 JUL-SEP", "y": 72.6 },{"name":"2002 AUG-OCT", "y": 72.7 },{"name":"2002 SEP-NOV", "y": 72.8 },{"name":"2002 OCT-DEC", "y": 72.9 },{"name":"2002 NOV-JAN", "y": 72.8 },{"name":"2002 DEC-FEB", "y": 72.6 },{"name":"2003 JAN-MAR", "y": 72.7 },{"name":"2003 FEB-APR", "y": 72.7 },{"name":"2003 MAR-MAY", "y": 72.8 },{"name":"2003 APR-JUN", "y": 72.9 },{"name":"2003 MAY-JUL", "y": 72.8 },{"name":"2003 JUN-AUG", "y": 72.8 },{"name":"2003 JUL-SEP", "y": 72.8 },{"name":"2003 AUG-OCT", "y": 72.8 },{"name":"2003 SEP-NOV", "y": 72.8 },{"name":"2003 OCT-DEC", "y": 72.8 },{"name":"2003 NOV-JAN", "y": 73.0 },{"name":"2003 DEC-FEB", "y": 73.0 },{"name":"2004 JAN-MAR", "y": 73.0 },{"name":"2004 FEB-APR", "y": 73.0 },{"name":"2004 MAR-MAY", "y": 72.9 },{"name":"2004 APR-JUN", "y": 72.9 },{"name":"2004 MAY-JUL", "y": 72.8 },{"name":"2004 JUN-AUG", "y": 72.8 },{"name":"2004 JUL-SEP", "y": 72.9 },{"name":"2004 AUG-OCT", "y": 72.9 },{"name":"2004 SEP-NOV", "y": 73.0 },{"name":"2004 OCT-DEC", "y": 73.0 },{"name":"2004 NOV-JAN", "y": 73.1 },{"name":"2004 DEC-FEB", "y": 73.2 },{"name":"2005 JAN-MAR", "y": 73.1 },{"name":"2005 FEB-APR", "y": 72.9 },{"name":"2005 MAR-MAY", "y": 72.9 },{"name":"2005 APR-JUN", "y": 72.9 },{"name":"2005 MAY-JUL", "y": 73.0 },{"name":"2005 JUN-AUG", "y": 73.0 },{"name":"2005 JUL-SEP", "y": 73.0 },{"name":"2005 AUG-OCT", "y": 72.9 },{"name":"2005 SEP-NOV", "y": 72.8 },{"name":"2005 OCT-DEC", "y": 72.7 },{"name":"2005 NOV-JAN", "y": 72.8 },{"name":"2005 DEC-FEB", "y": 72.8 },{"name":"2006 JAN-MAR", "y": 72.9 },{"name":"2006 FEB-APR", "y": 72.9 },{"name":"2006 MAR-MAY", "y": 72.8 },{"name":"2006 APR-JUN", "y": 72.8 },{"name":"2006 MAY-JUL", "y": 72.9 },{"name":"2006 JUN-AUG", "y": 73.0 },{"name":"2006 JUL-SEP", "y": 72.8 },{"name":"2006 AUG-OCT", "y": 72.8 },{"name":"2006 SEP-NOV", "y": 72.7 },{"name":"2006 OCT-DEC", "y": 72.7 },{"name":"2006 NOV-JAN", "y": 72.6 },{"name":"2006 DEC-FEB", "y": 72.5 },{"name":"2007 JAN-MAR", "y": 72.5 },{"name":"2007 FEB-APR", "y": 72.5 },{"name":"2007 MAR-MAY", "y": 72.7 },{"name":"2007 APR-JUN", "y": 72.7 },{"name":"2007 MAY-JUL", "y": 72.6 },{"name":"2007 JUN-AUG", "y": 72.6 },{"name":"2007 JUL-SEP", "y": 72.7 },{"name":"2007 AUG-OCT", "y": 72.8 },{"name":"2007 SEP-NOV", "y": 72.8 },{"name":"2007 OCT-DEC", "y": 72.9 },{"name":"2007 NOV-JAN", "y": 72.9 },{"name":"2007 DEC-FEB", "y": 73.0 },{"name":"2008 JAN-MAR", "y": 73.0 },{"name":"2008 FEB-APR", "y": 73.0 },{"name":"2008 MAR-MAY", "y": 73.0 },{"name":"2008 APR-JUN", "y": 72.9 },{"name":"2008 MAY-JUL", "y": 72.8 },{"name":"2008 JUN-AUG", "y": 72.6 },{"name":"2008 JUL-SEP", "y": 72.4 },{"name":"2008 AUG-OCT", "y": 72.3 },{"name":"2008 SEP-NOV", "y": 72.3 },{"name":"2008 OCT-DEC", "y": 72.2 },{"name":"2008 NOV-JAN", "y": 72.2 },{"name":"2008 DEC-FEB", "y": 71.9 },{"name":"2009 JAN-MAR", "y": 71.7 },{"name":"2009 FEB-APR", "y": 71.4 },{"name":"2009 MAR-MAY", "y": 71.0 },{"name":"2009 APR-JUN", "y": 70.8 },{"name":"2009 MAY-JUL", "y": 70.6 },{"name":"2009 JUN-AUG", "y": 70.7 },{"name":"2009 JUL-SEP", "y": 70.6 },{"name":"2009 AUG-OCT", "y": 70.6 },{"name":"2009 SEP-NOV", "y": 70.6 },{"name":"2009 OCT-DEC", "y": 70.6 },{"name":"2009 NOV-JAN", "y": 70.4 },{"name":"2009 DEC-FEB", "y": 70.3 },{"name":"2010 JAN-MAR", "y": 70.2 },{"name":"2010 FEB-APR", "y": 70.2 },{"name":"2010 MAR-MAY", "y": 70.4 },{"name":"2010 APR-JUN", "y": 70.4 },{"name":"2010 MAY-JUL", "y": 70.6 },{"name":"2010 JUN-AUG", "y": 70.6 },{"name":"2010 JUL-SEP", "y": 70.7 },{"name":"2010 AUG-OCT", "y": 70.5 },{"name":"2010 SEP-NOV", "y": 70.3 },{"name":"2010 OCT-DEC", "y": 70.4 },{"name":"2010 NOV-JAN", "y": 70.5 },{"name":"2010 DEC-FEB", "y": 70.6 },{"name":"2011 JAN-MAR", "y": 70.5 },{"name":"2011 FEB-APR", "y": 70.5 },{"name":"2011 MAR-MAY", "y": 70.5 },{"name":"2011 APR-JUN", "y": 70.5 },{"name":"2011 MAY-JUL", "y": 70.2 },{"name":"2011 JUN-AUG", "y": 70.2 },{"name":"2011 JUL-SEP", "y": 70.1 },{"name":"2011 AUG-OCT", "y": 70.1 },{"name":"2011 SEP-NOV", "y": 70.1 },{"name":"2011 OCT-DEC", "y": 70.2 },{"name":"2011 NOV-JAN", "y": 70.3 },{"name":"2011 DEC-FEB", "y": 70.3 },{"name":"2012 JAN-MAR", "y": 70.5 },{"name":"2012 FEB-APR", "y": 70.5 },{"name":"2012 MAR-MAY", "y": 70.7 },{"name":"2012 APR-JUN", "y": 70.9 },{"name":"2012 MAY-JUL", "y": 71.1 },{"name":"2012 JUN-AUG", "y": 71.2 },{"name":"2012 JUL-SEP", "y": 71.1 },{"name":"2012 AUG-OCT", "y": 71.1 },{"name":"2012 SEP-NOV", "y": 71.3 },{"name":"2012 OCT-DEC", "y": 71.4 },{"name":"2012 NOV-JAN", "y": 71.4 },{"name":"2012 DEC-FEB", "y": 71.2 },{"name":"2013 JAN-MAR", "y": 71.2 },{"name":"2013 FEB-APR", "y": 71.2 },{"name":"2013 MAR-MAY", "y": 71.2 },{"name":"2013 APR-JUN", "y": 71.3 },{"name":"2013 MAY-JUL", "y": 71.5 },{"name":"2013 JUN-AUG", "y": 71.5 },{"name":"2013 JUL-SEP", "y": 71.7 },{"name":"2013 AUG-OCT", "y": 71.9 },{"name":"2013 SEP-NOV", "y": 72.0 },{"name":"2013 OCT-DEC", "y": 72.0 },{"name":"2013 NOV-JAN", "y": 72.1 },{"name":"2013 DEC-FEB", "y": 72.4 },{"name":"2014 JAN-MAR", "y": 72.5 },{"name":"2014 FEB-APR", "y": 72.7 },{"name":"2014 MAR-MAY", "y": 72.9 },{"name":"2014 APR-JUN", "y": 72.8 },{"name":"2014 MAY-JUL", "y": 72.8 },{"name":"2014 JUN-AUG", "y": 73.0 },{"name":"2014 JUL-SEP", "y": 73.0 },{"name":"2014 AUG-OCT", "y": 73.0 },{"name":"2014 SEP-NOV", "y": 73.0 },{"name":"2014 OCT-DEC", "y": 73.2 },{"name":"2014 NOV-JAN", "y": 73.3 },{"name":"2014 DEC-FEB", "y": 73.4 },{"name":"2015 JAN-MAR", "y": 73.4 },{"name":"2015 FEB-APR", "y": 73.4 },{"name":"2015 MAR-MAY", "y": 73.3 },{"name":"2015 APR-JUN", "y": 73.4 },{"name":"2015 MAY-JUL", "y": 73.5 },{"name":"2015 JUN-AUG", "y": 73.6 },{"name":"2015 JUL-SEP", "y": 73.8 },{"name":"2015 AUG-OCT", "y": 74.0 },{"name":"2015 SEP-NOV", "y": 74.1 },{"name":"2015 OCT-DEC", "y": 74.1 },{"name":"2015 NOV-JAN", "y": 74.1 },{"name":"2015 DEC-FEB", "y": 74.1 },{"name":"2016 JAN-MAR", "y": 74.2 },{"name":"2016 FEB-APR", "y": 74.2 },{"name":"2016 MAR-MAY", "y": 74.4 },{"name":"2016 APR-JUN", "y": 74.4 },{"name":"2016 MAY-JUL", "y": 74.5 },{"name":"2016 JUN-AUG", "y": 74.5 },{"name":"2016 JUL-SEP", "y": 74.4 },{"name":"2016 AUG-OCT", "y": 74.4 },{"name":"2016 SEP-NOV", "y": 74.5 },{"name":"2016 OCT-DEC", "y": 74.6 },{"name":"2016 NOV-JAN", "y": 74.6 },{"name":"2016 DEC-FEB", "y": 74.6 },{"name":"2017 JAN-MAR", "y": 74.8 },{"name":"2017 FEB-APR", "y": 74.8 },{"name":"2017 MAR-MAY", "y": 74.9 },{"name":"2017 APR-JUN", "y": 75.1 },{"name":"2017 MAY-JUL", "y": 75.3 },{"name":"2017 JUN-AUG", "y": 75.1 },{"name":"2017 JUL-SEP", "y": 75.0 },{"name":"2017 AUG-OCT", "y": 75.1 },{"name":"2017 SEP-NOV", "y": 75.3 },]
+
+var description = {"title":"Employment rate (aged 16 to 64, seasonally adjusted)","metaDescription":"","contact":{"email":"labour.market@ons.gsi.gov.uk","name":"Richard Clegg","telephone":"+44 (0)1633 455400"},"releaseDate":"2018-01-24T00:00:00.000Z","nextRelease":"21 February 2018","datasetId":"LMS","datasetUri":"/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/labourmarketstatistics","cdid":"LF24","unit":"%","preUnit":"","source":"","monthLabelStyle":"three month average","date":"2017 OCT","number":"75.3","keyNote":"UK: Aged 16-64      ","sampleSize":"0"};
+var linechart = {
+   chart: {
+     type: 'line',
+     marginRight: 16,
+    
+    events: {
+        load: function () {
+            var chart = this,
+                yAxis = chart.yAxis[0],
+                tp = yAxis.tickPositions,
+                firstLabel = yAxis.ticks[tp[0]].label.getBBox().width,
+                lastLabel = yAxis.ticks[tp[tp.length - 1]].label.getBBox().width,
+                bb = yAxis.axisTitle.getBBox();
+            yAxis.update({
+                title: {
+                offset: -bb.width + (firstLabel > lastLabel ? firstLabel : lastLabel)
+            }
+            });
+        }
+    }
+   },
+   colors: ['#007dc3', '#409ed2', '#7fbee1', '#007dc3', '#409ed2', '#7fbee1'],
+
+   title: {
+     text: description.title
+   },
+   subtitle: {
+     text: 'Source: ' + description.source,
+     floating: true,
+     align: 'right',
+     x: 0,
+     verticalAlign: 'bottom',
+     y: 10
+   },
+   navigation: {
+     buttonOptions: {
+       enabled: false
+     }
+   },
+   xAxis: {
+     categories: ["1971 JAN-MAR","1971 FEB-APR","1971 MAR-MAY","1971 APR-JUN","1971 MAY-JUL","1971 JUN-AUG","1971 JUL-SEP","1971 AUG-OCT","1971 SEP-NOV","1971 OCT-DEC","1971 NOV-JAN","1971 DEC-FEB","1972 JAN-MAR","1972 FEB-APR","1972 MAR-MAY","1972 APR-JUN","1972 MAY-JUL","1972 JUN-AUG","1972 JUL-SEP","1972 AUG-OCT","1972 SEP-NOV","1972 OCT-DEC","1972 NOV-JAN","1972 DEC-FEB","1973 JAN-MAR","1973 FEB-APR","1973 MAR-MAY","1973 APR-JUN","1973 MAY-JUL","1973 JUN-AUG","1973 JUL-SEP","1973 AUG-OCT","1973 SEP-NOV","1973 OCT-DEC","1973 NOV-JAN","1973 DEC-FEB","1974 JAN-MAR","1974 FEB-APR","1974 MAR-MAY","1974 APR-JUN","1974 MAY-JUL","1974 JUN-AUG","1974 JUL-SEP","1974 AUG-OCT","1974 SEP-NOV","1974 OCT-DEC","1974 NOV-JAN","1974 DEC-FEB","1975 JAN-MAR","1975 FEB-APR","1975 MAR-MAY","1975 APR-JUN","1975 MAY-JUL","1975 JUN-AUG","1975 JUL-SEP","1975 AUG-OCT","1975 SEP-NOV","1975 OCT-DEC","1975 NOV-JAN","1975 DEC-FEB","1976 JAN-MAR","1976 FEB-APR","1976 MAR-MAY","1976 APR-JUN","1976 MAY-JUL","1976 JUN-AUG","1976 JUL-SEP","1976 AUG-OCT","1976 SEP-NOV","1976 OCT-DEC","1976 NOV-JAN","1976 DEC-FEB","1977 JAN-MAR","1977 FEB-APR","1977 MAR-MAY","1977 APR-JUN","1977 MAY-JUL","1977 JUN-AUG","1977 JUL-SEP","1977 AUG-OCT","1977 SEP-NOV","1977 OCT-DEC","1977 NOV-JAN","1977 DEC-FEB","1978 JAN-MAR","1978 FEB-APR","1978 MAR-MAY","1978 APR-JUN","1978 MAY-JUL","1978 JUN-AUG","1978 JUL-SEP","1978 AUG-OCT","1978 SEP-NOV","1978 OCT-DEC","1978 NOV-JAN","1978 DEC-FEB","1979 JAN-MAR","1979 FEB-APR","1979 MAR-MAY","1979 APR-JUN","1979 MAY-JUL","1979 JUN-AUG","1979 JUL-SEP","1979 AUG-OCT","1979 SEP-NOV","1979 OCT-DEC","1979 NOV-JAN","1979 DEC-FEB","1980 JAN-MAR","1980 FEB-APR","1980 MAR-MAY","1980 APR-JUN","1980 MAY-JUL","1980 JUN-AUG","1980 JUL-SEP","1980 AUG-OCT","1980 SEP-NOV","1980 OCT-DEC","1980 NOV-JAN","1980 DEC-FEB","1981 JAN-MAR","1981 FEB-APR","1981 MAR-MAY","1981 APR-JUN","1981 MAY-JUL","1981 JUN-AUG","1981 JUL-SEP","1981 AUG-OCT","1981 SEP-NOV","1981 OCT-DEC","1981 NOV-JAN","1981 DEC-FEB","1982 JAN-MAR","1982 FEB-APR","1982 MAR-MAY","1982 APR-JUN","1982 MAY-JUL","1982 JUN-AUG","1982 JUL-SEP","1982 AUG-OCT","1982 SEP-NOV","1982 OCT-DEC","1982 NOV-JAN","1982 DEC-FEB","1983 JAN-MAR","1983 FEB-APR","1983 MAR-MAY","1983 APR-JUN","1983 MAY-JUL","1983 JUN-AUG","1983 JUL-SEP","1983 AUG-OCT","1983 SEP-NOV","1983 OCT-DEC","1983 NOV-JAN","1983 DEC-FEB","1984 JAN-MAR","1984 FEB-APR","1984 MAR-MAY","1984 APR-JUN","1984 MAY-JUL","1984 JUN-AUG","1984 JUL-SEP","1984 AUG-OCT","1984 SEP-NOV","1984 OCT-DEC","1984 NOV-JAN","1984 DEC-FEB","1985 JAN-MAR","1985 FEB-APR","1985 MAR-MAY","1985 APR-JUN","1985 MAY-JUL","1985 JUN-AUG","1985 JUL-SEP","1985 AUG-OCT","1985 SEP-NOV","1985 OCT-DEC","1985 NOV-JAN","1985 DEC-FEB","1986 JAN-MAR","1986 FEB-APR","1986 MAR-MAY","1986 APR-JUN","1986 MAY-JUL","1986 JUN-AUG","1986 JUL-SEP","1986 AUG-OCT","1986 SEP-NOV","1986 OCT-DEC","1986 NOV-JAN","1986 DEC-FEB","1987 JAN-MAR","1987 FEB-APR","1987 MAR-MAY","1987 APR-JUN","1987 MAY-JUL","1987 JUN-AUG","1987 JUL-SEP","1987 AUG-OCT","1987 SEP-NOV","1987 OCT-DEC","1987 NOV-JAN","1987 DEC-FEB","1988 JAN-MAR","1988 FEB-APR","1988 MAR-MAY","1988 APR-JUN","1988 MAY-JUL","1988 JUN-AUG","1988 JUL-SEP","1988 AUG-OCT","1988 SEP-NOV","1988 OCT-DEC","1988 NOV-JAN","1988 DEC-FEB","1989 JAN-MAR","1989 FEB-APR","1989 MAR-MAY","1989 APR-JUN","1989 MAY-JUL","1989 JUN-AUG","1989 JUL-SEP","1989 AUG-OCT","1989 SEP-NOV","1989 OCT-DEC","1989 NOV-JAN","1989 DEC-FEB","1990 JAN-MAR","1990 FEB-APR","1990 MAR-MAY","1990 APR-JUN","1990 MAY-JUL","1990 JUN-AUG","1990 JUL-SEP","1990 AUG-OCT","1990 SEP-NOV","1990 OCT-DEC","1990 NOV-JAN","1990 DEC-FEB","1991 JAN-MAR","1991 FEB-APR","1991 MAR-MAY","1991 APR-JUN","1991 MAY-JUL","1991 JUN-AUG","1991 JUL-SEP","1991 AUG-OCT","1991 SEP-NOV","1991 OCT-DEC","1991 NOV-JAN","1991 DEC-FEB","1992 JAN-MAR","1992 FEB-APR","1992 MAR-MAY","1992 APR-JUN","1992 MAY-JUL","1992 JUN-AUG","1992 JUL-SEP","1992 AUG-OCT","1992 SEP-NOV","1992 OCT-DEC","1992 NOV-JAN","1992 DEC-FEB","1993 JAN-MAR","1993 FEB-APR","1993 MAR-MAY","1993 APR-JUN","1993 MAY-JUL","1993 JUN-AUG","1993 JUL-SEP","1993 AUG-OCT","1993 SEP-NOV","1993 OCT-DEC","1993 NOV-JAN","1993 DEC-FEB","1994 JAN-MAR","1994 FEB-APR","1994 MAR-MAY","1994 APR-JUN","1994 MAY-JUL","1994 JUN-AUG","1994 JUL-SEP","1994 AUG-OCT","1994 SEP-NOV","1994 OCT-DEC","1994 NOV-JAN","1994 DEC-FEB","1995 JAN-MAR","1995 FEB-APR","1995 MAR-MAY","1995 APR-JUN","1995 MAY-JUL","1995 JUN-AUG","1995 JUL-SEP","1995 AUG-OCT","1995 SEP-NOV","1995 OCT-DEC","1995 NOV-JAN","1995 DEC-FEB","1996 JAN-MAR","1996 FEB-APR","1996 MAR-MAY","1996 APR-JUN","1996 MAY-JUL","1996 JUN-AUG","1996 JUL-SEP","1996 AUG-OCT","1996 SEP-NOV","1996 OCT-DEC","1996 NOV-JAN","1996 DEC-FEB","1997 JAN-MAR","1997 FEB-APR","1997 MAR-MAY","1997 APR-JUN","1997 MAY-JUL","1997 JUN-AUG","1997 JUL-SEP","1997 AUG-OCT","1997 SEP-NOV","1997 OCT-DEC","1997 NOV-JAN","1997 DEC-FEB","1998 JAN-MAR","1998 FEB-APR","1998 MAR-MAY","1998 APR-JUN","1998 MAY-JUL","1998 JUN-AUG","1998 JUL-SEP","1998 AUG-OCT","1998 SEP-NOV","1998 OCT-DEC","1998 NOV-JAN","1998 DEC-FEB","1999 JAN-MAR","1999 FEB-APR","1999 MAR-MAY","1999 APR-JUN","1999 MAY-JUL","1999 JUN-AUG","1999 JUL-SEP","1999 AUG-OCT","1999 SEP-NOV","1999 OCT-DEC","1999 NOV-JAN","1999 DEC-FEB","2000 JAN-MAR","2000 FEB-APR","2000 MAR-MAY","2000 APR-JUN","2000 MAY-JUL","2000 JUN-AUG","2000 JUL-SEP","2000 AUG-OCT","2000 SEP-NOV","2000 OCT-DEC","2000 NOV-JAN","2000 DEC-FEB","2001 JAN-MAR","2001 FEB-APR","2001 MAR-MAY","2001 APR-JUN","2001 MAY-JUL","2001 JUN-AUG","2001 JUL-SEP","2001 AUG-OCT","2001 SEP-NOV","2001 OCT-DEC","2001 NOV-JAN","2001 DEC-FEB","2002 JAN-MAR","2002 FEB-APR","2002 MAR-MAY","2002 APR-JUN","2002 MAY-JUL","2002 JUN-AUG","2002 JUL-SEP","2002 AUG-OCT","2002 SEP-NOV","2002 OCT-DEC","2002 NOV-JAN","2002 DEC-FEB","2003 JAN-MAR","2003 FEB-APR","2003 MAR-MAY","2003 APR-JUN","2003 MAY-JUL","2003 JUN-AUG","2003 JUL-SEP","2003 AUG-OCT","2003 SEP-NOV","2003 OCT-DEC","2003 NOV-JAN","2003 DEC-FEB","2004 JAN-MAR","2004 FEB-APR","2004 MAR-MAY","2004 APR-JUN","2004 MAY-JUL","2004 JUN-AUG","2004 JUL-SEP","2004 AUG-OCT","2004 SEP-NOV","2004 OCT-DEC","2004 NOV-JAN","2004 DEC-FEB","2005 JAN-MAR","2005 FEB-APR","2005 MAR-MAY","2005 APR-JUN","2005 MAY-JUL","2005 JUN-AUG","2005 JUL-SEP","2005 AUG-OCT","2005 SEP-NOV","2005 OCT-DEC","2005 NOV-JAN","2005 DEC-FEB","2006 JAN-MAR","2006 FEB-APR","2006 MAR-MAY","2006 APR-JUN","2006 MAY-JUL","2006 JUN-AUG","2006 JUL-SEP","2006 AUG-OCT","2006 SEP-NOV","2006 OCT-DEC","2006 NOV-JAN","2006 DEC-FEB","2007 JAN-MAR","2007 FEB-APR","2007 MAR-MAY","2007 APR-JUN","2007 MAY-JUL","2007 JUN-AUG","2007 JUL-SEP","2007 AUG-OCT","2007 SEP-NOV","2007 OCT-DEC","2007 NOV-JAN","2007 DEC-FEB","2008 JAN-MAR","2008 FEB-APR","2008 MAR-MAY","2008 APR-JUN","2008 MAY-JUL","2008 JUN-AUG","2008 JUL-SEP","2008 AUG-OCT","2008 SEP-NOV","2008 OCT-DEC","2008 NOV-JAN","2008 DEC-FEB","2009 JAN-MAR","2009 FEB-APR","2009 MAR-MAY","2009 APR-JUN","2009 MAY-JUL","2009 JUN-AUG","2009 JUL-SEP","2009 AUG-OCT","2009 SEP-NOV","2009 OCT-DEC","2009 NOV-JAN","2009 DEC-FEB","2010 JAN-MAR","2010 FEB-APR","2010 MAR-MAY","2010 APR-JUN","2010 MAY-JUL","2010 JUN-AUG","2010 JUL-SEP","2010 AUG-OCT","2010 SEP-NOV","2010 OCT-DEC","2010 NOV-JAN","2010 DEC-FEB","2011 JAN-MAR","2011 FEB-APR","2011 MAR-MAY","2011 APR-JUN","2011 MAY-JUL","2011 JUN-AUG","2011 JUL-SEP","2011 AUG-OCT","2011 SEP-NOV","2011 OCT-DEC","2011 NOV-JAN","2011 DEC-FEB","2012 JAN-MAR","2012 FEB-APR","2012 MAR-MAY","2012 APR-JUN","2012 MAY-JUL","2012 JUN-AUG","2012 JUL-SEP","2012 AUG-OCT","2012 SEP-NOV","2012 OCT-DEC","2012 NOV-JAN","2012 DEC-FEB","2013 JAN-MAR","2013 FEB-APR","2013 MAR-MAY","2013 APR-JUN","2013 MAY-JUL","2013 JUN-AUG","2013 JUL-SEP","2013 AUG-OCT","2013 SEP-NOV","2013 OCT-DEC","2013 NOV-JAN","2013 DEC-FEB","2014 JAN-MAR","2014 FEB-APR","2014 MAR-MAY","2014 APR-JUN","2014 MAY-JUL","2014 JUN-AUG","2014 JUL-SEP","2014 AUG-OCT","2014 SEP-NOV","2014 OCT-DEC","2014 NOV-JAN","2014 DEC-FEB","2015 JAN-MAR","2015 FEB-APR","2015 MAR-MAY","2015 APR-JUN","2015 MAY-JUL","2015 JUN-AUG","2015 JUL-SEP","2015 AUG-OCT","2015 SEP-NOV","2015 OCT-DEC","2015 NOV-JAN","2015 DEC-FEB","2016 JAN-MAR","2016 FEB-APR","2016 MAR-MAY","2016 APR-JUN","2016 MAY-JUL","2016 JUN-AUG","2016 JUL-SEP","2016 AUG-OCT","2016 SEP-NOV","2016 OCT-DEC","2016 NOV-JAN","2016 DEC-FEB","2017 JAN-MAR","2017 FEB-APR","2017 MAR-MAY","2017 APR-JUN","2017 MAY-JUL","2017 JUN-AUG","2017 JUL-SEP","2017 AUG-OCT","2017 SEP-NOV",],
+      tickPositioner: function () {
+       var positions = [];
+       var increment = Math.ceil(((this.dataMax) - (this.dataMin)) / 16);
+       var tick = Math.floor(this.dataMin);
+       for (tick; tick < this.dataMax; tick += increment) {
+         positions.push(tick);
+       }
+       //prevent last tick label overlap the last data in the array if too close
+       var diff = tick - this.dataMax;
+       if(diff >= (increment /2) ) {
+        var deleted = positions.pop();
+       }
+
+       positions.push(this.dataMax);
+       return positions;
+     },
+     labels: {
+        formatter: function() {
+          var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+          var response = '';
+          if (w < 768) {
+            if (this.isFirst) {
+              count = 0;
+            }
+            if (count % 4 === 0 || this.isLast) {
+              response = this.value;
+            }
+            count++;
+          } else {
+            response = this.value;
+          }
+          return response;
+        }
+     },
+     tickmarkPlacement: 'on'
+   },
+   yAxis: {
+     title: {
+        text: " " + description.unit,
+       align: 'high',
+       rotation: 360,
+       x: -15,
+       y: -10
+     },
+    labels: {
+      format: '{value:,f}'
+    }
+   },
+
+   credits: {
+     enabled: false
+   },
+
+    annotationsOptions: {
+        enabledButtons: false
+    },
+
+   plotOptions: {
+     series: {
+       turboThreshold:0,
+       shadow: false,
+       states: {
+         hover: {
+           enabled: true,
+           shadow: false,
+           lineWidth: 3,
+           lineWidthPlus: 0,
+           marker: {
+             height: 0,
+             width: 0,
+             halo: false,
+             enabled: true,
+             fillColor: null,
+             radiusPlus: null,
+             lineWidth: 3,
+             lineWidthPlus: 0
+           }
+         }
+       }
+     }
+   },
+   tooltip: {
+     shared: true,
+     width: '150px',
+     crosshairs: {
+       width: 2,
+       color: '#f37121'
+     },
+     positioner: function(labelWidth, labelHeight, point) {
+       var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+       var points = {
+         x: 30,
+         y: 42
+       };
+       var tooltipX, tooltipY;
+       var chart = Highcharts.charts[Highcharts.charts.length - 1];
+       if (w > 768) {
+
+         if (point.plotX + labelWidth > chart.plotWidth) {
+           tooltipX = point.plotX + chart.plotLeft - labelWidth - 20;
+           $("#custom-tooltip").removeClass('tooltip-left');
+         } else {
+           tooltipX = point.plotX + chart.plotLeft + 20;
+           $("#custom-tooltip").removeClass('tooltip-right');
+         }
+
+         tooltipY = 50;
+         points = {
+           x: tooltipX,
+           y: tooltipY
+         };
+       } else {
+         $("#custom-tooltip").removeClass('tooltip-left');
+         $("#custom-tooltip").removeClass('tooltip-right');
+       }
+
+       return points;
+     },
+
+     formatter: function() {
+       var id1 = '<div id="custom-tooltip" class="tooltip-left tooltip-right">';
+       var block = id1 + "<div class='sidebar' >";
+       var title = '<b class="title">' + this.points[0].key + ': </b>';
+       var symbol = ['<div class="circle">●</div>', '<div class="square">■</div>', '<div class="diamond">♦</div>', '<div class="triangle">▲</div>', '<div class="triangle">▼</div>'];
+
+       var content = block;
+
+       // symbols
+       $.each(this.points, function(i, val) {
+         content += symbol[i];
+       });
+
+       content += "<br/></div>";
+       content += "<div class='maintext maintext__fixed-width'>";
+       content += title;
+
+       // series names and values
+       $.each(this.points, function(i, val) {
+         content += '<div class="tiptext">' + val.point.series.chart.series[i].name + "<br/><b>Value: " + val.point.series.chart.series[i].options.preUnit + numberWithCommas(val.y) + " " + val.point.series.chart.series[i].options.unit + '</b></div>';
+       });
+       content += "</div>";
+       return content;
+     },
+
+     backgroundColor: 'rgba(255, 255, 255, 0)',
+     borderWidth: 0,
+     borderColor: 'rgba(255, 255, 255, 0)',
+     shadow: false,
+     useHTML: true
+
+   },
+   series: [{
+     name: description.title,
+     id: description.id,
+     unit: description.unit,
+     preUnit: description.preUnit,
+     data: series,
+     marker: {
+       enabled:true,
+       radius:2,
+       symbol: "circle",
+       states: {
+         hover: {
+           fillColor: '#007dc3',
+           radiusPlus: 0,
+           lineWidthPlus: 0
+         }
+       }
+     },
+     dashStyle: 'Solid'
+   }]
+ };
+
+if(!description.isIndex) {
+  var min;
+  for(i = 0; i<series.length; i++) {
+   min = min ? Math.min(min, series[i].y) : series[i].y;
+  }
+       
+  if(min > 0) {
+   linechart.yAxis.min = 0;
+  } else {
+   linechart.yAxis.min = min - 1;
+  }
+
+ };
+
+
+    function numberWithCommas(number) {
+    var parts = number.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return parts.join(".");
+    }
+
+window.linechart = linechart;
+return linechart;
+
+
+ })()
