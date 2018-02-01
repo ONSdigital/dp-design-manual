@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://www.loop11.com/usertest/get-session -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <script type="text/javascript">
+      (function() {
+          "use strict";
+
+          var pattern = /(?:^|;)\s*session=([^;]+)/g;
+          var session;
+          var msg;
+          try {
+              session = JSON.parse(unescape(pattern.exec(document.cookie)[1]));
+              msg = {
+                  session: session,
+                  fromLoop11: true
+              };
+          } catch (e) {
+              msg = {
+                  noSession: true
+              };
+          }
+            window.parent.postMessage(escape(JSON.stringify(msg)), "*");
+      }());
+    </script>
+</head>
+
+<body>
+</body></html>
