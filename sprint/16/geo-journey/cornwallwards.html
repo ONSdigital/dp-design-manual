@@ -1,255 +1,28 @@
-<!-- Copy of ONS.GOV.UK with extra prototype styles included -->
+---
+layout: prototype
+title: "Cornwall: Electoral wards"
+contact-name: "Tom Davy"
 
-<!DOCTYPE html>
-<html lang="en">
+breadcrumbs:
+  - label: Home
+    link: https://www.ons.gov.uk/
+  - label: United Kingdom
+    link: index.html
+  - label: England
+    link: england.html    
+  - label: South West
+    link: southwest.html  
+  - label: Cornwall
+    link: cornwall.html             
 
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Cornwall: Census merged wards - ONS Digital Publishing Design Manual</title>
-  <meta name="description" content="A place for ONS website user experience and design stuff.">
-  <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/16/geo-journey/censuswards.html">
-  <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
-  <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
-
-  <meta name="robots" content="noindex, nofollow">
-
-</head>
-
-
-  <body>
+  
 
     
-      <div class="banner background--carrot">
-	<div class="wrapper">
-		<p class="banner__content font-size--16">
-			<strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
-	</div>
-</div>
-
     
-
-    <header>
-	<a class="skiplink" href="#main" tabindex="0">
-		Skip to main content
-	</a>
-
-	<div class="wrapper">
-		<div class="header col-wrap">
-
-			<div class="col col--lg-one-third col--md-one-third">
-  <a href="/dp-design-manual/">
-    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
-  </a>
-</div>
-
-
-			<div class="col col--lg-two-thirds col--md-two-thirds hide--sm print--hide language--js__container">
-  <dl class="language js--hide" style="display: none;">
-    <dt class="language__title">Language:</dt>
-    <dd class="language__item">
-      <a href="&#10;&#10;&#10;&#10;    //cy.ons.gov.uk/surveys/informationforbusinesses&#10;" class="language__link icon--hide">Cymraeg (CY)</a>
-    </dd>
-  </dl>
-  <form class="language language--js js--show" style="display: block;">
-    <label class="language--js__label" for="lang">Language:</label>
-    <select class="language--js__select" id="lang" name="lang">
-      <option value="english" data-url="//www.www.ons.gov.uk/surveys/informationforbusinesses" selected="selected">English (EN)</option>
-      <option value="welsh" data-url="//cy.ons.gov.uk/surveys/informationforbusinesses">Cymraeg (CY)</option>
-    </select>
-  </form>
-</div>
-
-
-			<div class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
-  <ul class="secondary-nav__list js-nav-clone__list">
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link  js-nav-clone__link" href="/releasecalendar">Release calendar</a>
-    </li>
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link  js-nav-clone__link" href="/methodology">Methodology</a>
-    </li>
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link  js-nav-clone__link" href="/news">Media</a>
-    </li>
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link  js-nav-clone__link" href="/aboutus">About</a>
-    </li>
-    <li class="secondary-nav__item">
-      <a class="secondary-nav__link icon--hide js-nav-clone__link" target="_blank" rel="noopener noreferrer" href="https://blog.ons.gov.uk/">Blog</a>
-    </li>
-  </ul>
-</div>
-
-
-		</div>
-	</div>
-
-	<div class="primary-nav print--hide">
-  <nav>
-    <ul class="nav--controls">
-      <li class="nav--controls__item">
-        <a href="#nav-primary" id="menu-toggle" aria-controls="nav-primary" class="nav--controls__menu">
-          <span class="nav--controls__text">Menu</span>
-        </a>
-      </li>
-      <li class="nav--controls__item ">
-        <a href="#nav-search" id="search-toggle" aria-controls="nav-search" class="nav--controls__search">
-          <span class="nav--controls__text">Search</span>
-        </a>
-      </li>
-    </ul>
-    <div class="wrapper nav-main--hidden" id="nav-primary" aria-expanded="false">
-      <ul class="primary-nav__list">
-        <li class="primary-nav__item  js-nav hide--sm old-ie--display-block"><a class="primary-nav__link col col--md-7 col--lg-9" href="/">Home</a></li>
-        <li class="primary-nav__item js-nav js-expandable">
-          <a class="primary-nav__link col col--md-8 col--lg-10" href="/businessindustryandtrade" aria-haspopup="true">Business, industry and trade</a>
-          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/business">Business</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/changestobusiness">Changes to business</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/constructionindustry">Construction industry</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/itandinternetindustry">IT and internet industry</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/internationaltrade">International trade</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/manufacturingandproductionindustry">Manufacturing and production industry</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/retailindustry">Retail industry</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/tourismindustry">Tourism industry</a>
-            </li>
-          </ul>
-        </li>
-        <li class="primary-nav__item js-nav js-expandable">
-          <a class="primary-nav__link col col--md-8 col--lg-10" href="/economy" aria-haspopup="true">Economy</a>
-          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/economicoutputandproductivity">Economic output and productivity</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/environmentalaccounts">Environmental accounts</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/governmentpublicsectorandtaxes">Government, public sector and taxes</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossdomesticproductgdp">Gross Domestic Product (GDP)</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/grossvalueaddedgva">Gross Value Added (GVA)</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/inflationandpriceindices">Inflation and price indices</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/investmentspensionsandtrusts">Investments, pensions and trusts</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/nationalaccounts">National accounts</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/economy/regionalaccounts">Regional accounts</a>
-            </li>
-          </ul>
-        </li>
-        <li class="primary-nav__item js-nav js-expandable">
-          <a class="primary-nav__link col col--md-8 col--lg-10" href="/employmentandlabourmarket" aria-haspopup="true">Employment and labour market</a>
-          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peopleinwork">People in work</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peoplenotinwork">People not in work</a>
-            </li>
-          </ul>
-        </li>
-        <li class="primary-nav__item js-nav js-expandable">
-          <a class="primary-nav__link col col--md-8 col--lg-10" href="/peoplepopulationandcommunity" aria-haspopup="true">People, population and community</a>
-          <ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/birthsdeathsandmarriages">Births, deaths and marriages</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/crimeandjustice">Crime and justice</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/culturalidentity">Cultural identity</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/educationandchildcare">Education and childcare</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/elections">Elections</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/healthandsocialcare">Health and social care</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/householdcharacteristics">Household characteristics</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/housing">Housing</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/leisureandtourism">Leisure and tourism</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/personalandhouseholdfinances">Personal and household finances</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/populationandmigration">Population and migration</a>
-            </li>
-            <li class="primary-nav__child-item  js-expandable__child">
-              <a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/wellbeing">Well-being</a>
-            </li>
-          </ul>
-        </li>
-        <li class="primary-nav__item  js-nav">
-          <a class="primary-nav__link  col col--md-8 col--lg-10" href="/surveys">
-Taking part in a survey?
-</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
-
-	
-		<div class="search nav-search--hidden print--hide" id="searchBar">
-  <div class="wrapper" role="search">
-    <form class="col-wrap search__form" action="search.html">
-      <label class="search__label col col--md-23 col--lg-24" for="nav-search">Search for a keyword(s) or time series ID</label>
-      <input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-32" id="nav-search" name="q" value="">
-      <button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
-        <span class="visuallyhidden">Search</span>
-        <span class="icon icon-search--light"></span>
-      </button>
-    </form>
-  </div>
-</div>
-
-	
-
-</header>
-
-
-    <style>
+   
+    
+---
+<style>
 
 
  p {
@@ -471,49 +244,8 @@ hr {
       <div class="col-wrap">
         <div class="col">
 
-          <nav>
-  <div class="breadcrumb breadcrumb-v2 print--hide">
-    <ol class="breadcrumb__list">
-      
-        
-        <li class="breadcrumb__item">
-          <a class="breadcrumb__link" href="https://www.ons.gov.uk/">Home</a>
-        </li>
-        
-        <li class="breadcrumb__item">
-          <a class="breadcrumb__link" href="index.html">United Kingdom</a>
-        </li>
-        
-        <li class="breadcrumb__item">
-          <a class="breadcrumb__link" href="england.html">England</a>
-        </li>
-        
-        <li class="breadcrumb__item">
-          <a class="breadcrumb__link" href="southwest.html">South West</a>
-        </li>
-        
-        <li class="breadcrumb__item">
-          <a class="breadcrumb__link" href="cornwall.html">Cornwall</a>
-        </li>
-        
-      
-      <li class="breadcrumb__item">
-        Cornwall: Census merged wards
-      </li>
-    </ol>
-  </div>
-</nav>
-
-          <div class="page-intro-v2">
-  
-  <h1 class="page-intro__title margin-top--0 col--md-46 font-weight--bold">
-      
-      Cornwall: Census merged wards
-      
-    </h1>
-    
-</div>
-
+          {% include breadcrumbs-v2.html %}
+          {% include page-intro-v2.html %}
 
       
        
@@ -575,10 +307,12 @@ hr {
         <hr> 
         <div> <a class="breage" href="url">Breage</a></div>
         <hr> 
+<!--
         <div> <a class="bude" href="url">Bude North and Stratton</a></div>
         <hr> 
         <div> <a class="bude" href="bude.html">Bude</a></div>
         <hr> 
+-->
          <div> <a class="bugle" href="url">Bugle</a></div>
         <hr> 
         <div> <a class="callington" href="url">Callington</a></div>
@@ -3696,9 +3430,9 @@ hr {
             
        
                  <h3 style="margin-top: 16px;">Areas within 'Cornwall' that contain data</h3><br>
-           <a href="censuswards.html" class="btn btn--secondary btn--secondary-active">Census merged wards (123)</a>
+           <a href="censuswards.html" class="btn btn--secondary btn--secondary-disabled">Census merged wards (123)</a>
            <a href="cornwallparish.html" class="btn btn--secondary btn--secondary-disabled">Parishes (213)</a>
-           <a href="cornwallwards.html"class="btn btn--secondary btn--secondary-disabled">Electoral wards (122)</a>
+           <a href="cornwallwards.html"class="btn btn--secondary btn--secondary-active">Electoral wards (122)</a>
            <a href="cornwalloutput.html"class="btn btn--secondary btn--secondary-disabled">Output areas (1732)</a>
            <a href="cornwallarea.html"class="btn btn--secondary btn--secondary-disabled">Unitary Authorities (1)</a><br><br>
             
@@ -3710,31 +3444,32 @@ hr {
          
                
         
-              <h2 style="margin-top: 32px;">Statistical data for Cornwall: Census merged wards</h2>
+               <h2 style="margin-top: 32px;">Statistical data for Cornwall: Electoral wards</h2>
         <h3>People, population and community</h3>
-            <p style="margin-top: 0px;"><a href="landing.html">Weekly provisional figures on deaths registered in England</a>&nbsp;| 
-               <a>Death registrations summary tables - England</a>&nbsp;| 
-               <a>Deaths registered by area of usual residence, England</a>&nbsp;|
-               <a>Cancer survival in England - adults diagnosed </a>&nbsp;| 
-               <a>Deaths registered in England (series DR) </a>&nbsp;| 
-               <a>The 21st century mortality files - deaths dataset, England</a>&nbsp;... (plus 32 more) <a>Show</a> 
+              <p style="margin-top: 0px;">0 datasets for this boundary.<br>
+               Try <a>Census merged wards</a>&nbsp;to find data for people, population and community</p>
+           
+           
+           
+       
                
              
         <h3>Business, industry and trade </h3>
            <p style="margin-top: 0px;">0 datasets for this boundary.<br>
-               Try <a href="electoral.html">Electoral wards</a>&nbsp;to find data for Business area and trade.      </p>
+               Try <a>Electroal wards</a>&nbsp;to find data for Business area and trade.      </p>
                
                <h3>Economy</h3>
          <p style="margin-top: 0px;">0 datasets for this boundary.<br>
                Try <a>Output areas</a>&nbsp;to find data for Economy.      </p>
                
                       <h3>Employment and labour market</h3>
-          <p style="margin-top: 0px;">0 datasets for this boundary.<br>
-               Try <a>Parishes</a>&nbsp;to find data for Employment and labour market.      </p>
-             
-            
-            
-       
+               <p style="margin-top: 0px;"><a href="landing.html">EARN01: Average Weekly Earnings</a>&nbsp;| 
+               <a>Annual survey of hours and earnings (ASHE) gender pay gap tables</a>&nbsp;| 
+               <a>Region by Occupation (4 digit SOC) - ASHE: Table 15 </a>&nbsp;|
+               <a>Occupation (4 digit SOC) - ASHE: Table 14 </a>&nbsp;| 
+               <a>Deaths registered in England (series DR) </a>&nbsp;| 
+               <a>All Employees - ASHE: Table 1</a>
+              
             <br>
             <br>
         
@@ -3749,7 +3484,7 @@ hr {
         <section>
         
         <div class="wrapper" style="margin-bottom:128px">
-        <h2 style="margin-top: 32px;">Geographical data and products - Cornwall: Census merged wards</h2>
+        <h2 style="margin-top: 32px;">Geographical data and products - Cornwall: Electoral wards</h2>
  <div class="col-wrap">
         <div class="col col--md-one-third col--lg-one-third">
             <h4>Current boundaries</h4>
@@ -3803,87 +3538,3 @@ hr {
        
        </script>
 
-
-
-    <footer class="print--hide">
-	<h2 class="visuallyhidden">Footer links</h2>
-	<div class="footer">
-		<div class="wrapper">
-			<nav>
-				<div class="footer-nav col-wrap">
-					<div class="col col--lg-one-third col--md-one-third">
-						<h3 class="footer-nav__heading">Help</h3>
-						<ul class="footer-nav__list">
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/help/accessibility">Accessibility</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/help/cookiesandprivacy">Cookies and privacy</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/help/termsandconditions">Terms and conditions</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col col--lg-one-third col--md-one-third">
-						<h3 class="footer-nav__heading">About ONS</h3>
-						<ul class="footer-nav__list">
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/aboutus/whatwedo">What we do</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/aboutus/careers">Careers</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/aboutus/contactus">Contact us</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/news">News</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col col--lg-one-third col--md-one-third">
-						<h3 class="footer-nav__heading">Connect with us</h3>
-						<ul class="footer-nav__list">
-							<li class="footer-nav__item">
-								<a href="https://twitter.com/ONS" class="icon--hide" target="_blank">Twitter</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.facebook.com/ONS" class="icon--hide" target="_blank">Facebook</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide" target="_blank">LinkedIn</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide" target="_blank">Email alerts</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-		<div class="wrapper">
-
-      <div class="footer-license">
-  <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
-  <p class="footer-license__text margin-left-sm--0">
-    All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
-  </p>
-</div>
-
-
-		</div>
-	</div>
-	<div id="viewport-sm" class="js-viewport-size"></div><div id="viewport-md" class="js-viewport-size"></div><div id="viewport-lg" class="js-viewport-size"></div>
-</footer>
-
-
-  </body>
-
-  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
-  <script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script>
-
-</html>
