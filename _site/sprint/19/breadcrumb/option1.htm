@@ -73,26 +73,78 @@
 
 <style>
 
-.breadcrumb__item:after !important {
+
+    .breadcrumb {
+    padding: 16px 0 7px 0;
+    border-bottom: none;!important;
+}
+    
+    
+    .breadcrumb__item:after {
    
-    padding-left: 8px;
-    background-image: url(img/breadcrumb.png);
+   padding-left: 8px;
+   background-image: url(img/breadcrumb.png);
     background-repeat: no-repeat;
     background-position: center;
+    content: '.';
+    color: #EAEAEA;  
+    display: inline-block;
+        margin-left:8px;
+       
+    }
+
+    .breadcrumb-border {
+    padding: 8px 0 0px 0px;
+    border-bottom: 1px solid #D0D2D3;
+  
 }
 
-
-.breadcrumb {
-display: inline;
+    .breadcrumb__list  {
+    border-bottom: none;!important;
 }
 
+    
+    
 .breadcrumb-mobile {
 display: none;
+    padding: 16px 0 7px 0;
+    border-bottom: none;!important;
+    margin-top: 16px;
+}
+    
+
+
+
+    .breadcrumb__list-mobile {
+    display: none;
+    padding: 16px 0 7px 0;
+    margin-top: 16px;
 }
 
     
+   @media only screen and (max-width: 479px) {
+       
+       .breadcrumb {
+        display: none !important;
+
+       }
+       
+       .breadcrumb-mobile {
+    display: inline;
+          
     
-    
+} 
+    .breadcrumb__item:after {
+   
+    padding-right: 0px;
+    background-image: url(img/breadcrumb2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    content: '.';
+         color: #EAEAEA;  
+    display: inline-block;
+       
+    }
     
     
     
@@ -364,16 +416,16 @@ Internal migration - Detailed estimates dataset by origin and destination local 
 
 <nav>
 <div class="breadcrumb-mobile print--hide">
-<ol class="breadcrumb__list" >
-<li class="breadcrumb__item" style="padding-bottom: 0px; padding-top: 0px;">
-<li class="breadcrumb__item" style="padding-bottom: 0px; padding-top: 0px;">
+<ol class="breadcrumb__list">
+<li class="breadcrumb__item" style="padding: 16px 0 8px 0;">
+<li class="breadcrumb__item" style="padding: 16px 0 8px 0;">
 <a class="breadcrumb__link" href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk">Migration within the UK</a>
 </li>
 </ol>
 </div>
 </nav>
 
-
+<div class="breadcrumb-border"></div>
 
 
 
