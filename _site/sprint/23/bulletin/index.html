@@ -11,7 +11,7 @@
   <title>Knife crime - ONS Digital Publishing Design Manual</title>
   <meta name="description" content="A place for ONS website user experience and design stuff.">
   <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/655b62a/css/main.css">
   <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/23/bulletin/">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
   <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
@@ -210,7 +210,22 @@ Taking part in a survey?
 
     </header>
 
-    <main id="main" role="main" tabindex="-1" class="bulletin-iteration">
+    <style>
+    .filler {
+        margin-bottom: 1px;
+    }
+    #sticky-nav.active {
+        position: fixed;
+        top: -8px;
+    }
+
+    @media (min-width: 992px) {
+        #sticky-nav.active {
+            top: -36px;
+        }
+    }
+</style>
+<main id="main" role="main" tabindex="-1" class="bulletin-iteration">
   <div class="page-intro background--astral padding-top--6 padding-bottom--3">
     <div class="wrapper">
       <div class="col-wrap">
@@ -257,22 +272,25 @@ Taking part in a survey?
       <div class="col-wrap">
 
         <div class="col col--md-one-third col--lg-one-quarter">
+        <div class="filler"></div>
+        <div id="sticky-nav">
           <h2 class="heading-medium">Sections</h2>
           <ul class="section-contents">
-            <li><a href="#">Summary</a></li>
-            <li><a href="#">Breakdown</a></li>
-            <li><a href="#">Things you need to know</a></li>
-            <li><a href="#">Data</a></li>
+            <li><a href="#section-1">Summary</a></li>
+            <li><a href="#section-2">Breakdown</a></li>
+            <li><a href="#section-3">Need to know</a></li>
+            <li><a href="#section-4">Data</a></li>
           </ul>
+          </div>
         </div>
 
         <div class="col col--md-two-thirds col--lg-three-quarters">
 
-          <h2>Summary</h2>
+          <h2 id="section-1">Summary</h2>
           <p class="font-medium">The police recorded 37,443 offences involving a knife or sharp instrument in the latest year ending September 2017, a 21% increase compared with the previous year (30,9413) and the highest number in the seven-year series.</p>
 
 
-          <h2>Breakdown</h2>
+          <h2 id="section-2">Breakdown</h2>
 
           <div class="js-show-hide">
 
@@ -288,13 +306,13 @@ Taking part in a survey?
             </div>
           </div>
 
-          <h2>Things you need to know</h2>
+          <h2 id="section-3">Things you need to know</h2>
           <ul>
             <li>Hello</li>
           </ul>
 
 
-          <h2>Data</h2>
+          <h2 id="section-4">Data</h2>
           <br>
 
           <div class="flex-grid">
@@ -358,7 +376,39 @@ Taking part in a survey?
     </div>
 
   </div>
+    <script>
+        const stickyNav = document.getElementById("sticky-nav");
+        const stickyPos = stickyNav.getBoundingClientRect().top;
+        let isStuck = false;
+        let currentScrollPos = 0;
+        let ticking = false;
 
+        console.log(stickyPos);
+        fixStickyNav = scrollPos => {
+            if (currentScrollPos < stickyPos && !isStuck) {
+                return;
+            }
+            if (currentScrollPos < stickyPos && isStuck) {
+                stickyNav.classList.remove(["active"]);
+                return;
+            }
+
+            isStuck = true;
+            stickyNav.classList.add(["active"]);
+        }
+
+        window.addEventListener('scroll', function(e) {
+            currentScrollPos = window.scrollY;
+
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    fixStickyNav(currentScrollPos);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    </script>
 
 </main>
 
