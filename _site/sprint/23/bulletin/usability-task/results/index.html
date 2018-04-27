@@ -16509,5 +16509,11 @@
         sentinel {}
     </style>
 </body>
-
+<Script>
+        const url = window.location.href
+        parameter = url.split("q=")[1]
+        parameter = parameter.split("&")[0]
+        term = parameter.replace("+"," ")
+        document.getElementById("lst-ib").value = term;
+    </Script>
 </html>
