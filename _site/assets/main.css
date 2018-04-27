@@ -398,11 +398,11 @@
 .visual-article-interation .heading-xlarge, .visual-article-interation .heading-large, .visual-article-interation .heading-medium, .visual-article-interation .heading-small, .visual-article-interation .heading-xsmall, .visual-article-interation .heading-xxsmall, .bulletin-iteration h1, .bulletin-iteration h2, .bulletin-iteration h3, .bulletin-iteration h4, .bulletin-iteration h5, .bulletin-iteration h6,
 .bulletin-iteration .heading-xlarge, .bulletin-iteration .heading-large, .bulletin-iteration .heading-medium, .bulletin-iteration .heading-small, .bulletin-iteration .heading-xsmall, .bulletin-iteration .heading-xxsmall {
   font-weight: bold; }
-.visual-article-interation h1, .visual-article-interation .heading-xlarge, .bulletin-iteration h1, .bulletin-iteration .heading-xlarge {
+.visual-article-interation h1, .visual-article-interation .heading-xlarge, .visual-article-interation .font-xlarge, .bulletin-iteration h1, .bulletin-iteration .heading-xlarge, .bulletin-iteration .font-xlarge {
   font-size: 32px;
   line-height: 40px; }
   @media (min-width: 768px) {
-    .visual-article-interation h1, .visual-article-interation .heading-xlarge, .bulletin-iteration h1, .bulletin-iteration .heading-xlarge {
+    .visual-article-interation h1, .visual-article-interation .heading-xlarge, .visual-article-interation .font-xlarge, .bulletin-iteration h1, .bulletin-iteration .heading-xlarge, .bulletin-iteration .font-xlarge {
       font-size: 38px;
       line-height: 48px; } }
 .visual-article-interation h2, .visual-article-interation .heading-large, .visual-article-interation .font-large, .bulletin-iteration h2, .bulletin-iteration .heading-large, .bulletin-iteration .font-large {
