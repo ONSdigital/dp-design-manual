@@ -476,6 +476,20 @@
       font-size: 14px;
       line-height: 24px; } }
 
+.flex-grid {
+  display: flex; }
+
+.flex-col {
+  flex: 1;
+  margin-right: 16px; }
+
+.flex-col:last-child {
+  margin-right: 0; }
+
+ul.section-contents {
+  list-style: none;
+  margin: 0; }
+
 .heading1 {
   font-weight: 700;
   font-size: 52px !important;
