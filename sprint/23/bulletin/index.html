@@ -2,13 +2,22 @@
 layout: prototype-bulletin-sprint
 type: Statistical bulletin
 title: "Knife crime"
-contact-name: Homer Simpson
-contact-email: homer.simpson@ons.gsi.gov.uk
-contact-tel: +44 (0)1234 467890
-release-date: 28 April 2018
-next-release: 25 May 2018
 ---
+<style>
+    .filler {
+        margin-bottom: 1px;
+    }
+    #sticky-nav.active {
+        position: fixed;
+        top: -8px;
+    }
 
+    @media (min-width: 992px) {
+        #sticky-nav.active {
+            top: -36px;
+        }
+    }
+</style>
 <main id="main" role="main" tabindex="-1" class="bulletin-iteration">
   <div class="page-intro background--astral padding-top--6 padding-bottom--3">
     <div class="wrapper">
@@ -32,15 +41,12 @@ next-release: 25 May 2018
           <p><span class="font-large font-weight--bold">22%</span> </br>yearly increase</p>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <div class="wrapper">
       <div class="col-wrap">
-        <div class="col col--md-half col--lg-half">
-          <p><span class="font-large font-weight--bold">Spark line goes here</span> </br></p>
-        </div>
-        <div class="col col--md-half col--lg-half">
-          <p><span class="font-large font-weight--bold">22%</span> </br> yearly increase</p>
+        <div class="col">
+          <p>Released on 28 April 2018</p>
         </div>
       </div>
     </div>
@@ -53,13 +59,16 @@ next-release: 25 May 2018
       <div class="col-wrap">
 
         <div class="col col--md-one-third col--lg-one-quarter">
+        <div class="filler"></div>
+        <div id="sticky-nav">
           <h2 class="heading-medium">Sections</h2>
           <ul class="section-contents">
-            <li><a href="#">Summary</a></li>
-            <li><a href="#">Breakdown</a></li>
-            <li><a href="#">Things you need to know</a></li>
-            <li><a href="#">Data</a></li>
+            <li><a href="#section-1">Summary</a></li>
+            <li><a href="#section-2">Breakdown</a></li>
+            <li><a href="#section-3">Need to know</a></li>
+            <li><a href="#section-4">Data</a></li>
           </ul>
+          </div>
         </div>
 
         <div class="col col--md-two-thirds col--lg-three-quarters">
@@ -71,15 +80,22 @@ next-release: 25 May 2018
             <p>This is an important call-out. <a class="link--underline" href="#">Link</a>.</p>
           </div> -->
 
+          <br>
 
+          <details role="group" class="margin-bottom--4 margin-top--1">
+          <summary role="button" aria-controls="details-content-1" aria-expanded="true"><span class="summary">Learn more <span class="visuallyhidden">about Geographic areas</span></span></summary>
+          <div class="panel" id="details-content-1" aria-hidden="false">
+          <p class="margin-top--0">Provides data at national level for the United Kingdom only. No breakdown of this data to smaller areas is available.</p>
+          </div>
+          </details>
 
-          <h2>Breakdown</h2>
+          <h2 id="section-2">Breakdown</h2>
 
           <div class="js-show-hide">
 
             <div class="show-hide show-hide--light background--gallery">
-              <div class="js-show-hide__title">
-                <h3 class="show-hide__title">
+              <div class="js-show-hide__title ">
+                <h3 class="heading-small padding-left--1 padding-top--0 margin-top--1 padding-bottom--1">
                   Geography
                 </h3>
               </div>
@@ -143,20 +159,20 @@ next-release: 25 May 2018
             </div>
           </div>
 
-          <h2>Things you need to know</h2>
+          <h2 id="section-3">Things you need to know</h2>
           <ul>
             <li>Hello</li>
           </ul>
 
 
-          <h2>Data</h2>
+          <h2 id="section-4">Data</h2>
           <br>
 
           <div class="flex-grid">
 
             <div class="flex-col background--gallery padding-left--1 padding-top--2 padding-bottom--1 margin-bottom--2">
-              <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Title of a content block</a></h3>
-              <p class="margin-top--0 margin-bottom--0">Description of a content block</p>
+              <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Title</a></h3>
+              <p class="margin-top--0 margin-bottom--0"><p><span class="font-large font-weight--bold">99%</span> </br>key figure example</p></p>
             </div>
 
             <div class="flex-col background--gallery padding-left--1 padding-top--2 padding-bottom--1 margin-bottom--2">
@@ -165,12 +181,125 @@ next-release: 25 May 2018
             </div>
 
           </div>
-        </div>
+
+          <div>
+
+            <div class="background--gallery padding-left--1 padding-right--1 padding-top--2 padding-bottom--1 margin-bottom--2">
+              <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Crime in England and Wales: Bulletin Tables</a></h3>
+              <p class="margin-top--0 margin-bottom--0">Data tables and figures from the statistical bulletin in excel format. The data contained in these tables are from four sources: Crime Survey for England and Wales, Home Office police recorded crime, the National Fraud Intelligence Bureau and the Ministry of Justice Criminal Justice Statistics Quarterly Update.</p>
+            </div>
+
+            <div class="background--gallery padding-left--1 padding-top--2 padding-bottom--1 margin-bottom--2">
+              <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Title of a content block</a></h3>
+              <p class="margin-top--0 margin-bottom--0">Description of a content block</p>
+            </div>
+
+          </div>
+
+          <div class="flex-grid">
+
+            <div class="flex-col background--gallery padding-left--1  padding-right--1 padding-top--2 padding-bottom--1 margin-bottom--2">
+              <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Title of a content block</a></h3>
+              <p class="margin-top--0 margin-bottom--0">Description of a content block. Description of a content block. Description of a content block. Description of a content block.</p>
+            </div>
+
+            <div class="flex-col background--gallery padding-left--1 padding-right--1 padding-top--2 padding-bottom--1 margin-bottom--2">
+              <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Title of a content block</a></h3>
+              <p class="margin-top--0 margin-bottom--0">Description of a content block</p>
+            </div>
+
+            <div class="flex-col background--gallery padding-left--1 padding-right--1 padding-top--2 padding-bottom--1 margin-bottom--2">
+              <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Title of a content block</a></h3>
+              <p class="margin-top--0 margin-bottom--0">Description of a content block</p>
+            </div>
+
+          </div>
+
+          <h2>Table</h2>
+          <p>Example table in case we need it.</p>
+          <table class="table-v2 margin-top--4 margin-bottom--4">
+              <tbody>
+                <tr>
+                <th>Year</th>
+                <th class="cell--align-right">UK Population</th>
+                <th class="cell--align-right">0 to 15 years (%)</th>
+                <th class="cell--align-right">16 to 64 years (%)</th>
+                <th class="cell--align-right">65 years and over (%)</th>
+              </tr>
+              <tr>
+                <td>1975</td>
+                <td class="cell--align-right">56,226,000</td>
+                <td class="cell--align-right">24.9</td>
+                <td class="cell--align-right">61.0</td>
+                <td class="cell--align-right">14.1</td>
+              </tr>
+              <tr>
+                <td>1985</td>
+                <td class="cell--align-right">56,554,000</td>
+                <td class="cell--align-right">20.7</td>
+                <td class="cell--align-right">64.1</td>
+                <td class="cell--align-right">15.2</td>
+              </tr>
+
+          </tbody>
+        </table>
 
       </div>
     </div>
 
   </div>
+    <script>
+        const stickyNav = document.getElementById("sticky-nav");
+        const stickyPos = stickyNav.getBoundingClientRect().top;
+        let isStuck = false;
+        let currentScrollPos = 0;
+        let ticking = false;
 
+        console.log(stickyPos);
+        fixStickyNav = scrollPos => {
+            if (currentScrollPos < stickyPos && !isStuck) {
+                return;
+            }
+            if (currentScrollPos < stickyPos && isStuck) {
+                stickyNav.classList.remove(["active"]);
+                return;
+            }
+
+            isStuck = true;
+            stickyNav.classList.add(["active"]);
+        }
+
+        window.addEventListener('scroll', function(e) {
+            currentScrollPos = window.scrollY;
+
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    fixStickyNav(currentScrollPos);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    </script>
+    <script>
+        //code to get a fake figure (as if from CMD)
+        function createNode(element) {
+        return document.createElement(element); // Create the type of element you pass in the parameters
+        }
+        function append(parent, el) {
+        return parent.appendChild(el); // Append the second parameter(element) to the first one
+        }
+
+        function getFigure(value){
+            console.log(value)
+        CrimeFigure = "1,234 offences involving weapons"
+        let place = value
+        p = createNode("p");
+                p.innerHTML = CrimeFigure + " reported by " + value + " police force  <a href = '#' style = 'color: #fff' >(view dataset)</a>"
+
+                append(answer, p);
+                // document.getElementById("disclaimer").style = "";
+        }
+    </script>
 
 </main>
