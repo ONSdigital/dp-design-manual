@@ -12,7 +12,7 @@
   <meta name="description" content="A place for ONS website user experience and design stuff.">
   <link rel="stylesheet" href="/dp-design-manual/assets/main.css">
   <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/e33b0a4/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/23/bulletin/">
+  <link rel="canonical" href="http://localhost:4000/dp-design-manual/sprint/23/bulletin/usability-task/results/testing.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Design Manual" href="/dp-design-manual/feed.xml">
   <link rel="shortcut icon" href="/dp-design-manual/favicon.ico">
 
@@ -210,22 +210,7 @@ Taking part in a survey?
 
     </header>
 
-    <style>
-    .filler {
-        margin-bottom: 1px;
-    }
-    #sticky-nav.active {
-        position: fixed;
-        top: -8px;
-    }
-
-    @media (min-width: 992px) {
-        #sticky-nav.active {
-            top: -36px;
-        }
-    }
-</style>
-<main id="main" role="main" tabindex="-1" class="bulletin-iteration">
+    <main id="main" role="main" tabindex="-1" class="bulletin-iteration">
   <div class="page-intro background--astral padding-top--6 padding-bottom--3">
     <div class="wrapper">
       <div class="col-wrap">
@@ -272,8 +257,6 @@ Taking part in a survey?
       <div class="col-wrap">
 
         <div class="col col--md-one-third col--lg-one-quarter">
-        <div class="filler"></div>
-        <div id="sticky-nav">
           <h2 class="heading-medium">Sections</h2>
           <ul class="section-contents">
             <li><a href="#">Summary</a></li>
@@ -281,7 +264,6 @@ Taking part in a survey?
             <li><a href="#">Things you need to know</a></li>
             <li><a href="#">Data</a></li>
           </ul>
-          </div>
         </div>
 
         <div class="col col--md-two-thirds col--lg-three-quarters">
@@ -295,14 +277,70 @@ Taking part in a survey?
           <div class="js-show-hide">
 
             <div class="show-hide show-hide--light background--gallery">
-              <div class="js-show-hide__title ">
-                <h3 class="heading-small padding-left--1 padding-top--0 margin-top--1 padding-bottom--1">
+              <div class="js-show-hide__title">
+                <h3 class="show-hide__title">
                   Geography
                 </h3>
               </div>
-              <div class="js-show-hide__content padding-left--1 padding-right--1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas pharetra nunc in aliquam. Duis malesuada euismod libero at ultricies. Morbi elementum sodales magna, quis fermentum est lobortis ut. Nulla eu pellentesque purus, et molestie dolor. Nulla ex augue, tincidunt in molestie sodales, pharetra et nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus consectetur nulla, auctor facilisis libero rutrum non.</p>
-              </div>
+              <div class="js-show-hide__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas pharetra nunc in aliquam. Duis malesuada euismod libero at ultricies. Morbi elementum sodales magna, quis fermentum est lobortis ut. Nulla eu pellentesque purus, et molestie dolor. Nulla ex augue, tincidunt in molestie sodales, pharetra et nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus consectetur nulla, auctor facilisis libero rutrum non.
+                
+                    <div class="background--astral padding-top-sm--2 padding-top-md--1 padding-right-sm--1 padding-right-md--1 padding-bottom-sm--2 padding-bottom-md--2 padding-left-sm--1 padding-left-md--1 js-mobile-filters__contents" style = "margin:10px">
+                        <h4>Offences involving weapons</h4>
+                        <div class="filters__field">
+                            <span>View figure for 
+                                <select onchange = "getFigure(this.value)">
+                                    <option disabled="true" selected value=""> --- select Police force area --- </option>
+                                    <option value="Avon and Somerset">Avon and Somerset</option>
+                                    <option value="Bedfordshire">Bedfordshire</option>
+                                    <option value="Cambridgeshire">Cambridgeshire</option>
+                                    <option value="Cheshire">Cheshire</option>
+                                    <option value="Cleveland">Cleveland</option>
+                                    <option value="Cumbria">Cumbria</option>
+                                    <option value="Derbyshire">Derbyshire</option>
+                                    <option value="Devon and Cornwall">Devon and Cornwall</option>
+                                    <option value="Dorset">Dorset</option>
+                                    <option value="Durham">Durham</option>
+                                    <option value="Dyfed-Powys">Dyfed-Powys</option>
+                                    <option value="Essex">Essex</option>
+                                    <option value="Gloucestershire">Gloucestershire</option>
+                                    <option value="Greater Manchester">Greater Manchester</option>
+                                    <option value="Gwent">Gwent</option>
+                                    <option value="Hampshire">Hampshire</option>
+                                    <option value="Hertfordshire">Hertfordshire</option>
+                                    <option value="Humberside">Humberside</option>
+                                    <option value="Kent">Kent</option>
+                                    <option value="Lancashire">Lancashire</option>
+                                    <option value="Leicestershire">Leicestershire</option>
+                                    <option value="Lincolnshire">Lincolnshire</option>
+                                    <option value="London, City of">London, City of</option>
+                                    <option value="Merseyside">Merseyside</option>
+                                    <option value="Norfolk">Norfolk</option>
+                                    <option value="North Wales">North Wales</option>
+                                    <option value="North Yorkshire">North Yorkshire</option>
+                                    <option value="Northamptonshire">Northamptonshire</option>
+                                    <option value="Northumbria">Northumbria</option>
+                                    <option value="Nottinghamshire">Nottinghamshire</option>
+                                    <option value="South Wales">South Wales</option>
+                                    <option value="South Yorkshire">South Yorkshire</option>
+                                    <option value="Staffordshire">Staffordshire</option>
+                                    <option value="Suffolk">Suffolk</option>
+                                    <option value="Surrey">Surrey</option>
+                                    <option value="Sussex">Sussex</option>
+                                    <option value="Thames Valley">Thames Valley</option>
+                                    <option value="Warwickshire">Warwickshire</option>
+                                    <option value="West Mercia">West Mercia</option>
+                                    <option value="West Midlands">West Midlands</option>
+                                    <option value="West Yorkshire">West Yorkshire</option>
+                                    <option value="Wiltshire">Wiltshire</option>
+                                </select>
+                            </span>
+                            <div id ="answer"></div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+
             </div>
           </div>
 
@@ -318,25 +356,11 @@ Taking part in a survey?
           <div class="flex-grid">
 
             <div class="flex-col background--gallery padding-left--1 padding-top--2 padding-bottom--1 margin-bottom--2">
-              <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Title</a></h3>
-              <p class="margin-top--0 margin-bottom--0"><p><span class="font-large font-weight--bold">99%</span> </br>key figure example</p></p>
-            </div>
-
-            <div class="flex-col background--gallery padding-left--1 padding-top--2 padding-bottom--1 margin-bottom--2">
               <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Title of a content block</a></h3>
               <p class="margin-top--0 margin-bottom--0">Description of a content block</p>
             </div>
 
-          </div>
-
-          <div>
-
-            <div class="background--gallery padding-left--1 padding-top--2 padding-bottom--1 margin-bottom--2">
-              <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Crime in England and Wales: Bulletin Tables</a></h3>
-              <p class="margin-top--0 margin-bottom--0">Data tables and figures from the statistical bulletin in excel format. The data contained in these tables are from four sources: Crime Survey for England and Wales, Home Office police recorded crime, the National Fraud Intelligence Bureau and the Ministry of Justice Criminal Justice Statistics Quarterly Update.</p>
-            </div>
-
-            <div class="background--gallery padding-left--1 padding-top--2 padding-bottom--1 margin-bottom--2">
+            <div class="flex-col background--gallery padding-left--1 padding-top--2 padding-bottom--1 margin-bottom--2">
               <h3 class="margin-top--0 margin-bottom--0 heading-small"><a href="#">Title of a content block</a></h3>
               <p class="margin-top--0 margin-bottom--0">Description of a content block</p>
             </div>
@@ -376,42 +400,28 @@ Taking part in a survey?
     </div>
 
   </div>
-    <script>
-        const stickyNav = document.getElementById("sticky-nav");
-        const stickyPos = stickyNav.getBoundingClientRect().top;
-        let isStuck = false;
-        let currentScrollPos = 0;
-        let ticking = false;
 
-        console.log(stickyPos);
-        fixStickyNav = scrollPos => {
-            if (currentScrollPos < stickyPos && !isStuck) {
-                return;
-            }
-            if (currentScrollPos < stickyPos && isStuck) {
-                stickyNav.classList.remove(["active"]);
-                return;
-            }
+<script>
+    //code to get a fake figure (as if from CMD)
+    function createNode(element) {
+    return document.createElement(element); // Create the type of element you pass in the parameters
+    }
+    function append(parent, el) {
+    return parent.appendChild(el); // Append the second parameter(element) to the first one
+    }
 
-            isStuck = true;
-            stickyNav.classList.add(["active"]);
-        }
+    function getFigure(value){
+        console.log(value)
+    CrimeFigure = "1,234 offences involving weapons"
+    let place = value
+    p = createNode("p");
+            p.innerHTML = CrimeFigure + " reported by " + value + " police force  <a href = '#' style = 'color: #fff' >(view dataset)</a>"
 
-        window.addEventListener('scroll', function(e) {
-            currentScrollPos = window.scrollY;
-
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    fixStickyNav(currentScrollPos);
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        });
-    </script>
-
+            append(answer, p);
+            // document.getElementById("disclaimer").style = "";
+    }
+</script>
 </main>
-
 
     <footer class="print--hide">
 	<h2 class="visuallyhidden">Footer links</h2>
