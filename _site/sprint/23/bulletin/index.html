@@ -228,12 +228,14 @@ Taking part in a survey?
       </div>
     </div>
 
-    <!-- <div class="alert-v2">
-      <div class="wrapper">
-        <div class="col-wrap">
-          <div class="col">
-            <p>This is the latest release. <a class="link--underline" href="#">View previous releases</a>.</p>
-          </div>
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col col--md-half col--lg-half">
+          <img style="width:100%" src="/dp-design-manual/assets/img/spark.png" class="" alt="">
+          <!-- <p><span class="font-large font-weight--bold">37,443</span> </br>offences involving a knife or sharp instrument</p> -->
+        </div>
+        <div class="col col--md-half col--lg-half">
+          <p><span class="font-large font-weight--bold">22%</span> </br>yearly increase</p>
         </div>
       </div>
     </div> -->
@@ -241,10 +243,10 @@ Taking part in a survey?
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col col--md-half col--lg-half">
-          <p><span class="font-large font-weight--bold">37,443</span> </br>offences involving a knife or sharp instrument</p>
+          <p><span class="font-large font-weight--bold">Spark line goes here</span> </br></p>
         </div>
         <div class="col col--md-half col--lg-half">
-          <p><span class="font-large font-weight--bold">21%</span> </br>increase compared with the previous year</p>
+          <p><span class="font-large font-weight--bold">22%</span> </br> yearly increase</p>
         </div>
       </div>
     </div>
@@ -268,10 +270,12 @@ Taking part in a survey?
 
         <div class="col col--md-two-thirds col--lg-three-quarters">
 
-          <h2>Summary</h2>
-          <p class="font-medium">Police recorded 39,598 offences involving a knife or sharp instrument in the year ending December 2017. About half of these offences were recorded as “assault with injury” and “assault with intent to cause serious harm”. All offence categories for which we collect data showed increases.</p>
+          <h2 id="section-1">Summary</h2>
+          <p>The police recorded 37,443 offences involving a knife or sharp instrument in the latest year ending September 2017, a 21% increase compared with the previous year (30,9413) and the highest number in the seven-year series.</p>
 
-          <p class="font-medium">This is supported by data for NHS hospitals in England, which showed a 7% increase in admissions for assault by a sharp object in the year ending March 2017.</p>
+          <!-- <div class="alert-v2">
+            <p>This is an important call-out. <a class="link--underline" href="#">Link</a>.</p>
+          </div> -->
 
 
 
@@ -285,9 +289,63 @@ Taking part in a survey?
                   Geography
                 </h3>
               </div>
-              <div class="js-show-hide__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas pharetra nunc in aliquam. Duis malesuada euismod libero at ultricies. Morbi elementum sodales magna, quis fermentum est lobortis ut. Nulla eu pellentesque purus, et molestie dolor. Nulla ex augue, tincidunt in molestie sodales, pharetra et nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus consectetur nulla, auctor facilisis libero rutrum non.</p>
-              </div>
+              <div class="js-show-hide__content padding-left--1 padding-right--1">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas pharetra nunc in aliquam. Duis malesuada euismod libero at ultricies. Morbi elementum sodales magna, quis fermentum est lobortis ut. Nulla eu pellentesque purus, et molestie dolor. Nulla ex augue, tincidunt in molestie sodales, pharetra et nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus consectetur nulla, auctor facilisis libero rutrum non.
+                      <div class="background--astral padding-top-sm--2 padding-top-md--1 padding-right-sm--1 padding-right-md--1 padding-bottom-sm--2 padding-bottom-md--2 padding-left-sm--1 padding-left-md--1 js-mobile-filters__contents" style = "margin:10px">
+                          <h4>Offences involving weapons</h4>
+                          <div class="filters__field">
+                              <span>View figure for
+                                  <select onchange = "getFigure(this.value)">
+                                      <option disabled="true" selected value=""> --- select Police force area --- </option>
+                                      <option value="Avon and Somerset">Avon and Somerset</option>
+                                      <option value="Bedfordshire">Bedfordshire</option>
+                                      <option value="Cambridgeshire">Cambridgeshire</option>
+                                      <option value="Cheshire">Cheshire</option>
+                                      <option value="Cleveland">Cleveland</option>
+                                      <option value="Cumbria">Cumbria</option>
+                                      <option value="Derbyshire">Derbyshire</option>
+                                      <option value="Devon and Cornwall">Devon and Cornwall</option>
+                                      <option value="Dorset">Dorset</option>
+                                      <option value="Durham">Durham</option>
+                                      <option value="Dyfed-Powys">Dyfed-Powys</option>
+                                      <option value="Essex">Essex</option>
+                                      <option value="Gloucestershire">Gloucestershire</option>
+                                      <option value="Greater Manchester">Greater Manchester</option>
+                                      <option value="Gwent">Gwent</option>
+                                      <option value="Hampshire">Hampshire</option>
+                                      <option value="Hertfordshire">Hertfordshire</option>
+                                      <option value="Humberside">Humberside</option>
+                                      <option value="Kent">Kent</option>
+                                      <option value="Lancashire">Lancashire</option>
+                                      <option value="Leicestershire">Leicestershire</option>
+                                      <option value="Lincolnshire">Lincolnshire</option>
+                                      <option value="London, City of">London, City of</option>
+                                      <option value="Merseyside">Merseyside</option>
+                                      <option value="Norfolk">Norfolk</option>
+                                      <option value="North Wales">North Wales</option>
+                                      <option value="North Yorkshire">North Yorkshire</option>
+                                      <option value="Northamptonshire">Northamptonshire</option>
+                                      <option value="Northumbria">Northumbria</option>
+                                      <option value="Nottinghamshire">Nottinghamshire</option>
+                                      <option value="South Wales">South Wales</option>
+                                      <option value="South Yorkshire">South Yorkshire</option>
+                                      <option value="Staffordshire">Staffordshire</option>
+                                      <option value="Suffolk">Suffolk</option>
+                                      <option value="Surrey">Surrey</option>
+                                      <option value="Sussex">Sussex</option>
+                                      <option value="Thames Valley">Thames Valley</option>
+                                      <option value="Warwickshire">Warwickshire</option>
+                                      <option value="West Mercia">West Mercia</option>
+                                      <option value="West Midlands">West Midlands</option>
+                                      <option value="West Yorkshire">West Yorkshire</option>
+                                      <option value="Wiltshire">Wiltshire</option>
+                                  </select>
+                              </span>
+                              <div id ="answer"></div>
+                          </div>
+                      </div>
+                      </p>
+                  </div>
             </div>
           </div>
 
