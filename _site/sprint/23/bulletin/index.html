@@ -226,10 +226,51 @@ Taking part in a survey?
     }
 </style>
 <main id="main" role="main" tabindex="-1" class="bulletin-iteration">
+    <div class="page-neutral-intro background--gallery">
+        <div class="wrapper">
+        <div class="col-wrap">
+        <div class="col">
+        <nav>
+        <div class="breadcrumb print--hide">
+        <ol class="breadcrumb__list">
+        <li class="breadcrumb__item" style = "font-size:14px">
+        <a class="breadcrumb__link"  href="/">Home</a>
+        </li>
+        <li class="breadcrumb__item" style = "font-size:14px">
+        <a class="breadcrumb__link"  href="/bulletins">Bulletins</a>
+        </li>
+        <li class="breadcrumb__item" style = "font-size:14px">
+        <a class="breadcrumb__link"  href="/crime-in-england-and-wales">Crime in England and Wales</a>
+        </li>
+        <li class="breadcrumb__item">
+
+        </li>
+        </ol>
+        </div>
+        </nav>
+        </div>
+        </div>
+        </div>
+
+
+        </div>
   <div class="page-intro background--astral padding-top--6 padding-bottom--3">
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <!-- <p class="margin-top-sm--2 font-xxsmall"><svg style="vertical-align: middle; fill: #323132;" width="14" viewBox="0 0 16 16">
 <g>
@@ -283,7 +324,6 @@ Taking part in a survey?
           <h2 class="heading-medium">Sections</h2>
           <ul class="section-contents">
             <li><a href="#section-1">Summary</a></li>
-            <li><a href="#section-2">Key data</a></li>
             <li><a href="#section-3">Data</a></li>
             <li><a href="#section-4">Things you need to know</a></li>
             <li><a href="#section-5">Analysis</a></li>
@@ -321,7 +361,6 @@ Taking part in a survey?
           </div>
           </details>
 
-          <h2 id="section-2">Key data</h2>
           <br>
 
           <div class="flex-grid">
@@ -353,7 +392,7 @@ Taking part in a survey?
                       <div class="background--astral padding-top-sm--2 padding-top-md--1 padding-right-sm--1 padding-right-md--1 padding-bottom-sm--2 padding-bottom-md--2 padding-left-sm--1 padding-left-md--1 js-mobile-filters__contents" style = "margin:10px">
                           <h4>Offences involving weapons</h4>
                           <div class="filters__field">
-                              <span>View figure for
+                              <span><strong>View figure for</strong>
                                   <select onchange = "getFigure(this.value)">
                                       <option disabled="true" selected value=""> --- select Police force area --- </option>
                                       <option value="Avon and Somerset">Avon and Somerset</option>
@@ -552,7 +591,7 @@ Taking part in a survey?
 
         function getFigure(value){
             console.log(value)
-        CrimeFigure = "1,234 offences involving weapons"
+        CrimeFigure = "<strong>1,234</strong> offences involving weapons"
         let place = value
         p = createNode("p");
                 p.innerHTML = CrimeFigure + " reported by " + value + " police force  <a href = '#' style = 'color: #fff' >(view dataset)</a>"
