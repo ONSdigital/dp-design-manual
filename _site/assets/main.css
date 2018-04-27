@@ -697,10 +697,10 @@ a.btn:hover {
 .basic .footer a:visited {
   color: #D0D2D3; }
 
-.alert-v2 .col {
-  background-color: #fff;
+.alert-v2 {
   border-left: 7px solid #206095;
-  padding-left: 16px; }
+  padding: 4px 16px;
+  background-color: #EAEAEA; }
 
 .alert-v2 p {
   padding: 0; }
