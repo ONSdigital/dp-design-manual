@@ -16511,7 +16511,8 @@
         const url = window.location.href
         parameter = url.split("q=")[1]
         parameter = parameter.split("&")[0]
-        term = parameter.replace("+"," ")
+        term = parameter.replace(/\+/g," ")
+        console.log (term)
         document.getElementById("lst-ib").value = term;
     </Script>
 </html>
