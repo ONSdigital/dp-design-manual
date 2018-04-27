@@ -210,7 +210,22 @@ Taking part in a survey?
 
     </header>
 
-    <main id="main" role="main" tabindex="-1" class="bulletin-iteration">
+    <style>
+    .filler {
+        margin-bottom: 1px;
+    }
+    #sticky-nav.active {
+        position: fixed;
+        top: -8px;
+    }
+
+    @media (min-width: 992px) {
+        #sticky-nav.active {
+            top: -36px;
+        }
+    }
+</style>
+<main id="main" role="main" tabindex="-1" class="bulletin-iteration">
   <div class="page-intro background--astral padding-top--6 padding-bottom--3">
     <div class="wrapper">
       <div class="col-wrap">
@@ -257,6 +272,8 @@ Taking part in a survey?
       <div class="col-wrap">
 
         <div class="col col--md-one-third col--lg-one-quarter">
+        <div class="filler"></div>
+        <div id="sticky-nav">
           <h2 class="heading-medium">Sections</h2>
           <ul class="section-contents">
             <li><a href="#">Summary</a></li>
@@ -264,6 +281,7 @@ Taking part in a survey?
             <li><a href="#">Things you need to know</a></li>
             <li><a href="#">Data</a></li>
           </ul>
+          </div>
         </div>
 
         <div class="col col--md-two-thirds col--lg-three-quarters">
@@ -344,7 +362,39 @@ Taking part in a survey?
     </div>
 
   </div>
+    <script>
+        const stickyNav = document.getElementById("sticky-nav");
+        const stickyPos = stickyNav.getBoundingClientRect().top;
+        let isStuck = false;
+        let currentScrollPos = 0;
+        let ticking = false;
 
+        console.log(stickyPos);
+        fixStickyNav = scrollPos => {
+            if (currentScrollPos < stickyPos && !isStuck) {
+                return;
+            }
+            if (currentScrollPos < stickyPos && isStuck) {
+                stickyNav.classList.remove(["active"]);
+                return;
+            }
+
+            isStuck = true;
+            stickyNav.classList.add(["active"]);
+        }
+
+        window.addEventListener('scroll', function(e) {
+            currentScrollPos = window.scrollY;
+
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    fixStickyNav(currentScrollPos);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    </script>
 
 </main>
 
