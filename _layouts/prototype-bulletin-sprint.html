@@ -1,0 +1,44 @@
+<!-- Copy of ONS.GOV.UK with extra prototype styles included -->
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% if page.warning != false %}
+      {% include banners/warning.html %}
+    {% endif %}
+
+    <header>
+    	<a class="skiplink" href="#main" tabindex="0">
+    		Skip to main content
+    	</a>
+
+    	<div class="wrapper">
+    		<div class="header col-wrap">
+
+    			{% include logo.html %}
+
+    		</div>
+    	</div>
+
+    	<!-- {% include primary-nav.html %}
+
+    	{% if page.search != false %}
+    		{% include search.html %}
+    	{% endif %} -->
+
+    </header>
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+  <!-- <script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script> -->
+
+</html>
