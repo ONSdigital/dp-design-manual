@@ -5,7 +5,7 @@
     <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
     <link href="/images/branding/product/ico/googleg_lodp.ico" rel="shortcut icon">
     <meta content="origin" name="referrer">
-    <title>knife crime in birmingham - Google Search</title>
+    <title>Google Search</title>
     <script nonce="J3Ish2aTWPMYPc24F8jPAg==">
         (function () {
             window.google = {
@@ -7711,7 +7711,7 @@
         <div class="sfbg nojsv" style="margin-top:-20px">
             <div class="sfbgg"></div>
         </div>
-        <form class="tsf" action="/search" style="overflow:visible" id="tsf" method="GET" name="f" onsubmit="return q.value!=''"
+        <form class="tsf" action="./index.html" style="overflow:visible" id="tsf" method="GET" name="f" onsubmit="return q.value!=''"
             role="search">
             <div id="tophf">
                 <input value="8ObiWuO8GOuDgAbNu5qADg" name="ei" type="hidden">
@@ -7742,7 +7742,7 @@
                                 </button>
                                 <div class="lst-c">
                                     <input class="lst lst-tbb sbibps" id="lst-ib" maxlength="2048" name="q" autocomplete="off"
-                                        title="Search" type="text" value="knife crime in birmingham" aria-label="Search">
+                                        title="Search" type="text" value="" aria-label="Search">
                                 </div>
                             </div>
                         </div>
@@ -8570,20 +8570,18 @@
                                                             <div data-hveid="CAAQKQ" data-ved="2ahUKEwjj9OaCjNraAhXrAcAKHc2dBuAQFSgAMAB6BAgAECk">
                                                                 <div class="rc">
                                                                     <h3 class="r">
-                                                                        <a href="https://www.birminghammail.co.uk/news/midlands-news/revealed-staggering-knife-crime-statistics-14262950"
-                                                                            ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.birminghammail.co.uk/news/midlands-news/revealed-staggering-knife-crime-statistics-14262950&amp;ved=2ahUKEwjj9OaCjNraAhXrAcAKHc2dBuAQFjAAegQIABAq">Revealed: Staggering knife crime statistics in Birmingham
-                                                                            schools ...</a>
+                                                                        <a href="https://onsdigital.github.io/dp-design-manual/sprint/23/bulletin/"
+                                                                            ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.birminghammail.co.uk/news/midlands-news/revealed-staggering-knife-crime-statistics-14262950&amp;ved=2ahUKEwjj9OaCjNraAhXrAcAKHc2dBuAQFjAAegQIABAq">Knife crime - Office for National Statistics
+                                                                            </a>
                                                                     </h3>
                                                                     <div class="s">
                                                                         <div>
                                                                             <div class="f hJND5c TbwUpd" style="white-space:nowrap">
-                                                                                <cite class="iUh30 bc">https://www.birminghammail.co.uk &rsaquo;
-                                                                                    News &rsaquo; Midlands News</cite>
+                                                                                <cite class="iUh30 bc">https://www.ons.gov.uk &rsaquo;
+                                                                                    Bulletins &rsaquo; Crime in England and Wales</cite>
                                                                             </div>
                                                                             <span class="st">
-                                                                                <span class="f">12 Feb 2018 - </span>Knuckle dusters, razors,
-                                                                                screwdrivers and kitchen knives among weapons
-                                                                                being taken into schools and used by schoolchildren.</span>
+                                                                                <span class="f">26 Apr 2018 - </span>The police recorded 37,443 offences involving a knife or sharp instrument in the latest year ending September 2017, a 21% increase compared with the previous year (30,9413) and the highest number in the seven-year series.</span>
                                                                         </div>
                                                                     </div>
                                                                     <div jsl="$t t--ddbPTeIsNI$t-nEjf2CObCkc;$x 0;" class="r-iDD1Fgq2VDJY"
@@ -16513,7 +16511,8 @@
         const url = window.location.href
         parameter = url.split("q=")[1]
         parameter = parameter.split("&")[0]
-        term = parameter.replace("+"," ")
+        term = parameter.replace(/\+/g," ")
+        console.log (term)
         document.getElementById("lst-ib").value = term;
     </Script>
 </html>
