@@ -903,6 +903,9 @@ details {
 .footnote__back-link {
   text-decoration: underline; }
 
+.tiles__list {
+  list-style: none; }
+
 .pl-colour-circle {
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
